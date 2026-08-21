@@ -7,8 +7,105 @@ export const enableBlog = false; // requires VITE_CONTENTFUL_ACCESS_TOKEN and VI
 
 /*   STEP 2   */
 export const homepageText = `
-  <p> This is fantasy foosball </p>
-  `;
+<h2>WELCOME TO FANTASY FOOSBALL — YEAR 8</h2>
+
+<p>
+Eight seasons. Twelve managers. One championship. Welcome to <strong>Fantasy Foosball Year 8</strong> — a league built on rivalries, ridiculous trades, Sunday heartbreak, waiver-wire desperation, and the never-ending pursuit of the ultimate prize.
+</p>
+
+<p>
+What started in 2019 as a 10-manager league has grown into a 12-team annual battle for fantasy football supremacy. Every season brings a new chapter to the league's history. Rosters change, contenders rise, dynasties are challenged, and eventually one manager is left standing with the championship.
+</p>
+
+<p>
+The road to the championship is never easy. A single bad draft pick can haunt a team for years. One lucky waiver-wire pickup can completely change a season. A questionable trade can become league folklore. And sometimes, despite everything, it simply comes down to who gets the right players at the right time.
+</p>
+
+<h3>🏆 THE ALL-TIME CHAMPIONS CIRCLE</h3>
+
+<p>
+Championships are forever. The managers below have earned their place in Fantasy Foosball history by reaching the top of the mountain and taking home the league title.
+</p>
+
+<p>
+<strong>Payton — 2 Championships</strong><br>
+2020, 2021
+</p>
+
+<p>
+<strong>Parker — 1 Championship</strong><br>
+2019 — Inaugural Season
+</p>
+
+<p>
+<strong>Cooper — 1 Championship</strong><br>
+2022
+</p>
+
+<p>
+<strong>Evan — 1 Championship</strong><br>
+2023
+</p>
+
+<p>
+<strong>Joey — 1 Championship</strong><br>
+2024
+</p>
+
+<p>
+<strong>Alex — 1 Championship</strong><br>
+2025
+</p>
+
+<h3>THE FIRST DYNASTY</h3>
+
+<p>
+Before Fantasy Foosball became the 12-team league it is today, the league consisted of only 10 managers. During those early years, Payton established the first true championship run in league history, winning back-to-back titles in <strong>2020 and 2021</strong>.
+</p>
+
+<p>
+Winning one championship is difficult. Winning two in a row is something else entirely. Payton's consecutive titles remain one of the defining accomplishments of the league's early era and established the first dynasty before the league expanded.
+</p>
+
+<h3>THE LEAGUE EXPANDS</h3>
+
+<p>
+In <strong>2023</strong>, Fantasy Foosball entered a new era when the league expanded from 10 managers to 12. With two additional teams came more competition, more rivalries, more trade chaos, and an even harder road to the championship.
+</p>
+
+<p>
+Since the expansion, three different managers have claimed the championship — proving just how difficult it is to stay on top in the modern era. The league is no longer just about defending a title; every season is a chance for a new manager to make history.
+</p>
+
+<h3>THE QUEST FOR YEAR 8</h3>
+
+<p>
+Now, the next chapter begins.
+</p>
+
+<p>
+The banners are hanging. The trophies have been claimed. The history books are written. But none of that matters once the new season starts.
+</p>
+
+<p>
+<strong>2026 is a clean slate.</strong>
+</p>
+
+<p>
+Twelve managers will enter the season believing this is their year. Some will be chasing their first championship. Some will be trying to reclaim former glory. Others will be fighting to add another title to their name and cement themselves among the greatest managers in league history.
+</p>
+
+<p>
+The question is simple:
+</p>
+
+<h2>WHO'S NEXT TO JOIN THE CHAMPIONS CIRCLE?</h2>
+
+<p>
+Welcome to <strong>Fantasy Foosball Year 8.</strong> May your draft be flawless, your waiver claims be timely, your players stay healthy, and your opponents suffer accordingly.
+</p>
+`;
+
 
 /*   STEP 3   */
 /*
