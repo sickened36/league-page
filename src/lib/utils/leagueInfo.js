@@ -60,11 +60,7 @@ Championships are forever. The managers below have earned their place in Fantasy
 <h3>THE FIRST DYNASTY</h3>
 
 <p>
-Before Fantasy Foosball became the 12-team league it is today, the league consisted of only 10 managers. During those early years, Payton established the first true championship run in league history, winning back-to-back titles in <strong>2020 and 2021</strong>.
-</p>
-
-<p>
-Winning one championship is difficult. Winning two in a row is something else entirely. Payton's consecutive titles remain one of the defining accomplishments of the league's early era and established the first dynasty before the league expanded.
+Before Fantasy Foosball became the 12-team league it is today, the league consisted of only 10 managers. During those early years, Parker began the league by winning the inaguaral season of <strong>2019 however it was Payton who established the first true championship run in league history, winning back-to-back titles in <strong>2020 and 2021</strong>. Cooper finished out the first era of Fantasy Foosball with a strong <strong>2022 to take the ring.
 </p>
 
 <h3>THE LEAGUE EXPANDS</h3>
@@ -74,7 +70,7 @@ In <strong>2023</strong>, Fantasy Foosball entered a new era when the league exp
 </p>
 
 <p>
-Since the expansion, three different managers have claimed the championship — proving just how difficult it is to stay on top in the modern era. The league is no longer just about defending a title; every season is a chance for a new manager to make history.
+Since the expansion, three different managers have claimed the championship — proving just how difficult it is to stay on top in the modern era. Evan prevailed in the first year of this new frontier with a solid showing in <strong>2023 but it was Joey who triuphed the following year with a blazing <strong>2024. Finally, the most recent champion holds the crown as Alex has stood triumphant throughout the offseason with the <strong>2025 title in his hands.
 </p>
 
 <h3>THE QUEST FOR YEAR 8</h3>
@@ -92,7 +88,7 @@ The banners are hanging. The trophies have been claimed. The history books are w
 </p>
 
 <p>
-Twelve managers will enter the season believing this is their year. Some will be chasing their first championship. Some will be trying to reclaim former glory. Others will be fighting to add another title to their name and cement themselves among the greatest managers in league history.
+Twelve managers will enter the season believing this is their year. Six will be chasing their first championship. Some will be trying to reclaim former glory. Others will be fighting to add another title to their name and cement themselves among the greatest managers in league history.
 </p>
 
 <p>
@@ -130,7 +126,7 @@ export const managers = [
       //"tookOver": 2020, // (DEPRECATED! You don't need to use this anymore) (optional) used if a manager took over a team, delete this line or change to null otherwise
      // "location": "Brooklyn", // (optional)
       //"bio": "Lorem ipsum...",
-      "photo": "/managers/name.jpg", // square ratio recommended (no larger than 500x500)
+     // "photo": "/managers/name.jpg", // square ratio recommended (no larger than 500x500)
      // "fantasyStart": 2014, // (optional) when did the manager start playing fantasy football
      // "favoriteTeam": "nyj", // (optional) favorite NFL team, (follows convention: nyj, sea, mia, etc.) MUST BE LOWERCASE
      // "mode": "Win Now", // (optional) 'Win Now', 'Dynasty', or 'Rebuild' (anything else and you will need to add a new png to /static/ similar to the 'Rebuild.png' and 'Win Now.png' currently in there)
@@ -154,7 +150,7 @@ export const managers = [
       // "tookOver": 2020, // (DEPRECATED! You don't need to use this anymore) (optional) used if a manager took over a team, delete this line or change to null otherwise
       // "location": "Brooklyn", // (optional)
       // "bio": "Lorem ipsum...",
-       "photo": "/managers/name.jpg", // square ratio recommended (no larger than 500x500)
+       //"photo": "/managers/name.jpg", // square ratio recommended (no larger than 500x500)
       // "fantasyStart": 2014, // (optional) when did the manager start playing fantasy football
       // "favoriteTeam": "nyj", // (optional) favorite NFL team, (follows convention: nyj, sea, mia, etc.) MUST BE LOWERCASE
       // "mode": "Win Now", // (optional) 'Win Now', 'Dynasty', or 'Rebuild' (anything else and you will need to add a new png to /static/ similar to the 'Rebuild.png' and 'Win Now.png' currently in there)
@@ -178,7 +174,7 @@ export const managers = [
       // "tookOver": 2020, // (DEPRECATED! You don't need to use this anymore) (optional) used if a manager took over a team, delete this line or change to null otherwise
       // "location": "Brooklyn", // (optional)
       // "bio": "Lorem ipsum...",
-       "photo": "/managers/name.jpg", // square ratio recommended (no larger than 500x500)
+      // "photo": "/managers/name.jpg", // square ratio recommended (no larger than 500x500)
       // "fantasyStart": 2014, // (optional) when did the manager start playing fantasy football
       // "favoriteTeam": "nyj", // (optional) favorite NFL team, (follows convention: nyj, sea, mia, etc.) MUST BE LOWERCASE
       // "mode": "Win Now", // (optional) 'Win Now', 'Dynasty', or 'Rebuild' (anything else and you will need to add a new png to /static/ similar to the 'Rebuild.png' and 'Win Now.png' currently in there)
@@ -202,7 +198,7 @@ export const managers = [
       // "tookOver": 2020, // (DEPRECATED! You don't need to use this anymore) (optional) used if a manager took over a team, delete this line or change to null otherwise
       // "location": "Brooklyn", // (optional)
       // "bio": "Lorem ipsum...",
-       "photo": "/managers/name.jpg", // square ratio recommended (no larger than 500x500)
+       //"photo": "/managers/name.jpg", // square ratio recommended (no larger than 500x500)
       // "fantasyStart": 2014, // (optional) when did the manager start playing fantasy football
       // "favoriteTeam": "nyj", // (optional) favorite NFL team, (follows convention: nyj, sea, mia, etc.) MUST BE LOWERCASE
       // "mode": "Win Now", // (optional) 'Win Now', 'Dynasty', or 'Rebuild' (anything else and you will need to add a new png to /static/ similar to the 'Rebuild.png' and 'Win Now.png' currently in there)
