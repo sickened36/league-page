@@ -7,7 +7,7 @@ export const enableBlog = false; // requires VITE_CONTENTFUL_ACCESS_TOKEN and VI
 
 /*   STEP 2   */
 export const homepageText = '
-  <p> This... is... FANTASY FOOOSBALLLL </p>
+  <p> This is fantasy foosball </p>
   ';
 
 /*   STEP 3   */
