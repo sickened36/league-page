@@ -10,21 +10,21 @@ export const homepageText = `
 <h2>WELCOME TO FANTASY FOOSBALL — YEAR 8</h2>
 
 <p>
-Eight seasons. Twelve managers. One championship. Welcome to <strong>Fantasy Foosball Year 8</strong> — a league built on rivalries, ridiculous trades, Sunday heartbreak, waiver-wire desperation, and the never-ending pursuit of the ultimate prize.
+Eight seasons in the books. Twelve managers battling for one crown. This is <strong>Fantasy Foosball</strong> — where friendships are tested, trades get personal, waiver wire wins feel like heists, and Sunday afternoons decide who talks trash all offseason.
 </p>
 
 <p>
-What started in 2019 as a 10-manager league has grown into a 12-team annual battle for fantasy football supremacy. Every season brings a new chapter to the league's history. Rosters change, contenders rise, dynasties are challenged, and eventually one manager is left standing with the championship.
+What began in 2019 as a scrappy 10-manager league has grown into a full-blown 12-team gauntlet. Every year adds another layer to the story: rookies who become legends, dynasties that crumble overnight, and rivalries that outlast the seasons that started them. One thing never changes — somebody's leaving with the trophy, and everybody else is already plotting revenge for next year.
 </p>
 
 <p>
-The road to the championship is never easy. A single bad draft pick can haunt a team for years. One lucky waiver-wire pickup can completely change a season. A questionable trade can become league folklore. And sometimes, despite everything, it simply comes down to who gets the right players at the right time.
+Nobody said it would be easy. One draft-day reach can haunt a manager for years. One desperate waiver claim can flip a season on its head. One trade can become the stuff of league legend — for better or worse. In the end, it always comes down to who's bold enough, patient enough, or just lucky enough to have the right players at the right moment.
 </p>
 
 <h3>🏆 THE ALL-TIME CHAMPIONS CIRCLE</h3>
 
 <p>
-Championships are forever. The managers below have earned their place in Fantasy Foosball history by reaching the top of the mountain and taking home the league title.
+These are the managers who climbed to the top and refused to hand back the crown. Every name here earned its place the hard way.
 </p>
 
 <p>
@@ -60,27 +60,23 @@ Championships are forever. The managers below have earned their place in Fantasy
 <h3>THE FIRST DYNASTY</h3>
 
 <p>
-Before Fantasy Foosball became the 12-team league it is today, the league consisted of only 10 managers. During those early years, Parker began the league by winning the inaguaral season of <strong>2019</strong> however it was Payton who established the first true championship run in league history, winning back-to-back titles in <strong>2020 and 2021</strong>. Cooper finished out the first era of Fantasy Foosball with a strong <strong>2022</strong> to take the ring.
+Back when Fantasy Foosball was still a 10-team league finding its footing, Parker kicked things off by claiming the inaugural crown in <strong>2019</strong>. But it was Payton who turned a title into a dynasty — back-to-back championships in <strong>2020 and 2021</strong> that no one has matched since. Cooper closed out that first era in style, taking the ring in a dominant <strong>2022</strong> campaign.
 </p>
 
 <h3>THE LEAGUE EXPANDS</h3>
 
 <p>
-In <strong>2023</strong>, Fantasy Foosball entered a new era when the league expanded from 10 managers to 12. With two additional teams came more competition, more rivalries, more trade chaos, and an even harder road to the championship.
+<strong>2023</strong> brought a new era. The league grew from 10 managers to 12, and with it came sharper competition, deeper rosters, and trade chaos nobody saw coming.
 </p>
 
 <p>
-Since the expansion, three different managers have claimed the championship — proving just how difficult it is to stay on top in the modern era. Evan prevailed in the first year of this new frontier with a solid showing in <strong>2023</strong> but it was Joey who triumphed the following year with a blazing <strong>2024</strong>. Finally, the most recent champion holds the crown as Alex has stood atop the mountain throughout the offseason with the <strong>2025</strong> title in his hands.
+The expansion era hasn't produced a repeat champion — yet. Evan claimed the first title of the new frontier in <strong>2023</strong>, Joey answered with a statement run in <strong>2024</strong>, and Alex closed out last season by taking home the <strong>2025</strong> crown. Three champions, three different paths to the top — proof that in this league, nobody's safe at the throne for long.
 </p>
 
 <h3>THE QUEST FOR YEAR 8</h3>
 
 <p>
-Now, the next chapter begins.
-</p>
-
-<p>
-The banners are hanging. The trophies have been claimed. The history books are written. But none of that matters once the new season starts.
+The banners are hung. The trophies are claimed. The history books are written. None of it matters once Week 1 kicks off.
 </p>
 
 <p>
@@ -88,17 +84,17 @@ The banners are hanging. The trophies have been claimed. The history books are w
 </p>
 
 <p>
-Twelve managers will enter the season believing this is their year. Six will be chasing their first championship. Some will be trying to reclaim former glory. Others will be fighting to add another title to their name and cement themselves among the greatest managers in league history.
+Twelve managers, twelve different chips on their shoulders. Six are still chasing that elusive first championship. Some are looking to reclaim glory they've already tasted. Others are chasing a second — or third — ring to cement their name among the league's all-time greats.
 </p>
 
 <p>
-The question is simple:
+Only one question matters now:
 </p>
 
 <h2>WHO'S NEXT TO JOIN THE CHAMPIONS CIRCLE?</h2>
 
 <p>
-Welcome to <strong>Fantasy Foosball Year 8.</strong> May your draft be flawless, your waiver claims be timely, your players stay healthy, and your opponents suffer accordingly.
+Welcome to <strong>Fantasy Foosball Year 8.</strong> May your waiver claims be timely, your players stay healthy, and your opponents suffer accordingly.
 </p>
 `;
 
