@@ -60,7 +60,7 @@ Championships are forever. The managers below have earned their place in Fantasy
 <h3>THE FIRST DYNASTY</h3>
 
 <p>
-Before Fantasy Foosball became the 12-team league it is today, the league consisted of only 10 managers. During those early years, Parker began the league by winning the inaguaral season of <strong>2019 however it was Payton who established the first true championship run in league history, winning back-to-back titles in <strong>2020 and 2021</strong>. Cooper finished out the first era of Fantasy Foosball with a strong <strong>2022 to take the ring.
+Before Fantasy Foosball became the 12-team league it is today, the league consisted of only 10 managers. During those early years, Parker began the league by winning the inaguaral season of <strong>2019</strong> however it was Payton who established the first true championship run in league history, winning back-to-back titles in <strong>2020 and 2021</strong>. Cooper finished out the first era of Fantasy Foosball with a strong <strong>2022</strong> to take the ring.
 </p>
 
 <h3>THE LEAGUE EXPANDS</h3>
@@ -70,7 +70,7 @@ In <strong>2023</strong>, Fantasy Foosball entered a new era when the league exp
 </p>
 
 <p>
-Since the expansion, three different managers have claimed the championship — proving just how difficult it is to stay on top in the modern era. Evan prevailed in the first year of this new frontier with a solid showing in <strong>2023 but it was Joey who triuphed the following year with a blazing <strong>2024. Finally, the most recent champion holds the crown as Alex has stood triumphant throughout the offseason with the <strong>2025 title in his hands.
+Since the expansion, three different managers have claimed the championship — proving just how difficult it is to stay on top in the modern era. Evan prevailed in the first year of this new frontier with a solid showing in <strong>2023</strong> but it was Joey who triuphed the following year with a blazing <strong>2024</strong>. Finally, the most recent champion holds the crown as Alex has stood triumphant throughout the offseason with the <strong>2025</strong> title in his hands.
 </p>
 
 <h3>THE QUEST FOR YEAR 8</h3>
