@@ -1,6 +1,6 @@
 /*   STEP 1   */
 export const leagueID = "1389689189200592896"; // your league ID
-export const leagueName = "Fantasy Football Year 8"; // your league name
+export const leagueName = "Fantasy Foosball Year 8"; // your league name
 export const dues = 100; // (optional) used in template constitution page
 export const dynasty = false; // true for dynasty leagues, false for redraft and keeper
 export const enableBlog = false; // requires VITE_CONTENTFUL_ACCESS_TOKEN and VITE_CONTENTFUL_SPACE environment variables
@@ -313,4 +313,4 @@ export const managers = [
       "tradingScale": 10, // 1 - 10 (optional)
       "preferredContact": "Text",  // (optional) 'Text', 'WhatsApp', 'Sleeper', 'Email', 'Phone', 'Discord', and 'Carrier Pigeon' are currently supplied in the template
     },
-  ]
+  ];
