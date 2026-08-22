@@ -7,97 +7,206 @@ export const enableBlog = false; // requires VITE_CONTENTFUL_ACCESS_TOKEN and VI
 
 /*   STEP 2   */
 export const homepageText = `
-<h2>WELCOME TO FANTASY FOOSBALL — YEAR 8</h2>
+<div class="ff-hero">
+    <div class="ff-kicker">EST. 2019 • YEAR 8</div>
 
-<p>
-Eight seasons in the books. Twelve managers battling for one crown. This is <strong>Fantasy Foosball</strong> — where friendships are tested, trades get personal, waiver wire wins feel like heists, and Sunday afternoons decide who talks trash all offseason.
-</p>
+    <h1>FANTASY<br><span>FOOSBALL</span></h1>
 
-<p>
-What began in 2019 as a scrappy 10-manager league has grown into a full-blown 12-team gauntlet. Every year adds another layer to the story: rookies who become legends, dynasties that crumble overnight, and rivalries that outlast the seasons that started them. One thing never changes — somebody's leaving with the trophy, and everybody else is already plotting revenge for next year.
-</p>
+    <p class="ff-tagline">
+        Twelve managers. One championship.<br>
+        Eight years of bad trades, broken hearts, and eternal glory.
+    </p>
 
-<p>
-Nobody said it would be easy. One draft-day reach can haunt a manager for years. One desperate waiver claim can flip a season on its head. One trade can become the stuff of league legend — for better or worse. In the end, it always comes down to who's bold enough, patient enough, or just lucky enough to have the right players at the right moment.
-</p>
+    <div class="ff-hero-line"></div>
+</div>
 
-<h3>🏆 THE ALL-TIME CHAMPIONS CIRCLE</h3>
+<div class="ff-stats">
 
-<p>
-These are the managers who climbed to the top and refused to hand back the crown. Every name here earned its place the hard way.
-</p>
+    <div class="ff-stat-card">
+        <span class="ff-stat-label">DEFENDING CHAMPION</span>
+        <strong>ALEX</strong>
+        <small>2025 Champion</small>
+    </div>
 
-<p>
-<strong>Payton — 2 Championships</strong><br>
-2020, 2021
-</p>
+    <div class="ff-stat-card">
+        <span class="ff-stat-label">MOST TITLES</span>
+        <strong>PAYTON</strong>
+        <small>2 Championships</small>
+    </div>
 
-<p>
-<strong>Parker — 1 Championship</strong><br>
-2019 — Inaugural Season
-</p>
+    <div class="ff-stat-card">
+        <span class="ff-stat-label">LEAGUE</span>
+        <strong>12</strong>
+        <small>Managers</small>
+    </div>
 
-<p>
-<strong>Cooper — 1 Championship</strong><br>
-2022
-</p>
+    <div class="ff-stat-card">
+        <span class="ff-stat-label">CURRENT SEASON</span>
+        <strong>YEAR 8</strong>
+        <small>2026</small>
+    </div>
 
-<p>
-<strong>Evan — 1 Championship</strong><br>
-2023
-</p>
+</div>
 
-<p>
-<strong>Joey — 1 Championship</strong><br>
-2024
-</p>
+<div class="ff-section-heading">
+    <span>01</span>
+    <div>
+        <small>THE STORY SO FAR</small>
+        <h2>Eight Years of Fantasy Foosball</h2>
+    </div>
+</div>
 
-<p>
-<strong>Alex — 1 Championship</strong><br>
-2025
-</p>
+<div class="ff-intro">
+    <p>
+        What started in 2019 as a 10-manager fantasy league has turned into an
+        annual 12-team battle built on rivalries, questionable trades, waiver-wire
+        desperation and Sunday heartbreak.
+    </p>
 
-<h3>THE FIRST DYNASTY</h3>
+    <p>
+        Seven championships have been decided. Six different managers have reached
+        the top. Only one has managed to defend the throne.
+    </p>
 
-<p>
-Back when Fantasy Foosball was still a 10-team league finding its footing, Parker kicked things off by claiming the inaugural crown in <strong>2019</strong>. But it was Payton who turned a title into a dynasty — back-to-back championships in <strong>2020 and 2021</strong> that no one has matched since. Cooper closed out that first era in style, taking the ring in a dominant <strong>2022</strong> campaign.
-</p>
+    <p class="ff-highlight">
+        In 2026, everybody starts at 0-0.
+    </p>
+</div>
 
-<h3>THE LEAGUE EXPANDS</h3>
+<div class="ff-section-heading">
+    <span>02</span>
+    <div>
+        <small>HALL OF CHAMPIONS</small>
+        <h2>The Banner Room</h2>
+    </div>
+</div>
 
-<p>
-<strong>2023</strong> brought a new era. The league grew from 10 managers to 12, and with it came sharper competition, deeper rosters, and trade chaos nobody saw coming.
-</p>
+<div class="ff-champions">
 
-<p>
-The expansion era hasn't produced a repeat champion — yet. Evan claimed the first title of the new frontier in <strong>2023</strong>, Joey answered with a statement run in <strong>2024</strong>, and Alex closed out last season by taking home the <strong>2025</strong> crown. Three champions, three different paths to the top — proof that in this league, nobody's safe at the throne for long.
-</p>
+    <div class="ff-banner">
+        <small>2019</small>
+        <strong>PARKER</strong>
+        <span>INAUGURAL CHAMPION</span>
+    </div>
 
-<h3>THE QUEST FOR YEAR 8</h3>
+    <div class="ff-banner ff-dynasty">
+        <small>2020</small>
+        <strong>PAYTON</strong>
+        <span>CHAMPION</span>
+    </div>
 
-<p>
-The banners are hung. The trophies are claimed. The history books are written. None of it matters once Week 1 kicks off.
-</p>
+    <div class="ff-banner ff-dynasty">
+        <small>2021</small>
+        <strong>PAYTON</strong>
+        <span>BACK-TO-BACK</span>
+    </div>
 
-<p>
-<strong>2026 is a clean slate.</strong>
-</p>
+    <div class="ff-banner">
+        <small>2022</small>
+        <strong>COOPER</strong>
+        <span>CHAMPION</span>
+    </div>
 
-<p>
-Twelve managers, twelve different chips on their shoulders. Six are still chasing that elusive first championship. Some are looking to reclaim glory they've already tasted. Others are chasing a second — or third — ring to cement their name among the league's all-time greats.
-</p>
+    <div class="ff-banner">
+        <small>2023</small>
+        <strong>EVAN</strong>
+        <span>CHAMPION</span>
+    </div>
 
-<p>
-Only one question matters now:
-</p>
+    <div class="ff-banner">
+        <small>2024</small>
+        <strong>JOEY</strong>
+        <span>CHAMPION</span>
+    </div>
 
-<h2>WHO'S NEXT TO JOIN THE CHAMPIONS CIRCLE?</h2>
+    <div class="ff-banner ff-current">
+        <small>2025</small>
+        <strong>ALEX</strong>
+        <span>DEFENDING CHAMPION</span>
+    </div>
 
-<p>
-Welcome to <strong>Fantasy Foosball Year 8.</strong> May your waiver claims be timely, your players stay healthy, and your opponents suffer accordingly.
-</p>
+</div>
+
+<div class="ff-section-heading">
+    <span>03</span>
+    <div>
+        <small>LEAGUE HISTORY</small>
+        <h2>How We Got Here</h2>
+    </div>
+</div>
+
+<div class="ff-history">
+
+    <div class="ff-era">
+        <div class="ff-era-year">2019</div>
+        <div>
+            <h3>The Beginning</h3>
+            <p>
+                Fantasy Foosball launches as a 10-team league. Parker survives
+                the inaugural season and becomes the first manager to put his
+                name on the trophy.
+            </p>
+        </div>
+    </div>
+
+    <div class="ff-era">
+        <div class="ff-era-year">20–21</div>
+        <div>
+            <h3>The First Dynasty</h3>
+            <p>
+                Payton wins consecutive championships in 2020 and 2021,
+                completing the first — and still only — back-to-back title run
+                in league history.
+            </p>
+        </div>
+    </div>
+
+    <div class="ff-era">
+        <div class="ff-era-year">2022</div>
+        <div>
+            <h3>End of an Era</h3>
+            <p>
+                Cooper takes the 2022 championship and closes the book on
+                Fantasy Foosball's original 10-team era.
+            </p>
+        </div>
+    </div>
+
+    <div class="ff-era">
+        <div class="ff-era-year">2023</div>
+        <div>
+            <h3>Expansion</h3>
+            <p>
+                The league expands to twelve managers. Evan immediately
+                conquers the larger field and wins the first championship
+                of the new era.
+            </p>
+        </div>
+    </div>
+
+    <div class="ff-era">
+        <div class="ff-era-year">24–25</div>
+        <div>
+            <h3>A New Champion Every Year</h3>
+            <p>
+                Joey wins in 2024. Alex follows in 2025. No manager has yet
+                been able to repeat during the 12-team era.
+            </p>
+        </div>
+    </div>
+
+</div>
+
+<div class="ff-year8">
+    <small>2026 SEASON</small>
+    <h2>THE QUEST FOR<br>YEAR 8</h2>
+    <p>
+        The banners are hanging. The history is written.
+        None of it matters when Week 1 begins.
+    </p>
+    <strong>WHO'S NEXT?</strong>
+</div>
 `;
-
 
 /*   STEP 3   */
 /*
