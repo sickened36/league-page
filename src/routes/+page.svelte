@@ -27,7 +27,7 @@
 
     .text {
         padding: 0 30px;
-        max-width: 620px;
+        max-width: 760px;
         margin: 0 auto;
     }
 
