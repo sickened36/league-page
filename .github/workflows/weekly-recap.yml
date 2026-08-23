@@ -8,14 +8,13 @@ on:
   workflow_dispatch:
     inputs:
       season:
-        description: 'Season to generate (example: 2025)'
+        description: 'Season to generate (2022-2026)'
         required: false
         default: '2026'
         type: string
       league_id:
-        description: 'Sleeper league ID'
+        description: 'Optional Sleeper league ID override. Leave blank for known Fantasy Foosball seasons.'
         required: false
-        default: '1389689189200592896'
         type: string
       week:
         description: 'Specific week. Leave blank to use the latest completed week.'
@@ -53,8 +52,8 @@ jobs:
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           OPENAI_MODEL: gpt-5.6-luna
-          RECAP_SEASON: ${{ inputs.season }}
-          RECAP_LEAGUE_ID: ${{ inputs.league_id }}
+          RECAP_SEASON: ${{ inputs.season || '2026' }}
+          RECAP_LEAGUE_ID: ${{ inputs.league_id || (inputs.season == '2022' && '857432836574138368' || inputs.season == '2023' && '981027810078756864' || inputs.season == '2024' && '1124840953127903232' || inputs.season == '2025' && '1251987542522212352' || '1389689189200592896') }}
           RECAP_WEEK: ${{ inputs.week }}
           RECAP_FORCE: ${{ inputs.force }}
         run: node scripts/generate-weekly-recap.mjs
