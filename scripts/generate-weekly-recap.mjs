@@ -237,6 +237,9 @@ RULES:
 - Do not say a matchup was decided "late," "on Monday night," or by a specific real-world game unless the supplied facts explicitly prove it.
 - You may say a team was "powered by" or "led by" a listed starter and cite that player's fantasy points.
 - Light trash talk and league lore are encouraged when supported by the supplied leagueLore fields, but keep the actual game reporting credible.
+- Do NOT calculate or state games-ahead, games-behind, standings gaps, streaks, playoff odds, or other standings relationships that are not explicitly supplied. You may state rank, record, and points-for exactly as provided.
+- Fantasy matchup margins are fantasy points, not football possessions. Never call a close fantasy result a "one-score" or "single-score" game; state the actual point margin instead.
+- Do not infer roster balance, depth, consistency, or contributions from players who are not listed in the supplied facts. If the listed stars do not fully explain a result, simply report the final margin and verified performances.
 - Every matchup gets its own headline and a 120-170 word mini article in 2-3 short paragraphs.
 - The leagueLead should be 140-220 words and summarize the week as a whole.
 - The closing should be 60-100 words and look ahead only in general terms; do not invent next-week opponents.
