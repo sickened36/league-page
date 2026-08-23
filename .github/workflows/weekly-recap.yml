@@ -36,6 +36,7 @@ concurrency:
 jobs:
   generate-recap:
     runs-on: ubuntu-latest
+    environment: recap-bot
 
     steps:
       - name: Check out repository
@@ -46,7 +47,17 @@ jobs:
       - name: Set up Node
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '24'
+
+      - name: Verify OpenAI secret
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          if [ -z "$OPENAI_API_KEY" ]; then
+            echo "::error::OPENAI_API_KEY is not available to the recap-bot environment."
+            exit 1
+          fi
+          echo "OPENAI_API_KEY is available to this job."
 
       - name: Generate weekly recap
         env:
