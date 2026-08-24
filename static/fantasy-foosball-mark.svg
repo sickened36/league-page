@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 112" role="img" aria-labelledby="title desc">
+  <title id="title">Fantasy Foosball shield</title>
+  <desc id="desc">An angular purple shield with an FF monogram and football laces.</desc>
+  <defs>
+    <linearGradient id="shield" x1="18" y1="8" x2="78" y2="102" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#a78bfa"/>
+      <stop offset="0.48" stop-color="#7c3aed"/>
+      <stop offset="1" stop-color="#4c1d95"/>
+    </linearGradient>
+  </defs>
+  <path d="M48 3 88 18v33c0 27-16 46-40 58C24 97 8 78 8 51V18L48 3Z" fill="#0b0911" stroke="#c4b5fd" stroke-width="3"/>
+  <path d="M48 10 81 22v28c0 22-12 38-33 50-21-12-33-28-33-50V22L48 10Z" fill="url(#shield)"/>
+  <path d="M23 30h24v9H34v8h11v9H34v17H23V30Zm29 0h24v9H63v8h11v9H63v17H52V30Z" fill="#fff"/>
+  <path d="M37 81c7 4 15 4 22 0" fill="none" stroke="#ddd6fe" stroke-width="3" stroke-linecap="round"/>
+  <path d="m43 78-2 7m7-6v8m5-9 2 7" fill="none" stroke="#ddd6fe" stroke-width="2" stroke-linecap="round"/>
+</svg>
