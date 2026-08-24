@@ -10,12 +10,165 @@
 </script>
 
 <style>
+    .home-page {
+        position: relative;
+        z-index: 1;
+        background: var(--f8f8f8);
+    }
+
+    .home-masthead {
+        position: relative;
+        isolation: isolate;
+        overflow: hidden;
+        min-height: 470px;
+        color: #fff;
+        background:
+            radial-gradient(circle at 78% 15%, rgba(139, 92, 246, 0.4), transparent 30%),
+            radial-gradient(circle at 20% 105%, rgba(76, 29, 149, 0.36), transparent 35%),
+            linear-gradient(135deg, #0b0911 0%, #181126 58%, #100d18 100%);
+        border-bottom: 1px solid rgba(167, 139, 250, 0.68);
+    }
+
+    .home-masthead::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        z-index: -1;
+        opacity: 0.13;
+        background:
+            repeating-linear-gradient(90deg, transparent 0 108px, rgba(255,255,255,0.14) 109px 111px, transparent 112px 218px),
+            linear-gradient(90deg, transparent 49.8%, rgba(255,255,255,0.32) 50%, transparent 50.2%);
+        mask-image: linear-gradient(90deg, transparent, #000 38%, #000 72%, transparent);
+    }
+
+    .masthead-inner {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(260px, 0.55fr);
+        align-items: center;
+        gap: clamp(30px, 7vw, 90px);
+        width: min(calc(100% - 40px), 1180px);
+        min-height: 470px;
+        margin: 0 auto;
+        padding: 48px 0;
+        box-sizing: border-box;
+    }
+
+    .masthead-copy {
+        position: relative;
+        z-index: 1;
+    }
+
+    .masthead-kicker {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 16px;
+        color: #c4b5fd;
+        font-size: 0.72rem;
+        font-weight: 900;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+    }
+
+    .masthead-kicker::after {
+        content: '';
+        width: 52px;
+        height: 2px;
+        background: #8b5cf6;
+        box-shadow: 0 0 14px rgba(139, 92, 246, 0.7);
+    }
+
+    .masthead-copy h1 {
+        margin: 0;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: clamp(4.4rem, 10vw, 8rem);
+        font-weight: 950;
+        line-height: 0.78;
+        letter-spacing: -0.045em;
+        text-transform: uppercase;
+    }
+
+    .masthead-copy h1 span {
+        color: #a78bfa;
+        text-shadow: 0 0 30px rgba(139, 92, 246, 0.28);
+    }
+
+    .masthead-tagline {
+        max-width: 570px;
+        margin: 27px 0 0;
+        color: rgba(255,255,255,0.79);
+        font-size: clamp(1rem, 2vw, 1.16rem);
+        line-height: 1.65;
+    }
+
+    .masthead-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 28px;
+    }
+
+    .masthead-actions a {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        min-height: 44px;
+        padding: 0 18px;
+        color: #fff;
+        border: 1px solid rgba(196, 181, 253, 0.45);
+        border-radius: 999px;
+        text-decoration: none;
+        font-size: 0.78rem;
+        font-weight: 850;
+        letter-spacing: 0.04em;
+        transition: transform 0.18s ease, background-color 0.18s ease, border-color 0.18s ease;
+    }
+
+    .masthead-actions a:first-child {
+        background: #7c3aed;
+        border-color: #8b5cf6;
+        box-shadow: 0 10px 24px rgba(124, 58, 237, 0.28);
+    }
+
+    .masthead-actions a:hover {
+        transform: translateY(-2px);
+        background: #8b5cf6;
+        border-color: #a78bfa;
+    }
+
+    .masthead-mark {
+        position: relative;
+        display: grid;
+        place-items: center;
+    }
+
+    .masthead-mark::before {
+        content: '';
+        position: absolute;
+        width: min(34vw, 340px);
+        aspect-ratio: 1;
+        background: radial-gradient(circle, rgba(139, 92, 246, 0.26), transparent 68%);
+        border: 1px solid rgba(196, 181, 253, 0.15);
+        border-radius: 50%;
+    }
+
+    .masthead-mark img {
+        position: relative;
+        width: min(25vw, 235px);
+        filter: drop-shadow(0 24px 32px rgba(0,0,0,0.42));
+        transform: rotate(2deg);
+    }
+
     #home {
         display: flex;
         flex-wrap: nowrap;
         position: relative;
         overflow-y: hidden;
         z-index: 1;
+        width: min(100%, 1440px);
+        margin: 0 auto;
+        background: var(--fff);
+        box-shadow: 0 22px 60px rgba(18, 12, 28, 0.06);
     }
 
     #main {
@@ -38,7 +191,7 @@
         min-width: 470px;
         max-width: 470px;
         min-height: 100%;
-		background-color: var(--ebebeb);
+		background-color: color-mix(in srgb, var(--fff) 91%, #8b5cf6 9%);
         border-left: var(--eee);
 		box-shadow: inset 8px 0px 6px -6px rgb(0 0 0 / 24%);
     }
@@ -65,22 +218,19 @@
         text-align: center;
     }
 
-    h6 {
-        text-align: center;
-    }
-
     .homeBanner {
-        background-color: var(--blueOne);
+        background: linear-gradient(90deg, #4c1d95, #7c3aed);
         color: #fff;
         padding: 0.5em 0;
         font-weight: 500;
         font-size: 1.5em;
+		letter-spacing: 0.02em;
     }
 
     /* champ styling */
     #currentChamp {
         padding: 25px 0;
-		background-color: var(--f3f3f3);
+		background-color: var(--fff);
         box-shadow: 5px 0 8px var(--champShadow);
         border-left: 1px solid var(--ddd);
     }
@@ -190,7 +340,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 12px;
-    margin: 5px 0 55px;
+	margin: 0 0 55px;
 }
 
 :global(.ff-stat-card) {
@@ -201,6 +351,8 @@
     flex-direction: column;
     min-height: 90px;
     transition: transform 0.2s ease, border-color 0.2s ease;
+	background: color-mix(in srgb, var(--fff) 95%, #8b5cf6 5%);
+	box-shadow: 0 7px 18px rgba(18, 12, 28, 0.05);
 }
 
 :global(.ff-stat-card:hover) {
@@ -289,9 +441,20 @@
 :global(.ff-banner) {
     position: relative;
     padding: 18px 15px;
-    border: 1px solid var(--ddd);
+	border: 1px solid rgba(212, 175, 55, 0.4);
     border-radius: 8px;
     overflow: hidden;
+	background:
+		linear-gradient(135deg, rgba(212, 175, 55, 0.08), transparent 48%),
+		var(--fff);
+	box-shadow: 0 7px 18px rgba(109, 82, 14, 0.06);
+	transition: transform 0.18s ease, border-color 0.18s ease, box-shadow 0.18s ease;
+}
+
+:global(.ff-banner:hover) {
+	transform: translateY(-2px);
+	border-color: rgba(232, 194, 80, 0.78);
+	box-shadow: 0 12px 24px rgba(109, 82, 14, 0.13);
 }
 
 :global(.ff-banner::before) {
@@ -301,20 +464,21 @@
     top: 0;
     bottom: 0;
     width: 3px;
-    background: #8b5cf6;
-    opacity: 0.45;
+	background: linear-gradient(180deg, #f4d675, #b8860b);
+	opacity: 0.85;
 }
 
 :global(.ff-banner small) {
     display: block;
     font-size: 0.68rem;
     font-weight: 800;
-    opacity: 0.55;
+	color: #a97908;
+	opacity: 0.9;
 }
 
 :global(.ff-banner strong) {
-    display: block;
-    color: #8b5cf6;
+	display: block;
+	color: #9a6d00;
     font-size: 1.25rem;
     margin: 4px 0;
 }
@@ -328,12 +492,22 @@
 }
 
 :global(.ff-banner.ff-dynasty) {
-    border-color: rgba(139, 92, 246, 0.5);
+	border-color: rgba(196, 151, 35, 0.72);
+	background:
+		linear-gradient(135deg, rgba(244, 214, 117, 0.16), transparent 52%),
+		var(--fff);
 }
 
 :global(.ff-banner.ff-current) {
-    border-color: #8b5cf6;
-    box-shadow: 0 0 22px rgba(139, 92, 246, 0.12);
+	border-color: #d4af37;
+	background:
+		linear-gradient(135deg, rgba(244, 214, 117, 0.24), rgba(139, 92, 246, 0.06) 70%),
+		var(--fff);
+	box-shadow: 0 0 26px rgba(212, 175, 55, 0.2);
+}
+
+:global(.ff-banner.ff-current strong) {
+	color: #b8860b;
 }
 
 
@@ -405,7 +579,7 @@
 :global(.ff-year8 p) {
     max-width: 420px;
     margin: 20px auto;
-    opacity: 0.7;
+    opacity: 0.82;
     line-height: 1.6;
 }
 
@@ -444,12 +618,61 @@
         padding: 35px 18px;
     }
 }
+
+@media (max-width: 820px) {
+    .home-masthead,
+    .masthead-inner {
+        min-height: 410px;
+    }
+
+    .masthead-inner {
+        grid-template-columns: 1fr;
+    }
+
+    .masthead-mark {
+        display: none;
+    }
+}
+
+@media (max-width: 520px) {
+    .masthead-inner {
+        width: min(calc(100% - 28px), 1180px);
+        padding: 38px 0 44px;
+    }
+
+    .masthead-copy h1 {
+        font-size: clamp(3.8rem, 20vw, 5.8rem);
+    }
+
+    .masthead-actions a {
+        flex: 1 1 auto;
+        justify-content: center;
+    }
+}
 </style>
+
+<div class="home-page">
+<section class="home-masthead">
+    <div class="masthead-inner">
+        <div class="masthead-copy">
+            <div class="masthead-kicker">Est. 2019 · Year 8</div>
+            <h1>Fantasy<br /><span>Foosball</span></h1>
+            <p class="masthead-tagline">Twelve managers. One championship. Eight years of bad trades, broken hearts and eternal glory.</p>
+            <div class="masthead-actions">
+                <a href="/standings"><span class="material-icons" aria-hidden="true">leaderboard</span> View Standings</a>
+                <a href="/recaps"><span class="material-icons" aria-hidden="true">newspaper</span> Weekly Recaps</a>
+                <a href="/matchups"><span class="material-icons" aria-hidden="true">sports_score</span> Matchups</a>
+            </div>
+        </div>
+        <div class="masthead-mark" aria-hidden="true">
+            <img src="/fantasy-foosball-mark.svg" alt="" />
+        </div>
+    </div>
+</section>
 
 <div id="home">
     <div id="main">
         <div class="text">
-            <h6>{leagueName}</h6>
             <!-- homepageText contains the intro text for your league, this gets edited in /src/lib/utils/leagueInfo.js -->
             {@html homepageText }
             <!-- Most recent Blog Post (if enabled) -->
@@ -505,3 +728,5 @@
         </div>
     </div>
 </div>
+</div>
+

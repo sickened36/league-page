@@ -7,19 +7,6 @@ export const enableBlog = false; // requires VITE_CONTENTFUL_ACCESS_TOKEN and VI
 
 /*   STEP 2   */
 export const homepageText = `
-<div class="ff-hero">
-    <div class="ff-kicker">EST. 2019 • YEAR 8</div>
-
-    <h1>FANTASY<br><span>FOOSBALL</span></h1>
-
-    <p class="ff-tagline">
-        Twelve managers. One championship.<br>
-        Eight years of bad trades, broken hearts, and eternal glory.
-    </p>
-
-    <div class="ff-hero-line"></div>
-</div>
-
 <div class="ff-stats">
 
     <div class="ff-stat-card">
@@ -326,3 +313,4 @@ export const managers = [
         "preferredContact": "Sleeper",
     },
 ];
+
