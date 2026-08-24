@@ -56,7 +56,21 @@
 		display: inline-flex;
 		position: relative;
     	justify-content: center;
+		border-top: 1px solid rgba(255, 255, 255, 0.06);
     }
+
+	:global(.navBar .mdc-tab) {
+		color: rgba(255, 255, 255, 0.74);
+	}
+
+	:global(.navBar .mdc-tab:hover),
+	:global(.navBar .mdc-tab--active) {
+		color: #fff;
+	}
+
+	:global(.navBar .mdc-tab-indicator__content--underline) {
+		border-color: #8b5cf6;
+	}
 
 	:global(.navBar .material-icons) {
 		font-size: 1.8em;
@@ -75,6 +89,7 @@
 		z-index: 5;
 		background-color: var(--fff);
 		transition: all 0.4s;
+		border-radius: 0 0 8px 8px;
 	}
 
 	.overlay {
