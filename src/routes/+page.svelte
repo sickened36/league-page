@@ -22,12 +22,12 @@
         flex-grow: 1;
         min-width: 320px;
         margin: 0 auto;
-        padding: 60px 0;
+        padding: 48px 0 68px;
     }
 
     .text {
-        padding: 0 30px;
-        max-width: 760px;
+        padding: 0 clamp(20px, 5vw, 42px);
+        max-width: 800px;
         margin: 0 auto;
     }
 
@@ -172,7 +172,7 @@
     max-width: 550px;
     font-size: 1.05rem;
     line-height: 1.6;
-    opacity: 0.75;
+    opacity: 0.86;
 }
 
 :global(.ff-hero-line) {
@@ -267,7 +267,7 @@
 }
 
 :global(.ff-intro p) {
-    opacity: 0.82;
+    opacity: 0.9;
 }
 
 :global(.ff-intro .ff-highlight) {
@@ -368,7 +368,7 @@
     margin: 0;
     line-height: 1.6;
     font-size: 0.9rem;
-    opacity: 0.7;
+    opacity: 0.82;
 }
 
 
