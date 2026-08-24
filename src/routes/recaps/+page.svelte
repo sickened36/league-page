@@ -134,7 +134,7 @@
     border-radius: 10px;
     padding: 16px;
     min-width: 0;
-    background: color-mix(in srgb, var(--fff) 94%, #8b5cf6 6%);
+	background: color-mix(in srgb, var(--fff) 96%, #64748b 4%);
     transition: transform 0.18s ease, border-color 0.18s ease;
   }
 

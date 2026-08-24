@@ -25,7 +25,7 @@
     }
 
 	:global(.contrastRow:hover) {
-		background-color: color-mix(in srgb, var(--fff) 91%, #8b5cf6 9%);
+		background-color: color-mix(in srgb, var(--fff) 93%, #64748b 7%);
 	}
 
     .team {
@@ -49,8 +49,9 @@
 	}
 
 	.podium {
-		color: #fff;
-		background: #7c3aed;
+		color: #2b2105;
+		background: linear-gradient(135deg, #f4d675, #c79a24);
+		box-shadow: inset 0 0 0 1px rgba(117, 82, 0, 0.2);
 	}
 </style>
 

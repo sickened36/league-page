@@ -93,7 +93,7 @@
 	}
 
 	:global(.standingsTable thead) {
-		background: color-mix(in srgb, var(--fff) 90%, #8b5cf6 10%);
+		background: color-mix(in srgb, var(--fff) 92%, #64748b 8%);
 	}
 </style>
 

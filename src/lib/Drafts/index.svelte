@@ -23,7 +23,7 @@
 
     h6 {
         text-align: center;
-		color: #8b5cf6;
+		color: #6b7280;
 		font-weight: 900;
 		letter-spacing: 0.1em;
 		text-transform: uppercase;

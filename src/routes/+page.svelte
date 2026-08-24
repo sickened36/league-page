@@ -191,7 +191,7 @@
         min-width: 470px;
         max-width: 470px;
         min-height: 100%;
-		background-color: color-mix(in srgb, var(--fff) 91%, #8b5cf6 9%);
+		background-color: color-mix(in srgb, var(--fff) 94%, #64748b 6%);
         border-left: var(--eee);
 		box-shadow: inset 8px 0px 6px -6px rgb(0 0 0 / 24%);
     }
@@ -351,7 +351,7 @@
     flex-direction: column;
     min-height: 90px;
     transition: transform 0.2s ease, border-color 0.2s ease;
-	background: color-mix(in srgb, var(--fff) 95%, #8b5cf6 5%);
+	background: color-mix(in srgb, var(--fff) 97%, #64748b 3%);
 	box-shadow: 0 7px 18px rgba(18, 12, 28, 0.05);
 }
 

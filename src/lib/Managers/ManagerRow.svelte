@@ -33,7 +33,7 @@
         margin: 0.5em 0;
 		border-radius: 12px;
 		border: 1px solid var(--ddd);
-		border-left: 3px solid rgba(139, 92, 246, 0.52);
+		border-left: 3px solid rgba(100, 116, 139, 0.52);
 		box-shadow: 0 6px 16px rgba(18, 12, 28, 0.06);
         cursor: pointer;
 		transition: transform 0.18s ease, border-color 0.18s ease, box-shadow 0.18s ease;
@@ -43,7 +43,7 @@
 		transform: translateY(-2px);
 		border-color: #8b5cf6;
 		box-shadow: 0 12px 24px rgba(18, 12, 28, 0.12);
-		background-color: color-mix(in srgb, var(--fff) 94%, #8b5cf6 6%);
+		background-color: color-mix(in srgb, var(--fff) 95%, #64748b 5%);
     }
 
     .photo {
