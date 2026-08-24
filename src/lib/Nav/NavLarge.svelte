@@ -60,16 +60,23 @@
     }
 
 	:global(.navBar .mdc-tab) {
-		color: rgba(255, 255, 255, 0.74);
+		--mdc-theme-primary: #ffffff;
+		color: rgba(255, 255, 255, 0.78) !important;
+	}
+
+	:global(.navBar .mdc-tab .mdc-tab__text-label),
+	:global(.navBar .mdc-tab .mdc-tab__icon) {
+		color: inherit !important;
+		opacity: 1;
 	}
 
 	:global(.navBar .mdc-tab:hover),
 	:global(.navBar .mdc-tab--active) {
-		color: #fff;
+		color: #fff !important;
 	}
 
 	:global(.navBar .mdc-tab-indicator__content--underline) {
-		border-color: #8b5cf6;
+		border-color: #a78bfa !important;
 	}
 
 	:global(.navBar .material-icons) {
