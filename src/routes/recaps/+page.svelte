@@ -46,7 +46,7 @@
   .hero p {
     margin: 0;
     max-width: 680px;
-    opacity: 0.7;
+    opacity: 0.84;
     line-height: 1.6;
   }
 
@@ -101,7 +101,7 @@
     margin: 0;
     font-size: 1.08rem;
     line-height: 1.6;
-    opacity: 0.72;
+    opacity: 0.84;
   }
 
   .generated {
@@ -112,8 +112,8 @@
   }
 
   .lead {
-    max-width: 820px;
-    font-size: 1.04rem;
+    max-width: 760px;
+    font-size: 1.08rem;
     line-height: 1.78;
     white-space: pre-line;
     margin-bottom: 36px;
@@ -211,7 +211,7 @@
 
   .story-card p {
     margin: 0 0 12px;
-    max-width: 820px;
+    max-width: 760px;
     line-height: 1.72;
   }
 
