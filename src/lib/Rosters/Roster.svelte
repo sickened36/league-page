@@ -155,9 +155,12 @@
 	}
 
 	:global(.teamInner) {
-		box-shadow: 0px 3px 3px -2px var(--boxShadowOne), 0px 3px 4px 0px var(--boxShadowTwo), 0px 1px 8px 0px var(--boxShadowThree);
+		border: 1px solid var(--ddd);
+		border-radius: 12px;
+		box-shadow: 0 10px 24px rgba(18, 12, 28, 0.09);
 		display: block;
 	    margin: 0 auto;
+		overflow: hidden;
 	}
 
 	.rosterBench{
@@ -310,3 +313,4 @@
 		</DataTable>
 	</div>
 </div>
+

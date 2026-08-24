@@ -1,4 +1,6 @@
 <script>
+  import { PageShell } from '$lib/components';
+
   export let data;
 
   const formatScore = (score) => Number(score || 0).toFixed(2);
@@ -17,9 +19,10 @@
 
 <style>
   .recaps-page {
-    width: min(1120px, calc(100% - 32px));
+    width: 100%;
     margin: 0 auto;
-    padding: 38px 0 72px;
+    padding: clamp(22px, 4vw, 38px);
+    box-sizing: border-box;
   }
 
   .hero {
@@ -131,6 +134,13 @@
     border-radius: 10px;
     padding: 16px;
     min-width: 0;
+    background: color-mix(in srgb, var(--fff) 94%, #8b5cf6 6%);
+    transition: transform 0.18s ease, border-color 0.18s ease;
+  }
+
+  .award:hover {
+    transform: translateY(-2px);
+    border-color: #8b5cf6;
   }
 
   .award small {
@@ -183,6 +193,8 @@
     border: 1px solid var(--ddd);
     border-radius: 12px;
     padding: clamp(20px, 4vw, 32px);
+    background: var(--fff);
+    box-shadow: 0 8px 22px rgba(18, 12, 28, 0.06);
   }
 
   .scoreline {
@@ -277,7 +289,7 @@
 
   @media (max-width: 600px) {
     .recaps-page {
-      width: min(100% - 24px, 1120px);
+      width: 100%;
       padding-top: 18px;
     }
 
@@ -288,12 +300,8 @@
   }
 </style>
 
-<div class="recaps-page">
-  <header class="hero">
-    <div class="eyebrow">Fantasy Foosball Weekly</div>
-    <h1>Weekly Recaps</h1>
-    <p>Game stories, weekly awards, standout performances and standings — generated from the league's actual Sleeper results after each completed week.</p>
-  </header>
+<PageShell eyebrow="Fantasy Foosball Weekly" title="Weekly Recaps" description="Game stories, weekly awards and standout performances generated from the league's actual Sleeper results." icon="newspaper">
+<div class="recaps-page page-panel">
 
   {#if data.weeks?.length}
     <nav class="week-nav" aria-label="Weekly recap archive">
@@ -419,3 +427,5 @@
     </div>
   {/if}
 </div>
+</PageShell>
+

@@ -26,20 +26,24 @@
         display: flex;
         justify-content: left;
         align-items: center;
-        padding: 1em 0;
+		padding: 1em 12px;
         background-color: var(--fff);
         background-repeat: no-repeat;
         background-position: 15% 50%;
         margin: 0.5em 0;
-        border-radius: 2em;
-        border: 1px solid var(--ccc);
-        box-shadow: 0 0 6px 0 var(--bbb);
+		border-radius: 12px;
+		border: 1px solid var(--ddd);
+		border-left: 3px solid rgba(139, 92, 246, 0.52);
+		box-shadow: 0 6px 16px rgba(18, 12, 28, 0.06);
         cursor: pointer;
+		transition: transform 0.18s ease, border-color 0.18s ease, box-shadow 0.18s ease;
     }
 
     .manager:hover {
-        box-shadow: 0 0 10px 0 bar(--g999);
-        background-color: bar(--eee);
+		transform: translateY(-2px);
+		border-color: #8b5cf6;
+		box-shadow: 0 12px 24px rgba(18, 12, 28, 0.12);
+		background-color: color-mix(in srgb, var(--fff) 94%, #8b5cf6 6%);
     }
 
     .photo {
@@ -145,7 +149,7 @@
         .manager {
             padding: 0.5em 0;
             margin: 0.3em 0;
-            border-radius: 1.5em;
+			border-radius: 10px;
         }
 
         .photo {
@@ -288,3 +292,4 @@
         {/if}
     </div>
 </div>
+

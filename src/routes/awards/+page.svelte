@@ -1,5 +1,5 @@
 <script>
-	import { Awards } from '$lib/components'
+	import { Awards, PageShell } from '$lib/components'
 	import { waitForAll } from '$lib/utils/helper';
 	import LinearProgress from '@smui/linear-progress';
 
@@ -10,8 +10,7 @@
 <style>
     .awards {
         display: block;
-        margin: 30px auto;
-		width: 95%;
+		width: 100%;
 		max-width: 1000px;
 		position: relative;
 		z-index: 1;
@@ -34,7 +33,8 @@
 	}
 </style>
 
-<div class="awards">
+<PageShell eyebrow="Hall of Champions" title="Awards" description="Champions, division winners and the league's most notorious last-place finishes." icon="emoji_events">
+<div class="awards page-panel">
 	{#await waitForAll(awardsData, teamManagersData) }
 		<div class="loading">
 			<p>Retrieving awards data...</p>
@@ -44,10 +44,12 @@
 		{#each podiums as podium}
 			<Awards {podium} {leagueTeamManagers} />
 		{:else}
-			<p class="nothingYet">No seasons have been completed yet, so no awards have been earned...</p>
+			<p class="nothingYet page-state">No seasons have been completed yet, so no awards have been earned...</p>
 		{/each}
 	{:catch error}
 		<!-- promise was rejected -->
 		<p>Something went wrong: {error.message}</p>
 	{/await}
 </div>
+</PageShell>
+

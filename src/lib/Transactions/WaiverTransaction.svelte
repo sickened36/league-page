@@ -18,7 +18,13 @@
     .waiverTransaction {
         display: flex;
         flex-direction: column;
-        margin-bottom: 1em;
+		margin-bottom: 1.25em;
+		padding-top: 14px;
+		background: var(--fff);
+		border: 1px solid var(--ddd);
+		border-radius: 12px;
+		box-shadow: 0 8px 20px rgba(18, 12, 28, 0.07);
+		overflow: hidden;
     }
     
     .name {
@@ -28,8 +34,8 @@
     .core {
         display: flex;
         flex-direction: column;
-        border-radius: 0 0 0 40px;
-        border: 1px solid var(--ddd);
+		border-radius: 0;
+		border: 0;
         border-left: 2px solid var(--blueTwo);
         border-bottom: none;
         background-color: var(--fff);
@@ -207,3 +213,4 @@
         </span>
     </div>
 </div>
+

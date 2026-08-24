@@ -1,6 +1,6 @@
 <script>
 	import LinearProgress from '@smui/linear-progress';
-    import {AllManagers} from '$lib/components';
+    import {AllManagers, PageShell} from '$lib/components';
 	import { onMount } from 'svelte';
 	import { goto } from '$app/navigation';
 
@@ -27,7 +27,8 @@
     }
 </style>
 
-<div class="main">
+<PageShell eyebrow="The League" title="Managers" description="Meet the personalities, rivals and former champions behind every roster." icon="person_search">
+<div class="main page-panel">
     {#await leagueTeamManagersData}
         <!-- promise is pending -->
         <div class="loading">
@@ -40,6 +41,8 @@
         {/if}
     {:catch error}
         <!-- promise was rejected -->
-        <p>Something went wrong: {error.message}</p>
+        <p class="page-state">Something went wrong: {error.message}</p>
     {/await}
 </div>
+</PageShell>
+

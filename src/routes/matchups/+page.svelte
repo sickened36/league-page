@@ -1,5 +1,5 @@
 <script>
-	import { MatchupsAndBrackets } from '$lib/components';
+	import { MatchupsAndBrackets, PageShell } from '$lib/components';
 
 	export let data;
 	const {queryWeek, matchupsData, bracketsData, playersData, leagueTeamManagersData} = data;
@@ -12,6 +12,9 @@
     }
 </style>
 
-<div id="main">
-    <MatchupsAndBrackets {queryWeek} {matchupsData} {bracketsData} {playersData} {leagueTeamManagersData} />
-</div>
+<PageShell eyebrow="Game Day" title="Matchups" description="Every head-to-head battle, box score and playoff bracket in one place." icon="sports_score">
+    <div id="main" class="page-panel page-panel--soft">
+        <MatchupsAndBrackets {queryWeek} {matchupsData} {bracketsData} {playersData} {leagueTeamManagersData} />
+    </div>
+</PageShell>
+

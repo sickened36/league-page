@@ -20,6 +20,8 @@
 		position: relative;
 		width: 100%;
 		z-index: 1;
+		padding: 12px 0 30px;
+		border-bottom: 1px solid var(--ddd);
 	}
 
 	#podium {
@@ -75,6 +77,9 @@
 
 	h3 {
 		text-align: center;
+		font-size: clamp(1.5rem, 4vw, 2.1rem);
+		font-weight: 900;
+		letter-spacing: -0.02em;
 	}
 
 	.leaderBlock {
@@ -378,3 +383,4 @@
 		</div>
 	{/if}
 </div>
+

@@ -77,8 +77,12 @@
     /* Button Styling */
     .buttonHolder {
         text-align: center;
-        margin: 2em 0 0;
+		margin: 0 0 2em;
     }
+
+	:global(.buttonHolder .mdc-button) {
+		border-radius: 999px;
+	}
 
     /* Start button resizing */
 
@@ -137,3 +141,4 @@
         <PerSeasonRecords transactionTotals={totals} {leagueRosterRecords} {seasonWeekRecords} {leagueTeamManagers} {currentYear} {lastYear} {key} />
     {/if}
 </div>
+

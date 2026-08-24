@@ -55,7 +55,7 @@
 
 <style>
     .matchups {
-        margin: 2em 0 6em;
+		margin: 1em 0 2em;
     }
     .weekContainer {
         display: flex;
@@ -72,7 +72,7 @@
     }
 
     :global(.changeWeek:hover) {
-        color: #00316b;
+		color: #8b5cf6;
     }
 
     .spacer {
@@ -82,7 +82,8 @@
     .weekText {
         flex-grow: 1;
         text-align: center;
-        font-size: 2em;
+		font-size: 1.65em;
+		font-weight: 850;
     }
 
     @media (max-width: 800px) {
@@ -122,3 +123,4 @@
         <Matchup {ix} {matchup} {players} {displayWeek} bind:active={active} {leagueTeamManagers} />
     {/each}
 </div>
+

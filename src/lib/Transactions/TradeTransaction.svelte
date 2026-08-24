@@ -11,7 +11,13 @@
         display: flex;
         position: relative;
         flex-direction: column;
-        margin-bottom: 1em;
+		margin-bottom: 1.25em;
+		padding-top: 14px;
+		background: var(--fff);
+		border: 1px solid var(--ddd);
+		border-radius: 12px;
+		box-shadow: 0 8px 20px rgba(18, 12, 28, 0.07);
+		overflow: hidden;
     }
     
     .name {
@@ -51,10 +57,10 @@
         text-align: center;
         padding: 0.7em 0 1em;
         background-color: var(--fff);
-        border-radius: 0 0 0 40px;
+		border-radius: 0;
         border-left: 2px solid var(--blueOne);
         border-right: 1px solid var(--ddd);
-        margin-bottom: 3em;
+		margin-bottom: 0;
     }
 
     table {
@@ -121,3 +127,4 @@
         {transaction.date}
     </span>
 </div>
+

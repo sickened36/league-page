@@ -16,11 +16,24 @@
 
     h4 {
         text-align: center;
+		margin: 8px 0 24px;
+		font-size: clamp(1.35rem, 3vw, 1.8rem);
+		font-weight: 850;
     }
 
     h6 {
         text-align: center;
+		color: #8b5cf6;
+		font-weight: 900;
+		letter-spacing: 0.1em;
+		text-transform: uppercase;
     }
+
+	hr {
+		margin: 46px 0 30px;
+		border: 0;
+		border-top: 1px solid var(--ddd);
+	}
 </style>
 
 
@@ -61,3 +74,4 @@
 	<!-- promise was rejected -->
 	<p>Something went wrong: {error.message}</p>
 {/await}
+

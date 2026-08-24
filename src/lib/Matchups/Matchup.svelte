@@ -113,25 +113,27 @@
 
 <style>
     .matchup {
-        width: 95%;
-        max-width: 600px;
-        margin: 10px auto;
+		width: 100%;
+		max-width: 720px;
+		margin: 14px auto;
     }
 
     .header {
         display: flex;
         justify-content: space-between;
         position: relative;
-        border: 1px solid #bbb;
-        border-radius: 10px;
-        opacity: 0.8;
+		border: 1px solid var(--ddd);
+		border-radius: 12px;
+		opacity: 0.96;
         cursor: pointer;
-		transition: opacity 0.5s;
+		transition: transform 0.18s ease, box-shadow 0.18s ease;
         overflow: hidden;
+		box-shadow: 0 7px 18px rgba(18, 12, 28, 0.08);
     }
 
     .header:hover {
-        opacity: 1;
+		transform: translateY(-2px);
+		box-shadow: 0 13px 26px rgba(18, 12, 28, 0.14);
     }
 
     .opponent {
@@ -558,3 +560,4 @@
         {/if}
     </div>
 </div>
+

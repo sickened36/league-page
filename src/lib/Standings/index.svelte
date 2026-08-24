@@ -65,20 +65,37 @@
         line-height: 1.2em;
     }
 
-    h1 {
-        font-size: 2.2em;
-        line-height: 1.3em;
-        margin: 1.5em 0 2em;
-    }
-
     .standingsTable {
         max-width: 100%;
-        overflow-x: scroll;
-        margin: 0.5em 0 5em;
+        overflow-x: auto;
+        margin: 0;
     }
-</style>
 
-<h1>{year ?? ''} {leagueName} Standings</h1>
+	.season-label {
+		padding: 20px 24px 14px;
+		text-align: left;
+		color: #8b5cf6;
+		font-size: 0.72rem;
+		font-weight: 900;
+		letter-spacing: 0.14em;
+		text-transform: uppercase;
+	}
+
+	:global(.standingsTable .mdc-data-table) {
+		width: 100%;
+		border: 0;
+		border-radius: 0;
+		box-shadow: none;
+	}
+
+	:global(.standingsTable table) {
+		width: 100%;
+	}
+
+	:global(.standingsTable thead) {
+		background: color-mix(in srgb, var(--fff) 90%, #8b5cf6 10%);
+	}
+</style>
 
 {#if loading}
     <!-- promise is pending -->
@@ -91,6 +108,7 @@
     <p>Preseason, No Standings Yet</p>
 </div>
 {:else}
+	<div class="season-label">{year ?? ''} {leagueName} · Official Table</div>
     <div class="standingsTable">
         <DataTable table$aria-label="League Standings" >
             <Head> <!-- Team name  -->
@@ -103,10 +121,11 @@
             </Head>
             <Body>
                 <!-- 	Standing	 -->
-                {#each standings as standing}
-                    <Standing {columnOrder} {standing} {leagueTeamManagers} team={getTeamFromTeamManagers(leagueTeamManagers, standing.rosterID)} />
+                {#each standings as standing, rank}
+                    <Standing {rank} {columnOrder} {standing} {leagueTeamManagers} team={getTeamFromTeamManagers(leagueTeamManagers, standing.rosterID)} />
                 {/each}
             </Body>
         </DataTable>
     </div>
 {/if}
+

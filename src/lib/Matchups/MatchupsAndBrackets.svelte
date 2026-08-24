@@ -58,8 +58,12 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: 3em 0;
+		margin: 0 0 2.2em;
     }
+
+	:global(.buttonHolder .mdc-button) {
+		border-radius: 999px;
+	}
 </style>
 
 
@@ -109,3 +113,4 @@
         <Brackets {queryWeek} {leagueTeamManagers} {players} {brackets} bind:selection={selection} />
     {/if}
 {/if}
+

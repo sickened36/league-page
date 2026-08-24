@@ -56,8 +56,11 @@
     :global(.draftBoard) {
         display: block;
         width: 95%;
-        margin: 2em auto 3em;
+		margin: 1.2em auto 3em;
         overflow-x: auto;
+		border: 1px solid var(--ddd);
+		border-radius: 12px;
+		box-shadow: 0 10px 26px rgba(18, 12, 28, 0.08);
     }
 
 	:global(.draftTeam) {

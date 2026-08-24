@@ -1,5 +1,5 @@
 <script>
-	import { Standings } from '$lib/components'
+	import { PageShell, Standings } from '$lib/components'
 
 	export let data;
 	const {standingsData, leagueTeamManagersData} = data;
@@ -13,6 +13,9 @@
 	}
 </style>
 
-<div class="holder">
-	<Standings {standingsData} {leagueTeamManagersData} />
-</div>
+<PageShell eyebrow="League Center" title="Standings" description="The race for the playoffs, ranked by the league's official tiebreakers." icon="leaderboard">
+	<div class="holder page-panel page-panel--flush">
+		<Standings {standingsData} {leagueTeamManagersData} />
+	</div>
+</PageShell>
+

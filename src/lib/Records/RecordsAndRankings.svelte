@@ -241,14 +241,20 @@
     }
 
     :global(.recordTable) {
-        box-shadow: 0px 3px 3px -2px var(--boxShadowOne), 0px 3px 4px 0px var(--boxShadowTwo), 0px 1px 8px 0px var(--boxShadowThree);
+		border: 1px solid var(--ddd);
+		border-radius: 10px;
+		box-shadow: 0 8px 22px rgba(18, 12, 28, 0.08);
         margin: 2em;
+		overflow: hidden;
     }
 
     :global(.rankingTable) {
         display: table;
-        box-shadow: 0px 3px 3px -2px var(--boxShadowOne), 0px 3px 4px 0px var(--boxShadowTwo), 0px 1px 8px 0px var(--boxShadowThree);
+		border: 1px solid var(--ddd);
+		border-radius: 10px;
+		box-shadow: 0 8px 22px rgba(18, 12, 28, 0.08);
         margin: 2em auto 0.5em;
+		overflow: hidden;
     }
 
     .fullFlex {
@@ -292,6 +298,10 @@
         text-align: center;
         margin: 2em 0 4em;
     }
+
+	:global(.buttonHolder .mdc-button) {
+		border-radius: 999px;
+	}
 
     :global(.cellName) {
         cursor: pointer;
@@ -812,3 +822,4 @@
         {/each}
     </Group>
 </div>
+

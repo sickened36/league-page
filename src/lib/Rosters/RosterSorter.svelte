@@ -32,8 +32,9 @@
 		display: flex;
 		justify-content: space-around;
 		flex-wrap: wrap;
-		margin: 10px auto 20px;
-		width: 95%;
+		gap: 18px;
+		margin: 10px auto 32px;
+		width: 100%;
 	}
 
 	.banner {
@@ -115,8 +116,12 @@
 	}
 
 	.expandButton {
-		margin: 5em auto 2em;
+		margin: 0 auto 2em;
     	text-align: center;
+	}
+
+	:global(.expandButton .mdc-button) {
+		border-radius: 999px;
 	}
 </style>
 
@@ -138,3 +143,4 @@
 		{/each}
 	</div>
 {/each}
+

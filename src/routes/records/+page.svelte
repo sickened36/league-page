@@ -1,6 +1,6 @@
 <script>
 	import LinearProgress from '@smui/linear-progress';
-	import { Records } from '$lib/components';
+	import { PageShell, Records } from '$lib/components';
 
     export let data;
     const recordsInfo = data.recordsInfo;
@@ -19,7 +19,8 @@
     }
 </style>
 
-<div id="main">
+<PageShell eyebrow="The Record Book" title="League Records" description="The best, worst and most unforgettable performances in Fantasy Foosball history." icon="military_tech" wide={true}>
+<div id="main" class="page-panel">
     {#await recordsInfo}
         <!-- promise is pending -->
         <div class="loading">
@@ -30,6 +31,8 @@
         <Records {leagueData} {totals} {stale} {leagueTeamManagers} />
     {:catch error}
         <!-- promise was rejected -->
-        <p>Something went wrong: {error.message}</p>
+        <p class="page-state">Something went wrong: {error.message}</p>
     {/await}
 </div>
+</PageShell>
+

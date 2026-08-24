@@ -158,7 +158,7 @@
 
 	.transactions {
 		flex-grow: 1;
-		padding: 0 15px;
+		padding: 0;
 	}
 
 	p {
@@ -171,7 +171,11 @@
 	}
 
 	.buttons {
-		margin: 40px auto 0;
+		margin: 0 auto;
+	}
+
+	:global(.buttons .mdc-button) {
+		border-radius: 999px;
 	}
 
 	:global(.disabled) {
@@ -289,3 +293,4 @@
 		{/if}
 	{/if}
 </div>
+
