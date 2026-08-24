@@ -28,13 +28,13 @@
 		top: 15px;
 		left: 15px;
 		font-size: 2em;
-		color: #888;
+		color: #ddd6fe;
 		padding: 6px;
 		cursor: pointer;
 	}
 
 	:global(.menuIcon:hover) {
-		color: #00316b;
+		color: #fff;
 	}
 
 	:global(.nav-drawer) {
