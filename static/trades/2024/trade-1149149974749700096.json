@@ -1,0 +1,232 @@
+{
+  "id": "1149149974749700096",
+  "leagueId": "1124840953127903232",
+  "leagueName": "Fantasy Foosball Year 6",
+  "season": 2024,
+  "week": 5,
+  "occurredAt": 1728341342659,
+  "generatedAt": "2026-08-27T11:59:21.411Z",
+  "model": "gpt-5.6-luna",
+  "methodology": "MVP: Sleeper player search rank + actual league production (when available) + roster fit + starting-lineup impact.",
+  "headline": "Outlaws Land the Heavy Hitters as CheesusJesus Rebalances",
+  "verdict": "Brae is the clear current winner, earning a B to Kade’s C+ on the supplied grades and scores.",
+  "summary": "Brae turns a 12-2 roster into an even more imposing contender by swapping Brandon Aiyuk and Kenneth Walker for Davante Adams and James Conner. The package value gap is substantial: 142.9 coming in versus 100.5 going out, while Brae also posts stronger roster-fit and lineup-impact scores. Adams and Conner bring the better supplied production profiles, including recent averages of 24.1 and 20.1. Kade’s return is more about structure than star power: Aiyuk and Walker fit a 3-11 roster with strong overall roster fit, but the lineup-impact score is only 64. The lone Packers fan may call it a rebuild; the scoreboard calls it a downgrade for now.",
+  "sides": [
+    {
+      "rosterId": 4,
+      "manager": "Kade",
+      "teamName": "CheesusJesus",
+      "lore": "Rivals: Kane, Kohlt, Andy. Only Packers fan in a league full of Cowboys fans.",
+      "received": [
+        {
+          "id": "6803",
+          "type": "player",
+          "name": "Brandon Aiyuk",
+          "position": "WR",
+          "nflTeam": "SF",
+          "searchRank": 177,
+          "games": 15,
+          "seasonAvg": 4.2,
+          "recentAvg": 0,
+          "value": 41.3
+        },
+        {
+          "id": "8151",
+          "type": "player",
+          "name": "Kenneth Walker",
+          "position": "RB",
+          "nflTeam": "KC",
+          "searchRank": 18,
+          "games": 17,
+          "seasonAvg": 10.7,
+          "recentAvg": 4.6,
+          "value": 69.9
+        }
+      ],
+      "sent": [
+        {
+          "id": "2133",
+          "type": "player",
+          "name": "Davante Adams",
+          "position": "WR",
+          "nflTeam": "LAR",
+          "searchRank": 46,
+          "games": 17,
+          "seasonAvg": 13,
+          "recentAvg": 24.1,
+          "value": 85.3
+        },
+        {
+          "id": "4137",
+          "type": "player",
+          "name": "James Conner",
+          "position": "RB",
+          "nflTeam": "ARI",
+          "searchRank": 92,
+          "games": 17,
+          "seasonAvg": 14.9,
+          "recentAvg": 20.1,
+          "value": 77.8
+        }
+      ],
+      "context": {
+        "record": "3-11",
+        "pointsFor": 1444.64,
+        "positionCounts": {
+          "WR": 4,
+          "TE": 1,
+          "K": 2,
+          "QB": 3,
+          "RB": 3,
+          "DEF": 1
+        },
+        "topPlayers": [
+          {
+            "name": "Chase Brown",
+            "position": "RB",
+            "value": 86.6
+          },
+          {
+            "name": "Justin Herbert",
+            "position": "QB",
+            "value": 78.4
+          },
+          {
+            "name": "Travis Kelce",
+            "position": "TE",
+            "value": 73.4
+          },
+          {
+            "name": "Jordan Addison",
+            "position": "WR",
+            "value": 70.6
+          },
+          {
+            "name": "Kenneth Walker",
+            "position": "RB",
+            "value": 69.9
+          }
+        ]
+      },
+      "packageValue": 100.5,
+      "scores": {
+        "overall": 77.2,
+        "value": 78.2,
+        "rosterFit": 86,
+        "lineupImpact": 64
+      },
+      "grade": "C+",
+      "analysis": "Kade’s CheesusJesus receives Brandon Aiyuk and Kenneth Walker while sending out Davante Adams and James Conner. The return has useful roster logic: Kade has only three running backs and four wide receivers, and the deal adds two players while preserving a broader structure around Chase Brown, Jordan Addison, Justin Herbert, and Travis Kelce. Walker’s supplied market value is 69.9, while Aiyuk adds another piece at 41.3. The risk is immediate production: Adams and Conner carry stronger season and recent averages, and Kade’s lineup-impact score is just 64. At 3-11, this is a fit-driven reshuffle, not a win-now upgrade.",
+      "bestReason": "The deal adds two players to a 3-11 roster with an 86 roster-fit score, giving Kade useful structural balance at RB and WR.",
+      "biggestRisk": "Kade gives up the two stronger supplied production profiles, and the 64 lineup-impact score signals limited immediate punch."
+    },
+    {
+      "rosterId": 9,
+      "manager": "Brae",
+      "teamName": "Ogles Outlaws",
+      "lore": "Rivals: Parker and Andy.",
+      "received": [
+        {
+          "id": "2133",
+          "type": "player",
+          "name": "Davante Adams",
+          "position": "WR",
+          "nflTeam": "LAR",
+          "searchRank": 46,
+          "games": 17,
+          "seasonAvg": 13,
+          "recentAvg": 24.1,
+          "value": 85.3
+        },
+        {
+          "id": "4137",
+          "type": "player",
+          "name": "James Conner",
+          "position": "RB",
+          "nflTeam": "ARI",
+          "searchRank": 92,
+          "games": 17,
+          "seasonAvg": 14.9,
+          "recentAvg": 20.1,
+          "value": 77.8
+        }
+      ],
+      "sent": [
+        {
+          "id": "6803",
+          "type": "player",
+          "name": "Brandon Aiyuk",
+          "position": "WR",
+          "nflTeam": "SF",
+          "searchRank": 177,
+          "games": 15,
+          "seasonAvg": 4.2,
+          "recentAvg": 0,
+          "value": 41.3
+        },
+        {
+          "id": "8151",
+          "type": "player",
+          "name": "Kenneth Walker",
+          "position": "RB",
+          "nflTeam": "KC",
+          "searchRank": 18,
+          "games": 17,
+          "seasonAvg": 10.7,
+          "recentAvg": 4.6,
+          "value": 69.9
+        }
+      ],
+      "context": {
+        "record": "12-2",
+        "pointsFor": 1848.32,
+        "positionCounts": {
+          "WR": 5,
+          "K": 1,
+          "RB": 4,
+          "TE": 2,
+          "QB": 2,
+          "DEF": 2
+        },
+        "topPlayers": [
+          {
+            "name": "Justin Jefferson",
+            "position": "WR",
+            "value": 95.6
+          },
+          {
+            "name": "Josh Allen",
+            "position": "QB",
+            "value": 95.3
+          },
+          {
+            "name": "Jaxon Smith-Njigba",
+            "position": "WR",
+            "value": 87.5
+          },
+          {
+            "name": "Davante Adams",
+            "position": "WR",
+            "value": 85.3
+          },
+          {
+            "name": "James Conner",
+            "position": "RB",
+            "value": 77.8
+          }
+        ]
+      },
+      "packageValue": 142.9,
+      "scores": {
+        "overall": 86.6,
+        "value": 85.8,
+        "rosterFit": 91,
+        "lineupImpact": 86
+      },
+      "grade": "B",
+      "analysis": "Brae’s Ogles Outlaws send Aiyuk and Walker for Davante Adams and James Conner, converting a lower-value package into two more productive, higher-value pieces. Adams’ supplied value is 85.3 and Conner’s is 77.8, compared with 41.3 for Aiyuk and 69.9 for Walker. Their season averages are also stronger, as are their recent averages: Adams at 24.1 and Conner at 20.1. The fit is excellent for a 12-2 team with five wide receivers and four running backs, while the 86 lineup-impact score backs up the upgrade. Brae’s already loaded roster just found another reason for rivals Parker and Andy to complain.",
+      "bestReason": "Brae adds the superior package by value and production while posting outstanding roster fit and an 86 lineup-impact score.",
+      "biggestRisk": "The main risk is opportunity cost: Brae parts with two useful players from an already strong roster, including Walker’s 18 search rank."
+    }
+  ]
+}

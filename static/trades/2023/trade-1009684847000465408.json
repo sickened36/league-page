@@ -1,0 +1,184 @@
+{
+  "id": "1009684847000465408",
+  "leagueId": "981027810078756864",
+  "leagueName": "Fantasy Foosball Year 5",
+  "season": 2023,
+  "week": 2,
+  "occurredAt": 1695090152809,
+  "generatedAt": "2026-08-27T11:58:17.981Z",
+  "model": "gpt-5.6-luna",
+  "methodology": "MVP: Sleeper player search rank + actual league production (when available) + roster fit + starting-lineup impact.",
+  "headline": "Pittman-Robinson Swap Gives Parker the Edge",
+  "verdict": "Parker is the current winner, with the stronger B- grade and slightly better overall, value, and package scores.",
+  "summary": "This is a close, fit-driven exchange rather than a blockbuster. Andy’s Long dong silvers move Michael Pittman, whose 66.7 package value and 14.3 season average exceed Brian Robinson’s 63.2 value and 11.0 season average, but the return better matches Andy’s four-RB roster and produces the stronger 86 roster-fit score. Parker’s JankMyKowski TilliSemien adds Pittman to a five-WR roster while sending from a five-RB group, making the swap similarly clean on fit. Parker gets the better value side and the B- grade, while Andy’s C+ reflects a reasonable positional reshuffle. The gap is narrow, but King of Dogshit Trades gets to enjoy this one.",
+  "sides": [
+    {
+      "rosterId": 2,
+      "manager": "Andy",
+      "teamName": "Long dong silvers",
+      "lore": "Rivals: Alex, CJ, Payton.",
+      "received": [
+        {
+          "id": "8154",
+          "type": "player",
+          "name": "Brian Robinson",
+          "position": "RB",
+          "nflTeam": "ATL",
+          "searchRank": 80,
+          "games": 17,
+          "seasonAvg": 11,
+          "recentAvg": 3.9,
+          "value": 63.2
+        }
+      ],
+      "sent": [
+        {
+          "id": "6819",
+          "type": "player",
+          "name": "Michael Pittman",
+          "position": "WR",
+          "nflTeam": "PIT",
+          "searchRank": 102,
+          "games": 17,
+          "seasonAvg": 14.3,
+          "recentAvg": 7.1,
+          "value": 66.7
+        }
+      ],
+      "context": {
+        "record": "6-8",
+        "pointsFor": 1573.66,
+        "positionCounts": {
+          "K": 2,
+          "WR": 4,
+          "RB": 4,
+          "TE": 2,
+          "QB": 1,
+          "DEF": 1
+        },
+        "topPlayers": [
+          {
+            "name": "Derrick Henry",
+            "position": "RB",
+            "value": 80.8
+          },
+          {
+            "name": "Baker Mayfield",
+            "position": "QB",
+            "value": 75.7
+          },
+          {
+            "name": "De'Von Achane",
+            "position": "RB",
+            "value": 75.2
+          },
+          {
+            "name": "Jonathan Taylor",
+            "position": "RB",
+            "value": 71.7
+          },
+          {
+            "name": "Justin Tucker",
+            "position": "K",
+            "value": 66.9
+          }
+        ]
+      },
+      "packageValue": 63.2,
+      "scores": {
+        "overall": 79.5,
+        "value": 81.4,
+        "rosterFit": 86,
+        "lineupImpact": 64
+      },
+      "grade": "C+",
+      "analysis": "Andy turns Michael Pittman into Brian Robinson, a move that trades away the higher supplied package value—66.7 versus 63.2—and the stronger season average, 14.3 versus 11.0. The appeal is roster fit: Long dong silvers already carry four running backs, including Derrick Henry, De’Von Achane, and Jonathan Taylor, so Robinson adds another option to a deep position group. The model still gives Andy an 86 roster-fit score, but only a 64 lineup-impact score, meaning the transaction looks more like a useful reshuffle than a lineup-changing strike. At 6-8, Andy gets a targeted fit play, but pays a modest value toll.",
+      "bestReason": "Robinson aligns with Andy’s running-back-heavy roster, supporting the supplied 86 roster-fit score.",
+      "biggestRisk": "Andy gives up the higher-value player and better season production, while the lineup-impact score remains 64."
+    },
+    {
+      "rosterId": 5,
+      "manager": "Parker",
+      "teamName": "JankMyKowski TilliSemien",
+      "lore": "2019 inaugural champion. League Public Enemy. Nickname: King of Dogshit Trades. Rivals: everyone.",
+      "received": [
+        {
+          "id": "6819",
+          "type": "player",
+          "name": "Michael Pittman",
+          "position": "WR",
+          "nflTeam": "PIT",
+          "searchRank": 102,
+          "games": 17,
+          "seasonAvg": 14.3,
+          "recentAvg": 7.1,
+          "value": 66.7
+        }
+      ],
+      "sent": [
+        {
+          "id": "8154",
+          "type": "player",
+          "name": "Brian Robinson",
+          "position": "RB",
+          "nflTeam": "ATL",
+          "searchRank": 80,
+          "games": 17,
+          "seasonAvg": 11,
+          "recentAvg": 3.9,
+          "value": 63.2
+        }
+      ],
+      "context": {
+        "record": "7-7",
+        "pointsFor": 1736.7,
+        "positionCounts": {
+          "K": 1,
+          "RB": 5,
+          "QB": 2,
+          "TE": 2,
+          "WR": 5,
+          "DEF": 1
+        },
+        "topPlayers": [
+          {
+            "name": "CeeDee Lamb",
+            "position": "WR",
+            "value": 98.4
+          },
+          {
+            "name": "Lamar Jackson",
+            "position": "QB",
+            "value": 92.3
+          },
+          {
+            "name": "Travis Etienne",
+            "position": "RB",
+            "value": 81.4
+          },
+          {
+            "name": "Justin Jefferson",
+            "position": "WR",
+            "value": 78.7
+          },
+          {
+            "name": "Brock Purdy",
+            "position": "QB",
+            "value": 77.1
+          }
+        ]
+      },
+      "packageValue": 66.7,
+      "scores": {
+        "overall": 80.3,
+        "value": 82.6,
+        "rosterFit": 86,
+        "lineupImpact": 64
+      },
+      "grade": "B-",
+      "analysis": "Parker acquires Michael Pittman after sending Brian Robinson, winning the supplied player-value exchange 66.7 to 63.2 and taking the stronger overall score, 80.3 to Andy’s 79.5. Pittman also brings the better season average, 14.3 compared with Robinson’s 11.0, although his recent average is 7.1. The fit remains strong at 86: Parker has five wide receivers and five running backs, so the deal shifts depth without creating an obvious positional imbalance. The 64 lineup-impact score keeps expectations measured. Still, for a 7-7 team with CeeDee Lamb and Justin Jefferson, this is a tidy value win—and the Public Enemy’s trade ledger gets another playful footnote.",
+      "bestReason": "Parker receives the higher-value player and posts the trade’s better overall and value scores.",
+      "biggestRisk": "Pittman’s supplied recent average of 7.1 is well below his 14.3 season average, and lineup impact is rated only 64."
+    }
+  ]
+}

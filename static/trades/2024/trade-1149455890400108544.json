@@ -1,0 +1,208 @@
+{
+  "id": "1149455890400108544",
+  "leagueId": "1124840953127903232",
+  "leagueName": "Fantasy Foosball Year 6",
+  "season": 2024,
+  "week": 5,
+  "occurredAt": 1728415722577,
+  "generatedAt": "2026-08-27T11:59:30.742Z",
+  "model": "gpt-5.6-luna",
+  "methodology": "MVP: Sleeper player search rank + actual league production (when available) + roster fit + starting-lineup impact.",
+  "headline": "Brown Brings Star Power, but Evan Wins the Two-for-One Math",
+  "verdict": "Evan is the current winner on overall grade and value, though both teams receive a strong roster-fit boost.",
+  "summary": "Payton turns two wideouts into one premium target, swapping DK Metcalf and George Pickens for A.J. Brown. The move carries a B- grade, but the 91 roster-fit score and 88 lineup-impact score show why Brown makes sense for a 5-9 Big Pitts and Bass team. Brown’s 20.4 recent average is the splashiest supplied production figure in the deal, while Payton also keeps a strong core featuring Jahmyr Gibbs, Puka Nacua, and Bucky Irving. Evan’s packageValue is higher at 116, earning the Reigning Champ a B and the edge in overall score, value, and lineup impact. That is a sturdy haul for a reigning champion, even if Brown is the single biggest name moved.",
+  "sides": [
+    {
+      "rosterId": 1,
+      "manager": "Payton",
+      "teamName": "Big Pitts and Bass",
+      "lore": "Two-time champion (2020, 2021). Rivals: Parker, Andy, CJ, Alex.",
+      "received": [
+        {
+          "id": "5859",
+          "type": "player",
+          "name": "A.J. Brown",
+          "position": "WR",
+          "nflTeam": "NE",
+          "searchRank": 18,
+          "games": 17,
+          "seasonAvg": 12.8,
+          "recentAvg": 20.4,
+          "value": 85.4
+        }
+      ],
+      "sent": [
+        {
+          "id": "5846",
+          "type": "player",
+          "name": "DK Metcalf",
+          "position": "WR",
+          "nflTeam": "PIT",
+          "searchRank": 73,
+          "games": 17,
+          "seasonAvg": 10.4,
+          "recentAvg": 9.2,
+          "value": 66.5
+        },
+        {
+          "id": "8137",
+          "type": "player",
+          "name": "George Pickens",
+          "position": "WR",
+          "nflTeam": "DAL",
+          "searchRank": 25,
+          "games": 17,
+          "seasonAvg": 9.6,
+          "recentAvg": 2.7,
+          "value": 66.8
+        }
+      ],
+      "context": {
+        "record": "5-9",
+        "pointsFor": 1633.2,
+        "positionCounts": {
+          "RB": 5,
+          "K": 1,
+          "WR": 4,
+          "TE": 2,
+          "QB": 2,
+          "DEF": 1
+        },
+        "topPlayers": [
+          {
+            "name": "Jahmyr Gibbs",
+            "position": "RB",
+            "value": 98.4
+          },
+          {
+            "name": "A.J. Brown",
+            "position": "WR",
+            "value": 85.4
+          },
+          {
+            "name": "Puka Nacua",
+            "position": "WR",
+            "value": 85.4
+          },
+          {
+            "name": "Bucky Irving",
+            "position": "RB",
+            "value": 81.2
+          },
+          {
+            "name": "Jameson Williams",
+            "position": "WR",
+            "value": 78
+          }
+        ]
+      },
+      "packageValue": 85.4,
+      "scores": {
+        "overall": 81.9,
+        "value": 78.7,
+        "rosterFit": 91,
+        "lineupImpact": 88
+      },
+      "grade": "B-",
+      "analysis": "Payton gets the deal’s premier single asset in A.J. Brown, whose 85.4 value, 18 search rank, 12.8 season average, and 20.4 recent average give Big Pitts and Bass a clear top-end receiving anchor. The roster-fit score of 91 and lineup-impact score of 88 support the move, especially for a 5-9 team that needs quality from every starting slot. The cost is substantial: DK Metcalf and George Pickens carry combined supplied value of 133.3, creating a depth sacrifice for one player. Still, Brown joins Jahmyr Gibbs, Puka Nacua, and Bucky Irving in a formidable core. The B- reflects a useful upgrade with concentration risk.",
+      "bestReason": "Brown’s 20.4 recent average and 88 lineup-impact score give Payton a high-end weekly centerpiece.",
+      "biggestRisk": "Payton gives up two receivers, including Pickens’ 25 search rank, for one roster spot and one production path."
+    },
+    {
+      "rosterId": 7,
+      "manager": "Evan",
+      "teamName": "Reigning Champ",
+      "lore": "2023 champion. Rivals: Joey, Andy, Payton.",
+      "received": [
+        {
+          "id": "5846",
+          "type": "player",
+          "name": "DK Metcalf",
+          "position": "WR",
+          "nflTeam": "PIT",
+          "searchRank": 73,
+          "games": 17,
+          "seasonAvg": 10.4,
+          "recentAvg": 9.2,
+          "value": 66.5
+        },
+        {
+          "id": "8137",
+          "type": "player",
+          "name": "George Pickens",
+          "position": "WR",
+          "nflTeam": "DAL",
+          "searchRank": 25,
+          "games": 17,
+          "seasonAvg": 9.6,
+          "recentAvg": 2.7,
+          "value": 66.8
+        }
+      ],
+      "sent": [
+        {
+          "id": "5859",
+          "type": "player",
+          "name": "A.J. Brown",
+          "position": "WR",
+          "nflTeam": "NE",
+          "searchRank": 18,
+          "games": 17,
+          "seasonAvg": 12.8,
+          "recentAvg": 20.4,
+          "value": 85.4
+        }
+      ],
+      "context": {
+        "record": "5-9",
+        "pointsFor": 1623.28,
+        "positionCounts": {
+          "QB": 2,
+          "K": 1,
+          "RB": 4,
+          "TE": 2,
+          "WR": 4,
+          "DEF": 2
+        },
+        "topPlayers": [
+          {
+            "name": "De'Von Achane",
+            "position": "RB",
+            "value": 91.1
+          },
+          {
+            "name": "George Kittle",
+            "position": "TE",
+            "value": 80.8
+          },
+          {
+            "name": "Caleb Williams",
+            "position": "QB",
+            "value": 73.9
+          },
+          {
+            "name": "Chris Boswell",
+            "position": "K",
+            "value": 67.8
+          },
+          {
+            "name": "George Pickens",
+            "position": "WR",
+            "value": 66.8
+          }
+        ]
+      },
+      "packageValue": 116,
+      "scores": {
+        "overall": 86.6,
+        "value": 85.3,
+        "rosterFit": 91,
+        "lineupImpact": 88
+      },
+      "grade": "B",
+      "analysis": "Evan sends A.J. Brown but receives two wideouts with a combined packageValue of 116, the strongest supplied transaction total in the deal. DK Metcalf brings a 66.5 value and 10.4 season average, while George Pickens adds a 66.8 value and 25 search rank, giving the Reigning Champ more receiving inventory around a roster led by De’Von Achane and George Kittle. The 91 roster-fit and 88 lineup-impact scores say the two-player return works immediately on paper. The principal concern is recent form: Metcalf’s recent average is 9.2 and Pickens’ is 2.7, both below Brown’s 20.4. The B grade still makes Evan the current winner.",
+      "bestReason": "Evan’s two-player return carries a 116 packageValue and improves the deal’s overall value score to 86.6.",
+      "biggestRisk": "He gives up Brown’s 20.4 recent average for two receivers whose supplied recent averages are 9.2 and 2.7."
+    }
+  ]
+}

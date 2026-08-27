@@ -1,0 +1,208 @@
+{
+  "id": "1155156422959849472",
+  "leagueId": "1124840953127903232",
+  "leagueName": "Fantasy Foosball Year 6",
+  "season": 2024,
+  "week": 8,
+  "occurredAt": 1729773277734,
+  "generatedAt": "2026-08-27T11:59:48.985Z",
+  "model": "gpt-5.6-luna",
+  "methodology": "MVP: Sleeper player search rank + actual league production (when available) + roster fit + starting-lineup impact.",
+  "headline": "Blueballs Cashes In While SunGod Bets on Chubb",
+  "verdict": "Blueballs is the clear current winner, with the stronger package value and overall grade.",
+  "summary": "This trade strongly favors Kane’s Blueballs on the supplied numbers. Blueballs turns Nick Chubb, valued at 35.7 with a 3.7 season average and 0.7 recent average, into Rico Dowdle and Chris Olave, a package worth 108.1. Dowdle brings the clearest production case at a 10.7 season average and 10.9 recent average, while Olave carries the better search rank at 31. Joey’s SunGod does improve its running-back count from three to four and receives a player who could fit that roster structure, but the value gap is enormous. The grades reflect it: B and 86.6 for Blueballs versus C- and 72.1 for SunGod. Even the 2024 champion has taken the less convincing side here.",
+  "sides": [
+    {
+      "rosterId": 3,
+      "manager": "Kane",
+      "teamName": "Blueballs",
+      "lore": "Rivals: Kohlt and Kade.",
+      "received": [
+        {
+          "id": "7021",
+          "type": "player",
+          "name": "Rico Dowdle",
+          "position": "RB",
+          "nflTeam": "PIT",
+          "searchRank": 65,
+          "games": 17,
+          "seasonAvg": 10.7,
+          "recentAvg": 10.9,
+          "value": 68.2
+        },
+        {
+          "id": "8144",
+          "type": "player",
+          "name": "Chris Olave",
+          "position": "WR",
+          "nflTeam": "NO",
+          "searchRank": 31,
+          "games": 17,
+          "seasonAvg": 4.5,
+          "recentAvg": 0,
+          "value": 53.9
+        }
+      ],
+      "sent": [
+        {
+          "id": "4988",
+          "type": "player",
+          "name": "Nick Chubb",
+          "position": "RB",
+          "nflTeam": null,
+          "searchRank": 244,
+          "games": 17,
+          "seasonAvg": 3.7,
+          "recentAvg": 0.7,
+          "value": 35.7
+        }
+      ],
+      "context": {
+        "record": "8-6",
+        "pointsFor": 1694.98,
+        "positionCounts": {
+          "WR": 8,
+          "QB": 1,
+          "RB": 4,
+          "K": 1,
+          "TE": 1,
+          "DEF": 1
+        },
+        "topPlayers": [
+          {
+            "name": "Lamar Jackson",
+            "position": "QB",
+            "value": 98.4
+          },
+          {
+            "name": "Brian Thomas",
+            "position": "WR",
+            "value": 89
+          },
+          {
+            "name": "Kyren Williams",
+            "position": "RB",
+            "value": 86.9
+          },
+          {
+            "name": "Mike Evans",
+            "position": "WR",
+            "value": 83.8
+          },
+          {
+            "name": "Cameron Dicker",
+            "position": "K",
+            "value": 79.9
+          }
+        ]
+      },
+      "packageValue": 108.1,
+      "scores": {
+        "overall": 86.6,
+        "value": 93.1,
+        "rosterFit": 79,
+        "lineupImpact": 64
+      },
+      "grade": "B",
+      "analysis": "Kane’s Blueballs gets the trade’s premium package: Rico Dowdle and Chris Olave for Nick Chubb. Dowdle carries a 68.2 value, a 65 search rank, and the strongest supplied production line in the deal, averaging 10.7 for the season and 10.9 recently. Olave’s 31 search rank adds meaningful market appeal, even with a 4.5 season average and 0 recent average. Blueballs already has Kyren Williams, Brian Thomas, and Mike Evans among its top players, so the roster-fit score of 79 is solid rather than perfect. Still, a 108.1 package value explains the B grade. Kohlt and Kade may want a scouting report after this one.",
+      "bestReason": "Blueballs converts a lower-valued Chubb into a 108.1 package led by Dowdle’s superior supplied production and Olave’s strong search rank.",
+      "biggestRisk": "The lineup-impact score is only 64, and Olave’s supplied recent average is 0, so the package’s immediate starting-lineup effect is not overwhelming."
+    },
+    {
+      "rosterId": 6,
+      "manager": "Joey",
+      "teamName": "SunGod",
+      "lore": "2024 champion. Rivals: Andy and Evan.",
+      "received": [
+        {
+          "id": "4988",
+          "type": "player",
+          "name": "Nick Chubb",
+          "position": "RB",
+          "nflTeam": null,
+          "searchRank": 244,
+          "games": 17,
+          "seasonAvg": 3.7,
+          "recentAvg": 0.7,
+          "value": 35.7
+        }
+      ],
+      "sent": [
+        {
+          "id": "7021",
+          "type": "player",
+          "name": "Rico Dowdle",
+          "position": "RB",
+          "nflTeam": "PIT",
+          "searchRank": 65,
+          "games": 17,
+          "seasonAvg": 10.7,
+          "recentAvg": 10.9,
+          "value": 68.2
+        },
+        {
+          "id": "8144",
+          "type": "player",
+          "name": "Chris Olave",
+          "position": "WR",
+          "nflTeam": "NO",
+          "searchRank": 31,
+          "games": 17,
+          "seasonAvg": 4.5,
+          "recentAvg": 0,
+          "value": 53.9
+        }
+      ],
+      "context": {
+        "record": "9-5",
+        "pointsFor": 1682.98,
+        "positionCounts": {
+          "TE": 1,
+          "WR": 8,
+          "RB": 3,
+          "QB": 1,
+          "K": 1,
+          "DEF": 1
+        },
+        "topPlayers": [
+          {
+            "name": "Amon-Ra St. Brown",
+            "position": "WR",
+            "value": 98.4
+          },
+          {
+            "name": "Derrick Henry",
+            "position": "RB",
+            "value": 93.4
+          },
+          {
+            "name": "Joe Burrow",
+            "position": "QB",
+            "value": 91.2
+          },
+          {
+            "name": "Brock Bowers",
+            "position": "TE",
+            "value": 91.1
+          },
+          {
+            "name": "Malik Nabers",
+            "position": "WR",
+            "value": 88.8
+          }
+        ]
+      },
+      "packageValue": 35.7,
+      "scores": {
+        "overall": 72.1,
+        "value": 70.9,
+        "rosterFit": 86,
+        "lineupImpact": 64
+      },
+      "grade": "C-",
+      "analysis": "Joey’s SunGod receives only Nick Chubb while sending out both Rico Dowdle and Chris Olave. Chubb’s supplied value is 35.7, with a 244 search rank, a 3.7 season average, and a 0.7 recent average. The roster-fit score of 86 shows the logic of adding another running back: SunGod had three RBs, compared with eight wide receivers, and already has Derrick Henry among its top players. That fit keeps the deal from grading even lower. But the return is dramatically smaller than the outgoing package, producing a 70.9 value score and a C-. The defending 2024 champion’s rivals, Andy and Evan, can enjoy this transaction-week scoreboard.",
+      "bestReason": "Chubb fills SunGod’s thinnest listed position, raising the roster-fit score to 86 while moving the team from three RBs to four.",
+      "biggestRisk": "SunGod gives up a 108.1 combined package for a 35.7-value return, while Chubb’s supplied production and search rank trail the outgoing players."
+    }
+  ]
+}

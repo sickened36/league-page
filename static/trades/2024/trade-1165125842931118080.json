@@ -1,0 +1,184 @@
+{
+  "id": "1165125842931118080",
+  "leagueId": "1124840953127903232",
+  "leagueName": "Fantasy Foosball Year 6",
+  "season": 2024,
+  "week": 12,
+  "occurredAt": 1732150275352,
+  "generatedAt": "2026-08-27T12:00:05.222Z",
+  "model": "gpt-5.6-luna",
+  "methodology": "MVP: Sleeper player search rank + actual league production (when available) + roster fit + starting-lineup impact.",
+  "headline": "Parker Turns Tillman Into a Backfield Upgrade",
+  "verdict": "Parker is the clear current winner, with an 84.1 overall score and a B grade against CJ’s 71.5 and C-.",
+  "summary": "Parker acquires Javonte Williams, whose supplied market value of 64.9, search rank of 32, 17 games played, and 8.7 season average make this the stronger current asset exchange. The fit is not perfect: Parker already has six running backs, including Bijan Robinson and Alvin Kamara, while holding only four wide receivers. Still, moving Cedric Tillman—ranked 667th, with a 5.9 season average and a zero recent average—for Williams gives the 9-5 roster a more established backfield piece. CJ has seven wide receivers, so Tillman addresses positional quantity, but surrendering Williams creates the larger value loss. Even the King of Dogshit Trades can occasionally make the cleaner move.",
+  "sides": [
+    {
+      "rosterId": 5,
+      "manager": "Parker",
+      "teamName": "My BallDak hurts",
+      "lore": "2019 inaugural champion. League Public Enemy. Nickname: King of Dogshit Trades. Rivals: everyone.",
+      "received": [
+        {
+          "id": "7588",
+          "type": "player",
+          "name": "Javonte Williams",
+          "position": "RB",
+          "nflTeam": "DAL",
+          "searchRank": 32,
+          "games": 17,
+          "seasonAvg": 8.7,
+          "recentAvg": 6.2,
+          "value": 64.9
+        }
+      ],
+      "sent": [
+        {
+          "id": "10444",
+          "type": "player",
+          "name": "Cedric Tillman",
+          "position": "WR",
+          "nflTeam": "CLE",
+          "searchRank": 667,
+          "games": 10,
+          "seasonAvg": 5.9,
+          "recentAvg": 0,
+          "value": 27.3
+        }
+      ],
+      "context": {
+        "record": "9-5",
+        "pointsFor": 1661.74,
+        "positionCounts": {
+          "TE": 2,
+          "K": 1,
+          "RB": 6,
+          "WR": 4,
+          "QB": 2,
+          "DEF": 1
+        },
+        "topPlayers": [
+          {
+            "name": "Bijan Robinson",
+            "position": "RB",
+            "value": 96.8
+          },
+          {
+            "name": "CeeDee Lamb",
+            "position": "WR",
+            "value": 87.6
+          },
+          {
+            "name": "Baker Mayfield",
+            "position": "QB",
+            "value": 84.9
+          },
+          {
+            "name": "Alvin Kamara",
+            "position": "RB",
+            "value": 67.5
+          },
+          {
+            "name": "Marvin Harrison",
+            "position": "WR",
+            "value": 66.9
+          }
+        ]
+      },
+      "packageValue": 64.9,
+      "scores": {
+        "overall": 84.1,
+        "value": 91,
+        "rosterFit": 72,
+        "lineupImpact": 64
+      },
+      "grade": "B",
+      "analysis": "Parker’s My BallDak hurts sends Cedric Tillman and receives Javonte Williams, a clear upgrade in supplied market value: 64.9 versus 27.3, with Williams ranked 32nd compared with Tillman’s 667th. Williams also brings 17 games and an 8.7 season average, while Tillman’s season average is 5.9 and his recent average is zero. The fit is the only wrinkle. Parker already has six running backs, including Bijan Robinson and Alvin Kamara, but just four wide receivers. That limits the immediate lineup-impact case, reflected in the 64 score, yet the 9-5 roster still adds the more valuable player. Public Enemy gets a rare favorable ruling.",
+      "bestReason": "Parker converts a lower-ranked wide receiver into a much stronger market asset with the better supplied production profile.",
+      "biggestRisk": "The roster already carries six running backs and has only four wide receivers, so the positional fit is less than perfect."
+    },
+    {
+      "rosterId": 11,
+      "manager": "CJ",
+      "teamName": "cjbroadway23",
+      "lore": "Rivals: Payton, Andy, Alex.",
+      "received": [
+        {
+          "id": "10444",
+          "type": "player",
+          "name": "Cedric Tillman",
+          "position": "WR",
+          "nflTeam": "CLE",
+          "searchRank": 667,
+          "games": 10,
+          "seasonAvg": 5.9,
+          "recentAvg": 0,
+          "value": 27.3
+        }
+      ],
+      "sent": [
+        {
+          "id": "7588",
+          "type": "player",
+          "name": "Javonte Williams",
+          "position": "RB",
+          "nflTeam": "DAL",
+          "searchRank": 32,
+          "games": 17,
+          "seasonAvg": 8.7,
+          "recentAvg": 6.2,
+          "value": 64.9
+        }
+      ],
+      "context": {
+        "record": "3-11",
+        "pointsFor": 1475.04,
+        "positionCounts": {
+          "WR": 7,
+          "K": 1,
+          "RB": 5,
+          "QB": 2,
+          "TE": 1,
+          "DEF": 1
+        },
+        "topPlayers": [
+          {
+            "name": "Ladd McConkey",
+            "position": "WR",
+            "value": 82.6
+          },
+          {
+            "name": "Terry McLaurin",
+            "position": "WR",
+            "value": 77.1
+          },
+          {
+            "name": "Jalen Hurts",
+            "position": "QB",
+            "value": 75.8
+          },
+          {
+            "name": "Tyjae Spears",
+            "position": "RB",
+            "value": 65
+          },
+          {
+            "name": "J.K. Dobbins",
+            "position": "RB",
+            "value": 63.7
+          }
+        ]
+      },
+      "packageValue": 27.3,
+      "scores": {
+        "overall": 71.5,
+        "value": 73,
+        "rosterFit": 72,
+        "lineupImpact": 64
+      },
+      "grade": "C-",
+      "analysis": "CJ’s cjbroadway23 receives Cedric Tillman for Javonte Williams, earning the deal’s weaker grade at 71.5 overall and C-. Tillman’s supplied value is 27.3, his search rank is 667th, and his 5.9 season average trails Williams’ 8.7; his recent average is also zero. The roster-fit argument is real: CJ has seven wide receivers, compared with five running backs, so adding another receiver matches the team’s positional construction. But the transaction gives away the higher-valued player by a wide margin. With Ladd McConkey and Terry McLaurin already leading the roster, Tillman adds quantity more than demonstrated strength. CJ wins the fit footnote, not the trade ledger.",
+      "bestReason": "Tillman joins a roster with seven wide receivers, making the position a natural fit for CJ’s construction.",
+      "biggestRisk": "CJ parts with Williams’ 64.9 supplied value for Tillman’s 27.3, alongside the lower rank and weaker production profile."
+    }
+  ]
+}

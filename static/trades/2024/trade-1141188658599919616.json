@@ -1,0 +1,304 @@
+{
+  "id": "1141188658599919616",
+  "leagueId": "1124840953127903232",
+  "leagueName": "Fantasy Foosball Year 6",
+  "season": 2024,
+  "week": 2,
+  "occurredAt": 1726443629801,
+  "generatedAt": "2026-08-27T11:59:02.961Z",
+  "model": "gpt-5.6-luna",
+  "methodology": "MVP: Sleeper player search rank + actual league production (when available) + roster fit + starting-lineup impact.",
+  "headline": "Blueballs Adds Firepower, but Parker Keeps the Crown Jewel",
+  "verdict": "Blueballs narrowly wins the current-value battle, though both sides land a B-.",
+  "summary": "This is a balanced, high-volume swap with both managers graded B-. Blueballs sends away the deal’s top market-ranked asset in CeeDee Lamb, plus Terry McLaurin and Javonte Williams, but receives four players and a larger supplied package value of 206.7. Kyren Williams and Brian Thomas are the centerpiece returns, with Michael Pittman adding another usable wideout and Nick Chubb providing lower-valued depth. Parker gets Lamb, McLaurin and Javonte, a cleaner three-player haul that fits a roster already featuring Bijan Robinson, Alvin Kamara and four wide receivers. The supplied scores give Blueballs the slight overall edge, while Parker’s roster-fit score is better. Naturally, the league’s Public Enemy has made another trade that will require a scoreboard defense.",
+  "sides": [
+    {
+      "rosterId": 3,
+      "manager": "Kane",
+      "teamName": "Blueballs",
+      "lore": "Rivals: Kohlt and Kade.",
+      "received": [
+        {
+          "id": "4988",
+          "type": "player",
+          "name": "Nick Chubb",
+          "position": "RB",
+          "nflTeam": null,
+          "searchRank": 244,
+          "games": 17,
+          "seasonAvg": 3.7,
+          "recentAvg": 0.7,
+          "value": 35.7
+        },
+        {
+          "id": "6819",
+          "type": "player",
+          "name": "Michael Pittman",
+          "position": "WR",
+          "nflTeam": "PIT",
+          "searchRank": 102,
+          "games": 17,
+          "seasonAvg": 9,
+          "recentAvg": 13.2,
+          "value": 63.7
+        },
+        {
+          "id": "8150",
+          "type": "player",
+          "name": "Kyren Williams",
+          "position": "RB",
+          "nflTeam": "LAR",
+          "searchRank": 13,
+          "games": 17,
+          "seasonAvg": 16,
+          "recentAvg": 16.4,
+          "value": 86.9
+        },
+        {
+          "id": "11631",
+          "type": "player",
+          "name": "Brian Thomas",
+          "position": "WR",
+          "nflTeam": "JAX",
+          "searchRank": 72,
+          "games": 17,
+          "seasonAvg": 15.7,
+          "recentAvg": 28.2,
+          "value": 89
+        }
+      ],
+      "sent": [
+        {
+          "id": "5927",
+          "type": "player",
+          "name": "Terry McLaurin",
+          "position": "WR",
+          "nflTeam": "WAS",
+          "searchRank": 53,
+          "games": 17,
+          "seasonAvg": 14.6,
+          "recentAvg": 14.9,
+          "value": 77.1
+        },
+        {
+          "id": "6786",
+          "type": "player",
+          "name": "CeeDee Lamb",
+          "position": "WR",
+          "nflTeam": "DAL",
+          "searchRank": 8,
+          "games": 17,
+          "seasonAvg": 15.5,
+          "recentAvg": 14.7,
+          "value": 87.6
+        },
+        {
+          "id": "7588",
+          "type": "player",
+          "name": "Javonte Williams",
+          "position": "RB",
+          "nflTeam": "DAL",
+          "searchRank": 32,
+          "games": 17,
+          "seasonAvg": 8.7,
+          "recentAvg": 6.2,
+          "value": 64.9
+        }
+      ],
+      "context": {
+        "record": "8-6",
+        "pointsFor": 1694.98,
+        "positionCounts": {
+          "WR": 8,
+          "QB": 1,
+          "RB": 4,
+          "K": 1,
+          "TE": 1,
+          "DEF": 1
+        },
+        "topPlayers": [
+          {
+            "name": "Lamar Jackson",
+            "position": "QB",
+            "value": 98.4
+          },
+          {
+            "name": "Brian Thomas",
+            "position": "WR",
+            "value": 89
+          },
+          {
+            "name": "Kyren Williams",
+            "position": "RB",
+            "value": 86.9
+          },
+          {
+            "name": "Mike Evans",
+            "position": "WR",
+            "value": 83.8
+          },
+          {
+            "name": "Cameron Dicker",
+            "position": "K",
+            "value": 79.9
+          }
+        ]
+      },
+      "packageValue": 206.7,
+      "scores": {
+        "overall": 82.7,
+        "value": 83.4,
+        "rosterFit": 84,
+        "lineupImpact": 78
+      },
+      "grade": "B-",
+      "analysis": "Kane’s Blueballs receives the larger supplied package: Kyren Williams, Brian Thomas, Michael Pittman and Nick Chubb total 206.7 in package value. Kyren is the strongest market asset in the return at 86.9, with a 16.0 season average and 16.4 recent average. Brian Thomas brings the loudest production trend, averaging 28.2 recently against 15.7 for the season. Pittman adds a 13.2 recent average, while Chubb is the clear depth piece at 35.7 value. The fit is solid but lineup impact trails value, and losing CeeDee leaves Blueballs explaining the headline move to rivals Kohlt and Kade.",
+      "bestReason": "Blueballs adds four players, led by Kyren Williams and Brian Thomas, for a supplied package value of 206.7.",
+      "biggestRisk": "The return is deeper, but Blueballs gives up CeeDee Lamb, the trade’s highest-ranked player, and receives only a 78 lineup-impact score."
+    },
+    {
+      "rosterId": 5,
+      "manager": "Parker",
+      "teamName": "My BallDak hurts",
+      "lore": "2019 inaugural champion. League Public Enemy. Nickname: King of Dogshit Trades. Rivals: everyone.",
+      "received": [
+        {
+          "id": "5927",
+          "type": "player",
+          "name": "Terry McLaurin",
+          "position": "WR",
+          "nflTeam": "WAS",
+          "searchRank": 53,
+          "games": 17,
+          "seasonAvg": 14.6,
+          "recentAvg": 14.9,
+          "value": 77.1
+        },
+        {
+          "id": "6786",
+          "type": "player",
+          "name": "CeeDee Lamb",
+          "position": "WR",
+          "nflTeam": "DAL",
+          "searchRank": 8,
+          "games": 17,
+          "seasonAvg": 15.5,
+          "recentAvg": 14.7,
+          "value": 87.6
+        },
+        {
+          "id": "7588",
+          "type": "player",
+          "name": "Javonte Williams",
+          "position": "RB",
+          "nflTeam": "DAL",
+          "searchRank": 32,
+          "games": 17,
+          "seasonAvg": 8.7,
+          "recentAvg": 6.2,
+          "value": 64.9
+        }
+      ],
+      "sent": [
+        {
+          "id": "4988",
+          "type": "player",
+          "name": "Nick Chubb",
+          "position": "RB",
+          "nflTeam": null,
+          "searchRank": 244,
+          "games": 17,
+          "seasonAvg": 3.7,
+          "recentAvg": 0.7,
+          "value": 35.7
+        },
+        {
+          "id": "6819",
+          "type": "player",
+          "name": "Michael Pittman",
+          "position": "WR",
+          "nflTeam": "PIT",
+          "searchRank": 102,
+          "games": 17,
+          "seasonAvg": 9,
+          "recentAvg": 13.2,
+          "value": 63.7
+        },
+        {
+          "id": "8150",
+          "type": "player",
+          "name": "Kyren Williams",
+          "position": "RB",
+          "nflTeam": "LAR",
+          "searchRank": 13,
+          "games": 17,
+          "seasonAvg": 16,
+          "recentAvg": 16.4,
+          "value": 86.9
+        },
+        {
+          "id": "11631",
+          "type": "player",
+          "name": "Brian Thomas",
+          "position": "WR",
+          "nflTeam": "JAX",
+          "searchRank": 72,
+          "games": 17,
+          "seasonAvg": 15.7,
+          "recentAvg": 28.2,
+          "value": 89
+        }
+      ],
+      "context": {
+        "record": "9-5",
+        "pointsFor": 1661.74,
+        "positionCounts": {
+          "TE": 2,
+          "K": 1,
+          "RB": 6,
+          "WR": 4,
+          "QB": 2,
+          "DEF": 1
+        },
+        "topPlayers": [
+          {
+            "name": "Bijan Robinson",
+            "position": "RB",
+            "value": 96.8
+          },
+          {
+            "name": "CeeDee Lamb",
+            "position": "WR",
+            "value": 87.6
+          },
+          {
+            "name": "Baker Mayfield",
+            "position": "QB",
+            "value": 84.9
+          },
+          {
+            "name": "Alvin Kamara",
+            "position": "RB",
+            "value": 67.5
+          },
+          {
+            "name": "Marvin Harrison",
+            "position": "WR",
+            "value": 66.9
+          }
+        ]
+      },
+      "packageValue": 182.3,
+      "scores": {
+        "overall": 80.9,
+        "value": 80.6,
+        "rosterFit": 84.7,
+        "lineupImpact": 78.7
+      },
+      "grade": "B-",
+      "analysis": "Parker’s My BallDak hurts turns four players into a concentrated three-player return: CeeDee Lamb, Terry McLaurin and Javonte Williams. Lamb is the package’s premium piece, carrying an 87.6 value and search rank 8, while McLaurin contributes a 14.6 season average and 14.9 recent average. Javonte’s 64.9 value adds running-back depth, though his 8.7 season average and 6.2 recent average are less imposing. Parker’s 84.7 roster-fit score leads the deal, matching a roster with Bijan Robinson, Alvin Kamara and four listed wide receivers. The value score is lower than Kane’s, but this is a cleaner consolidation for the 9-5 team.",
+      "bestReason": "Parker secures CeeDee Lamb, the highest-ranked player in the trade, while posting the deal’s best roster-fit score at 84.7.",
+      "biggestRisk": "Parker gives up Kyren Williams and Brian Thomas, whose supplied recent averages are stronger than the incoming Javonte Williams figure."
+    }
+  ]
+}

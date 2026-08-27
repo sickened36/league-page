@@ -1,0 +1,256 @@
+{
+  "id": "1148055251166212096",
+  "leagueId": "1124840953127903232",
+  "leagueName": "Fantasy Foosball Year 6",
+  "season": 2024,
+  "week": 5,
+  "occurredAt": 1728080222374,
+  "generatedAt": "2026-08-27T11:59:12.371Z",
+  "model": "gpt-5.6-luna",
+  "methodology": "MVP: Sleeper player search rank + actual league production (when available) + roster fit + starting-lineup impact.",
+  "headline": "Bijan Blockbuster Gives Parker the Edge, but CJ Gets the Deeper Haul",
+  "verdict": "Parker is the current winner, with CJ’s depth keeping this from becoming a runaway.",
+  "summary": "This is a classic star-for-depth swap, and the supplied grades lean Parker: 80.4 overall versus CJ’s 83.2, but Parker’s roster-fit score is stronger at 84 while CJ owns the lineup-impact edge at 84. Parker acquires Bijan Robinson, the package’s clear centerpiece, plus Cooper Kupp, while sending Terry McLaurin, J.K. Dobbins, and Javonte Williams. Bijan’s 18.3 season average and 21.2 recent average provide the biggest production signal in the deal. CJ counters with three players whose combined package value is higher, led by McLaurin’s 14.9 recent average. Parker consolidates talent; CJ spreads it around. The league’s Public Enemy has made a trade that, at least on paper, is not dogshit.",
+  "sides": [
+    {
+      "rosterId": 5,
+      "manager": "Parker",
+      "teamName": "My BallDak hurts",
+      "lore": "2019 inaugural champion. League Public Enemy. Nickname: King of Dogshit Trades. Rivals: everyone.",
+      "received": [
+        {
+          "id": "4039",
+          "type": "player",
+          "name": "Cooper Kupp",
+          "position": "WR",
+          "nflTeam": "SEA",
+          "searchRank": 205,
+          "games": 17,
+          "seasonAvg": 10.3,
+          "recentAvg": 3.1,
+          "value": 47.2
+        },
+        {
+          "id": "9509",
+          "type": "player",
+          "name": "Bijan Robinson",
+          "position": "RB",
+          "nflTeam": "ATL",
+          "searchRank": 1,
+          "games": 17,
+          "seasonAvg": 18.3,
+          "recentAvg": 21.2,
+          "value": 96.8
+        }
+      ],
+      "sent": [
+        {
+          "id": "5927",
+          "type": "player",
+          "name": "Terry McLaurin",
+          "position": "WR",
+          "nflTeam": "WAS",
+          "searchRank": 53,
+          "games": 17,
+          "seasonAvg": 14.6,
+          "recentAvg": 14.9,
+          "value": 77.1
+        },
+        {
+          "id": "6806",
+          "type": "player",
+          "name": "J.K. Dobbins",
+          "position": "RB",
+          "nflTeam": "DEN",
+          "searchRank": 68,
+          "games": 17,
+          "seasonAvg": 10.7,
+          "recentAvg": 5.1,
+          "value": 63.7
+        },
+        {
+          "id": "7588",
+          "type": "player",
+          "name": "Javonte Williams",
+          "position": "RB",
+          "nflTeam": "DAL",
+          "searchRank": 32,
+          "games": 17,
+          "seasonAvg": 8.7,
+          "recentAvg": 6.2,
+          "value": 64.9
+        }
+      ],
+      "context": {
+        "record": "9-5",
+        "pointsFor": 1661.74,
+        "positionCounts": {
+          "TE": 2,
+          "K": 1,
+          "RB": 6,
+          "WR": 4,
+          "QB": 2,
+          "DEF": 1
+        },
+        "topPlayers": [
+          {
+            "name": "Bijan Robinson",
+            "position": "RB",
+            "value": 96.8
+          },
+          {
+            "name": "CeeDee Lamb",
+            "position": "WR",
+            "value": 87.6
+          },
+          {
+            "name": "Baker Mayfield",
+            "position": "QB",
+            "value": 84.9
+          },
+          {
+            "name": "Alvin Kamara",
+            "position": "RB",
+            "value": 67.5
+          },
+          {
+            "name": "Marvin Harrison",
+            "position": "WR",
+            "value": 66.9
+          }
+        ]
+      },
+      "packageValue": 131.7,
+      "scores": {
+        "overall": 80.4,
+        "value": 79.7,
+        "rosterFit": 84,
+        "lineupImpact": 80
+      },
+      "grade": "B-",
+      "analysis": "Parker’s B- grade is built around acquiring the trade’s premier asset: Bijan Robinson carries a 96.8 value, a No. 1 search rank, an 18.3 season average, and a 21.2 recent average. That is a substantial centerpiece for a 9-5 roster already featuring CeeDee Lamb, Baker Mayfield, Alvin Kamara, and Marvin Harrison. Cooper Kupp adds a second wide receiver, though his 47.2 value, 10.3 season average, and 3.1 recent average make him the swing piece rather than the foundation. Parker gives up three players and some depth, but the 84 roster-fit score says the consolidation works. King of Dogshit Trades, meet King of Buying the Best Player.",
+      "bestReason": "Bijan is the deal’s strongest asset and brings elite recent production to a 9-5 roster.",
+      "biggestRisk": "Parker gives up McLaurin plus two running backs, while Kupp’s 3.1 recent average adds meaningful uncertainty."
+    },
+    {
+      "rosterId": 11,
+      "manager": "CJ",
+      "teamName": "cjbroadway23",
+      "lore": "Rivals: Payton, Andy, Alex.",
+      "received": [
+        {
+          "id": "5927",
+          "type": "player",
+          "name": "Terry McLaurin",
+          "position": "WR",
+          "nflTeam": "WAS",
+          "searchRank": 53,
+          "games": 17,
+          "seasonAvg": 14.6,
+          "recentAvg": 14.9,
+          "value": 77.1
+        },
+        {
+          "id": "6806",
+          "type": "player",
+          "name": "J.K. Dobbins",
+          "position": "RB",
+          "nflTeam": "DEN",
+          "searchRank": 68,
+          "games": 17,
+          "seasonAvg": 10.7,
+          "recentAvg": 5.1,
+          "value": 63.7
+        },
+        {
+          "id": "7588",
+          "type": "player",
+          "name": "Javonte Williams",
+          "position": "RB",
+          "nflTeam": "DAL",
+          "searchRank": 32,
+          "games": 17,
+          "seasonAvg": 8.7,
+          "recentAvg": 6.2,
+          "value": 64.9
+        }
+      ],
+      "sent": [
+        {
+          "id": "4039",
+          "type": "player",
+          "name": "Cooper Kupp",
+          "position": "WR",
+          "nflTeam": "SEA",
+          "searchRank": 205,
+          "games": 17,
+          "seasonAvg": 10.3,
+          "recentAvg": 3.1,
+          "value": 47.2
+        },
+        {
+          "id": "9509",
+          "type": "player",
+          "name": "Bijan Robinson",
+          "position": "RB",
+          "nflTeam": "ATL",
+          "searchRank": 1,
+          "games": 17,
+          "seasonAvg": 18.3,
+          "recentAvg": 21.2,
+          "value": 96.8
+        }
+      ],
+      "context": {
+        "record": "3-11",
+        "pointsFor": 1475.04,
+        "positionCounts": {
+          "WR": 7,
+          "K": 1,
+          "RB": 5,
+          "QB": 2,
+          "TE": 1,
+          "DEF": 1
+        },
+        "topPlayers": [
+          {
+            "name": "Ladd McConkey",
+            "position": "WR",
+            "value": 82.6
+          },
+          {
+            "name": "Terry McLaurin",
+            "position": "WR",
+            "value": 77.1
+          },
+          {
+            "name": "Jalen Hurts",
+            "position": "QB",
+            "value": 75.8
+          },
+          {
+            "name": "Tyjae Spears",
+            "position": "RB",
+            "value": 65
+          },
+          {
+            "name": "J.K. Dobbins",
+            "position": "RB",
+            "value": 63.7
+          }
+        ]
+      },
+      "packageValue": 162.1,
+      "scores": {
+        "overall": 83.2,
+        "value": 84.3,
+        "rosterFit": 77,
+        "lineupImpact": 84
+      },
+      "grade": "B",
+      "analysis": "CJ earns a B by turning one elite running back and a lower-valued receiver into three usable pieces. Terry McLaurin leads the return with a 77.1 value, a 14.6 season average, and a 14.9 recent average, while J.K. Dobbins and Javonte Williams add running-back depth at 63.7 and 64.9 in value. The package value is 162.1, higher than Parker’s 131.7, and CJ’s 84 lineup-impact score reflects the appeal of adding multiple players. Still, a 3-11 record and a roster with seven wide receivers make the 77 roster-fit score understandable. CJ gets volume; Parker gets the headline.",
+      "bestReason": "Three incoming players provide greater package value and stronger immediate lineup-impact potential.",
+      "biggestRisk": "CJ parts with Bijan and adds another wide receiver to an already wide receiver-heavy roster."
+    }
+  ]
+}

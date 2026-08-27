@@ -1,0 +1,280 @@
+{
+  "id": "1149479666831486976",
+  "leagueId": "1124840953127903232",
+  "leagueName": "Fantasy Foosball Year 6",
+  "season": 2024,
+  "week": 5,
+  "occurredAt": 1728419855760,
+  "generatedAt": "2026-08-27T11:59:40.794Z",
+  "model": "gpt-5.6-luna",
+  "methodology": "MVP: Sleeper player search rank + actual league production (when available) + roster fit + starting-lineup impact.",
+  "headline": "Blueballs Adds the Biggest Bat in a Three-for-Three Swap",
+  "verdict": "Blueballs is the current winner, with the stronger B grade and a clear edge in overall trade value.",
+  "summary": "This is a quantity-for-quality exchange, and the scoreboard leans Kane’s way. Blueballs turns Mooney, Etienne, and Bigsby into Deebo Samuel, Breece Hall, and Chase Brown, moving from a 132.1 package to a 176.2 package on the supplied heuristic values. Chase Brown’s 15-point season average and 17.8 recent average headline the deal, while Hall brings a 13.1 season average and a search rank of 27. Cooper’s C+ grade is rescued by strong roster fit, especially with only five wide receivers, but the lineup-impact score remains modest at 68. Kane’s 8-6 Blueballs gets the better value swing, though both teams share that record and neither side is guaranteed anything.",
+  "sides": [
+    {
+      "rosterId": 3,
+      "manager": "Kane",
+      "teamName": "Blueballs",
+      "lore": "Rivals: Kohlt and Kade.",
+      "received": [
+        {
+          "id": "5872",
+          "type": "player",
+          "name": "Deebo Samuel",
+          "position": "WR",
+          "nflTeam": "SF",
+          "searchRank": 132,
+          "games": 17,
+          "seasonAvg": 9,
+          "recentAvg": 13,
+          "value": 58.6
+        },
+        {
+          "id": "8155",
+          "type": "player",
+          "name": "Breece Hall",
+          "position": "RB",
+          "nflTeam": "NYJ",
+          "searchRank": 27,
+          "games": 17,
+          "seasonAvg": 13.1,
+          "recentAvg": 11.1,
+          "value": 75.2
+        },
+        {
+          "id": "9224",
+          "type": "player",
+          "name": "Chase Brown",
+          "position": "RB",
+          "nflTeam": "CIN",
+          "searchRank": 16,
+          "games": 17,
+          "seasonAvg": 15,
+          "recentAvg": 17.8,
+          "value": 86.6
+        }
+      ],
+      "sent": [
+        {
+          "id": "7090",
+          "type": "player",
+          "name": "Darnell Mooney",
+          "position": "WR",
+          "nflTeam": "NYG",
+          "searchRank": 194,
+          "games": 15,
+          "seasonAvg": 11.5,
+          "recentAvg": 6.3,
+          "value": 51.5
+        },
+        {
+          "id": "7543",
+          "type": "player",
+          "name": "Travis Etienne",
+          "position": "RB",
+          "nflTeam": "NO",
+          "searchRank": 34,
+          "games": 17,
+          "seasonAvg": 7.1,
+          "recentAvg": 8.9,
+          "value": 64.7
+        },
+        {
+          "id": "9225",
+          "type": "player",
+          "name": "Tank Bigsby",
+          "position": "RB",
+          "nflTeam": "PHI",
+          "searchRank": 147,
+          "games": 12,
+          "seasonAvg": 7.3,
+          "recentAvg": 5.9,
+          "value": 50.5
+        }
+      ],
+      "context": {
+        "record": "8-6",
+        "pointsFor": 1694.98,
+        "positionCounts": {
+          "WR": 8,
+          "QB": 1,
+          "RB": 4,
+          "K": 1,
+          "TE": 1,
+          "DEF": 1
+        },
+        "topPlayers": [
+          {
+            "name": "Lamar Jackson",
+            "position": "QB",
+            "value": 98.4
+          },
+          {
+            "name": "Brian Thomas",
+            "position": "WR",
+            "value": 89
+          },
+          {
+            "name": "Kyren Williams",
+            "position": "RB",
+            "value": 86.9
+          },
+          {
+            "name": "Mike Evans",
+            "position": "WR",
+            "value": 83.8
+          },
+          {
+            "name": "Cameron Dicker",
+            "position": "K",
+            "value": 79.9
+          }
+        ]
+      },
+      "packageValue": 176.2,
+      "scores": {
+        "overall": 83.4,
+        "value": 85.1,
+        "rosterFit": 83,
+        "lineupImpact": 76
+      },
+      "grade": "B",
+      "analysis": "Kane’s Blueballs gets the deal’s strongest package, led by Chase Brown’s 86.6 value, search rank of 16, 15-point season average, and 17.8 recent average. Breece Hall adds a 75.2 value, 27 search rank, and 13.1 season average, while Deebo Samuel offers a 13 recent average after a 9 season average. The return totals 176.2 on the supplied heuristic scale, well above what Blueballs sends out. The fit is solid rather than perfect: Kane already has Kyren Williams, Brian Thomas, and Mike Evans among his top players. Still, an 83.4 overall score and B grade make this a substantial upgrade.",
+      "bestReason": "Chase Brown supplies the clearest production and market-value edge, with Hall adding another high-value running back.",
+      "biggestRisk": "The 76 lineup-impact score shows that the large paper-value gain may not translate into an equally large starting-lineup boost."
+    },
+    {
+      "rosterId": 8,
+      "manager": "Cooper",
+      "teamName": "Jack MeHoff",
+      "lore": "2022 champion. Rival: Kade.",
+      "received": [
+        {
+          "id": "7090",
+          "type": "player",
+          "name": "Darnell Mooney",
+          "position": "WR",
+          "nflTeam": "NYG",
+          "searchRank": 194,
+          "games": 15,
+          "seasonAvg": 11.5,
+          "recentAvg": 6.3,
+          "value": 51.5
+        },
+        {
+          "id": "7543",
+          "type": "player",
+          "name": "Travis Etienne",
+          "position": "RB",
+          "nflTeam": "NO",
+          "searchRank": 34,
+          "games": 17,
+          "seasonAvg": 7.1,
+          "recentAvg": 8.9,
+          "value": 64.7
+        },
+        {
+          "id": "9225",
+          "type": "player",
+          "name": "Tank Bigsby",
+          "position": "RB",
+          "nflTeam": "PHI",
+          "searchRank": 147,
+          "games": 12,
+          "seasonAvg": 7.3,
+          "recentAvg": 5.9,
+          "value": 50.5
+        }
+      ],
+      "sent": [
+        {
+          "id": "5872",
+          "type": "player",
+          "name": "Deebo Samuel",
+          "position": "WR",
+          "nflTeam": "SF",
+          "searchRank": 132,
+          "games": 17,
+          "seasonAvg": 9,
+          "recentAvg": 13,
+          "value": 58.6
+        },
+        {
+          "id": "8155",
+          "type": "player",
+          "name": "Breece Hall",
+          "position": "RB",
+          "nflTeam": "NYJ",
+          "searchRank": 27,
+          "games": 17,
+          "seasonAvg": 13.1,
+          "recentAvg": 11.1,
+          "value": 75.2
+        },
+        {
+          "id": "9224",
+          "type": "player",
+          "name": "Chase Brown",
+          "position": "RB",
+          "nflTeam": "CIN",
+          "searchRank": 16,
+          "games": 17,
+          "seasonAvg": 15,
+          "recentAvg": 17.8,
+          "value": 86.6
+        }
+      ],
+      "context": {
+        "record": "8-6",
+        "pointsFor": 1553.08,
+        "positionCounts": {
+          "WR": 5,
+          "K": 1,
+          "QB": 2,
+          "TE": 2,
+          "RB": 4,
+          "DEF": 1
+        },
+        "topPlayers": [
+          {
+            "name": "Brandon Aubrey",
+            "position": "K",
+            "value": 80.5
+          },
+          {
+            "name": "DJ Moore",
+            "position": "WR",
+            "value": 73.4
+          },
+          {
+            "name": "Aaron Jones",
+            "position": "RB",
+            "value": 71.1
+          },
+          {
+            "name": "Kyler Murray",
+            "position": "QB",
+            "value": 68.4
+          },
+          {
+            "name": "Zach Charbonnet",
+            "position": "RB",
+            "value": 68.2
+          }
+        ]
+      },
+      "packageValue": 132.1,
+      "scores": {
+        "overall": 78.6,
+        "value": 78.9,
+        "rosterFit": 87.7,
+        "lineupImpact": 68
+      },
+      "grade": "C+",
+      "analysis": "Cooper’s Jack MeHoff receives three players for three players, but the package is lighter on the supplied heuristic values at 132.1. Travis Etienne brings the best incoming value at 64.7, with a 7.1 season average and 8.9 recent average. Darnell Mooney adds a 51.5 value and 11.5 season average, while Tank Bigsby checks in at 50.5 value, 7.3 season average, and 5.9 recent average. The roster-fit score of 87.7 is the bright spot: Cooper has five wide receivers and four running backs, so the incoming mix addresses roster construction. The C+ grade reflects that fit, but the 68 lineup-impact score keeps the ceiling restrained.",
+      "bestReason": "The deal fits Cooper’s roster better than the raw values suggest, particularly by adding a wide receiver to a five-WR room.",
+      "biggestRisk": "Cooper gives up Deebo, Hall, and Brown’s 176.2 package value for a 132.1 return, leaving a sizable talent gap to overcome."
+    }
+  ]
+}

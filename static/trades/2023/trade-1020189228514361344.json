@@ -1,0 +1,232 @@
+{
+  "id": "1020189228514361344",
+  "leagueId": "981027810078756864",
+  "leagueName": "Fantasy Foosball Year 5",
+  "season": 2023,
+  "week": 6,
+  "occurredAt": 1697666381341,
+  "generatedAt": "2026-08-27T11:58:53.294Z",
+  "model": "gpt-5.6-luna",
+  "methodology": "MVP: Sleeper player search rank + actual league production (when available) + roster fit + starting-lineup impact.",
+  "headline": "Andy Wins the Henry-Jefferson Star Swap",
+  "verdict": "Andy is the current winner, with the stronger overall grade, package value, roster fit, and lineup-impact score.",
+  "summary": "This is a two-star exchange with a clear statistical edge for Andy. He sends Justin Jefferson, whose recent average of 17.5 is the best current production mark in the deal, but receives Derrick Henry, the package’s highest-value asset at 80.8, plus Tyler Lockett. Andy’s 85.2 overall score, 123.1 package value, and 93.5 roster-fit mark all lead Parker’s corresponding 78.4, 101.5, and 86. Parker gets the premier recent-production profile in Jefferson and adds Kadarius Toney, but the lineup-impact score is only 64. The grades say Andy gains the sturdier package; Parker gets the louder headline piece.",
+  "sides": [
+    {
+      "rosterId": 2,
+      "manager": "Andy",
+      "teamName": "Long dong silvers",
+      "lore": "Rivals: Alex, CJ, Payton.",
+      "received": [
+        {
+          "id": "2374",
+          "type": "player",
+          "name": "Tyler Lockett",
+          "position": "WR",
+          "nflTeam": null,
+          "searchRank": 131,
+          "games": 17,
+          "seasonAvg": 10.9,
+          "recentAvg": 7.7,
+          "value": 57.2
+        },
+        {
+          "id": "3198",
+          "type": "player",
+          "name": "Derrick Henry",
+          "position": "RB",
+          "nflTeam": "BAL",
+          "searchRank": 7,
+          "games": 17,
+          "seasonAvg": 13.3,
+          "recentAvg": 10.2,
+          "value": 80.8
+        }
+      ],
+      "sent": [
+        {
+          "id": "6794",
+          "type": "player",
+          "name": "Justin Jefferson",
+          "position": "WR",
+          "nflTeam": "MIN",
+          "searchRank": 11,
+          "games": 17,
+          "seasonAvg": 9.8,
+          "recentAvg": 17.5,
+          "value": 78.7
+        },
+        {
+          "id": "7606",
+          "type": "player",
+          "name": "Kadarius Toney",
+          "position": "WR",
+          "nflTeam": null,
+          "searchRank": 296,
+          "games": 10,
+          "seasonAvg": 3.8,
+          "recentAvg": 1.3,
+          "value": 30.8
+        }
+      ],
+      "context": {
+        "record": "6-8",
+        "pointsFor": 1573.66,
+        "positionCounts": {
+          "K": 2,
+          "WR": 4,
+          "RB": 4,
+          "TE": 2,
+          "QB": 1,
+          "DEF": 1
+        },
+        "topPlayers": [
+          {
+            "name": "Derrick Henry",
+            "position": "RB",
+            "value": 80.8
+          },
+          {
+            "name": "Baker Mayfield",
+            "position": "QB",
+            "value": 75.7
+          },
+          {
+            "name": "De'Von Achane",
+            "position": "RB",
+            "value": 75.2
+          },
+          {
+            "name": "Jonathan Taylor",
+            "position": "RB",
+            "value": 71.7
+          },
+          {
+            "name": "Justin Tucker",
+            "position": "K",
+            "value": 66.9
+          }
+        ]
+      },
+      "packageValue": 123.1,
+      "scores": {
+        "overall": 85.2,
+        "value": 84.1,
+        "rosterFit": 93.5,
+        "lineupImpact": 82
+      },
+      "grade": "B",
+      "analysis": "Andy earns a B because his return combines the deal’s highest individual value in Derrick Henry (80.8, search rank 7) with Tyler Lockett (57.2). Henry’s 13.3 season average and Lockett’s 10.9 give this side two established production profiles, even though both recent averages are lower than their season marks. The fit is the big story: Andy’s roster already lists four RBs and four WRs, while Henry is also shown among his top players. That helps explain the exceptional 93.5 roster-fit score and 82 lineup-impact mark. The risk is surrendering Jefferson’s 17.5 recent average and 78.7 value.",
+      "bestReason": "Andy’s 123.1 package value and 93.5 roster-fit score are the strongest supplied marks in the trade.",
+      "biggestRisk": "Jefferson’s 17.5 recent average is comfortably higher than Henry’s 10.2 and Lockett’s 7.7."
+    },
+    {
+      "rosterId": 5,
+      "manager": "Parker",
+      "teamName": "JankMyKowski TilliSemien",
+      "lore": "2019 inaugural champion. League Public Enemy. Nickname: King of Dogshit Trades. Rivals: everyone.",
+      "received": [
+        {
+          "id": "6794",
+          "type": "player",
+          "name": "Justin Jefferson",
+          "position": "WR",
+          "nflTeam": "MIN",
+          "searchRank": 11,
+          "games": 17,
+          "seasonAvg": 9.8,
+          "recentAvg": 17.5,
+          "value": 78.7
+        },
+        {
+          "id": "7606",
+          "type": "player",
+          "name": "Kadarius Toney",
+          "position": "WR",
+          "nflTeam": null,
+          "searchRank": 296,
+          "games": 10,
+          "seasonAvg": 3.8,
+          "recentAvg": 1.3,
+          "value": 30.8
+        }
+      ],
+      "sent": [
+        {
+          "id": "2374",
+          "type": "player",
+          "name": "Tyler Lockett",
+          "position": "WR",
+          "nflTeam": null,
+          "searchRank": 131,
+          "games": 17,
+          "seasonAvg": 10.9,
+          "recentAvg": 7.7,
+          "value": 57.2
+        },
+        {
+          "id": "3198",
+          "type": "player",
+          "name": "Derrick Henry",
+          "position": "RB",
+          "nflTeam": "BAL",
+          "searchRank": 7,
+          "games": 17,
+          "seasonAvg": 13.3,
+          "recentAvg": 10.2,
+          "value": 80.8
+        }
+      ],
+      "context": {
+        "record": "7-7",
+        "pointsFor": 1736.7,
+        "positionCounts": {
+          "K": 1,
+          "RB": 5,
+          "QB": 2,
+          "TE": 2,
+          "WR": 5,
+          "DEF": 1
+        },
+        "topPlayers": [
+          {
+            "name": "CeeDee Lamb",
+            "position": "WR",
+            "value": 98.4
+          },
+          {
+            "name": "Lamar Jackson",
+            "position": "QB",
+            "value": 92.3
+          },
+          {
+            "name": "Travis Etienne",
+            "position": "RB",
+            "value": 81.4
+          },
+          {
+            "name": "Justin Jefferson",
+            "position": "WR",
+            "value": 78.7
+          },
+          {
+            "name": "Brock Purdy",
+            "position": "QB",
+            "value": 77.1
+          }
+        ]
+      },
+      "packageValue": 101.5,
+      "scores": {
+        "overall": 78.4,
+        "value": 79.9,
+        "rosterFit": 86,
+        "lineupImpact": 64
+      },
+      "grade": "C+",
+      "analysis": "Parker receives the deal’s best recent producer in Justin Jefferson, whose 17.5 recent average tops every player listed here, along with Kadarius Toney. Jefferson also carries a strong 78.7 value and search rank 11, while Toney’s 30.8 value provides a second piece despite a 3.8 season average and 1.3 recent average. Parker’s roster has five WRs and five RBs, and Jefferson joins a top group already featuring CeeDee Lamb, so the return adds another premium wide receiver to a deep roster. Still, Parker sends Henry’s 80.8 value and posts lower overall, fit, and lineup-impact scores. The Public Enemy’s trade ledger takes another swing.",
+      "bestReason": "Parker acquires Jefferson, whose 17.5 recent average and search rank 11 make him the deal’s premier recent-production asset.",
+      "biggestRisk": "The return’s 101.5 package value trails Andy’s 123.1, while Toney’s 1.3 recent average limits the second piece’s production case."
+    }
+  ]
+}

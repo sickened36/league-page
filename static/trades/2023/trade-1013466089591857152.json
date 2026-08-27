@@ -1,0 +1,256 @@
+{
+  "id": "1013466089591857152",
+  "leagueId": "981027810078756864",
+  "leagueName": "Fantasy Foosball Year 5",
+  "season": 2023,
+  "week": 4,
+  "occurredAt": 1695992273921,
+  "generatedAt": "2026-08-27T11:58:45.199Z",
+  "model": "gpt-5.6-luna",
+  "methodology": "MVP: Sleeper player search rank + actual league production (when available) + roster fit + starting-lineup impact.",
+  "headline": "Gibbs Headliner Gives Blueballs a Needed Spark",
+  "verdict": "Cooper gets the stronger package-value grade, but Kane lands the deal’s biggest centerpiece in Jahmyr Gibbs.",
+  "summary": "This is a classic quantity-versus-quality swap, with both sides receiving a defensible roster fit but different kinds of value. Kane’s Blueballs sends three players totaling a 141.2 package value and gets back two totaling 120.8, yet the return includes Jahmyr Gibbs, whose 87.6 value, No. 1 search rank, and 18 recent average make him the deal’s premier individual asset. Cooper’s Jack MeHoff receives more aggregate value, including DJ Moore’s 16.2 season average and Jerome Ford’s 14.2 recent average, while already carrying a 9-5 record. The grades reflect that split: Cooper earns B- and stronger value marks, while Kane gets C+ but better lineup-impact potential from the headliner.",
+  "sides": [
+    {
+      "rosterId": 3,
+      "manager": "Kane",
+      "teamName": "Blueballs",
+      "lore": "Rivals: Kohlt and Kade.",
+      "received": [
+        {
+          "id": "4171",
+          "type": "player",
+          "name": "Josh Reynolds",
+          "position": "WR",
+          "nflTeam": null,
+          "searchRank": 394,
+          "games": 3,
+          "seasonAvg": 9.2,
+          "recentAvg": 9.2,
+          "value": 44.9
+        },
+        {
+          "id": "9221",
+          "type": "player",
+          "name": "Jahmyr Gibbs",
+          "position": "RB",
+          "nflTeam": "DET",
+          "searchRank": 1,
+          "games": 17,
+          "seasonAvg": 13.7,
+          "recentAvg": 18,
+          "value": 87.6
+        }
+      ],
+      "sent": [
+        {
+          "id": "4098",
+          "type": "player",
+          "name": "Kareem Hunt",
+          "position": "RB",
+          "nflTeam": null,
+          "searchRank": 242,
+          "games": 14,
+          "seasonAvg": 7.2,
+          "recentAvg": 7.2,
+          "value": 45.9
+        },
+        {
+          "id": "4983",
+          "type": "player",
+          "name": "DJ Moore",
+          "position": "WR",
+          "nflTeam": "BUF",
+          "searchRank": 56,
+          "games": 17,
+          "seasonAvg": 16.2,
+          "recentAvg": 15,
+          "value": 79.5
+        },
+        {
+          "id": "8143",
+          "type": "player",
+          "name": "Jerome Ford",
+          "position": "RB",
+          "nflTeam": "WAS",
+          "searchRank": 637,
+          "games": 15,
+          "seasonAvg": 12,
+          "recentAvg": 14.2,
+          "value": 47.4
+        }
+      ],
+      "context": {
+        "record": "5-9",
+        "pointsFor": 1556.04,
+        "positionCounts": {
+          "WR": 6,
+          "K": 1,
+          "QB": 1,
+          "RB": 4,
+          "TE": 2,
+          "DEF": 1
+        },
+        "topPlayers": [
+          {
+            "name": "Jahmyr Gibbs",
+            "position": "RB",
+            "value": 87.6
+          },
+          {
+            "name": "James Cook",
+            "position": "RB",
+            "value": 84.9
+          },
+          {
+            "name": "Ja'Marr Chase",
+            "position": "WR",
+            "value": 80
+          },
+          {
+            "name": "Rashee Rice",
+            "position": "WR",
+            "value": 79.7
+          },
+          {
+            "name": "Isaiah Likely",
+            "position": "TE",
+            "value": 76.8
+          }
+        ]
+      },
+      "packageValue": 120.8,
+      "scores": {
+        "overall": 79.8,
+        "value": 80.3,
+        "rosterFit": 81.5,
+        "lineupImpact": 76
+      },
+      "grade": "C+",
+      "analysis": "Kane’s Blueballs turns Kareem Hunt, DJ Moore, and Jerome Ford into Josh Reynolds and Jahmyr Gibbs. On supplied package scores, that is a smaller total return—120.8 versus 141.2—but Gibbs is the deal’s clear centerpiece: an 87.6 value, No. 1 search rank, 13.7 season average, and 18 recent average. That profile gives Kane a high-end RB addition alongside James Cook, while Reynolds supplies a WR piece with a 9.2 season and recent average. The risk is concentration: Blueballs gives up three players and DJ Moore’s 16.2 season average for one premium asset and a lower-valued receiver. Still, the 81.5 roster-fit mark says the headline upgrade fits.",
+      "bestReason": "Jahmyr Gibbs is the trade’s highest-value individual player and carries the strongest recent production listed.",
+      "biggestRisk": "Blueballs surrenders three players, including DJ Moore and Jerome Ford, for a lower-total package with more dependence on Gibbs."
+    },
+    {
+      "rosterId": 8,
+      "manager": "Cooper",
+      "teamName": "Jack MeHoff",
+      "lore": "2022 champion. Rival: Kade.",
+      "received": [
+        {
+          "id": "4098",
+          "type": "player",
+          "name": "Kareem Hunt",
+          "position": "RB",
+          "nflTeam": null,
+          "searchRank": 242,
+          "games": 14,
+          "seasonAvg": 7.2,
+          "recentAvg": 7.2,
+          "value": 45.9
+        },
+        {
+          "id": "4983",
+          "type": "player",
+          "name": "DJ Moore",
+          "position": "WR",
+          "nflTeam": "BUF",
+          "searchRank": 56,
+          "games": 17,
+          "seasonAvg": 16.2,
+          "recentAvg": 15,
+          "value": 79.5
+        },
+        {
+          "id": "8143",
+          "type": "player",
+          "name": "Jerome Ford",
+          "position": "RB",
+          "nflTeam": "WAS",
+          "searchRank": 637,
+          "games": 15,
+          "seasonAvg": 12,
+          "recentAvg": 14.2,
+          "value": 47.4
+        }
+      ],
+      "sent": [
+        {
+          "id": "4171",
+          "type": "player",
+          "name": "Josh Reynolds",
+          "position": "WR",
+          "nflTeam": null,
+          "searchRank": 394,
+          "games": 3,
+          "seasonAvg": 9.2,
+          "recentAvg": 9.2,
+          "value": 44.9
+        },
+        {
+          "id": "9221",
+          "type": "player",
+          "name": "Jahmyr Gibbs",
+          "position": "RB",
+          "nflTeam": "DET",
+          "searchRank": 1,
+          "games": 17,
+          "seasonAvg": 13.7,
+          "recentAvg": 18,
+          "value": 87.6
+        }
+      ],
+      "context": {
+        "record": "9-5",
+        "pointsFor": 1634.82,
+        "positionCounts": {
+          "WR": 6,
+          "TE": 2,
+          "QB": 2,
+          "K": 1,
+          "RB": 3,
+          "DEF": 1
+        },
+        "topPlayers": [
+          {
+            "name": "Davante Adams",
+            "position": "WR",
+            "value": 85.3
+          },
+          {
+            "name": "Sam LaPorta",
+            "position": "TE",
+            "value": 84.4
+          },
+          {
+            "name": "Bijan Robinson",
+            "position": "RB",
+            "value": 80.6
+          },
+          {
+            "name": "DJ Moore",
+            "position": "WR",
+            "value": 79.5
+          },
+          {
+            "name": "Jaxon Smith-Njigba",
+            "position": "WR",
+            "value": 75.1
+          }
+        ]
+      },
+      "packageValue": 141.2,
+      "scores": {
+        "overall": 81.2,
+        "value": 83.7,
+        "rosterFit": 83,
+        "lineupImpact": 68
+      },
+      "grade": "B-",
+      "analysis": "Cooper’s Jack MeHoff gets the broader package: Kareem Hunt, DJ Moore, and Jerome Ford, valued at 141.2 combined, for Josh Reynolds and Jahmyr Gibbs at 120.8. The return adds DJ Moore’s 79.5 value and 16.2 season average, plus Ford’s 14.2 recent average and Hunt’s 7.2 season average. That depth aligns with a 9-5 roster carrying three listed running backs and six wide receivers, while the 83.7 value and 83 roster-fit scores support the transaction. The catch is obvious: Cooper parts with Gibbs, whose No. 1 search rank and 18 recent average set the deal’s ceiling. The B- grade is solid, but the champion’s rivals may still circle that headline.",
+      "bestReason": "Cooper receives the larger package value and spreads the return across an RB-WR-RB combination.",
+      "biggestRisk": "Jack MeHoff gives up the trade’s most valuable player and strongest recent average in Gibbs."
+    }
+  ]
+}

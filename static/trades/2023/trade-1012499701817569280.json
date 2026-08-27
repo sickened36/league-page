@@ -1,0 +1,280 @@
+{
+  "id": "1012499701817569280",
+  "leagueId": "981027810078756864",
+  "leagueName": "Fantasy Foosball Year 5",
+  "season": 2023,
+  "week": 3,
+  "occurredAt": 1695773133025,
+  "generatedAt": "2026-08-27T11:58:36.295Z",
+  "model": "gpt-5.6-luna",
+  "methodology": "MVP: Sleeper player search rank + actual league production (when available) + roster fit + starting-lineup impact.",
+  "headline": "Blueballs Adds Cook; Parker Gets the Deeper Package",
+  "verdict": "It is nearly even on paper, but Parker narrowly wins the current fit battle.",
+  "summary": "This is a balanced three-player swap with both managers receiving a package valued around the mid-150s: 157.9 for Kane and 152 for Parker. Blueballs gets James Cook, whose value and search rank lead the entire deal, plus Amari Cooper, whose 24.1 recent average is the trade’s loudest production signal. Parker counters with Travis Etienne, Tyler Lockett, and Tank Dell, gaining a stronger roster-fit score while preserving a high-value running back. The grades match the tension: both sides land at B-. Kane’s 5-9 record and Parker’s 7-7 mark provide context, but the supplied scores make this a close exchange rather than a league-breaking heist—even from the league’s Public Enemy.",
+  "sides": [
+    {
+      "rosterId": 3,
+      "manager": "Kane",
+      "teamName": "Blueballs",
+      "lore": "Rivals: Kohlt and Kade.",
+      "received": [
+        {
+          "id": "2309",
+          "type": "player",
+          "name": "Amari Cooper",
+          "position": "WR",
+          "nflTeam": null,
+          "searchRank": 183,
+          "games": 17,
+          "seasonAvg": 13.4,
+          "recentAvg": 24.1,
+          "value": 68.3
+        },
+        {
+          "id": "7562",
+          "type": "player",
+          "name": "Tutu Atwell",
+          "position": "WR",
+          "nflTeam": "MIA",
+          "searchRank": 691,
+          "games": 7,
+          "seasonAvg": 10,
+          "recentAvg": 7,
+          "value": 38.8
+        },
+        {
+          "id": "8138",
+          "type": "player",
+          "name": "James Cook",
+          "position": "RB",
+          "nflTeam": "BUF",
+          "searchRank": 5,
+          "games": 17,
+          "seasonAvg": 13.2,
+          "recentAvg": 15.5,
+          "value": 84.9
+        }
+      ],
+      "sent": [
+        {
+          "id": "2374",
+          "type": "player",
+          "name": "Tyler Lockett",
+          "position": "WR",
+          "nflTeam": null,
+          "searchRank": 131,
+          "games": 17,
+          "seasonAvg": 10.9,
+          "recentAvg": 7.7,
+          "value": 57.2
+        },
+        {
+          "id": "7543",
+          "type": "player",
+          "name": "Travis Etienne",
+          "position": "RB",
+          "nflTeam": "NO",
+          "searchRank": 34,
+          "games": 17,
+          "seasonAvg": 15.8,
+          "recentAvg": 13.9,
+          "value": 81.4
+        },
+        {
+          "id": "9502",
+          "type": "player",
+          "name": "Tank Dell",
+          "position": "WR",
+          "nflTeam": "HOU",
+          "searchRank": 175,
+          "games": 15,
+          "seasonAvg": 9.2,
+          "recentAvg": 0,
+          "value": 48.7
+        }
+      ],
+      "context": {
+        "record": "5-9",
+        "pointsFor": 1556.04,
+        "positionCounts": {
+          "WR": 6,
+          "K": 1,
+          "QB": 1,
+          "RB": 4,
+          "TE": 2,
+          "DEF": 1
+        },
+        "topPlayers": [
+          {
+            "name": "Jahmyr Gibbs",
+            "position": "RB",
+            "value": 87.6
+          },
+          {
+            "name": "James Cook",
+            "position": "RB",
+            "value": 84.9
+          },
+          {
+            "name": "Ja'Marr Chase",
+            "position": "WR",
+            "value": 80
+          },
+          {
+            "name": "Rashee Rice",
+            "position": "WR",
+            "value": 79.7
+          },
+          {
+            "name": "Isaiah Likely",
+            "position": "TE",
+            "value": 76.8
+          }
+        ]
+      },
+      "packageValue": 157.9,
+      "scores": {
+        "overall": 80.8,
+        "value": 82.4,
+        "rosterFit": 78.3,
+        "lineupImpact": 76
+      },
+      "grade": "B-",
+      "analysis": "Kane’s Blueballs receives the deal’s highest-value individual asset in James Cook, whose 84.9 value, No. 5 search rank, 13.2 season average, and 15.5 recent average give this side a strong centerpiece. Amari Cooper adds a 13.4 season average and a notably higher 24.1 recent average, while Tutu Atwell rounds out the incoming WR group. The fit is more complicated: Blueballs already has six WRs and four RBs, plus Jahmyr Gibbs and Cook among its top players. That concentration limits the lineup-impact score to 76, explaining the B- despite an 82.4 value score.",
+      "bestReason": "James Cook is the trade’s top-valued player and pairs a 15.5 recent average with the league’s No. 5 search rank.",
+      "biggestRisk": "Blueballs already lists Cook and Gibbs among its top players, so the package’s raw value may not translate into maximum lineup impact."
+    },
+    {
+      "rosterId": 5,
+      "manager": "Parker",
+      "teamName": "JankMyKowski TilliSemien",
+      "lore": "2019 inaugural champion. League Public Enemy. Nickname: King of Dogshit Trades. Rivals: everyone.",
+      "received": [
+        {
+          "id": "2374",
+          "type": "player",
+          "name": "Tyler Lockett",
+          "position": "WR",
+          "nflTeam": null,
+          "searchRank": 131,
+          "games": 17,
+          "seasonAvg": 10.9,
+          "recentAvg": 7.7,
+          "value": 57.2
+        },
+        {
+          "id": "7543",
+          "type": "player",
+          "name": "Travis Etienne",
+          "position": "RB",
+          "nflTeam": "NO",
+          "searchRank": 34,
+          "games": 17,
+          "seasonAvg": 15.8,
+          "recentAvg": 13.9,
+          "value": 81.4
+        },
+        {
+          "id": "9502",
+          "type": "player",
+          "name": "Tank Dell",
+          "position": "WR",
+          "nflTeam": "HOU",
+          "searchRank": 175,
+          "games": 15,
+          "seasonAvg": 9.2,
+          "recentAvg": 0,
+          "value": 48.7
+        }
+      ],
+      "sent": [
+        {
+          "id": "2309",
+          "type": "player",
+          "name": "Amari Cooper",
+          "position": "WR",
+          "nflTeam": null,
+          "searchRank": 183,
+          "games": 17,
+          "seasonAvg": 13.4,
+          "recentAvg": 24.1,
+          "value": 68.3
+        },
+        {
+          "id": "7562",
+          "type": "player",
+          "name": "Tutu Atwell",
+          "position": "WR",
+          "nflTeam": "MIA",
+          "searchRank": 691,
+          "games": 7,
+          "seasonAvg": 10,
+          "recentAvg": 7,
+          "value": 38.8
+        },
+        {
+          "id": "8138",
+          "type": "player",
+          "name": "James Cook",
+          "position": "RB",
+          "nflTeam": "BUF",
+          "searchRank": 5,
+          "games": 17,
+          "seasonAvg": 13.2,
+          "recentAvg": 15.5,
+          "value": 84.9
+        }
+      ],
+      "context": {
+        "record": "7-7",
+        "pointsFor": 1736.7,
+        "positionCounts": {
+          "K": 1,
+          "RB": 5,
+          "QB": 2,
+          "TE": 2,
+          "WR": 5,
+          "DEF": 1
+        },
+        "topPlayers": [
+          {
+            "name": "CeeDee Lamb",
+            "position": "WR",
+            "value": 98.4
+          },
+          {
+            "name": "Lamar Jackson",
+            "position": "QB",
+            "value": 92.3
+          },
+          {
+            "name": "Travis Etienne",
+            "position": "RB",
+            "value": 81.4
+          },
+          {
+            "name": "Justin Jefferson",
+            "position": "WR",
+            "value": 78.7
+          },
+          {
+            "name": "Brock Purdy",
+            "position": "QB",
+            "value": 77.1
+          }
+        ]
+      },
+      "packageValue": 152,
+      "scores": {
+        "overall": 81,
+        "value": 81.6,
+        "rosterFit": 84.7,
+        "lineupImpact": 74.7
+      },
+      "grade": "B-",
+      "analysis": "Parker’s JankMyKowski TilliSemien gets a broad three-player return: Travis Etienne brings an 81.4 value and 15.8 season average, Tyler Lockett adds 17 games of production, and Tank Dell supplies another WR with a 48.7 value. The roster fit is this side’s clearest edge, reflected in an 84.7 score: Parker has five RBs and five WRs, with Etienne already among the top players. The trade also gives up James Cook’s superior search rank and value, while Lockett’s 7.7 recent average and Dell’s zero recent average create production questions. Still, this package supports the stronger fit grade.",
+      "bestReason": "Etienne remains a high-value RB, and Parker’s 84.7 roster-fit score is the best individual score in the deal.",
+      "biggestRisk": "Parker gives up Cook’s No. 5 search rank and 84.9 value while accepting lower recent averages from Lockett and Dell."
+    }
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "season": 2023,
+  "trades": [
+    {
+      "id": "1020189228514361344",
+      "week": 6,
+      "occurredAt": 1697666381341,
+      "generatedAt": "2026-08-27T11:58:53.294Z",
+      "headline": "Andy Wins the Henry-Jefferson Star Swap",
+      "verdict": "Andy is the current winner, with the stronger overall grade, package value, roster fit, and lineup-impact score.",
+      "participants": [
+        {
+          "rosterId": 2,
+          "manager": "Andy",
+          "teamName": "Long dong silvers",
+          "grade": "B",
+          "score": 85.2
+        },
+        {
+          "rosterId": 5,
+          "manager": "Parker",
+          "teamName": "JankMyKowski TilliSemien",
+          "grade": "C+",
+          "score": 78.4
+        }
+      ]
+    },
+    {
+      "id": "1013466089591857152",
+      "week": 4,
+      "occurredAt": 1695992273921,
+      "generatedAt": "2026-08-27T11:58:45.199Z",
+      "headline": "Gibbs Headliner Gives Blueballs a Needed Spark",
+      "verdict": "Cooper gets the stronger package-value grade, but Kane lands the deal’s biggest centerpiece in Jahmyr Gibbs.",
+      "participants": [
+        {
+          "rosterId": 3,
+          "manager": "Kane",
+          "teamName": "Blueballs",
+          "grade": "C+",
+          "score": 79.8
+        },
+        {
+          "rosterId": 8,
+          "manager": "Cooper",
+          "teamName": "Jack MeHoff",
+          "grade": "B-",
+          "score": 81.2
+        }
+      ]
+    },
+    {
+      "id": "1012499701817569280",
+      "week": 3,
+      "occurredAt": 1695773133025,
+      "generatedAt": "2026-08-27T11:58:36.295Z",
+      "headline": "Blueballs Adds Cook; Parker Gets the Deeper Package",
+      "verdict": "It is nearly even on paper, but Parker narrowly wins the current fit battle.",
+      "participants": [
+        {
+          "rosterId": 3,
+          "manager": "Kane",
+          "teamName": "Blueballs",
+          "grade": "B-",
+          "score": 80.8
+        },
+        {
+          "rosterId": 5,
+          "manager": "Parker",
+          "teamName": "JankMyKowski TilliSemien",
+          "grade": "B-",
+          "score": 81
+        }
+      ]
+    },
+    {
+      "id": "1009687808204247040",
+      "week": 2,
+      "occurredAt": 1695091414757,
+      "generatedAt": "2026-08-27T11:58:27.717Z",
+      "headline": "Thielen Brings the Better Haul in a Quarterback-for-Receiver Swap",
+      "verdict": "Brae is the current winner, with the B grade and stronger value score making the difference.",
+      "participants": [
+        {
+          "rosterId": 1,
+          "manager": "Payton",
+          "teamName": "Kupp My Balls",
+          "grade": "C",
+          "score": 76.4
+        },
+        {
+          "rosterId": 9,
+          "manager": "Brae",
+          "teamName": "Ass",
+          "grade": "B",
+          "score": 83.1
+        }
+      ]
+    },
+    {
+      "id": "1009684847000465408",
+      "week": 2,
+      "occurredAt": 1695090152809,
+      "generatedAt": "2026-08-27T11:58:17.981Z",
+      "headline": "Pittman-Robinson Swap Gives Parker the Edge",
+      "verdict": "Parker is the current winner, with the stronger B- grade and slightly better overall, value, and package scores.",
+      "participants": [
+        {
+          "rosterId": 2,
+          "manager": "Andy",
+          "teamName": "Long dong silvers",
+          "grade": "C+",
+          "score": 79.5
+        },
+        {
+          "rosterId": 5,
+          "manager": "Parker",
+          "teamName": "JankMyKowski TilliSemien",
+          "grade": "B-",
+          "score": 80.3
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,184 @@
+{
+  "id": "1009687808204247040",
+  "leagueId": "981027810078756864",
+  "leagueName": "Fantasy Foosball Year 5",
+  "season": 2023,
+  "week": 2,
+  "occurredAt": 1695091414757,
+  "generatedAt": "2026-08-27T11:58:27.717Z",
+  "model": "gpt-5.6-luna",
+  "methodology": "MVP: Sleeper player search rank + actual league production (when available) + roster fit + starting-lineup impact.",
+  "headline": "Thielen Brings the Better Haul in a Quarterback-for-Receiver Swap",
+  "verdict": "Brae is the current winner, with the B grade and stronger value score making the difference.",
+  "summary": "Brae sends Anthony Richardson, valued at 40, and receives Adam Thielen, valued at 63.6, creating the larger package-value return in the deal. Thielen brings a 17-game sample, a 13.4 season average, and an 11.2 recent average, while Richardson has played six games with 12.1 and 11.3 averages. Payton’s C grade reflects excellent roster fit but only a 64 lineup-impact score, while Brae’s B grade pairs 87 value with 76 lineup impact. Payton has two quarterbacks and six wide receivers; Brae has one quarterback and seven wide receivers. On the supplied math, Brae wins the exchange, though roster construction keeps it from being a total laugher.",
+  "sides": [
+    {
+      "rosterId": 1,
+      "manager": "Payton",
+      "teamName": "Kupp My Balls",
+      "lore": "Two-time champion (2020, 2021). Rivals: Parker, Andy, CJ, Alex.",
+      "received": [
+        {
+          "id": "9229",
+          "type": "player",
+          "name": "Anthony Richardson",
+          "position": "QB",
+          "nflTeam": "IND",
+          "searchRank": 465,
+          "games": 6,
+          "seasonAvg": 12.1,
+          "recentAvg": 11.3,
+          "value": 40
+        }
+      ],
+      "sent": [
+        {
+          "id": "1689",
+          "type": "player",
+          "name": "Adam Thielen",
+          "position": "WR",
+          "nflTeam": null,
+          "searchRank": 163,
+          "games": 17,
+          "seasonAvg": 13.4,
+          "recentAvg": 11.2,
+          "value": 63.6
+        }
+      ],
+      "context": {
+        "record": "7-7",
+        "pointsFor": 1548.16,
+        "positionCounts": {
+          "K": 1,
+          "WR": 6,
+          "QB": 2,
+          "RB": 4,
+          "TE": 1,
+          "DEF": 1
+        },
+        "topPlayers": [
+          {
+            "name": "George Pickens",
+            "position": "WR",
+            "value": 85.2
+          },
+          {
+            "name": "Mike Evans",
+            "position": "WR",
+            "value": 81.9
+          },
+          {
+            "name": "Kenneth Walker",
+            "position": "RB",
+            "value": 78.3
+          },
+          {
+            "name": "Patrick Mahomes",
+            "position": "QB",
+            "value": 75.6
+          },
+          {
+            "name": "David Montgomery",
+            "position": "RB",
+            "value": 74.1
+          }
+        ]
+      },
+      "packageValue": 40,
+      "scores": {
+        "overall": 76.4,
+        "value": 77,
+        "rosterFit": 86,
+        "lineupImpact": 64
+      },
+      "grade": "C",
+      "analysis": "Payton turns Adam Thielen into Anthony Richardson, a move that fits the roster’s positional shape: Kupp My Balls already has six wide receivers and two quarterbacks, including Patrick Mahomes. Richardson’s supplied value is 40, with a 12.1 season average and 11.3 recent average across six games. The fit score is excellent at 86, but the 64 lineup-impact score explains the C grade: the incoming quarterback may not immediately reshape a roster that already has Mahomes. Payton’s 7-7 team has championship history, so this is more roster engineering than a headline-grabbing heist.",
+      "bestReason": "The deal’s strongest case for Payton is roster fit, reflected in the 86 score and the chance to add another quarterback behind Mahomes.",
+      "biggestRisk": "Payton gives up the higher-valued asset, 63.6 to 40, while the supplied lineup-impact score remains only 64."
+    },
+    {
+      "rosterId": 9,
+      "manager": "Brae",
+      "teamName": "Ass",
+      "lore": "Rivals: Parker and Andy.",
+      "received": [
+        {
+          "id": "1689",
+          "type": "player",
+          "name": "Adam Thielen",
+          "position": "WR",
+          "nflTeam": null,
+          "searchRank": 163,
+          "games": 17,
+          "seasonAvg": 13.4,
+          "recentAvg": 11.2,
+          "value": 63.6
+        }
+      ],
+      "sent": [
+        {
+          "id": "9229",
+          "type": "player",
+          "name": "Anthony Richardson",
+          "position": "QB",
+          "nflTeam": "IND",
+          "searchRank": 465,
+          "games": 6,
+          "seasonAvg": 12.1,
+          "recentAvg": 11.3,
+          "value": 40
+        }
+      ],
+      "context": {
+        "record": "4-10",
+        "pointsFor": 1619.48,
+        "positionCounts": {
+          "WR": 7,
+          "TE": 1,
+          "K": 1,
+          "RB": 5,
+          "QB": 1,
+          "DEF": 1
+        },
+        "topPlayers": [
+          {
+            "name": "Saquon Barkley",
+            "position": "RB",
+            "value": 76.6
+          },
+          {
+            "name": "DK Metcalf",
+            "position": "WR",
+            "value": 74.7
+          },
+          {
+            "name": "Deebo Samuel",
+            "position": "WR",
+            "value": 68.7
+          },
+          {
+            "name": "Gus Edwards",
+            "position": "RB",
+            "value": 66.7
+          },
+          {
+            "name": "Jacksonville Jaguars",
+            "position": "DEF",
+            "value": 65.9
+          }
+        ]
+      },
+      "packageValue": 63.6,
+      "scores": {
+        "overall": 83.1,
+        "value": 87,
+        "rosterFit": 72,
+        "lineupImpact": 76
+      },
+      "grade": "B",
+      "analysis": "Brae ships Anthony Richardson for Adam Thielen and earns the deal’s stronger grade: B, compared with Payton’s C. Thielen carries a 63.6 package value, a 17-game sample, a 13.4 season average, and an 11.2 recent average. That gives Brae the larger supplied return, while the 87 value score leads the trade. The fit score is a more modest 72 because Ass already has seven wide receivers, but the lineup-impact score still reaches 76. With only one quarterback on the roster, moving Richardson has a clear positional cost; the value edge is doing the heavy lifting.",
+      "bestReason": "Brae receives the higher-value player and leads the deal in both overall grade and value score.",
+      "biggestRisk": "Ass drops from one quarterback while adding to an already deep seven-player wide-receiver group, limiting the roster-fit score to 72."
+    }
+  ]
+}

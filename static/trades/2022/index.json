@@ -1,0 +1,77 @@
+{
+  "season": 2022,
+  "trades": [
+    {
+      "id": "899178344129114112",
+      "week": 11,
+      "occurredAt": 1668743368522,
+      "generatedAt": "2026-08-27T11:58:09.234Z",
+      "headline": "Joey Lands the Two-for-One Knockout",
+      "verdict": "Joey is the clear current winner, taking the A-rated side of a deal Evan receives a C- for.",
+      "participants": [
+        {
+          "rosterId": 6,
+          "manager": "Joey",
+          "teamName": "JoeyCrawford33",
+          "grade": "A",
+          "score": 93.6
+        },
+        {
+          "rosterId": 7,
+          "manager": "Evan",
+          "teamName": "kennedy24",
+          "grade": "C-",
+          "score": 71.9
+        }
+      ]
+    },
+    {
+      "id": "891460796398419968",
+      "week": 8,
+      "occurredAt": 1666903538836,
+      "generatedAt": "2026-08-27T11:57:59.376Z",
+      "headline": "Kade Lands McCaffrey, Kane Buys the Package",
+      "verdict": "A near-draw on overall grade, but Kade is the current winner on lineup fit while Kane wins the package-value argument.",
+      "participants": [
+        {
+          "rosterId": 3,
+          "manager": "Kane",
+          "teamName": "Blueballs",
+          "grade": "B",
+          "score": 84.3
+        },
+        {
+          "rosterId": 4,
+          "manager": "Kade",
+          "teamName": "CheesusJesus",
+          "grade": "B",
+          "score": 84
+        }
+      ]
+    },
+    {
+      "id": "883513788677353472",
+      "week": 5,
+      "occurredAt": 1665013873377,
+      "generatedAt": "2026-08-27T11:57:49.509Z",
+      "headline": "Joey Adds Two Pieces; Evan Takes the Robinson Swing",
+      "verdict": "Joey is the current winner on the supplied numbers, earning a B to Evan’s C.",
+      "participants": [
+        {
+          "rosterId": 6,
+          "manager": "Joey",
+          "teamName": "JoeyCrawford33",
+          "grade": "B",
+          "score": 86.2
+        },
+        {
+          "rosterId": 7,
+          "manager": "Evan",
+          "teamName": "kennedy24",
+          "grade": "C",
+          "score": 73.6
+        }
+      ]
+    }
+  ]
+}

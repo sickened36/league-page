@@ -1,0 +1,256 @@
+{
+  "id": "1157086854399934464",
+  "leagueId": "1124840953127903232",
+  "leagueName": "Fantasy Foosball Year 6",
+  "season": 2024,
+  "week": 8,
+  "occurredAt": 1730233539075,
+  "generatedAt": "2026-08-27T11:59:57.760Z",
+  "model": "gpt-5.6-luna",
+  "methodology": "MVP: Sleeper player search rank + actual league production (when available) + roster fit + starting-lineup impact.",
+  "headline": "Kade Wins the Chase Brown Shuffle",
+  "verdict": "Kade is the current winner, with the stronger B grade and a clear roster-fit edge over Kane’s C.",
+  "summary": "This is a two-for-three exchange that gives Kade the better present-day package on the supplied numbers. Kane receives Tyreek Hill and Jerry Jeudy, whose combined heuristic package value is 114, while sending Michael Pittman, Jaylen Waddle, and Chase Brown at a 168.2 package value. Kane’s return still offers two wide receivers, and Jeudy’s 15.7 recent average is the best recent mark in the deal. But Kade adds a running back with an 86.6 value, a 15.0 season average, and a 17.8 recent average, while also improving a roster with only three running backs. The 3-11 Packers fan gets the better scorecard; Kane’s 8-6 squad takes the swing.",
+  "sides": [
+    {
+      "rosterId": 3,
+      "manager": "Kane",
+      "teamName": "Blueballs",
+      "lore": "Rivals: Kohlt and Kade.",
+      "received": [
+        {
+          "id": "3321",
+          "type": "player",
+          "name": "Tyreek Hill",
+          "position": "WR",
+          "nflTeam": null,
+          "searchRank": 145,
+          "games": 17,
+          "seasonAvg": 12.6,
+          "recentAvg": 12.3,
+          "value": 63.3
+        },
+        {
+          "id": "6783",
+          "type": "player",
+          "name": "Jerry Jeudy",
+          "position": "WR",
+          "nflTeam": "CLE",
+          "searchRank": 160,
+          "games": 17,
+          "seasonAvg": 13.4,
+          "recentAvg": 15.7,
+          "value": 67.2
+        }
+      ],
+      "sent": [
+        {
+          "id": "6819",
+          "type": "player",
+          "name": "Michael Pittman",
+          "position": "WR",
+          "nflTeam": "PIT",
+          "searchRank": 102,
+          "games": 17,
+          "seasonAvg": 9,
+          "recentAvg": 13.2,
+          "value": 63.7
+        },
+        {
+          "id": "7526",
+          "type": "player",
+          "name": "Jaylen Waddle",
+          "position": "WR",
+          "nflTeam": "DEN",
+          "searchRank": 42,
+          "games": 17,
+          "seasonAvg": 8.3,
+          "recentAvg": 0,
+          "value": 59.4
+        },
+        {
+          "id": "9224",
+          "type": "player",
+          "name": "Chase Brown",
+          "position": "RB",
+          "nflTeam": "CIN",
+          "searchRank": 16,
+          "games": 17,
+          "seasonAvg": 15,
+          "recentAvg": 17.8,
+          "value": 86.6
+        }
+      ],
+      "context": {
+        "record": "8-6",
+        "pointsFor": 1694.98,
+        "positionCounts": {
+          "WR": 8,
+          "QB": 1,
+          "RB": 4,
+          "K": 1,
+          "TE": 1,
+          "DEF": 1
+        },
+        "topPlayers": [
+          {
+            "name": "Lamar Jackson",
+            "position": "QB",
+            "value": 98.4
+          },
+          {
+            "name": "Brian Thomas",
+            "position": "WR",
+            "value": 89
+          },
+          {
+            "name": "Kyren Williams",
+            "position": "RB",
+            "value": 86.9
+          },
+          {
+            "name": "Mike Evans",
+            "position": "WR",
+            "value": 83.8
+          },
+          {
+            "name": "Cameron Dicker",
+            "position": "K",
+            "value": 79.9
+          }
+        ]
+      },
+      "packageValue": 114,
+      "scores": {
+        "overall": 74.9,
+        "value": 77.8,
+        "rosterFit": 72,
+        "lineupImpact": 64
+      },
+      "grade": "C",
+      "analysis": "Kane’s Blueballs receive two wide receivers in Tyreek Hill and Jerry Jeudy, but the package value is 114, well below the 168.2 he sends away. Jeudy brings the strongest recent production in the incoming group at 15.7, while Hill has a 12.6 season average and 12.3 recent average. The fit is only moderate: Kane already has eight wide receivers, alongside established pieces such as Brian Thomas and Mike Evans, while surrendering Chase Brown’s 86.6 value and 17.8 recent average. At 8-6, this is a narrower consolidation move, and the C grade reflects limited lineup impact despite respectable receiver production.",
+      "bestReason": "Jeudy’s 15.7 recent average gives Kane the deal’s strongest recent incoming production, with Hill adding another established receiver profile.",
+      "biggestRisk": "Kane gives up Chase Brown’s 86.6 value and 17.8 recent average despite already carrying eight wide receivers, leaving the trade with a 64 lineup-impact score."
+    },
+    {
+      "rosterId": 4,
+      "manager": "Kade",
+      "teamName": "CheesusJesus",
+      "lore": "Rivals: Kane, Kohlt, Andy. Only Packers fan in a league full of Cowboys fans.",
+      "received": [
+        {
+          "id": "6819",
+          "type": "player",
+          "name": "Michael Pittman",
+          "position": "WR",
+          "nflTeam": "PIT",
+          "searchRank": 102,
+          "games": 17,
+          "seasonAvg": 9,
+          "recentAvg": 13.2,
+          "value": 63.7
+        },
+        {
+          "id": "7526",
+          "type": "player",
+          "name": "Jaylen Waddle",
+          "position": "WR",
+          "nflTeam": "DEN",
+          "searchRank": 42,
+          "games": 17,
+          "seasonAvg": 8.3,
+          "recentAvg": 0,
+          "value": 59.4
+        },
+        {
+          "id": "9224",
+          "type": "player",
+          "name": "Chase Brown",
+          "position": "RB",
+          "nflTeam": "CIN",
+          "searchRank": 16,
+          "games": 17,
+          "seasonAvg": 15,
+          "recentAvg": 17.8,
+          "value": 86.6
+        }
+      ],
+      "sent": [
+        {
+          "id": "3321",
+          "type": "player",
+          "name": "Tyreek Hill",
+          "position": "WR",
+          "nflTeam": null,
+          "searchRank": 145,
+          "games": 17,
+          "seasonAvg": 12.6,
+          "recentAvg": 12.3,
+          "value": 63.3
+        },
+        {
+          "id": "6783",
+          "type": "player",
+          "name": "Jerry Jeudy",
+          "position": "WR",
+          "nflTeam": "CLE",
+          "searchRank": 160,
+          "games": 17,
+          "seasonAvg": 13.4,
+          "recentAvg": 15.7,
+          "value": 67.2
+        }
+      ],
+      "context": {
+        "record": "3-11",
+        "pointsFor": 1444.64,
+        "positionCounts": {
+          "WR": 4,
+          "TE": 1,
+          "K": 2,
+          "QB": 3,
+          "RB": 3,
+          "DEF": 1
+        },
+        "topPlayers": [
+          {
+            "name": "Chase Brown",
+            "position": "RB",
+            "value": 86.6
+          },
+          {
+            "name": "Justin Herbert",
+            "position": "QB",
+            "value": 78.4
+          },
+          {
+            "name": "Travis Kelce",
+            "position": "TE",
+            "value": 73.4
+          },
+          {
+            "name": "Jordan Addison",
+            "position": "WR",
+            "value": 70.6
+          },
+          {
+            "name": "Kenneth Walker",
+            "position": "RB",
+            "value": 69.9
+          }
+        ]
+      },
+      "packageValue": 168.2,
+      "scores": {
+        "overall": 86.4,
+        "value": 86.2,
+        "rosterFit": 91,
+        "lineupImpact": 82.7
+      },
+      "grade": "B",
+      "analysis": "Kade’s CheesusJesus receives Michael Pittman, Jaylen Waddle, and Chase Brown, a 168.2 heuristic package, for Hill and Jeudy at 114. The biggest prize is Brown: an 86.6 value, 15.0 season average, 17.8 recent average, and search rank of 16. That directly addresses a roster with only three running backs, while Kade also adds two receivers to a group of four. Pittman’s 13.2 recent average helps, and Waddle’s search rank of 42 preserves market upside despite an 8.3 season average and zero recent average. The B grade, 91 roster-fit score, and 82.7 lineup-impact score make this a strong reset for a 3-11 team—even if Kane will hear about it.",
+      "bestReason": "Chase Brown supplies the deal’s highest player value and strongest recent average while filling Kade’s thinner running-back count.",
+      "biggestRisk": "Kade gives up Jerry Jeudy’s 15.7 recent average and Tyreek Hill’s steady 12.3 recent average, while Waddle’s recent average is listed at zero."
+    }
+  ]
+}

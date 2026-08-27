@@ -1,0 +1,232 @@
+{
+  "id": "891460796398419968",
+  "leagueId": "857432836574138368",
+  "leagueName": "Fantasy Foosball Year 4",
+  "season": 2022,
+  "week": 8,
+  "occurredAt": 1666903538836,
+  "generatedAt": "2026-08-27T11:57:59.376Z",
+  "model": "gpt-5.6-luna",
+  "methodology": "MVP: Sleeper player search rank + actual league production (when available) + roster fit + starting-lineup impact.",
+  "headline": "Kade Lands McCaffrey, Kane Buys the Package",
+  "verdict": "A near-draw on overall grade, but Kade is the current winner on lineup fit while Kane wins the package-value argument.",
+  "summary": "Both managers received a B, and the overall scores are essentially identical: Kane at 84.3 and Kade at 84.0. Kane turns Christian McCaffrey’s 98.4 value into three pieces, led by DJ Moore’s 72.3 value and a 15.3 recent average, while adding DeAndre Hopkins and Daniel Carlson. That improves breadth but gives up the trade’s premier asset. Kade consolidates the package into McCaffrey, whose 19.8 season average and 20.7 recent average headline the deal. The decisive split is fit: Kade’s 96 roster-fit and lineup-impact scores tower over Kane’s 81.7 and 82.7. In other words, Kane got more stuff; Kade got the biggest hammer. Let the Kane-Kade rivalry add the usual scoreboard seasoning.",
+  "sides": [
+    {
+      "rosterId": 3,
+      "manager": "Kane",
+      "teamName": "Blueballs",
+      "lore": "Rivals: Kohlt and Kade.",
+      "received": [
+        {
+          "id": "1426",
+          "type": "player",
+          "name": "DeAndre Hopkins",
+          "position": "WR",
+          "nflTeam": null,
+          "searchRank": 319,
+          "games": 18,
+          "seasonAvg": 8.4,
+          "recentAvg": 0.5,
+          "value": 36.9
+        },
+        {
+          "id": "4983",
+          "type": "player",
+          "name": "DJ Moore",
+          "position": "WR",
+          "nflTeam": "BUF",
+          "searchRank": 56,
+          "games": 18,
+          "seasonAvg": 11.1,
+          "recentAvg": 15.3,
+          "value": 72.3
+        },
+        {
+          "id": "5095",
+          "type": "player",
+          "name": "Daniel Carlson",
+          "position": "K",
+          "nflTeam": "NO",
+          "searchRank": 523,
+          "games": 18,
+          "seasonAvg": 8.8,
+          "recentAvg": 8.7,
+          "value": 51.6
+        }
+      ],
+      "sent": [
+        {
+          "id": "4034",
+          "type": "player",
+          "name": "Christian McCaffrey",
+          "position": "RB",
+          "nflTeam": "SF",
+          "searchRank": 5,
+          "games": 18,
+          "seasonAvg": 19.8,
+          "recentAvg": 20.7,
+          "value": 98.4
+        }
+      ],
+      "context": {
+        "record": "8-6",
+        "pointsFor": 1854.42,
+        "positionCounts": {
+          "WR": 6,
+          "RB": 5,
+          "TE": 2,
+          "QB": 1,
+          "K": 1,
+          "DEF": 1
+        },
+        "topPlayers": [
+          {
+            "name": "Josh Allen",
+            "position": "QB",
+            "value": 89.2
+          },
+          {
+            "name": "DJ Moore",
+            "position": "WR",
+            "value": 72.3
+          },
+          {
+            "name": "Chris Godwin",
+            "position": "WR",
+            "value": 70
+          },
+          {
+            "name": "Aaron Jones",
+            "position": "RB",
+            "value": 67.3
+          },
+          {
+            "name": "Dallas Goedert",
+            "position": "TE",
+            "value": 63.6
+          }
+        ]
+      },
+      "packageValue": 131.9,
+      "scores": {
+        "overall": 84.3,
+        "value": 85.2,
+        "rosterFit": 81.7,
+        "lineupImpact": 82.7
+      },
+      "grade": "B",
+      "analysis": "Kane’s Blueballs receives three assets for Christian McCaffrey, with the package led by DJ Moore’s 72.3 value, search rank 56, 11.1 season average, and 15.3 recent average. DeAndre Hopkins adds a 36.9 value but carries a 0.5 recent average against an 8.4 season mark, while Daniel Carlson supplies a kicker at 51.6 value with steady 8.8 and 8.7 averages. The return broadens a roster already carrying six wide receivers and five running backs, but surrendering McCaffrey removes a top-five search-ranked, 19.8-average centerpiece. Kane’s B grade reflects useful volume, though the 81.7 fit and 82.7 lineup-impact scores trail Kade’s.",
+      "bestReason": "Kane converts one elite running back into three roster pieces, with Moore providing the clearest current production signal.",
+      "biggestRisk": "The package may lack McCaffrey’s singular weekly ceiling, while Hopkins’ recent average is notably below his season average."
+    },
+    {
+      "rosterId": 4,
+      "manager": "Kade",
+      "teamName": "CheesusJesus",
+      "lore": "Rivals: Kane, Kohlt, Andy. Only Packers fan in a league full of Cowboys fans.",
+      "received": [
+        {
+          "id": "4034",
+          "type": "player",
+          "name": "Christian McCaffrey",
+          "position": "RB",
+          "nflTeam": "SF",
+          "searchRank": 5,
+          "games": 18,
+          "seasonAvg": 19.8,
+          "recentAvg": 20.7,
+          "value": 98.4
+        }
+      ],
+      "sent": [
+        {
+          "id": "1426",
+          "type": "player",
+          "name": "DeAndre Hopkins",
+          "position": "WR",
+          "nflTeam": null,
+          "searchRank": 319,
+          "games": 18,
+          "seasonAvg": 8.4,
+          "recentAvg": 0.5,
+          "value": 36.9
+        },
+        {
+          "id": "4983",
+          "type": "player",
+          "name": "DJ Moore",
+          "position": "WR",
+          "nflTeam": "BUF",
+          "searchRank": 56,
+          "games": 18,
+          "seasonAvg": 11.1,
+          "recentAvg": 15.3,
+          "value": 72.3
+        },
+        {
+          "id": "5095",
+          "type": "player",
+          "name": "Daniel Carlson",
+          "position": "K",
+          "nflTeam": "NO",
+          "searchRank": 523,
+          "games": 18,
+          "seasonAvg": 8.8,
+          "recentAvg": 8.7,
+          "value": 51.6
+        }
+      ],
+      "context": {
+        "record": "7-7",
+        "pointsFor": 1709.68,
+        "positionCounts": {
+          "WR": 3,
+          "TE": 2,
+          "QB": 2,
+          "RB": 4,
+          "K": 1,
+          "DEF": 2
+        },
+        "topPlayers": [
+          {
+            "name": "Christian McCaffrey",
+            "position": "RB",
+            "value": 98.4
+          },
+          {
+            "name": "Derrick Henry",
+            "position": "RB",
+            "value": 86.4
+          },
+          {
+            "name": "Amon-Ra St. Brown",
+            "position": "WR",
+            "value": 84.5
+          },
+          {
+            "name": "Jared Goff",
+            "position": "QB",
+            "value": 78.7
+          },
+          {
+            "name": "Mike Evans",
+            "position": "WR",
+            "value": 76.6
+          }
+        ]
+      },
+      "packageValue": 98.4,
+      "scores": {
+        "overall": 84,
+        "value": 78.8,
+        "rosterFit": 96,
+        "lineupImpact": 96
+      },
+      "grade": "B",
+      "analysis": "Kade’s CheesusJesus turns three players into Christian McCaffrey, the deal’s highest-value asset at 98.4 and search rank 5. McCaffrey also brings the strongest supplied production profile, averaging 19.8 for the season and 20.7 recently. The consolidation is especially clean for a 7-7 roster with four running backs, three wide receivers, Derrick Henry already among the top players, and a 96 roster-fit score paired with a 96 lineup-impact score. Kade gives up DJ Moore’s strong 15.3 recent average, plus Hopkins and Carlson, so the price is real. Still, the 84.0 overall grade says this is a targeted upgrade, not a runaway value heist. Also, the league’s lone Packers fan may now have another reason to chirp at Kane.",
+      "bestReason": "McCaffrey supplies the trade’s best value and production indicators while fitting Kade’s roster exceptionally well.",
+      "biggestRisk": "Kade sacrifices three usable assets, including Moore’s recent production, for one centerpiece and less overall package value."
+    }
+  ]
+}

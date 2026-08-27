@@ -1,0 +1,197 @@
+{
+  "season": 2024,
+  "trades": [
+    {
+      "id": "1165125842931118080",
+      "week": 12,
+      "occurredAt": 1732150275352,
+      "generatedAt": "2026-08-27T12:00:05.222Z",
+      "headline": "Parker Turns Tillman Into a Backfield Upgrade",
+      "verdict": "Parker is the clear current winner, with an 84.1 overall score and a B grade against CJ’s 71.5 and C-.",
+      "participants": [
+        {
+          "rosterId": 5,
+          "manager": "Parker",
+          "teamName": "My BallDak hurts",
+          "grade": "B",
+          "score": 84.1
+        },
+        {
+          "rosterId": 11,
+          "manager": "CJ",
+          "teamName": "cjbroadway23",
+          "grade": "C-",
+          "score": 71.5
+        }
+      ]
+    },
+    {
+      "id": "1157086854399934464",
+      "week": 8,
+      "occurredAt": 1730233539075,
+      "generatedAt": "2026-08-27T11:59:57.760Z",
+      "headline": "Kade Wins the Chase Brown Shuffle",
+      "verdict": "Kade is the current winner, with the stronger B grade and a clear roster-fit edge over Kane’s C.",
+      "participants": [
+        {
+          "rosterId": 3,
+          "manager": "Kane",
+          "teamName": "Blueballs",
+          "grade": "C",
+          "score": 74.9
+        },
+        {
+          "rosterId": 4,
+          "manager": "Kade",
+          "teamName": "CheesusJesus",
+          "grade": "B",
+          "score": 86.4
+        }
+      ]
+    },
+    {
+      "id": "1155156422959849472",
+      "week": 8,
+      "occurredAt": 1729773277734,
+      "generatedAt": "2026-08-27T11:59:48.985Z",
+      "headline": "Blueballs Cashes In While SunGod Bets on Chubb",
+      "verdict": "Blueballs is the clear current winner, with the stronger package value and overall grade.",
+      "participants": [
+        {
+          "rosterId": 3,
+          "manager": "Kane",
+          "teamName": "Blueballs",
+          "grade": "B",
+          "score": 86.6
+        },
+        {
+          "rosterId": 6,
+          "manager": "Joey",
+          "teamName": "SunGod",
+          "grade": "C-",
+          "score": 72.1
+        }
+      ]
+    },
+    {
+      "id": "1149479666831486976",
+      "week": 5,
+      "occurredAt": 1728419855760,
+      "generatedAt": "2026-08-27T11:59:40.794Z",
+      "headline": "Blueballs Adds the Biggest Bat in a Three-for-Three Swap",
+      "verdict": "Blueballs is the current winner, with the stronger B grade and a clear edge in overall trade value.",
+      "participants": [
+        {
+          "rosterId": 3,
+          "manager": "Kane",
+          "teamName": "Blueballs",
+          "grade": "B",
+          "score": 83.4
+        },
+        {
+          "rosterId": 8,
+          "manager": "Cooper",
+          "teamName": "Jack MeHoff",
+          "grade": "C+",
+          "score": 78.6
+        }
+      ]
+    },
+    {
+      "id": "1149455890400108544",
+      "week": 5,
+      "occurredAt": 1728415722577,
+      "generatedAt": "2026-08-27T11:59:30.742Z",
+      "headline": "Brown Brings Star Power, but Evan Wins the Two-for-One Math",
+      "verdict": "Evan is the current winner on overall grade and value, though both teams receive a strong roster-fit boost.",
+      "participants": [
+        {
+          "rosterId": 1,
+          "manager": "Payton",
+          "teamName": "Big Pitts and Bass",
+          "grade": "B-",
+          "score": 81.9
+        },
+        {
+          "rosterId": 7,
+          "manager": "Evan",
+          "teamName": "Reigning Champ",
+          "grade": "B",
+          "score": 86.6
+        }
+      ]
+    },
+    {
+      "id": "1149149974749700096",
+      "week": 5,
+      "occurredAt": 1728341342659,
+      "generatedAt": "2026-08-27T11:59:21.411Z",
+      "headline": "Outlaws Land the Heavy Hitters as CheesusJesus Rebalances",
+      "verdict": "Brae is the clear current winner, earning a B to Kade’s C+ on the supplied grades and scores.",
+      "participants": [
+        {
+          "rosterId": 4,
+          "manager": "Kade",
+          "teamName": "CheesusJesus",
+          "grade": "C+",
+          "score": 77.2
+        },
+        {
+          "rosterId": 9,
+          "manager": "Brae",
+          "teamName": "Ogles Outlaws",
+          "grade": "B",
+          "score": 86.6
+        }
+      ]
+    },
+    {
+      "id": "1148055251166212096",
+      "week": 5,
+      "occurredAt": 1728080222374,
+      "generatedAt": "2026-08-27T11:59:12.371Z",
+      "headline": "Bijan Blockbuster Gives Parker the Edge, but CJ Gets the Deeper Haul",
+      "verdict": "Parker is the current winner, with CJ’s depth keeping this from becoming a runaway.",
+      "participants": [
+        {
+          "rosterId": 5,
+          "manager": "Parker",
+          "teamName": "My BallDak hurts",
+          "grade": "B-",
+          "score": 80.4
+        },
+        {
+          "rosterId": 11,
+          "manager": "CJ",
+          "teamName": "cjbroadway23",
+          "grade": "B",
+          "score": 83.2
+        }
+      ]
+    },
+    {
+      "id": "1141188658599919616",
+      "week": 2,
+      "occurredAt": 1726443629801,
+      "generatedAt": "2026-08-27T11:59:02.961Z",
+      "headline": "Blueballs Adds Firepower, but Parker Keeps the Crown Jewel",
+      "verdict": "Blueballs narrowly wins the current-value battle, though both sides land a B-.",
+      "participants": [
+        {
+          "rosterId": 3,
+          "manager": "Kane",
+          "teamName": "Blueballs",
+          "grade": "B-",
+          "score": 82.7
+        },
+        {
+          "rosterId": 5,
+          "manager": "Parker",
+          "teamName": "My BallDak hurts",
+          "grade": "B-",
+          "score": 80.9
+        }
+      ]
+    }
+  ]
+}

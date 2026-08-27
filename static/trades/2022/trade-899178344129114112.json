@@ -1,0 +1,208 @@
+{
+  "id": "899178344129114112",
+  "leagueId": "857432836574138368",
+  "leagueName": "Fantasy Foosball Year 4",
+  "season": 2022,
+  "week": 11,
+  "occurredAt": 1668743368522,
+  "generatedAt": "2026-08-27T11:58:09.234Z",
+  "model": "gpt-5.6-luna",
+  "methodology": "MVP: Sleeper player search rank + actual league production (when available) + roster fit + starting-lineup impact.",
+  "headline": "Joey Lands the Two-for-One Knockout",
+  "verdict": "Joey is the clear current winner, taking the A-rated side of a deal Evan receives a C- for.",
+  "summary": "This is a decisive value win for Joey on the supplied numbers. He turns one Dalvin Cook asset valued at 43.2 into A.J. Brown at 87.9 and Najee Harris at 66.5, while posting a 93.6 overall score against Evan’s 71.9. Joey’s 7-7 roster gets a major lineup-impact boost from a high-value wide receiver and a running back whose recent average, 16.7, exceeds his 12.4 season average. Evan does improve positional fit with a three-RB roster, but the exchange gives away the highest-ranked player in the deal and another productive piece for a player with a 617 search rank and 6.6 recent average. That is a steep hill, even for a former champion.",
+  "sides": [
+    {
+      "rosterId": 6,
+      "manager": "Joey",
+      "teamName": "JoeyCrawford33",
+      "lore": "2024 champion. Rivals: Andy and Evan.",
+      "received": [
+        {
+          "id": "5859",
+          "type": "player",
+          "name": "A.J. Brown",
+          "position": "WR",
+          "nflTeam": "NE",
+          "searchRank": 18,
+          "games": 18,
+          "seasonAvg": 16.6,
+          "recentAvg": 16.5,
+          "value": 87.9
+        },
+        {
+          "id": "7528",
+          "type": "player",
+          "name": "Najee Harris",
+          "position": "RB",
+          "nflTeam": "NYG",
+          "searchRank": 170,
+          "games": 18,
+          "seasonAvg": 12.4,
+          "recentAvg": 16.7,
+          "value": 66.5
+        }
+      ],
+      "sent": [
+        {
+          "id": "4029",
+          "type": "player",
+          "name": "Dalvin Cook",
+          "position": "RB",
+          "nflTeam": null,
+          "searchRank": 617,
+          "games": 18,
+          "seasonAvg": 13.2,
+          "recentAvg": 6.6,
+          "value": 43.2
+        }
+      ],
+      "context": {
+        "record": "7-7",
+        "pointsFor": 1721.78,
+        "positionCounts": {
+          "QB": 2,
+          "RB": 4,
+          "WR": 5,
+          "TE": 2,
+          "K": 1,
+          "DEF": 1
+        },
+        "topPlayers": [
+          {
+            "name": "A.J. Brown",
+            "position": "WR",
+            "value": 87.9
+          },
+          {
+            "name": "Joe Burrow",
+            "position": "QB",
+            "value": 82.2
+          },
+          {
+            "name": "George Pickens",
+            "position": "WR",
+            "value": 74.1
+          },
+          {
+            "name": "Tyreek Hill",
+            "position": "WR",
+            "value": 72.4
+          },
+          {
+            "name": "Dalton Schultz",
+            "position": "TE",
+            "value": 67.5
+          }
+        ]
+      },
+      "packageValue": 137.1,
+      "scores": {
+        "overall": 93.6,
+        "value": 93.5,
+        "rosterFit": 96,
+        "lineupImpact": 92
+      },
+      "grade": "A",
+      "analysis": "Joey receives the premium package: A.J. Brown, valued at 87.9 with a search rank of 18, plus Najee Harris at 66.5. Brown brings a 16.6 season average and 16.5 recent average, while Harris has posted a stronger 16.7 recent average than his 12.4 season mark. Joey parts with Dalvin Cook, whose 43.2 value and 6.6 recent average trail the incoming pieces. The fit score of 96 and lineup-impact score of 92 reflect a major roster upgrade for a 7-7 team. With Brown joining an already strong group led by Joe Burrow, George Pickens, and Tyreek Hill, Joey’s transaction-week flex just got considerably louder.",
+      "bestReason": "Joey converts a 43.2-value running back into two players worth 154.4 combined, led by a top-20-ranked A.J. Brown.",
+      "biggestRisk": "The deal concentrates Joey’s gain in a two-player package, so the supplied scores still leave room for lineup-management pressure despite the 92 lineup-impact mark."
+    },
+    {
+      "rosterId": 7,
+      "manager": "Evan",
+      "teamName": "kennedy24",
+      "lore": "2023 champion. Rivals: Joey, Andy, Payton.",
+      "received": [
+        {
+          "id": "4029",
+          "type": "player",
+          "name": "Dalvin Cook",
+          "position": "RB",
+          "nflTeam": null,
+          "searchRank": 617,
+          "games": 18,
+          "seasonAvg": 13.2,
+          "recentAvg": 6.6,
+          "value": 43.2
+        }
+      ],
+      "sent": [
+        {
+          "id": "5859",
+          "type": "player",
+          "name": "A.J. Brown",
+          "position": "WR",
+          "nflTeam": "NE",
+          "searchRank": 18,
+          "games": 18,
+          "seasonAvg": 16.6,
+          "recentAvg": 16.5,
+          "value": 87.9
+        },
+        {
+          "id": "7528",
+          "type": "player",
+          "name": "Najee Harris",
+          "position": "RB",
+          "nflTeam": "NYG",
+          "searchRank": 170,
+          "games": 18,
+          "seasonAvg": 12.4,
+          "recentAvg": 16.7,
+          "value": 66.5
+        }
+      ],
+      "context": {
+        "record": "4-10",
+        "pointsFor": 1613.1,
+        "positionCounts": {
+          "TE": 1,
+          "RB": 3,
+          "QB": 1,
+          "K": 1,
+          "WR": 4,
+          "DEF": 2
+        },
+        "topPlayers": [
+          {
+            "name": "Patrick Mahomes",
+            "position": "QB",
+            "value": 87.9
+          },
+          {
+            "name": "DeVonta Smith",
+            "position": "WR",
+            "value": 85.1
+          },
+          {
+            "name": "Travis Kelce",
+            "position": "TE",
+            "value": 84.9
+          },
+          {
+            "name": "Jakobi Meyers",
+            "position": "WR",
+            "value": 72.8
+          },
+          {
+            "name": "Jerick McKinnon",
+            "position": "RB",
+            "value": 69.8
+          }
+        ]
+      },
+      "packageValue": 43.2,
+      "scores": {
+        "overall": 71.9,
+        "value": 70.5,
+        "rosterFit": 86,
+        "lineupImpact": 64
+      },
+      "grade": "C-",
+      "analysis": "Evan receives only Dalvin Cook in exchange for A.J. Brown and Najee Harris. Cook carries a 43.2 value, a 617 search rank, and a 6.6 recent average against Harris’s 66.5 value and 16.7 recent average, making the immediate production and market exchange heavily unfavorable on the supplied facts. Evan’s roster-fit score of 86 indicates the move does address construction: he had three running backs and now adds another, while his roster already features Patrick Mahomes, DeVonta Smith, Travis Kelce, and Jakobi Meyers. Still, the 64 lineup-impact score captures the problem: this is a fit play that costs far more talent than it adds. Joey’s rival gets the better headline.",
+      "bestReason": "Cook fills a positional need on a roster with three running backs, matching Evan’s relatively strong 86 roster-fit score.",
+      "biggestRisk": "Evan gives up Brown and Harris—154.4 in combined supplied value—for Cook at 43.2, with the incoming player’s 6.6 recent average adding substantial downside."
+    }
+  ]
+}

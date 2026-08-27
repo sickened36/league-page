@@ -1,0 +1,208 @@
+{
+  "id": "883513788677353472",
+  "leagueId": "857432836574138368",
+  "leagueName": "Fantasy Foosball Year 4",
+  "season": 2022,
+  "week": 5,
+  "occurredAt": 1665013873377,
+  "generatedAt": "2026-08-27T11:57:49.509Z",
+  "model": "gpt-5.6-luna",
+  "methodology": "MVP: Sleeper player search rank + actual league production (when available) + roster fit + starting-lineup impact.",
+  "headline": "Joey Adds Two Pieces; Evan Takes the Robinson Swing",
+  "verdict": "Joey is the current winner on the supplied numbers, earning a B to Evan’s C.",
+  "summary": "Joey turns James Robinson into Tyler Boyd and Kareem Hunt, winning the transaction on the supplied overall score, value score, and package-value comparison. The incoming package carries a heuristic packageValue of 82.2 versus Robinson’s 34.3, while Joey’s value score reaches 91. Evan’s roster-fit score is still strong at 86, and a three-player-to-one-player swap gives him a cleaner roster structure, but the production snapshot favors the players he sent away: Boyd has a 9.8 season average and Hunt 7.0, compared with Robinson’s 9.2. Joey’s 7-7 roster gets the bigger numerical boost; Evan, at 4-10, is betting on Robinson’s simpler role to make this look less lopsided. The former champion gets the louder scoreboard jab this week.",
+  "sides": [
+    {
+      "rosterId": 6,
+      "manager": "Joey",
+      "teamName": "JoeyCrawford33",
+      "lore": "2024 champion. Rivals: Andy and Evan.",
+      "received": [
+        {
+          "id": "3225",
+          "type": "player",
+          "name": "Tyler Boyd",
+          "position": "WR",
+          "nflTeam": null,
+          "searchRank": 243,
+          "games": 18,
+          "seasonAvg": 9.8,
+          "recentAvg": 7.9,
+          "value": 50.3
+        },
+        {
+          "id": "4098",
+          "type": "player",
+          "name": "Kareem Hunt",
+          "position": "RB",
+          "nflTeam": null,
+          "searchRank": 242,
+          "games": 18,
+          "seasonAvg": 7,
+          "recentAvg": 4,
+          "value": 43.1
+        }
+      ],
+      "sent": [
+        {
+          "id": "6955",
+          "type": "player",
+          "name": "James Robinson",
+          "position": "RB",
+          "nflTeam": null,
+          "searchRank": 573,
+          "games": 8,
+          "seasonAvg": 9.2,
+          "recentAvg": 2.7,
+          "value": 34.3
+        }
+      ],
+      "context": {
+        "record": "7-7",
+        "pointsFor": 1721.78,
+        "positionCounts": {
+          "QB": 2,
+          "RB": 4,
+          "WR": 5,
+          "TE": 2,
+          "K": 1,
+          "DEF": 1
+        },
+        "topPlayers": [
+          {
+            "name": "A.J. Brown",
+            "position": "WR",
+            "value": 87.9
+          },
+          {
+            "name": "Joe Burrow",
+            "position": "QB",
+            "value": 82.2
+          },
+          {
+            "name": "George Pickens",
+            "position": "WR",
+            "value": 74.1
+          },
+          {
+            "name": "Tyreek Hill",
+            "position": "WR",
+            "value": 72.4
+          },
+          {
+            "name": "Dalton Schultz",
+            "position": "TE",
+            "value": 67.5
+          }
+        ]
+      },
+      "packageValue": 82.2,
+      "scores": {
+        "overall": 86.2,
+        "value": 91,
+        "rosterFit": 86,
+        "lineupImpact": 64
+      },
+      "grade": "B",
+      "analysis": "Joey receives Tyler Boyd and Kareem Hunt for James Robinson, and the supplied numbers make that a clear value win. Boyd brings a 9.8 season average and 7.9 recent average, while Hunt contributes a 7.0 season average; Robinson’s figures are 9.2 and 2.7. Joey’s incoming packageValue is 82.2 against 34.3 sent, supporting his 91 value score and B grade. The roster already has five wide receivers and four running backs, so this is not a dramatic position-count correction, but it adds two players to a 7-7 team. The 64 lineup-impact score keeps expectations measured. Joey’s 2024-champion banner gets another light polish, at least on paper.",
+      "bestReason": "Joey converts one player with a 2.7 recent average into two players whose combined supplied value and production profile are stronger.",
+      "biggestRisk": "The lineup-impact score is only 64, so the larger package may not translate into a major starting-lineup change."
+    },
+    {
+      "rosterId": 7,
+      "manager": "Evan",
+      "teamName": "kennedy24",
+      "lore": "2023 champion. Rivals: Joey, Andy, Payton.",
+      "received": [
+        {
+          "id": "6955",
+          "type": "player",
+          "name": "James Robinson",
+          "position": "RB",
+          "nflTeam": null,
+          "searchRank": 573,
+          "games": 8,
+          "seasonAvg": 9.2,
+          "recentAvg": 2.7,
+          "value": 34.3
+        }
+      ],
+      "sent": [
+        {
+          "id": "3225",
+          "type": "player",
+          "name": "Tyler Boyd",
+          "position": "WR",
+          "nflTeam": null,
+          "searchRank": 243,
+          "games": 18,
+          "seasonAvg": 9.8,
+          "recentAvg": 7.9,
+          "value": 50.3
+        },
+        {
+          "id": "4098",
+          "type": "player",
+          "name": "Kareem Hunt",
+          "position": "RB",
+          "nflTeam": null,
+          "searchRank": 242,
+          "games": 18,
+          "seasonAvg": 7,
+          "recentAvg": 4,
+          "value": 43.1
+        }
+      ],
+      "context": {
+        "record": "4-10",
+        "pointsFor": 1613.1,
+        "positionCounts": {
+          "TE": 1,
+          "RB": 3,
+          "QB": 1,
+          "K": 1,
+          "WR": 4,
+          "DEF": 2
+        },
+        "topPlayers": [
+          {
+            "name": "Patrick Mahomes",
+            "position": "QB",
+            "value": 87.9
+          },
+          {
+            "name": "DeVonta Smith",
+            "position": "WR",
+            "value": 85.1
+          },
+          {
+            "name": "Travis Kelce",
+            "position": "TE",
+            "value": 84.9
+          },
+          {
+            "name": "Jakobi Meyers",
+            "position": "WR",
+            "value": 72.8
+          },
+          {
+            "name": "Jerick McKinnon",
+            "position": "RB",
+            "value": 69.8
+          }
+        ]
+      },
+      "packageValue": 34.3,
+      "scores": {
+        "overall": 73.6,
+        "value": 73,
+        "rosterFit": 86,
+        "lineupImpact": 64
+      },
+      "grade": "C",
+      "analysis": "Evan sends Boyd and Hunt for Robinson, earning a C despite an 86 roster-fit score. The deal reduces his listed roster from four wide receivers and three running backs to three wide receivers and four running backs, directly addressing positional balance. Robinson’s 34.3 value trails the 50.3 and 43.1 values of the players Evan gives up, and his recent average of 2.7 is well below Boyd’s 7.9 and Hunt’s 4.0. Still, Evan’s 4-10 roster gets a simpler one-player return, and the 64 lineup-impact score suggests the immediate starting effect is limited either way. The 2023 champion is taking the narrower side of the value exchange; Joey’s rivalry target can call this one a points-table win.",
+      "bestReason": "Evan improves the listed RB/WR roster balance by moving from four WRs and three RBs to three WRs and four RBs.",
+      "biggestRisk": "Robinson’s supplied 34.3 value and 2.7 recent average lag behind the combined package Evan sends away."
+    }
+  ]
+}
