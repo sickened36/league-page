@@ -1,85 +1,56 @@
-import { getLeagueData } from "./leagueData"
+import { getLeagueData } from './leagueData';
 import { leagueID } from '$lib/utils/leagueInfo';
-import { getNflState } from "./nflState"
 import { waitForAll } from './multiPromise';
 import { get } from 'svelte/store';
-import {matchupsStore} from '$lib/stores';
+import { matchupsStore } from '$lib/stores';
 
-export const getLeagueMatchups = async () => {
-	if(get(matchupsStore).matchupWeeks) {
-		return get(matchupsStore);
-	}
+export const getLeagueMatchups = async (queryLeagueID = leagueID) => {
+	const cached = get(matchupsStore)[queryLeagueID];
+	if(cached?.matchupWeeks) return cached;
 
-	const [nflState, leagueData] = await waitForAll(
-		getNflState(),
-		getLeagueData(),
-	).catch((err) => { console.error(err); });
+	const leagueData = await getLeagueData(queryLeagueID).catch((err) => { console.error(err); });
+	if(!leagueData) return { matchupWeeks: [], year: null, week: 1, regularSeasonLength: 14 };
 
-	let week = 1;
-	if(nflState.season_type == 'regular') {
-		week = nflState.display_week;
-	} else if(nflState.season_type == 'post') {
-		week = 18;
-	}
 	const year = leagueData.season;
-	const regularSeasonLength = leagueData.settings.playoff_week_start - 1;
+	const regularSeasonLength = (Number(leagueData.settings?.playoff_week_start) || 15) - 1;
+	const lastScoredLeg = Number(leagueData.settings?.last_scored_leg || 0);
+	const week = leagueData.status === 'in_season'
+		? Math.min(Math.max(lastScoredLeg + 1, 1), regularSeasonLength)
+		: Math.max(Math.min(lastScoredLeg, regularSeasonLength), 1);
 
-	// pull in all matchup data for the season
-	const matchupsPromises = [];
-	for(let i = 1; i < leagueData.settings.playoff_week_start; i++) {
-		matchupsPromises.push(fetch(`https://api.sleeper.app/v1/league/${leagueID}/matchups/${i}`, {compress: true}))
-	}
-	const matchupsRes = await waitForAll(...matchupsPromises);
+	const matchupsRes = await waitForAll(
+		...Array.from({ length: regularSeasonLength }, (_, index) =>
+			fetch(`https://api.sleeper.app/v1/league/${queryLeagueID}/matchups/${index + 1}`, {compress: true})
+		)
+	);
 
-	// convert the json matchup responses
-	const matchupsJsonPromises = [];
-	for(const matchupRes of matchupsRes) {
-		const data = matchupRes.json();
-		matchupsJsonPromises.push(data)
-		if (!matchupRes.ok) {
-			throw new Error(data);
-		}
-	}
-	const matchupsData = await waitForAll(...matchupsJsonPromises).catch((err) => { console.error(err); }).catch((err) => { console.error(err); });
+	const matchupsData = await waitForAll(...matchupsRes.map(async (response) => {
+		const data = await response.json();
+		if(!response.ok) throw new Error(data);
+		return data;
+	}));
 
 	const matchupWeeks = [];
-	// process all the matchups
-	for(let i = 1; i < matchupsData.length + 1; i++) {
+	for(let i = 1; i <= matchupsData.length; i++) {
 		const processed = processMatchups(matchupsData[i - 1], i);
-		if(processed) {
-			matchupWeeks.push({
-				matchups: processed.matchups,
-				week: processed.week
-			});
-		}
+		if(processed) matchupWeeks.push({ matchups: processed.matchups, week: processed.week });
 	}
 
-	const matchupsResponse = {
-		matchupWeeks,
-		year,
-		week,
-		regularSeasonLength
-	}
-	
-	matchupsStore.update(() => matchupsResponse);
-
-	return matchupsResponse;
-}
+	const response = { matchupWeeks, year, week, regularSeasonLength };
+	matchupsStore.update((all) => ({ ...all, [queryLeagueID]: response }));
+	return response;
+};
 
 const processMatchups = (inputMatchups, week) => {
-	if(!inputMatchups || inputMatchups.length == 0) {
-		return false;
-	}
+	if(!inputMatchups || inputMatchups.length === 0) return false;
 	const matchups = {};
 	for(const match of inputMatchups) {
-		if(!matchups[match.matchup_id]) {
-			matchups[match.matchup_id] = [];
-		}
+		if(!matchups[match.matchup_id]) matchups[match.matchup_id] = [];
 		matchups[match.matchup_id].push({
 			roster_id: match.roster_id,
 			starters: match.starters,
 			points: match.starters_points,
-		})
+		});
 	}
-	return {matchups, week};
-}
+	return { matchups, week };
+};
