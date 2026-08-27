@@ -1,0 +1,58 @@
+name: Backfill 2025 Trade Grades
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - '.github/workflows/backfill-2025-trade-grades.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  backfill-2025:
+    runs-on: ubuntu-latest
+    environment: recap-bot
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Verify OpenAI secret
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          if [ -z "$OPENAI_API_KEY" ]; then
+            echo "::error::OPENAI_API_KEY is not available to the recap-bot environment."
+            exit 1
+          fi
+
+      - name: Grade every archived 2025 trade
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_MODEL: gpt-5.6-luna
+          TRADE_SEASON: '2025'
+          TRADE_LEAGUE_ID: '1251987542522212352'
+          TRADE_FORCE: 'false'
+        run: node scripts/generate-trade-grades.mjs
+
+      - name: Commit 2025 trade grades
+        run: |
+          git config user.name "sickened36"
+          git config user.email "121896441+sickened36@users.noreply.github.com"
+          git add static/trades/2025
+          if git diff --cached --quiet; then
+            echo "No 2025 trade grades to commit."
+            exit 0
+          fi
+          git commit -m "Publish 2025 Fantasy Foosball trade grades"
+          git push
