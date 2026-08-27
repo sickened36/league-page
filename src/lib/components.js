@@ -19,6 +19,7 @@ import FullPost from './BlogPosts/FullPost.svelte';
 import Posts from './BlogPosts/Posts.svelte';
 import Standings from './Standings/index.svelte';
 import PageShell from './PageShell.svelte';
+import SeasonSwitcher from './SeasonSwitcher.svelte';
 
 export {
     Nav,
@@ -42,5 +43,5 @@ export {
     FullPost,
     Standings,
     PageShell,
+    SeasonSwitcher,
 };
-
