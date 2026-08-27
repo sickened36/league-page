@@ -1,0 +1,76 @@
+name: Fantasy Foosball Trade Grades
+
+on:
+  schedule:
+    # Check for completed trades four times per day.
+    - cron: '17 */6 * * *'
+  workflow_dispatch:
+    inputs:
+      season:
+        description: 'Season to scan (2022-2026)'
+        required: false
+        default: '2026'
+        type: string
+      league_id:
+        description: 'Optional Sleeper league ID override. Leave blank for known Fantasy Foosball seasons.'
+        required: false
+        type: string
+      force:
+        description: 'Regenerate grades for trades already archived'
+        required: false
+        default: false
+        type: boolean
+
+permissions:
+  contents: write
+
+concurrency:
+  group: fantasy-foosball-trade-grades
+  cancel-in-progress: false
+
+jobs:
+  grade-trades:
+    runs-on: ubuntu-latest
+    environment: recap-bot
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Verify OpenAI secret
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          if [ -z "$OPENAI_API_KEY" ]; then
+            echo "::error::OPENAI_API_KEY is not available to the recap-bot environment."
+            exit 1
+          fi
+          echo "OPENAI_API_KEY is available to this job."
+
+      - name: Grade new trades
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_MODEL: gpt-5.6-luna
+          TRADE_SEASON: ${{ inputs.season || '2026' }}
+          TRADE_LEAGUE_ID: ${{ inputs.league_id || (inputs.season == '2022' && '857432836574138368' || inputs.season == '2023' && '981027810078756864' || inputs.season == '2024' && '1124840953127903232' || inputs.season == '2025' && '1251987542522212352' || '1389689189200592896') }}
+          TRADE_FORCE: ${{ inputs.force }}
+        run: node scripts/generate-trade-grades.mjs
+
+      - name: Commit new trade grades
+        run: |
+          git config user.name "sickened36"
+          git config user.email "121896441+sickened36@users.noreply.github.com"
+          git add static/trades
+          if git diff --cached --quiet; then
+            echo "No new trade grades to commit."
+            exit 0
+          fi
+          git commit -m "Publish Fantasy Foosball trade grades"
+          git push
