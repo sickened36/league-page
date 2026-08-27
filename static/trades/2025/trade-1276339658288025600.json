@@ -1,0 +1,304 @@
+{
+  "id": "1276339658288025600",
+  "leagueId": "1251987542522212352",
+  "leagueName": "Fantasy Foosball Year 7",
+  "season": 2025,
+  "week": 3,
+  "occurredAt": 1758667875872,
+  "generatedAt": "2026-08-27T11:49:31.757Z",
+  "model": "gpt-5.6-luna",
+  "methodology": "MVP: Sleeper player search rank + actual league production (when available) + roster fit + starting-lineup impact.",
+  "headline": "Chase Powers Andy’s Win in a Four-for-Three Shuffle",
+  "verdict": "Andy is the current winner, with the stronger overall grade and the bigger top-end prize in Ja’Marr Chase.",
+  "summary": "This is a classic consolidation-versus-depth deal, but the supplied grades give Andy the edge: B- and 81.8 overall compared with Kane’s C+ and 79.5. Andy turns four pieces into Tony Pollard, Ja’Marr Chase and Ladd McConkey, highlighted by Chase’s 96.2 value, fourth search rank and 22.7 recent average. Kane receives two running backs and two receivers, including Breece Hall at 74.3 value, but gives up the trade’s premier asset and McConkey’s 68.7 value. Andy’s 11-3 record and 1,856.94 points for make the upgrade feel like a contender’s move, while Kane’s 5-9 roster gets breadth. The trash talk writes itself: Andy gets to wave Chase at rivals Alex, CJ and Payton.",
+  "sides": [
+    {
+      "rosterId": 2,
+      "manager": "Andy",
+      "teamName": "Long dong silvers",
+      "lore": "Rivals: Alex, CJ, Payton.",
+      "received": [
+        {
+          "id": "5967",
+          "type": "player",
+          "name": "Tony Pollard",
+          "position": "RB",
+          "nflTeam": "TEN",
+          "searchRank": 63,
+          "games": 14,
+          "seasonAvg": 8.6,
+          "recentAvg": 8.3,
+          "value": 63.1
+        },
+        {
+          "id": "7564",
+          "type": "player",
+          "name": "Ja'Marr Chase",
+          "position": "WR",
+          "nflTeam": "CIN",
+          "searchRank": 4,
+          "games": 17,
+          "seasonAvg": 17.1,
+          "recentAvg": 22.7,
+          "value": 96.2
+        },
+        {
+          "id": "11635",
+          "type": "player",
+          "name": "Ladd McConkey",
+          "position": "WR",
+          "nflTeam": "LAC",
+          "searchRank": 38,
+          "games": 17,
+          "seasonAvg": 10.6,
+          "recentAvg": 7.5,
+          "value": 68.7
+        }
+      ],
+      "sent": [
+        {
+          "id": "6806",
+          "type": "player",
+          "name": "J.K. Dobbins",
+          "position": "RB",
+          "nflTeam": "DEN",
+          "searchRank": 68,
+          "games": 17,
+          "seasonAvg": 6.8,
+          "recentAvg": 0,
+          "value": 53.9
+        },
+        {
+          "id": "8155",
+          "type": "player",
+          "name": "Breece Hall",
+          "position": "RB",
+          "nflTeam": "NYJ",
+          "searchRank": 27,
+          "games": 17,
+          "seasonAvg": 12.2,
+          "recentAvg": 11.6,
+          "value": 74.3
+        },
+        {
+          "id": "9756",
+          "type": "player",
+          "name": "Jordan Addison",
+          "position": "WR",
+          "nflTeam": "MIN",
+          "searchRank": 99,
+          "games": 17,
+          "seasonAvg": 7.8,
+          "recentAvg": 8.6,
+          "value": 58.3
+        },
+        {
+          "id": "11628",
+          "type": "player",
+          "name": "Marvin Harrison",
+          "position": "WR",
+          "nflTeam": "ARI",
+          "searchRank": 74,
+          "games": 17,
+          "seasonAvg": 7.5,
+          "recentAvg": 0.8,
+          "value": 55.6
+        }
+      ],
+      "context": {
+        "record": "11-3",
+        "pointsFor": 1856.94,
+        "positionCounts": {
+          "RB": 3,
+          "TE": 2,
+          "QB": 2,
+          "K": 2,
+          "WR": 5,
+          "DEF": 2
+        },
+        "topPlayers": [
+          {
+            "name": "Jonathan Taylor",
+            "position": "RB",
+            "value": 96.5
+          },
+          {
+            "name": "Amon-Ra St. Brown",
+            "position": "WR",
+            "value": 96.3
+          },
+          {
+            "name": "Ja'Marr Chase",
+            "position": "WR",
+            "value": 96.2
+          },
+          {
+            "name": "George Pickens",
+            "position": "WR",
+            "value": 87.2
+          },
+          {
+            "name": "Brock Purdy",
+            "position": "QB",
+            "value": 81.3
+          }
+        ]
+      },
+      "packageValue": 183.6,
+      "scores": {
+        "overall": 81.8,
+        "value": 82.6,
+        "rosterFit": 87.7,
+        "lineupImpact": 72
+      },
+      "grade": "B-",
+      "analysis": "Andy earns the higher grade because this package gives him the deal’s clear centerpiece in Ja’Marr Chase, whose 96.2 value, fourth search rank and 17.1 season average stand out. Chase’s 22.7 recent average supplies the biggest performance signal in the trade. Tony Pollard adds a 63.1-value running back with an 8.6 season average, while Ladd McConkey brings 68.7 value and a 10.6 season average. The fit score is the strongest component at 87.7, though lineup impact is a more modest 72. At 11-3 with 1,856.94 points, Andy is buying star power without needing a league-wide TED Talk.",
+      "bestReason": "Ja’Marr Chase is the trade’s highest-value asset, and Andy’s 87.7 roster-fit score supports the consolidation.",
+      "biggestRisk": "The 72 lineup-impact score shows the package may not transform Andy’s starting lineup as dramatically as its headline name suggests."
+    },
+    {
+      "rosterId": 3,
+      "manager": "Kane",
+      "teamName": "Blueballs",
+      "lore": "Rivals: Kohlt and Kade.",
+      "received": [
+        {
+          "id": "6806",
+          "type": "player",
+          "name": "J.K. Dobbins",
+          "position": "RB",
+          "nflTeam": "DEN",
+          "searchRank": 68,
+          "games": 17,
+          "seasonAvg": 6.8,
+          "recentAvg": 0,
+          "value": 53.9
+        },
+        {
+          "id": "8155",
+          "type": "player",
+          "name": "Breece Hall",
+          "position": "RB",
+          "nflTeam": "NYJ",
+          "searchRank": 27,
+          "games": 17,
+          "seasonAvg": 12.2,
+          "recentAvg": 11.6,
+          "value": 74.3
+        },
+        {
+          "id": "9756",
+          "type": "player",
+          "name": "Jordan Addison",
+          "position": "WR",
+          "nflTeam": "MIN",
+          "searchRank": 99,
+          "games": 17,
+          "seasonAvg": 7.8,
+          "recentAvg": 8.6,
+          "value": 58.3
+        },
+        {
+          "id": "11628",
+          "type": "player",
+          "name": "Marvin Harrison",
+          "position": "WR",
+          "nflTeam": "ARI",
+          "searchRank": 74,
+          "games": 17,
+          "seasonAvg": 7.5,
+          "recentAvg": 0.8,
+          "value": 55.6
+        }
+      ],
+      "sent": [
+        {
+          "id": "5967",
+          "type": "player",
+          "name": "Tony Pollard",
+          "position": "RB",
+          "nflTeam": "TEN",
+          "searchRank": 63,
+          "games": 14,
+          "seasonAvg": 8.6,
+          "recentAvg": 8.3,
+          "value": 63.1
+        },
+        {
+          "id": "7564",
+          "type": "player",
+          "name": "Ja'Marr Chase",
+          "position": "WR",
+          "nflTeam": "CIN",
+          "searchRank": 4,
+          "games": 17,
+          "seasonAvg": 17.1,
+          "recentAvg": 22.7,
+          "value": 96.2
+        },
+        {
+          "id": "11635",
+          "type": "player",
+          "name": "Ladd McConkey",
+          "position": "WR",
+          "nflTeam": "LAC",
+          "searchRank": 38,
+          "games": 17,
+          "seasonAvg": 10.6,
+          "recentAvg": 7.5,
+          "value": 68.7
+        }
+      ],
+      "context": {
+        "record": "5-9",
+        "pointsFor": 1605.4,
+        "positionCounts": {
+          "QB": 2,
+          "RB": 4,
+          "WR": 7,
+          "K": 1,
+          "TE": 1,
+          "DEF": 1
+        },
+        "topPlayers": [
+          {
+            "name": "Trey McBride",
+            "position": "TE",
+            "value": 95.6
+          },
+          {
+            "name": "Bo Nix",
+            "position": "QB",
+            "value": 82.2
+          },
+          {
+            "name": "Zay Flowers",
+            "position": "WR",
+            "value": 78.9
+          },
+          {
+            "name": "Breece Hall",
+            "position": "RB",
+            "value": 74.3
+          },
+          {
+            "name": "Rico Dowdle",
+            "position": "RB",
+            "value": 73.5
+          }
+        ]
+      },
+      "packageValue": 174.5,
+      "scores": {
+        "overall": 79.5,
+        "value": 81.4,
+        "rosterFit": 80.3,
+        "lineupImpact": 70
+      },
+      "grade": "C+",
+      "analysis": "Kane receives four players and gains a broader package led by Breece Hall, whose 74.3 value, 27 search rank and 12.2 season average give this side a credible foundation. Jordan Addison adds 58.3 value with a slightly better recent average than season average, while J.K. Dobbins and Marvin Harrison round out the return. The concern is concentration of quality: Kane sends away Chase, the deal’s 96.2-value superstar, plus Pollard and McConkey. The 80.3 roster-fit score is respectable, but the 70 lineup-impact score and 79.5 overall grade leave this as a depth play for a 5-9 team. Blueballs gets numbers; Andy gets the fireworks.",
+      "bestReason": "Breece Hall anchors a four-player return and gives Kane useful running-back value alongside Addison and Harrison.",
+      "biggestRisk": "Kane gives up Ja’Marr Chase, the highest-value player in the trade, while the side’s 70 lineup-impact score trails Andy’s package."
+    }
+  ]
+}

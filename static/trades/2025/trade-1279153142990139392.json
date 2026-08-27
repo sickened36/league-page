@@ -1,0 +1,232 @@
+{
+  "id": "1279153142990139392",
+  "leagueId": "1251987542522212352",
+  "leagueName": "Fantasy Foosball Year 7",
+  "season": 2025,
+  "week": 5,
+  "occurredAt": 1759336578949,
+  "generatedAt": "2026-08-27T11:49:39.167Z",
+  "model": "gpt-5.6-luna",
+  "methodology": "MVP: Sleeper player search rank + actual league production (when available) + roster fit + starting-lineup impact.",
+  "headline": "Brae Wins the Fit Battle in a Balanced Swap",
+  "verdict": "Brae is the current winner, with the stronger overall grade and a major roster-fit edge.",
+  "summary": "This is a remarkably balanced package by the supplied heuristic values: Parker receives 162.7 in player value, while Brae receives 167.0. The grades separate the deal more clearly than the raw totals. Parker lands a B-, with 84 roster fit and 86 lineup impact, while Brae earns a B through an outstanding 93.5 roster-fit score and the same 86 lineup-impact mark. Smith-Njigba brings the highest individual value in the trade, but Chase Brown’s 26 recent average gives Brae a compelling production piece alongside Jefferson. At 5-9, Brae gets the better current grade; Parker’s 8-6 team remains a plausible counterweight. Even Public Enemy Parker did not turn this into another dogshit trade.",
+  "sides": [
+    {
+      "rosterId": 5,
+      "manager": "Parker",
+      "teamName": "My BallDak hurts",
+      "lore": "2019 inaugural champion. League Public Enemy. Nickname: King of Dogshit Trades. Rivals: everyone.",
+      "received": [
+        {
+          "id": "9488",
+          "type": "player",
+          "name": "Jaxon Smith-Njigba",
+          "position": "WR",
+          "nflTeam": "SEA",
+          "searchRank": 6,
+          "games": 17,
+          "seasonAvg": 20.3,
+          "recentAvg": 19.4,
+          "value": 98.3
+        },
+        {
+          "id": "11584",
+          "type": "player",
+          "name": "Bucky Irving",
+          "position": "RB",
+          "nflTeam": "TB",
+          "searchRank": 32,
+          "games": 17,
+          "seasonAvg": 7.5,
+          "recentAvg": 7.8,
+          "value": 64.4
+        }
+      ],
+      "sent": [
+        {
+          "id": "6794",
+          "type": "player",
+          "name": "Justin Jefferson",
+          "position": "WR",
+          "nflTeam": "MIN",
+          "searchRank": 11,
+          "games": 17,
+          "seasonAvg": 10.8,
+          "recentAvg": 8.6,
+          "value": 73.2
+        },
+        {
+          "id": "9224",
+          "type": "player",
+          "name": "Chase Brown",
+          "position": "RB",
+          "nflTeam": "CIN",
+          "searchRank": 16,
+          "games": 17,
+          "seasonAvg": 15.5,
+          "recentAvg": 26,
+          "value": 93.7
+        }
+      ],
+      "context": {
+        "record": "8-6",
+        "pointsFor": 1544.78,
+        "positionCounts": {
+          "WR": 4,
+          "QB": 2,
+          "RB": 6,
+          "TE": 1,
+          "K": 1,
+          "DEF": 1
+        },
+        "topPlayers": [
+          {
+            "name": "Jaxon Smith-Njigba",
+            "position": "WR",
+            "value": 98.3
+          },
+          {
+            "name": "Caleb Williams",
+            "position": "QB",
+            "value": 85
+          },
+          {
+            "name": "TreVeyon Henderson",
+            "position": "RB",
+            "value": 74.2
+          },
+          {
+            "name": "Omarion Hampton",
+            "position": "RB",
+            "value": 73.9
+          },
+          {
+            "name": "Tyler Warren",
+            "position": "TE",
+            "value": 73.3
+          }
+        ]
+      },
+      "packageValue": 146,
+      "scores": {
+        "overall": 82.8,
+        "value": 81.9,
+        "rosterFit": 84,
+        "lineupImpact": 86
+      },
+      "grade": "B-",
+      "analysis": "Parker’s return is headlined by Jaxon Smith-Njigba, whose 98.3 value, sixth search rank, 20.3 season average, and 19.4 recent average make him the trade’s strongest individual asset. Bucky Irving adds a running back with a 64.4 value and steady 7.5 season and 7.8 recent averages. The package fits an 8-6 roster carrying six running backs and four wideouts, while the 86 lineup-impact score says the swap can matter immediately. The principal concern is surrendering Chase Brown, whose 93.7 value and 26 recent average are the deal’s hottest production profile.",
+      "bestReason": "Smith-Njigba is the highest-value player involved, and Parker’s six-RB/four-WR roster can absorb the positional reshuffle.",
+      "biggestRisk": "Giving up Chase Brown’s 26 recent average could sting if his recent production remains the strongest part of this package."
+    },
+    {
+      "rosterId": 9,
+      "manager": "Brae",
+      "teamName": "Ogles Outlaws",
+      "lore": "Rivals: Parker and Andy.",
+      "received": [
+        {
+          "id": "6794",
+          "type": "player",
+          "name": "Justin Jefferson",
+          "position": "WR",
+          "nflTeam": "MIN",
+          "searchRank": 11,
+          "games": 17,
+          "seasonAvg": 10.8,
+          "recentAvg": 8.6,
+          "value": 73.2
+        },
+        {
+          "id": "9224",
+          "type": "player",
+          "name": "Chase Brown",
+          "position": "RB",
+          "nflTeam": "CIN",
+          "searchRank": 16,
+          "games": 17,
+          "seasonAvg": 15.5,
+          "recentAvg": 26,
+          "value": 93.7
+        }
+      ],
+      "sent": [
+        {
+          "id": "9488",
+          "type": "player",
+          "name": "Jaxon Smith-Njigba",
+          "position": "WR",
+          "nflTeam": "SEA",
+          "searchRank": 6,
+          "games": 17,
+          "seasonAvg": 20.3,
+          "recentAvg": 19.4,
+          "value": 98.3
+        },
+        {
+          "id": "11584",
+          "type": "player",
+          "name": "Bucky Irving",
+          "position": "RB",
+          "nflTeam": "TB",
+          "searchRank": 32,
+          "games": 17,
+          "seasonAvg": 7.5,
+          "recentAvg": 7.8,
+          "value": 64.4
+        }
+      ],
+      "context": {
+        "record": "5-9",
+        "pointsFor": 1518.56,
+        "positionCounts": {
+          "RB": 4,
+          "WR": 5,
+          "TE": 2,
+          "QB": 4,
+          "K": 1,
+          "DEF": 1
+        },
+        "topPlayers": [
+          {
+            "name": "Chase Brown",
+            "position": "RB",
+            "value": 93.7
+          },
+          {
+            "name": "Nico Collins",
+            "position": "WR",
+            "value": 81.1
+          },
+          {
+            "name": "Dallas Goedert",
+            "position": "TE",
+            "value": 75.5
+          },
+          {
+            "name": "Justin Jefferson",
+            "position": "WR",
+            "value": 73.2
+          },
+          {
+            "name": "Jaylen Warren",
+            "position": "RB",
+            "value": 72.7
+          }
+        ]
+      },
+      "packageValue": 147.9,
+      "scores": {
+        "overall": 84.4,
+        "value": 82.1,
+        "rosterFit": 93.5,
+        "lineupImpact": 86
+      },
+      "grade": "B",
+      "analysis": "Brae receives Justin Jefferson and Chase Brown, a two-player package that carries 167.0 in supplied player value. Brown is the centerpiece from a production standpoint, with a 93.7 value, 15.5 season average, and 26 recent average; Jefferson adds a 73.2 value and 11th search rank. The move suits a 5-9 roster with four running backs and five wide receivers, earning a standout 93.5 roster-fit score and matching Parker’s 86 lineup impact. The risk is moving Smith-Njigba, the deal’s top individual asset, while Irving’s replacement value trails the outgoing WR.",
+      "bestReason": "Brae’s 93.5 roster-fit score leads the deal, and Chase Brown’s 26 recent average gives the return its clearest production punch.",
+      "biggestRisk": "Brae parts with Smith-Njigba, whose 98.3 value and sixth search rank make him the strongest single asset exchanged."
+    }
+  ]
+}

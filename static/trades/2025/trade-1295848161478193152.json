@@ -1,0 +1,232 @@
+{
+  "id": "1295848161478193152",
+  "leagueId": "1251987542522212352",
+  "leagueName": "Fantasy Foosball Year 7",
+  "season": 2025,
+  "week": 11,
+  "occurredAt": 1763322174754,
+  "generatedAt": "2026-08-27T11:50:21.802Z",
+  "model": "gpt-5.6-luna",
+  "methodology": "MVP: Sleeper player search rank + actual league production (when available) + roster fit + starting-lineup impact.",
+  "headline": "Montgomery-Wilson Swap Lands in C+ Territory",
+  "verdict": "Andy is the narrow current winner on roster fit, but the nearly identical C+ grades make this deal too close to separate.",
+  "summary": "This is a balanced two-for-two exchange with both managers landing at C+ and separated by only 0.2 points overall: Andy scores 79.3, while Cooper scores 79.5. Andy receives the higher-valued individual asset in David Montgomery and adds Garrett Wilson, while Cooper gets the stronger package by supplied total value, led by Ladd McConkey’s 68.7 and Tony Pollard’s 63.1. The fit numbers lean Andy, whose roster is 11-3 and has three RBs and five WRs, though the lineup-impact score is only 64. Cooper’s 6-8 roster has four RBs and six WRs, making the exchange a genuine reshuffle rather than a clear upgrade. No one gets to print a championship banner yet.",
+  "sides": [
+    {
+      "rosterId": 2,
+      "manager": "Andy",
+      "teamName": "Long dong silvers",
+      "lore": "Rivals: Alex, CJ, Payton.",
+      "received": [
+        {
+          "id": "5892",
+          "type": "player",
+          "name": "David Montgomery",
+          "position": "RB",
+          "nflTeam": "HOU",
+          "searchRank": 46,
+          "games": 17,
+          "seasonAvg": 9.4,
+          "recentAvg": 5.5,
+          "value": 65.4
+        },
+        {
+          "id": "8146",
+          "type": "player",
+          "name": "Garrett Wilson",
+          "position": "WR",
+          "nflTeam": "NYJ",
+          "searchRank": 38,
+          "games": 17,
+          "seasonAvg": 5.9,
+          "recentAvg": 0,
+          "value": 55.9
+        }
+      ],
+      "sent": [
+        {
+          "id": "5967",
+          "type": "player",
+          "name": "Tony Pollard",
+          "position": "RB",
+          "nflTeam": "TEN",
+          "searchRank": 63,
+          "games": 14,
+          "seasonAvg": 8.6,
+          "recentAvg": 8.3,
+          "value": 63.1
+        },
+        {
+          "id": "11635",
+          "type": "player",
+          "name": "Ladd McConkey",
+          "position": "WR",
+          "nflTeam": "LAC",
+          "searchRank": 38,
+          "games": 17,
+          "seasonAvg": 10.6,
+          "recentAvg": 7.5,
+          "value": 68.7
+        }
+      ],
+      "context": {
+        "record": "11-3",
+        "pointsFor": 1856.94,
+        "positionCounts": {
+          "RB": 3,
+          "TE": 2,
+          "QB": 2,
+          "K": 2,
+          "WR": 5,
+          "DEF": 2
+        },
+        "topPlayers": [
+          {
+            "name": "Jonathan Taylor",
+            "position": "RB",
+            "value": 96.5
+          },
+          {
+            "name": "Amon-Ra St. Brown",
+            "position": "WR",
+            "value": 96.3
+          },
+          {
+            "name": "Ja'Marr Chase",
+            "position": "WR",
+            "value": 96.2
+          },
+          {
+            "name": "George Pickens",
+            "position": "WR",
+            "value": 87.2
+          },
+          {
+            "name": "Brock Purdy",
+            "position": "QB",
+            "value": 81.3
+          }
+        ]
+      },
+      "packageValue": 106.8,
+      "scores": {
+        "overall": 79.3,
+        "value": 81.1,
+        "rosterFit": 86,
+        "lineupImpact": 64
+      },
+      "grade": "C+",
+      "analysis": "Andy’s return is built around David Montgomery’s 65.4 value and Garrett Wilson’s 55.9, with Montgomery carrying a better search rank than Pollard and Wilson matching McConkey at 38. The roster-fit score of 86 is the strongest number in the deal, a logical mark for an 11-3 team that already has Jonathan Taylor, Amon-Ra St. Brown, Ja’Marr Chase, and George Pickens among its top players. The catch is lineup impact: 64, tied with Cooper’s score. Montgomery’s 9.4 season average exceeds Pollard’s 8.6, but Wilson’s 5.9 trails McConkey’s 10.6, leaving Andy’s C+ firmly in “useful reshuffle,” not “league-winning heist” territory.",
+      "bestReason": "Andy gets Montgomery’s higher supplied player value and the trade’s best roster-fit score at 86.",
+      "biggestRisk": "Garrett Wilson’s 5.9 season average and 0 recent average create the clearest production concern in Andy’s incoming package."
+    },
+    {
+      "rosterId": 8,
+      "manager": "Cooper",
+      "teamName": "Jack MeHoff",
+      "lore": "2022 champion. Rival: Kade.",
+      "received": [
+        {
+          "id": "5967",
+          "type": "player",
+          "name": "Tony Pollard",
+          "position": "RB",
+          "nflTeam": "TEN",
+          "searchRank": 63,
+          "games": 14,
+          "seasonAvg": 8.6,
+          "recentAvg": 8.3,
+          "value": 63.1
+        },
+        {
+          "id": "11635",
+          "type": "player",
+          "name": "Ladd McConkey",
+          "position": "WR",
+          "nflTeam": "LAC",
+          "searchRank": 38,
+          "games": 17,
+          "seasonAvg": 10.6,
+          "recentAvg": 7.5,
+          "value": 68.7
+        }
+      ],
+      "sent": [
+        {
+          "id": "5892",
+          "type": "player",
+          "name": "David Montgomery",
+          "position": "RB",
+          "nflTeam": "HOU",
+          "searchRank": 46,
+          "games": 17,
+          "seasonAvg": 9.4,
+          "recentAvg": 5.5,
+          "value": 65.4
+        },
+        {
+          "id": "8146",
+          "type": "player",
+          "name": "Garrett Wilson",
+          "position": "WR",
+          "nflTeam": "NYJ",
+          "searchRank": 38,
+          "games": 17,
+          "seasonAvg": 5.9,
+          "recentAvg": 0,
+          "value": 55.9
+        }
+      ],
+      "context": {
+        "record": "6-8",
+        "pointsFor": 1544.54,
+        "positionCounts": {
+          "WR": 6,
+          "K": 1,
+          "QB": 1,
+          "RB": 4,
+          "TE": 1,
+          "DEF": 1
+        },
+        "topPlayers": [
+          {
+            "name": "Drake Maye",
+            "position": "QB",
+            "value": 93
+          },
+          {
+            "name": "Michael Wilson",
+            "position": "WR",
+            "value": 88
+          },
+          {
+            "name": "Ashton Jeanty",
+            "position": "RB",
+            "value": 83.6
+          },
+          {
+            "name": "Brandon Aubrey",
+            "position": "K",
+            "value": 81.6
+          },
+          {
+            "name": "Ladd McConkey",
+            "position": "WR",
+            "value": 68.7
+          }
+        ]
+      },
+      "packageValue": 115.4,
+      "scores": {
+        "overall": 79.5,
+        "value": 82.9,
+        "rosterFit": 79,
+        "lineupImpact": 64
+      },
+      "grade": "C+",
+      "analysis": "Cooper receives Tony Pollard and Ladd McConkey, whose supplied values total 131.8 and exceed the 121.3 total of Montgomery and Wilson. McConkey brings the strongest season average in the trade at 10.6, while Pollard’s 8.3 recent average is also better than Montgomery’s 5.5. That production profile helps explain Cooper’s superior value score of 82.9, even as his roster-fit score sits at 79. His 6-8 team has four RBs and six WRs, so the incoming pair reinforces both listed position groups without producing a dramatic lineup-impact edge. It’s a tidy package, though the C+ says this is more accounting than fireworks—appropriate for a former 2022 champion, not quite another coronation.",
+      "bestReason": "Cooper gets the larger supplied package value, plus stronger season and recent averages from the incoming pair.",
+      "biggestRisk": "The roster-fit score of 79 and lineup-impact score of 64 suggest the package does not create a major immediate edge for Cooper."
+    }
+  ]
+}

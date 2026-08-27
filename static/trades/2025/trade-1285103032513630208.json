@@ -1,0 +1,233 @@
+{
+  "id": "1285103032513630208",
+  "leagueId": "1251987542522212352",
+  "leagueName": "Fantasy Foosball Year 7",
+  "season": 2025,
+  "week": 7,
+  "occurredAt": 1760757282060,
+  "generatedAt": "2026-08-27T11:50:11.378Z",
+  "model": "gpt-5.6-luna",
+  "methodology": "MVP: Sleeper player search rank + actual league production (when available) + roster fit + starting-lineup impact.",
+  "headline": "Payton Wins the Moore Deal on Fit and Form",
+  "verdict": "Retirement Home is the current winner, with Payton holding the clearer edge in grade, fit, and lineup impact.",
+  "summary": "Payton’s Retirement Home wins this transaction on the supplied evaluation: an 82.6 overall score, 88.5 roster-fit mark, and 76 lineup-impact score all beat Parker’s 78.4, 79, and 64. The central swing is DJ Moore, whose 70.7 value, No. 56 search rank, 9.9 season average, and 15.5 recent average give Payton the trade’s strongest current asset. Parker receives a useful RB in Woody Marks, but his recent average is below his season mark, while Elic Ayomanor’s recent production is only 1. Parker’s roster has six RBs and one TE, so the fit is understandable, but surrendering Moore leaves his side with the lower grade. Even the league’s resident trade lightning rod could not quite sell this one as a masterpiece.",
+  "sides": [
+    {
+      "rosterId": 1,
+      "manager": "Payton",
+      "teamName": "Retirement Home",
+      "lore": "Two-time champion (2020, 2021). Rivals: Parker, Andy, CJ, Alex.",
+      "received": [
+        {
+          "id": "2505",
+          "type": "player",
+          "name": "Darren Waller",
+          "position": "TE",
+          "nflTeam": "CAR",
+          "searchRank": 402,
+          "games": 15,
+          "seasonAvg": 4,
+          "recentAvg": 4.9,
+          "value": 30.8
+        },
+        {
+          "id": "4983",
+          "type": "player",
+          "name": "DJ Moore",
+          "position": "WR",
+          "nflTeam": "BUF",
+          "searchRank": 56,
+          "games": 17,
+          "seasonAvg": 9.9,
+          "recentAvg": 15.5,
+          "value": 70.7
+        }
+      ],
+      "sent": [
+        {
+          "id": "12474",
+          "type": "player",
+          "name": "Woody Marks",
+          "position": "RB",
+          "nflTeam": "HOU",
+          "searchRank": 105,
+          "games": 14,
+          "seasonAvg": 9.5,
+          "recentAvg": 6.4,
+          "value": 59.1
+        },
+        {
+          "id": "12499",
+          "type": "player",
+          "name": "Elic Ayomanor",
+          "position": "WR",
+          "nflTeam": "TEN",
+          "searchRank": 185,
+          "games": 10,
+          "seasonAvg": 5.5,
+          "recentAvg": 1,
+          "value": 38.5
+        }
+      ],
+      "context": {
+        "record": "8-6",
+        "pointsFor": 1597.08,
+        "positionCounts": {
+          "RB": 5,
+          "TE": 2,
+          "WR": 4,
+          "QB": 2,
+          "DB": 1,
+          "K": 1,
+          "DEF": 1
+        },
+        "topPlayers": [
+          {
+            "name": "Christian McCaffrey",
+            "position": "RB",
+            "value": 98.4
+          },
+          {
+            "name": "Justin Herbert",
+            "position": "QB",
+            "value": 80
+          },
+          {
+            "name": "Javonte Williams",
+            "position": "RB",
+            "value": 76.8
+          },
+          {
+            "name": "Jaxson Dart",
+            "position": "QB",
+            "value": 76.6
+          },
+          {
+            "name": "Juwan Johnson",
+            "position": "TE",
+            "value": 71.5
+          }
+        ]
+      },
+      "packageValue": 93.5,
+      "scores": {
+        "overall": 82.6,
+        "value": 82.7,
+        "rosterFit": 88.5,
+        "lineupImpact": 76
+      },
+      "grade": "B-",
+      "analysis": "Payton sends Woody Marks and Elic Ayomanor but gets the trade’s most valuable piece in DJ Moore, plus Darren Waller for added TE depth. Moore carries a 70.7 value and No. 56 search rank, with a 15.5 recent average well above his 9.9 season average. Waller’s 4.9 recent average also edges his 4 season mark. Retirement Home has five RBs and two TEs, including Juwan Johnson, so this is not a desperation depth move; it is a quality-for-quality reshuffle that fits an 8-6 roster. The 88.5 fit score and 76 lineup-impact mark support Payton’s B- grade.",
+      "bestReason": "DJ Moore is the deal’s strongest asset, and his recent 15.5 average gives Payton the clearest production signal.",
+      "biggestRisk": "Payton gives up Woody Marks, whose 59.1 value and 9.5 season average make the RB-for-WR swap less comfortable if running-back depth becomes the priority."
+    },
+    {
+      "rosterId": 5,
+      "manager": "Parker",
+      "teamName": "My BallDak hurts",
+      "lore": "2019 inaugural champion. League Public Enemy. Nickname: King of Dogshit Trades. Rivals: everyone.",
+      "received": [
+        {
+          "id": "12474",
+          "type": "player",
+          "name": "Woody Marks",
+          "position": "RB",
+          "nflTeam": "HOU",
+          "searchRank": 105,
+          "games": 14,
+          "seasonAvg": 9.5,
+          "recentAvg": 6.4,
+          "value": 59.1
+        },
+        {
+          "id": "12499",
+          "type": "player",
+          "name": "Elic Ayomanor",
+          "position": "WR",
+          "nflTeam": "TEN",
+          "searchRank": 185,
+          "games": 10,
+          "seasonAvg": 5.5,
+          "recentAvg": 1,
+          "value": 38.5
+        }
+      ],
+      "sent": [
+        {
+          "id": "2505",
+          "type": "player",
+          "name": "Darren Waller",
+          "position": "TE",
+          "nflTeam": "CAR",
+          "searchRank": 402,
+          "games": 15,
+          "seasonAvg": 4,
+          "recentAvg": 4.9,
+          "value": 30.8
+        },
+        {
+          "id": "4983",
+          "type": "player",
+          "name": "DJ Moore",
+          "position": "WR",
+          "nflTeam": "BUF",
+          "searchRank": 56,
+          "games": 17,
+          "seasonAvg": 9.9,
+          "recentAvg": 15.5,
+          "value": 70.7
+        }
+      ],
+      "context": {
+        "record": "8-6",
+        "pointsFor": 1544.78,
+        "positionCounts": {
+          "WR": 4,
+          "QB": 2,
+          "RB": 6,
+          "TE": 1,
+          "K": 1,
+          "DEF": 1
+        },
+        "topPlayers": [
+          {
+            "name": "Jaxon Smith-Njigba",
+            "position": "WR",
+            "value": 98.3
+          },
+          {
+            "name": "Caleb Williams",
+            "position": "QB",
+            "value": 85
+          },
+          {
+            "name": "TreVeyon Henderson",
+            "position": "RB",
+            "value": 74.2
+          },
+          {
+            "name": "Omarion Hampton",
+            "position": "RB",
+            "value": 73.9
+          },
+          {
+            "name": "Tyler Warren",
+            "position": "TE",
+            "value": 73.3
+          }
+        ]
+      },
+      "packageValue": 87.6,
+      "scores": {
+        "overall": 78.4,
+        "value": 81.3,
+        "rosterFit": 79,
+        "lineupImpact": 64
+      },
+      "grade": "C+",
+      "analysis": "Parker receives a two-player package led by Woody Marks, whose 59.1 value, No. 105 search rank, and 9.5 season average provide credible RB production. Elic Ayomanor adds a WR, though his 5.5 season average has fallen to a 1 recent average. The move does address Parker’s roster construction: six RBs leave room to exchange one for another asset while adding a second wideout to a four-WR roster. Still, Parker gives up DJ Moore, the highest-value player in the deal, along with Darren Waller’s TE depth. The 78.4 overall score and 64 lineup-impact score explain the C+; classic King of Dogshit Trades branding, but not a total disaster.",
+      "bestReason": "Woody Marks supplies a 59.1-value RB with a 9.5 season average, and Parker’s six-RB roster can absorb the outgoing depth.",
+      "biggestRisk": "Parker loses DJ Moore’s 70.7 value and 15.5 recent average while taking back Ayomanor, whose recent average is only 1."
+    }
+  ]
+}

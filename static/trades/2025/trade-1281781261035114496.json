@@ -1,0 +1,209 @@
+{
+  "id": "1281781261035114496",
+  "leagueId": "1251987542522212352",
+  "leagueName": "Fantasy Foosball Year 7",
+  "season": 2025,
+  "week": 6,
+  "occurredAt": 1759981687018,
+  "generatedAt": "2026-08-27T11:49:54.642Z",
+  "model": "gpt-5.6-luna",
+  "methodology": "MVP: Sleeper player search rank + actual league production (when available) + roster fit + starting-lineup impact.",
+  "headline": "Alex Adds Thunderpower as Payton Reboots the Backfield",
+  "verdict": "Alex is the current winner, earning the stronger B grade and a decisive edge in value and lineup impact.",
+  "summary": "Alex paid Javonte Williams’ 76.8 package value for Derrick Henry and Mike Evans, a 143.4 return that explains the stronger 86.6 overall score, 88.7 value mark, and 82 lineup-impact rating. Henry brings a search rank of 7, a 15.7 season average, and a 26.1 recent average, while Evans adds a 15.1 recent average despite a 4.7 season mark. Payton receives the younger single-piece return in Williams, whose 76.8 value and 14.3 season average offer a useful foundation, but the package gives up Henry’s premium profile and Evans’ recent production. The Retirement Home still has McCaffrey, so this is hardly a roster funeral—but Alex gets the headline haul.",
+  "sides": [
+    {
+      "rosterId": 1,
+      "manager": "Payton",
+      "teamName": "Retirement Home",
+      "lore": "Two-time champion (2020, 2021). Rivals: Parker, Andy, CJ, Alex.",
+      "received": [
+        {
+          "id": "7588",
+          "type": "player",
+          "name": "Javonte Williams",
+          "position": "RB",
+          "nflTeam": "DAL",
+          "searchRank": 32,
+          "games": 17,
+          "seasonAvg": 14.3,
+          "recentAvg": 10.9,
+          "value": 76.8
+        }
+      ],
+      "sent": [
+        {
+          "id": "2216",
+          "type": "player",
+          "name": "Mike Evans",
+          "position": "WR",
+          "nflTeam": "SF",
+          "searchRank": 60,
+          "games": 17,
+          "seasonAvg": 4.7,
+          "recentAvg": 15.1,
+          "value": 62.8
+        },
+        {
+          "id": "3198",
+          "type": "player",
+          "name": "Derrick Henry",
+          "position": "RB",
+          "nflTeam": "BAL",
+          "searchRank": 7,
+          "games": 17,
+          "seasonAvg": 15.7,
+          "recentAvg": 26.1,
+          "value": 96.9
+        }
+      ],
+      "context": {
+        "record": "8-6",
+        "pointsFor": 1597.08,
+        "positionCounts": {
+          "RB": 5,
+          "TE": 2,
+          "WR": 4,
+          "QB": 2,
+          "DB": 1,
+          "K": 1,
+          "DEF": 1
+        },
+        "topPlayers": [
+          {
+            "name": "Christian McCaffrey",
+            "position": "RB",
+            "value": 98.4
+          },
+          {
+            "name": "Justin Herbert",
+            "position": "QB",
+            "value": 80
+          },
+          {
+            "name": "Javonte Williams",
+            "position": "RB",
+            "value": 76.8
+          },
+          {
+            "name": "Jaxson Dart",
+            "position": "QB",
+            "value": 76.6
+          },
+          {
+            "name": "Juwan Johnson",
+            "position": "TE",
+            "value": 71.5
+          }
+        ]
+      },
+      "packageValue": 76.8,
+      "scores": {
+        "overall": 73.1,
+        "value": 75.3,
+        "rosterFit": 72,
+        "lineupImpact": 64
+      },
+      "grade": "C",
+      "analysis": "Payton’s Retirement Home receives Javonte Williams, a 76.8-value running back with a 32 search rank, 17 games played, and a 14.3 season average. That is a clean, concentrated return for a roster already carrying five running backs, including Christian McCaffrey, and it keeps Payton’s package centered at one position. The concern is immediate lineup impact: the supplied 64 score trails the trade’s other side, while Williams’ 10.9 recent average is below his season mark. At 8-6, Payton gets a usable piece, but also gives up Derrick Henry’s 96.9 value and Mike Evans’ 15.1 recent average.",
+      "bestReason": "Williams provides a solid 76.8-value RB return while preserving a deep running-back room led by Christian McCaffrey.",
+      "biggestRisk": "The deal sacrifices Henry’s elite 96.9 value and Evans’ strong 15.1 recent average for one player with a 10.9 recent average."
+    },
+    {
+      "rosterId": 10,
+      "manager": "Alex",
+      "teamName": "I love big TD’s",
+      "lore": "2025 champion. Defending champion entering 2026. Rivals: Andy, Payton, CJ.",
+      "received": [
+        {
+          "id": "2216",
+          "type": "player",
+          "name": "Mike Evans",
+          "position": "WR",
+          "nflTeam": "SF",
+          "searchRank": 60,
+          "games": 17,
+          "seasonAvg": 4.7,
+          "recentAvg": 15.1,
+          "value": 62.8
+        },
+        {
+          "id": "3198",
+          "type": "player",
+          "name": "Derrick Henry",
+          "position": "RB",
+          "nflTeam": "BAL",
+          "searchRank": 7,
+          "games": 17,
+          "seasonAvg": 15.7,
+          "recentAvg": 26.1,
+          "value": 96.9
+        }
+      ],
+      "sent": [
+        {
+          "id": "7588",
+          "type": "player",
+          "name": "Javonte Williams",
+          "position": "RB",
+          "nflTeam": "DAL",
+          "searchRank": 32,
+          "games": 17,
+          "seasonAvg": 14.3,
+          "recentAvg": 10.9,
+          "value": 76.8
+        }
+      ],
+      "context": {
+        "record": "8-6",
+        "pointsFor": 1627.18,
+        "positionCounts": {
+          "RB": 4,
+          "WR": 6,
+          "TE": 2,
+          "K": 1,
+          "QB": 2,
+          "DEF": 1
+        },
+        "topPlayers": [
+          {
+            "name": "Derrick Henry",
+            "position": "RB",
+            "value": 96.9
+          },
+          {
+            "name": "De'Von Achane",
+            "position": "RB",
+            "value": 94.5
+          },
+          {
+            "name": "Kyren Williams",
+            "position": "RB",
+            "value": 85.2
+          },
+          {
+            "name": "Ka'imi Fairbairn",
+            "position": "K",
+            "value": 80.2
+          },
+          {
+            "name": "Colston Loveland",
+            "position": "TE",
+            "value": 79.9
+          }
+        ]
+      },
+      "packageValue": 143.4,
+      "scores": {
+        "overall": 86.6,
+        "value": 88.7,
+        "rosterFit": 81.5,
+        "lineupImpact": 82
+      },
+      "grade": "B",
+      "analysis": "Alex’s I love big TD’s lands Derrick Henry and Mike Evans for Javonte Williams, and the supplied numbers make this the more forceful side. Henry carries a 96.9 value, a 7 search rank, a 15.7 season average, and a 26.1 recent average; Evans adds a 62.8 value and 15.1 recent average. The two-player package fits an 8-6 roster with four running backs and six receivers, while the lineup-impact score reaches 82. Alex already has De’Von Achane and Kyren Williams, so the principal risk is roster concentration at premium running back spots. Still, the defending champion gets the louder thunder.",
+      "bestReason": "Henry’s elite market profile and 26.1 recent average, paired with Evans’ recent production, drive the trade’s 88.7 value score.",
+      "biggestRisk": "Alex adds another high-value running back to a room already featuring Achane and Kyren Williams, increasing positional concentration."
+    }
+  ]
+}

@@ -1,0 +1,185 @@
+{
+  "id": "1273665893695516672",
+  "leagueId": "1251987542522212352",
+  "leagueName": "Fantasy Foosball Year 7",
+  "season": 2025,
+  "week": 2,
+  "occurredAt": 1758037831073,
+  "generatedAt": "2026-08-27T11:49:10.357Z",
+  "model": "gpt-5.6-luna",
+  "methodology": "MVP: Sleeper player search rank + actual league production (when available) + roster fit + starting-lineup impact.",
+  "headline": "Deebo-to-Coleman Swap Gives Cooper the Clear Edge",
+  "verdict": "Cooper is the current winner, with the B- side comfortably ahead of Payton’s C+ return.",
+  "summary": "This is a straightforward value-for-fit trade, but the value gap is substantial. Payton sends Deebo Samuel, whose supplied value is 57.6, search rank is 132, season average is 10.8, and recent average is 8.4, for Keon Coleman, valued at 40 with a 206 search rank, 5.3 season average, and 3.2 recent average. Payton’s roster-fit score is stronger at 86, suggesting Coleman fits the Retirement Home roster better, while Cooper’s value score leads the deal at 86. Still, both sides receive only a 64 lineup-impact score. Cooper gets the better asset; Payton gets the cleaner fit. The former champion’s bargain bin has officially been inspected.",
+  "sides": [
+    {
+      "rosterId": 1,
+      "manager": "Payton",
+      "teamName": "Retirement Home",
+      "lore": "Two-time champion (2020, 2021). Rivals: Parker, Andy, CJ, Alex.",
+      "received": [
+        {
+          "id": "11637",
+          "type": "player",
+          "name": "Keon Coleman",
+          "position": "WR",
+          "nflTeam": "BUF",
+          "searchRank": 206,
+          "games": 8,
+          "seasonAvg": 5.3,
+          "recentAvg": 3.2,
+          "value": 40
+        }
+      ],
+      "sent": [
+        {
+          "id": "5872",
+          "type": "player",
+          "name": "Deebo Samuel",
+          "position": "WR",
+          "nflTeam": "SF",
+          "searchRank": 132,
+          "games": 17,
+          "seasonAvg": 10.8,
+          "recentAvg": 8.4,
+          "value": 57.6
+        }
+      ],
+      "context": {
+        "record": "8-6",
+        "pointsFor": 1597.08,
+        "positionCounts": {
+          "RB": 5,
+          "TE": 2,
+          "WR": 4,
+          "QB": 2,
+          "DB": 1,
+          "K": 1,
+          "DEF": 1
+        },
+        "topPlayers": [
+          {
+            "name": "Christian McCaffrey",
+            "position": "RB",
+            "value": 98.4
+          },
+          {
+            "name": "Justin Herbert",
+            "position": "QB",
+            "value": 80
+          },
+          {
+            "name": "Javonte Williams",
+            "position": "RB",
+            "value": 76.8
+          },
+          {
+            "name": "Jaxson Dart",
+            "position": "QB",
+            "value": 76.6
+          },
+          {
+            "name": "Juwan Johnson",
+            "position": "TE",
+            "value": 71.5
+          }
+        ]
+      },
+      "packageValue": 40,
+      "scores": {
+        "overall": 77.1,
+        "value": 78,
+        "rosterFit": 86,
+        "lineupImpact": 64
+      },
+      "grade": "C+",
+      "analysis": "Payton’s Retirement Home receives Keon Coleman and a C+ grade, with the roster-fit score providing the clearest case for the move. Coleman joins a roster carrying five running backs, four wide receivers, and two tight ends, so the transaction aligns with the team’s overall construction better than the incoming player’s raw market profile might suggest. Still, the supplied numbers show a meaningful production and value drop: Coleman carries a 40 package value, 206 search rank, 5.3 season average, and 3.2 recent average, compared with Deebo Samuel’s 57.6 value, 132 rank, and 10.8 season average. The upside is fit; the risk is paying for it with the stronger asset.",
+      "bestReason": "Coleman’s 86 roster-fit score is the strongest argument for Payton’s side.",
+      "biggestRisk": "Payton gives up the higher-value, higher-producing wide receiver for a clearly lower-valued return."
+    },
+    {
+      "rosterId": 8,
+      "manager": "Cooper",
+      "teamName": "Jack MeHoff",
+      "lore": "2022 champion. Rival: Kade.",
+      "received": [
+        {
+          "id": "5872",
+          "type": "player",
+          "name": "Deebo Samuel",
+          "position": "WR",
+          "nflTeam": "SF",
+          "searchRank": 132,
+          "games": 17,
+          "seasonAvg": 10.8,
+          "recentAvg": 8.4,
+          "value": 57.6
+        }
+      ],
+      "sent": [
+        {
+          "id": "11637",
+          "type": "player",
+          "name": "Keon Coleman",
+          "position": "WR",
+          "nflTeam": "BUF",
+          "searchRank": 206,
+          "games": 8,
+          "seasonAvg": 5.3,
+          "recentAvg": 3.2,
+          "value": 40
+        }
+      ],
+      "context": {
+        "record": "6-8",
+        "pointsFor": 1544.54,
+        "positionCounts": {
+          "WR": 6,
+          "K": 1,
+          "QB": 1,
+          "RB": 4,
+          "TE": 1,
+          "DEF": 1
+        },
+        "topPlayers": [
+          {
+            "name": "Drake Maye",
+            "position": "QB",
+            "value": 93
+          },
+          {
+            "name": "Michael Wilson",
+            "position": "WR",
+            "value": 88
+          },
+          {
+            "name": "Ashton Jeanty",
+            "position": "RB",
+            "value": 83.6
+          },
+          {
+            "name": "Brandon Aubrey",
+            "position": "K",
+            "value": 81.6
+          },
+          {
+            "name": "Ladd McConkey",
+            "position": "WR",
+            "value": 68.7
+          }
+        ]
+      },
+      "packageValue": 57.6,
+      "scores": {
+        "overall": 80.6,
+        "value": 86,
+        "rosterFit": 72,
+        "lineupImpact": 64
+      },
+      "grade": "B-",
+      "analysis": "Cooper’s Jack MeHoff lands Deebo Samuel for a B-, making this the stronger value side on the supplied math. Samuel brings a 57.6 package value, 132 search rank, 17 games, 10.8 season average, and 8.4 recent average, all materially ahead of Keon Coleman’s 40 value, 206 rank, eight games, 5.3 season average, and 3.2 recent average. Cooper already has six wide receivers, including Michael Wilson and Ladd McConkey, which explains the more modest 72 roster-fit score. Even so, adding the better-valued player is a meaningful upgrade for a 6-8 roster, though the 64 lineup-impact score says the immediate starting-lineup difference is not guaranteed by the supplied data. Kade’s rival may want a receipt.",
+      "bestReason": "Cooper converts a lower-valued wide receiver into Samuel’s stronger market and production profile.",
+      "biggestRisk": "The six-WR roster lowers fit, and the lineup-impact score remains only 64 despite the value upgrade."
+    }
+  ]
+}

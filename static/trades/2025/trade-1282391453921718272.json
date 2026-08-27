@@ -1,0 +1,184 @@
+{
+  "id": "1282391453921718272",
+  "leagueId": "1251987542522212352",
+  "leagueName": "Fantasy Foosball Year 7",
+  "season": 2025,
+  "week": 6,
+  "occurredAt": 1760135691962,
+  "generatedAt": "2026-08-27T11:50:03.497Z",
+  "model": "gpt-5.6-luna",
+  "methodology": "MVP: Sleeper player search rank + actual league production (when available) + roster fit + starting-lineup impact.",
+  "headline": "Etienne-for-Flowers Swap Gives Joey the Edge",
+  "verdict": "Joey is the current winner, though both managers land a solid B-grade outcome.",
+  "summary": "This is a clean one-for-one swap with no package clutter: Kane sends Travis Etienne to Joey and receives Zay Flowers. Flowers brings the better recent average at 16.7 compared with Etienne’s 19.8? No—Etienne still owns the stronger recent and season production, along with the higher supplied value. That makes Joey’s return attractive on raw player value, while Kane’s case rests on Flowers’ fit and the major lineup-impact score of 96. The grades remain close, but Joey leads in overall score, 85.5 to 83.6, and roster fit is still excellent at 96. The reigning 2024 champion gets the desk’s narrow nod, while Kane adds another weapon to a 5-9 roster with plenty of season still to explain.",
+  "sides": [
+    {
+      "rosterId": 3,
+      "manager": "Kane",
+      "teamName": "Blueballs",
+      "lore": "Rivals: Kohlt and Kade.",
+      "received": [
+        {
+          "id": "9997",
+          "type": "player",
+          "name": "Zay Flowers",
+          "position": "WR",
+          "nflTeam": "BAL",
+          "searchRank": 42,
+          "games": 17,
+          "seasonAvg": 12.6,
+          "recentAvg": 16.7,
+          "value": 78.9
+        }
+      ],
+      "sent": [
+        {
+          "id": "7543",
+          "type": "player",
+          "name": "Travis Etienne",
+          "position": "RB",
+          "nflTeam": "NO",
+          "searchRank": 34,
+          "games": 17,
+          "seasonAvg": 14.7,
+          "recentAvg": 19.8,
+          "value": 84.4
+        }
+      ],
+      "context": {
+        "record": "5-9",
+        "pointsFor": 1605.4,
+        "positionCounts": {
+          "QB": 2,
+          "RB": 4,
+          "WR": 7,
+          "K": 1,
+          "TE": 1,
+          "DEF": 1
+        },
+        "topPlayers": [
+          {
+            "name": "Trey McBride",
+            "position": "TE",
+            "value": 95.6
+          },
+          {
+            "name": "Bo Nix",
+            "position": "QB",
+            "value": 82.2
+          },
+          {
+            "name": "Zay Flowers",
+            "position": "WR",
+            "value": 78.9
+          },
+          {
+            "name": "Breece Hall",
+            "position": "RB",
+            "value": 74.3
+          },
+          {
+            "name": "Rico Dowdle",
+            "position": "RB",
+            "value": 73.5
+          }
+        ]
+      },
+      "packageValue": 78.9,
+      "scores": {
+        "overall": 83.6,
+        "value": 81.3,
+        "rosterFit": 82,
+        "lineupImpact": 96
+      },
+      "grade": "B",
+      "analysis": "Kane’s Blueballs turn Travis Etienne, the higher-valued asset at 84.4, into Zay Flowers at 78.9. On the supplied production, Flowers trails Etienne in season average, 12.6 to 14.7, and recent average, 16.7 to 19.8, so this is not a raw-value win. The fit argument is stronger: Blueballs are 5-9, carry seven wide receivers but only four running backs, and Flowers posts a 96 lineup-impact score in the grade model. With Trey McBride and Bo Nix already among the roster’s top players, Kane is betting on a useful WR addition rather than hoarding another back. A tidy move, even if rivals Kohlt and Kade may enjoy the debate.",
+      "bestReason": "Flowers earns the trade’s strongest supplied lineup-impact score at 96, giving a 5-9 roster a potentially meaningful fit upgrade.",
+      "biggestRisk": "Kane gives up the higher-value player and the stronger season and recent averages, creating a clear production-based downside."
+    },
+    {
+      "rosterId": 6,
+      "manager": "Joey",
+      "teamName": "Off Constantly",
+      "lore": "2024 champion. Rivals: Andy and Evan.",
+      "received": [
+        {
+          "id": "7543",
+          "type": "player",
+          "name": "Travis Etienne",
+          "position": "RB",
+          "nflTeam": "NO",
+          "searchRank": 34,
+          "games": 17,
+          "seasonAvg": 14.7,
+          "recentAvg": 19.8,
+          "value": 84.4
+        }
+      ],
+      "sent": [
+        {
+          "id": "9997",
+          "type": "player",
+          "name": "Zay Flowers",
+          "position": "WR",
+          "nflTeam": "BAL",
+          "searchRank": 42,
+          "games": 17,
+          "seasonAvg": 12.6,
+          "recentAvg": 16.7,
+          "value": 78.9
+        }
+      ],
+      "context": {
+        "record": "8-6",
+        "pointsFor": 1649.8,
+        "positionCounts": {
+          "WR": 6,
+          "K": 1,
+          "RB": 4,
+          "QB": 2,
+          "TE": 1,
+          "DEF": 1
+        },
+        "topPlayers": [
+          {
+            "name": "Puka Nacua",
+            "position": "WR",
+            "value": 98.4
+          },
+          {
+            "name": "Kyle Pitts",
+            "position": "TE",
+            "value": 87.6
+          },
+          {
+            "name": "Travis Etienne",
+            "position": "RB",
+            "value": 84.4
+          },
+          {
+            "name": "Matthew Stafford",
+            "position": "QB",
+            "value": 81.8
+          },
+          {
+            "name": "Josh Jacobs",
+            "position": "RB",
+            "value": 78.6
+          }
+        ]
+      },
+      "packageValue": 84.4,
+      "scores": {
+        "overall": 85.5,
+        "value": 82.7,
+        "rosterFit": 96,
+        "lineupImpact": 88
+      },
+      "grade": "B",
+      "analysis": "Joey’s Off Constantly receives the deal’s more valuable player: Travis Etienne at 84.4 for Zay Flowers at 78.9. Etienne also leads Flowers in season average, 14.7 to 12.6, and recent average, 19.8 to 16.7. The roster fit is where this move really cashes in, earning a 96, while Joey’s 8-6 team already has six wide receivers and a strong top end led by Puka Nacua. Etienne joins Josh Jacobs among the listed backs, giving the reigning 2024 champion a higher-value running-back piece without sacrificing the overall grade. The lineup-impact score is 88, still strong enough to make this more than a value-only victory. Andy and Evan now have another reason to keep receipts.",
+      "bestReason": "Joey acquires the higher-value player and the stronger supplied production profile while posting the trade’s top overall score at 85.5.",
+      "biggestRisk": "Etienne’s lineup-impact score of 88 trails Flowers’ 96, so the raw-value win may not translate into the larger immediate fit boost."
+    }
+  ]
+}

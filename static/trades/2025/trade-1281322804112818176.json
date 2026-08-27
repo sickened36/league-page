@@ -1,0 +1,208 @@
+{
+  "id": "1281322804112818176",
+  "leagueId": "1251987542522212352",
+  "leagueName": "Fantasy Foosball Year 7",
+  "season": 2025,
+  "week": 5,
+  "occurredAt": 1759854402368,
+  "generatedAt": "2026-08-27T11:49:46.804Z",
+  "model": "gpt-5.6-luna",
+  "methodology": "MVP: Sleeper player search rank + actual league production (when available) + roster fit + starting-lineup impact.",
+  "headline": "Etienne Haul Gives Blueballs the Edge Over CheesusJesus",
+  "verdict": "Blueballs wins the current grade battle, with the stronger overall score and a much larger supplied package value.",
+  "summary": "Kane’s Blueballs comes out ahead on the supplied numbers, earning an 86.6 overall score and 88.5 value score after turning DK Metcalf into Travis Etienne and Keenan Allen. Etienne is the centerpiece: his 84.4 value, 14.7 season average, and 19.8 recent average give Blueballs a meaningful running-back addition alongside Breece Hall and Rico Dowdle. Kade’s CheesusJesus receives the cleaner roster-fit score at 91 and consolidates two players into one wide receiver, but the return carries a 66.1 package value versus 121.3 for Blueballs. That makes this a practical consolidation for Kade, while Kane gets the stronger present-day asset haul. The Packers fan may call it efficient; the scoreboard calls it a loss.",
+  "sides": [
+    {
+      "rosterId": 3,
+      "manager": "Kane",
+      "teamName": "Blueballs",
+      "lore": "Rivals: Kohlt and Kade.",
+      "received": [
+        {
+          "id": "1479",
+          "type": "player",
+          "name": "Keenan Allen",
+          "position": "WR",
+          "nflTeam": "IND",
+          "searchRank": 197,
+          "games": 17,
+          "seasonAvg": 10.1,
+          "recentAvg": 6.9,
+          "value": 49.9
+        },
+        {
+          "id": "7543",
+          "type": "player",
+          "name": "Travis Etienne",
+          "position": "RB",
+          "nflTeam": "NO",
+          "searchRank": 34,
+          "games": 17,
+          "seasonAvg": 14.7,
+          "recentAvg": 19.8,
+          "value": 84.4
+        }
+      ],
+      "sent": [
+        {
+          "id": "5846",
+          "type": "player",
+          "name": "DK Metcalf",
+          "position": "WR",
+          "nflTeam": "PIT",
+          "searchRank": 73,
+          "games": 17,
+          "seasonAvg": 11,
+          "recentAvg": 7.6,
+          "value": 66.1
+        }
+      ],
+      "context": {
+        "record": "5-9",
+        "pointsFor": 1605.4,
+        "positionCounts": {
+          "QB": 2,
+          "RB": 4,
+          "WR": 7,
+          "K": 1,
+          "TE": 1,
+          "DEF": 1
+        },
+        "topPlayers": [
+          {
+            "name": "Trey McBride",
+            "position": "TE",
+            "value": 95.6
+          },
+          {
+            "name": "Bo Nix",
+            "position": "QB",
+            "value": 82.2
+          },
+          {
+            "name": "Zay Flowers",
+            "position": "WR",
+            "value": 78.9
+          },
+          {
+            "name": "Breece Hall",
+            "position": "RB",
+            "value": 74.3
+          },
+          {
+            "name": "Rico Dowdle",
+            "position": "RB",
+            "value": 73.5
+          }
+        ]
+      },
+      "packageValue": 121.3,
+      "scores": {
+        "overall": 86.6,
+        "value": 88.5,
+        "rosterFit": 84,
+        "lineupImpact": 80
+      },
+      "grade": "B",
+      "analysis": "Kane sends DK Metcalf but receives a two-player package led by Travis Etienne. Etienne’s 84.4 value, No. 34 search rank, 14.7 season average, and 19.8 recent average make him the clear centerpiece, while Keenan Allen adds a 49.9-value wide receiver. Blueballs already has Breece Hall and Rico Dowdle, so Etienne gives a 5-9 roster another strong running-back option, though the supplied lineup-impact score is 80 rather than elite. The deal’s 121.3 package value and 88.5 value score explain the B grade: Kane adds more total asset value than he gives up, even with seven wide receivers already rostered.",
+      "bestReason": "Etienne brings the strongest supplied value and recent production in the deal, giving Blueballs a substantial running-back addition.",
+      "biggestRisk": "Blueballs has seven wide receivers, so moving from Metcalf to a two-player return may not maximize lineup impact despite the stronger overall value."
+    },
+    {
+      "rosterId": 4,
+      "manager": "Kade",
+      "teamName": "CheesusJesus",
+      "lore": "Rivals: Kane, Kohlt, Andy. Only Packers fan in a league full of Cowboys fans.",
+      "received": [
+        {
+          "id": "5846",
+          "type": "player",
+          "name": "DK Metcalf",
+          "position": "WR",
+          "nflTeam": "PIT",
+          "searchRank": 73,
+          "games": 17,
+          "seasonAvg": 11,
+          "recentAvg": 7.6,
+          "value": 66.1
+        }
+      ],
+      "sent": [
+        {
+          "id": "1479",
+          "type": "player",
+          "name": "Keenan Allen",
+          "position": "WR",
+          "nflTeam": "IND",
+          "searchRank": 197,
+          "games": 17,
+          "seasonAvg": 10.1,
+          "recentAvg": 6.9,
+          "value": 49.9
+        },
+        {
+          "id": "7543",
+          "type": "player",
+          "name": "Travis Etienne",
+          "position": "RB",
+          "nflTeam": "NO",
+          "searchRank": 34,
+          "games": 17,
+          "seasonAvg": 14.7,
+          "recentAvg": 19.8,
+          "value": 84.4
+        }
+      ],
+      "context": {
+        "record": "6-8",
+        "pointsFor": 1584.76,
+        "positionCounts": {
+          "WR": 5,
+          "RB": 4,
+          "K": 1,
+          "QB": 3,
+          "TE": 2,
+          "DEF": 1
+        },
+        "topPlayers": [
+          {
+            "name": "Bijan Robinson",
+            "position": "RB",
+            "value": 98.4
+          },
+          {
+            "name": "Malik Willis",
+            "position": "QB",
+            "value": 85.2
+          },
+          {
+            "name": "Christian Watson",
+            "position": "WR",
+            "value": 71.8
+          },
+          {
+            "name": "Lamar Jackson",
+            "position": "QB",
+            "value": 71.3
+          },
+          {
+            "name": "Kenny Gainwell",
+            "position": "RB",
+            "value": 70.3
+          }
+        ]
+      },
+      "packageValue": 66.1,
+      "scores": {
+        "overall": 77.9,
+        "value": 75.5,
+        "rosterFit": 91,
+        "lineupImpact": 76
+      },
+      "grade": "C+",
+      "analysis": "Kade’s CheesusJesus turns Keenan Allen and Travis Etienne into one player, DK Metcalf. The move fits the roster cleanly: CheesusJesus has five wide receivers and four running backs, and the supplied roster-fit score is an excellent 91. Metcalf carries a 66.1 value and No. 73 search rank, while his 11-point season average exceeds Allen’s 10.1. Still, the outgoing package totals 121.3 in the supplied heuristic, compared with 66.1 coming back, and Etienne’s 84.4 value plus 19.8 recent average is a major piece to surrender. The C+ reflects tidy roster construction, but a thinner asset return. That’s a bold consolidation from the league’s lone Packers fan.",
+      "bestReason": "Kade improves roster fit by consolidating two players into a single wide receiver while adding Metcalf to a five-WR group.",
+      "biggestRisk": "The supplied package-value gap is substantial, and Kade gives up Etienne’s higher value and stronger recent average."
+    }
+  ]
+}

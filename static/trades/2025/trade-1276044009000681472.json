@@ -1,0 +1,184 @@
+{
+  "id": "1276044009000681472",
+  "leagueId": "1251987542522212352",
+  "leagueName": "Fantasy Foosball Year 7",
+  "season": 2025,
+  "week": 3,
+  "occurredAt": 1758658810290,
+  "generatedAt": "2026-08-27T11:49:20.635Z",
+  "model": "gpt-5.6-luna",
+  "methodology": "MVP: Sleeper player search rank + actual league production (when available) + roster fit + starting-lineup impact.",
+  "headline": "CJ Lands Allen as Parker Pays the Quarterback Premium",
+  "verdict": "CJ is the current winner, with the stronger B+ grade and a decisive roster-fit edge.",
+  "summary": "This is a clean one-for-one swap with a clear difference in supplied value: Josh Allen carries a 90.6 package value, while Omarion Hampton checks in at 73.9. Parker’s B- reflects the trade’s strong lineup-impact score of 88 and a useful RB addition, but surrendering a player ranked third in search rank with a 22-point season average creates the larger value concession. CJ earns a B+ because Allen’s quarterback value, 96 roster-fit score, and 96 lineup-impact score align with a 5-9 roster that already features Jahmyr Gibbs but also has Dak Prescott. Parker gets the younger RB profile on paper, while CJ gets the headline asset. Public Enemy or not, the numbers favor CJ.",
+  "sides": [
+    {
+      "rosterId": 5,
+      "manager": "Parker",
+      "teamName": "My BallDak hurts",
+      "lore": "2019 inaugural champion. League Public Enemy. Nickname: King of Dogshit Trades. Rivals: everyone.",
+      "received": [
+        {
+          "id": "12507",
+          "type": "player",
+          "name": "Omarion Hampton",
+          "position": "RB",
+          "nflTeam": "LAC",
+          "searchRank": 12,
+          "games": 17,
+          "seasonAvg": 8,
+          "recentAvg": 14.7,
+          "value": 73.9
+        }
+      ],
+      "sent": [
+        {
+          "id": "4984",
+          "type": "player",
+          "name": "Josh Allen",
+          "position": "QB",
+          "nflTeam": "BUF",
+          "searchRank": 3,
+          "games": 17,
+          "seasonAvg": 22,
+          "recentAvg": 18.2,
+          "value": 90.6
+        }
+      ],
+      "context": {
+        "record": "8-6",
+        "pointsFor": 1544.78,
+        "positionCounts": {
+          "WR": 4,
+          "QB": 2,
+          "RB": 6,
+          "TE": 1,
+          "K": 1,
+          "DEF": 1
+        },
+        "topPlayers": [
+          {
+            "name": "Jaxon Smith-Njigba",
+            "position": "WR",
+            "value": 98.3
+          },
+          {
+            "name": "Caleb Williams",
+            "position": "QB",
+            "value": 85
+          },
+          {
+            "name": "TreVeyon Henderson",
+            "position": "RB",
+            "value": 74.2
+          },
+          {
+            "name": "Omarion Hampton",
+            "position": "RB",
+            "value": 73.9
+          },
+          {
+            "name": "Tyler Warren",
+            "position": "TE",
+            "value": 73.3
+          }
+        ]
+      },
+      "packageValue": 73.9,
+      "scores": {
+        "overall": 80.6,
+        "value": 79.8,
+        "rosterFit": 77,
+        "lineupImpact": 88
+      },
+      "grade": "B-",
+      "analysis": "Parker receives Omarion Hampton, a running back valued at 73.9 with a search rank of 12, a season average of 8, and a recent average of 14.7. That recent production gives the move some current punch, while Hampton fits a roster carrying six running backs and featuring TreVeyon Henderson among its top players. Parker’s 88 lineup-impact score says the incoming RB can matter immediately within the roster construction. The cost is substantial: Josh Allen is valued at 90.6, ranks third in search, and owns a 22-point season average. The B- grade captures useful fit, but a meaningful quarterback-value sacrifice.",
+      "bestReason": "Hampton’s 14.7 recent average and Parker’s RB-heavy roster support the lineup-impact case.",
+      "biggestRisk": "Parker gives up Allen’s 90.6 value and 22-point season average for a player valued at 73.9."
+    },
+    {
+      "rosterId": 11,
+      "manager": "CJ",
+      "teamName": "cjbroadway23",
+      "lore": "Rivals: Payton, Andy, Alex.",
+      "received": [
+        {
+          "id": "4984",
+          "type": "player",
+          "name": "Josh Allen",
+          "position": "QB",
+          "nflTeam": "BUF",
+          "searchRank": 3,
+          "games": 17,
+          "seasonAvg": 22,
+          "recentAvg": 18.2,
+          "value": 90.6
+        }
+      ],
+      "sent": [
+        {
+          "id": "12507",
+          "type": "player",
+          "name": "Omarion Hampton",
+          "position": "RB",
+          "nflTeam": "LAC",
+          "searchRank": 12,
+          "games": 17,
+          "seasonAvg": 8,
+          "recentAvg": 14.7,
+          "value": 73.9
+        }
+      ],
+      "context": {
+        "record": "5-9",
+        "pointsFor": 1604.88,
+        "positionCounts": {
+          "WR": 5,
+          "RB": 5,
+          "TE": 2,
+          "K": 1,
+          "QB": 2,
+          "DEF": 1
+        },
+        "topPlayers": [
+          {
+            "name": "Jahmyr Gibbs",
+            "position": "RB",
+            "value": 93.4
+          },
+          {
+            "name": "Josh Allen",
+            "position": "QB",
+            "value": 90.6
+          },
+          {
+            "name": "Dak Prescott",
+            "position": "QB",
+            "value": 80.8
+          },
+          {
+            "name": "Courtland Sutton",
+            "position": "WR",
+            "value": 76.6
+          },
+          {
+            "name": "Kenneth Walker",
+            "position": "RB",
+            "value": 75.1
+          }
+        ]
+      },
+      "packageValue": 90.6,
+      "scores": {
+        "overall": 87.7,
+        "value": 84.2,
+        "rosterFit": 96,
+        "lineupImpact": 96
+      },
+      "grade": "B+",
+      "analysis": "CJ receives Josh Allen, the trade’s most valuable asset at 90.6, with a third-place search rank, 17 games played, a 22-point season average, and an 18.2 recent average. The fit is especially strong by the supplied model: CJ receives a 96 roster-fit score and a 96 lineup-impact score. Allen joins a roster that already lists Dak Prescott at 80.8, so quarterback depth is notable, while the 5-9 record and 1,604.88 points for give the acquisition meaningful context without requiring any invented lineup plan. CJ sends Hampton, valued at 73.9, but the B+ grade says the quarterback upgrade wins the exchange.",
+      "bestReason": "Allen’s 90.6 value pairs with elite supplied roster-fit and lineup-impact scores of 96.",
+      "biggestRisk": "CJ parts with Hampton’s 14.7 recent average and adds another major quarterback asset beside Dak Prescott."
+    }
+  ]
+}
