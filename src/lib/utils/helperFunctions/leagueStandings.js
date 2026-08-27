@@ -1,133 +1,93 @@
 import { leagueID } from '$lib/utils/leagueInfo';
-import { getNflState } from "./nflState"
-import { getLeagueData } from "./leagueData"
-import { getLeagueRosters } from "./leagueRosters"
+import { getLeagueData } from './leagueData';
+import { getLeagueRosters } from './leagueRosters';
 import { waitForAll } from './multiPromise';
 import { get } from 'svelte/store';
-import {standingsStore} from '$lib/stores';
+import { standingsStore } from '$lib/stores';
 import { round } from './universalFunctions';
 
-export const getLeagueStandings = async () => {
-	if(get(standingsStore).standingsInfo) {
-		return get(standingsStore);
-	}
+export const getLeagueStandings = async (queryLeagueID = leagueID) => {
+	const cached = get(standingsStore)[queryLeagueID];
+	if(cached?.standingsInfo) return cached;
 
-	const [nflState, leagueData, rostersData] = await waitForAll(
-		getNflState(),
-		getLeagueData(),
-		getLeagueRosters(),
+	const [leagueData, rostersData] = await waitForAll(
+		getLeagueData(queryLeagueID),
+		getLeagueRosters(queryLeagueID),
 	).catch((err) => { console.error(err); });
 
-	const yearData = leagueData.season;
-	const regularSeasonLength = leagueData.settings.playoff_week_start - 1;
-	const divisions = leagueData.settings.divisions && leagueData.settings.divisions > 1;
-    const rosters = rostersData.rosters;
+	if(!leagueData || !rostersData) return null;
 
-	// if the season hasn't started, standings can't be created
-	if((leagueData.status != "in_season" && leagueData.status != "post_season" && leagueData.status != "complete") || nflState.week < 1) {
+	const yearData = leagueData.season;
+	const regularSeasonLength = (Number(leagueData.settings?.playoff_week_start) || 15) - 1;
+	const divisions = Number(leagueData.settings?.divisions || 0) > 1;
+	const lastScoredLeg = Number(leagueData.settings?.last_scored_leg || 0);
+	const rosters = rostersData.rosters;
+
+	if(!['in_season', 'post_season', 'complete'].includes(leagueData.status) || lastScoredLeg < 1) {
 		return null;
 	}
 
 	let standings = {};
-    for(const rosterID in rosters) {
-        const roster = rosters[rosterID];
-        standings[rosterID] = {
-            rosterID,
-            wins: roster.settings.wins,
-            losses: roster.settings.losses,
-            ties: roster.settings.ties,
-            fpts: round(roster.settings.fpts + (roster.settings.fpts_decimal / 100)),
-            fptsAgainst: round(roster.settings.fpts_against + (roster.settings.fpts_against_decimal / 100)),
-            streak: roster.metadata?.streak || 0,
-            divisionWins: divisions ? 0 : null,
-            divisionLosses: divisions ? 0 : null,
-            divisionTies: divisions ? 0 : null,
-        }
-    }
-
-    if(divisions) {
-        let week = 0;
-        if(nflState.season_type == 'regular') {
-            // max the week out at end of regular season
-            week = nflState.display_week > regularSeasonLength ? regularSeasonLength + 1 : nflState.display_week;
-        } else if(nflState.season_type == 'post') {
-            week = regularSeasonLength + 1;
-        }
-
-        // if at least one week hasn't been completed, then standings can't be created
-        if(week < 2) {
-            return null;
-        }
-
-        // pull in all matchup data for the season
-        const matchupsPromises = [];
-        for(let i = week - 1; i > 0; i--) {
-            matchupsPromises.push(fetch(`https://api.sleeper.app/v1/league/${leagueID}/matchups/${i}`, {compress: true}))
-        }
-        const matchupsRes = await waitForAll(...matchupsPromises);
-
-        // convert the json matchup responses
-        const matchupsJsonPromises = [];
-        for(const matchupRes of matchupsRes) {
-            const data = matchupRes.json();
-            matchupsJsonPromises.push(data)
-            if (!matchupRes.ok) {
-                throw new Error(data);
-            }
-        }
-        const matchupsData = await waitForAll(...matchupsJsonPromises).catch((err) => { console.error(err); }).catch((err) => { console.error(err); });
-
-        // process all the matchups
-        for(const matchup of matchupsData) {
-            standings = processStandings(matchup, standings, rosters);
-        }
-    }
-
-	const response = {
-		standingsInfo: standings,
-		yearData,
+	for(const rosterID in rosters) {
+		const roster = rosters[rosterID];
+		standings[rosterID] = {
+			rosterID,
+			wins: roster.settings.wins,
+			losses: roster.settings.losses,
+			ties: roster.settings.ties,
+			fpts: round(roster.settings.fpts + (roster.settings.fpts_decimal / 100)),
+			fptsAgainst: round(roster.settings.fpts_against + (roster.settings.fpts_against_decimal / 100)),
+			streak: roster.metadata?.streak || 0,
+			divisionWins: divisions ? 0 : null,
+			divisionLosses: divisions ? 0 : null,
+			divisionTies: divisions ? 0 : null,
+		};
 	}
-	
-	standingsStore.update(() => response);
 
+	if(divisions) {
+		const throughWeek = Math.min(lastScoredLeg, regularSeasonLength);
+		const matchupResponses = await waitForAll(
+			...Array.from({ length: throughWeek }, (_, index) =>
+				fetch(`https://api.sleeper.app/v1/league/${queryLeagueID}/matchups/${index + 1}`, {compress: true})
+			)
+		);
+		const matchupData = await waitForAll(...matchupResponses.map((response) => response.json()));
+		for(const matchup of matchupData) standings = processStandings(matchup, standings, rosters);
+	}
+
+	const response = { standingsInfo: standings, yearData };
+	standingsStore.update((all) => ({ ...all, [queryLeagueID]: response }));
 	return response;
-}
+};
 
 const processStandings = (matchup, standingsData, rosters) => {
 	const matchups = {};
 	for(const match of matchup) {
-		if(!matchups[match.matchup_id]) {
-			matchups[match.matchup_id] = [];
-		}
+		if(!matchups[match.matchup_id]) matchups[match.matchup_id] = [];
 		const rosterID = match.roster_id;
-
 		matchups[match.matchup_id].push({
 			rosterID,
 			division: rosters[rosterID].settings.division,
 			points: match.points,
-		})
+		});
 	}
 
 	for(const matchupKey in matchups) {
-		const teamA = matchups[matchupKey][0];
-		const teamB = matchups[matchupKey][1];
-	
+		const [teamA, teamB] = matchups[matchupKey];
+		if(!teamA || !teamB) continue;
 		const divisionMatchup = teamA.division && teamB.division && teamA.division == teamB.division;
+		if(!divisionMatchup) continue;
 
-        if(divisionMatchup) {
-            if(teamA.points > teamB.points) {
-                standingsData[teamA.rosterID].divisionWins ++;
-                standingsData[teamB.rosterID].divisionLosses ++;
-                continue;
-            } else if(teamB.points > teamA.points) {
-                standingsData[teamB.rosterID].divisionWins ++;
-                standingsData[teamA.rosterID].divisionLosses ++;
-                continue;
-            } else {
-                standingsData[teamA.rosterID].divisionTies ++;
-                standingsData[teamB.rosterID].divisionTies ++;
-            }
-        }
+		if(teamA.points > teamB.points) {
+			standingsData[teamA.rosterID].divisionWins++;
+			standingsData[teamB.rosterID].divisionLosses++;
+		} else if(teamB.points > teamA.points) {
+			standingsData[teamB.rosterID].divisionWins++;
+			standingsData[teamA.rosterID].divisionLosses++;
+		} else {
+			standingsData[teamA.rosterID].divisionTies++;
+			standingsData[teamB.rosterID].divisionTies++;
+		}
 	}
 	return standingsData;
-}
+};
