@@ -20,6 +20,12 @@ export const tabs = [
         key: 'recaps',
     },
     {
+        icon: 'grading',
+        label: 'Trade Grades',
+        dest: '/trades',
+        key: 'trades',
+    },
+    {
         icon: 'swap_horiz',
         label: 'Trades & Waivers',
         dest: '/transactions',
