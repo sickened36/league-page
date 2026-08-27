@@ -1,0 +1,79 @@
+name: Backfill Sleeper Trade Grades
+
+on:
+  push:
+    paths:
+      - '.github/workflows/backfill-sleeper-trade-grades.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: fantasy-foosball-historical-trade-backfill
+  cancel-in-progress: false
+
+jobs:
+  backfill-sleeper-years:
+    runs-on: ubuntu-latest
+    environment: recap-bot
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Verify OpenAI secret
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          if [ -z "$OPENAI_API_KEY" ]; then
+            echo "::error::OPENAI_API_KEY is not available to the recap-bot environment."
+            exit 1
+          fi
+          echo "OPENAI_API_KEY is available to this job."
+
+      - name: Backfill 2022 trade grades
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_MODEL: gpt-5.6-luna
+          TRADE_SEASON: '2022'
+          TRADE_LEAGUE_ID: '857432836574138368'
+          TRADE_FORCE: 'false'
+        run: node scripts/generate-trade-grades.mjs
+
+      - name: Backfill 2023 trade grades
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_MODEL: gpt-5.6-luna
+          TRADE_SEASON: '2023'
+          TRADE_LEAGUE_ID: '981027810078756864'
+          TRADE_FORCE: 'false'
+        run: node scripts/generate-trade-grades.mjs
+
+      - name: Backfill 2024 trade grades
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_MODEL: gpt-5.6-luna
+          TRADE_SEASON: '2024'
+          TRADE_LEAGUE_ID: '1124840953127903232'
+          TRADE_FORCE: 'false'
+        run: node scripts/generate-trade-grades.mjs
+
+      - name: Commit historical trade grades
+        run: |
+          git config user.name "sickened36"
+          git config user.email "121896441+sickened36@users.noreply.github.com"
+          git add static/trades/2022 static/trades/2023 static/trades/2024
+          if git diff --cached --quiet; then
+            echo "No historical trade grades to commit."
+            exit 0
+          fi
+          git commit -m "Publish 2022-2024 Fantasy Foosball trade grades"
+          git push
