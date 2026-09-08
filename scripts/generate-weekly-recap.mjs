@@ -46,10 +46,43 @@ function asNumber(value, fallback = null) {
   return Number.isFinite(number) ? number : fallback;
 }
 
+const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+
+async function fetchWithRetry(url, options = {}, { attempts = 4, timeoutMs = 20000, label = 'Request' } = {}) {
+  let lastError = null;
+
+  for (let attempt = 1; attempt <= attempts; attempt++) {
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(), timeoutMs);
+
+    try {
+      const response = await fetch(url, { ...options, signal: controller.signal });
+      const retryableStatus = response.status === 408 || response.status === 425 || response.status === 429 || response.status >= 500;
+
+      if (!retryableStatus || attempt === attempts) return response;
+
+      console.warn(`${label} attempt ${attempt}/${attempts} returned HTTP ${response.status}; retrying.`);
+    } catch (error) {
+      lastError = error;
+      if (attempt === attempts) {
+        throw new Error(`${label} failed after ${attempts} attempts: ${url}`, { cause: error });
+      }
+      console.warn(`${label} attempt ${attempt}/${attempts} failed (${error?.cause?.code || error?.code || error?.name || 'network error'}); retrying.`);
+    } finally {
+      clearTimeout(timeout);
+    }
+
+    await sleep(1000 * (2 ** (attempt - 1)));
+  }
+
+  throw lastError || new Error(`${label} failed: ${url}`);
+}
+
 async function fetchJson(url) {
-  const response = await fetch(url, {
+  const response = await fetchWithRetry(url, {
     headers: { 'User-Agent': 'Fantasy-Foosball-Weekly-Recap/1.0' },
-  });
+  }, { label: 'Sleeper API request' });
+
   if (!response.ok) {
     throw new Error(`Request failed (${response.status}) for ${url}`);
   }
@@ -279,7 +312,7 @@ async function generateEditorial(prompt) {
   const apiKey = process.env.OPENAI_API_KEY;
   if (!apiKey) throw new Error('OPENAI_API_KEY is required. Add it as a GitHub Actions repository secret.');
 
-  const response = await fetch('https://api.openai.com/v1/responses', {
+  const response = await fetchWithRetry('https://api.openai.com/v1/responses', {
     method: 'POST',
     headers: {
       Authorization: `Bearer ${apiKey}`,
@@ -299,7 +332,7 @@ async function generateEditorial(prompt) {
         },
       },
     }),
-  });
+  }, { attempts: 3, timeoutMs: 60000, label: 'OpenAI request' });
 
   if (!response.ok) {
     const body = await response.text();
