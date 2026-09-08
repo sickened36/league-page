@@ -2,9 +2,11 @@ name: Fantasy Foosball Weekly Recap
 
 on:
   schedule:
-    # Tuesday morning after the fantasy week is complete.
+    # Primary Tuesday run after the fantasy week is complete.
+    # Wednesday is a safety-net run in case Sleeper scoring/status updates are delayed.
     # 15:00 UTC = 10:00 AM CDT / 9:00 AM CST.
     - cron: '0 15 * * 2'
+    - cron: '0 15 * * 3'
   workflow_dispatch:
     inputs:
       season:
