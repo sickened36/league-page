@@ -21,10 +21,22 @@
 
     .recordTeam {
         display: flex;
+        align-items: center;
+        min-width: 0;
+        max-width: 100%;
     }
 
     .name {
+        min-width: 0;
+        max-width: 100%;
         margin: auto 0;
+    }
+
+    .teamName {
+        max-width: 100%;
+        white-space: normal;
+        overflow-wrap: anywhere;
+        line-height: 1.15;
     }
 
     .managerNames {
@@ -41,15 +53,32 @@
 		margin-right: 6px;
     }
 
-    @media (max-width: 405px) {
+    @media (max-width: 520px) {
         .teamAvatar {
-            height: 25px;
-            margin-right: 8px;
+            flex: 0 0 auto;
+            height: 24px;
+            margin-right: 6px;
         }
 
         .compressed {
-            height: 20px;
+            height: 18px;
             margin-right: 4px;
+        }
+
+        .managerNames {
+            max-width: 100%;
+            font-size: 0.68em;
+            line-height: 1.15;
+        }
+    }
+
+    @media (max-width: 390px) {
+        .teamAvatar {
+            display: none;
+        }
+
+        .managerNames {
+            font-size: 0.64em;
         }
     }
 
