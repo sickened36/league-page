@@ -25,7 +25,7 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Install icon renderer
+      - name: Install image renderer
         run: python -m pip install --disable-pip-version-check cairosvg pillow
 
       - name: Render app icons and launch screens
@@ -33,14 +33,14 @@ jobs:
           python - <<'PY'
           from io import BytesIO
           from pathlib import Path
-          import re
+
           import cairosvg
-          from PIL import Image, ImageFilter
+          from PIL import Image, ImageDraw, ImageFilter
 
           icon_source = Path('static/fantasy-foosball-app-icon.svg').read_bytes()
           mark_source = Path('static/fantasy-foosball-mark.svg').read_bytes()
 
-          outputs = {
+          icon_outputs = {
               'static/apple-touch-icon.png': 180,
               'static/favicons/apple-touch-icon.png': 180,
               'static/favicons/android-chrome-192x192.png': 192,
@@ -53,7 +53,7 @@ jobs:
               'static/pwa/manifest-icon-512.png': 512,
           }
 
-          for output, size in outputs.items():
+          for output, size in icon_outputs.items():
               Path(output).parent.mkdir(parents=True, exist_ok=True)
               png = cairosvg.svg2png(
                   bytestring=icon_source,
@@ -62,52 +62,38 @@ jobs:
               )
               Path(output).write_bytes(png)
 
-          ico_png = cairosvg.svg2png(bytestring=icon_source, output_width=64, output_height=64)
-          image = Image.open(BytesIO(ico_png)).convert('RGBA')
-          image.save('static/favicons/favicon.ico', format='ICO', sizes=[(16, 16), (32, 32), (48, 48), (64, 64)])
+          ico_png = cairosvg.svg2png(
+              bytestring=icon_source,
+              output_width=64,
+              output_height=64,
+          )
+          ico = Image.open(BytesIO(ico_png)).convert('RGBA')
+          ico.save(
+              'static/favicons/favicon.ico',
+              format='ICO',
+              sizes=[(16, 16), (32, 32), (48, 48), (64, 64)],
+          )
 
-          # Rebuild every iOS launch image from its filename dimensions.
-          # Keep these as JPGs because src/app.html already references that format.
-          splash_files = sorted(Path('static/pwa').glob('apple-splash-*.jpg'))
-          pattern = re.compile(r'apple-splash-(\d+)-(\d+)\.jpg
-
-      - name: Commit generated icons
-        run: |
-          git config user.name "sickened36"
-          git config user.email "121896441+sickened36@users.noreply.github.com"
-          git add static/apple-touch-icon.png static/favicons static/pwa/apple-icon-180.png static/pwa/manifest-icon-192.png static/pwa/manifest-icon-512.png static/pwa/apple-splash-*.jpg
-          if git diff --cached --quiet; then
-            echo "App icons are already current."
-            exit 0
-          fi
-          git commit -m "Generate Fantasy Foosball app icons"
-          git pull --rebase origin master
-          git push
-)
-
-          for splash_path in splash_files:
-              match = pattern.search(splash_path.name)
-              if not match:
+          for splash_path in sorted(Path('static/pwa').glob('apple-splash-*.jpg')):
+              dimensions = splash_path.stem.removeprefix('apple-splash-').split('-')
+              if len(dimensions) != 2:
                   continue
 
-              width, height = map(int, match.groups())
-              background = Image.new('RGB', (width, height), '#0f141a')
+              width, height = map(int, dimensions)
+              canvas = Image.new('RGBA', (width, height), '#0f141aff')
 
-              # Subtle teal glow behind the shield.
-              glow_size = max(240, int(min(width, height) * 0.42))
+              glow_size = max(260, int(min(width, height) * 0.46))
               glow = Image.new('RGBA', (glow_size, glow_size), (0, 0, 0, 0))
-              glow_center = glow_size / 2
-              pixels = glow.load()
-              for y in range(glow_size):
-                  for x in range(glow_size):
-                      distance = ((x - glow_center) ** 2 + (y - glow_center) ** 2) ** 0.5 / glow_center
-                      alpha = max(0, int(52 * (1 - min(distance, 1)) ** 2))
-                      pixels[x, y] = (0, 206, 184, alpha)
-              glow = glow.filter(ImageFilter.GaussianBlur(max(10, glow_size // 18)))
-              background.paste(
+              draw = ImageDraw.Draw(glow)
+              inset = int(glow_size * 0.12)
+              draw.ellipse(
+                  (inset, inset, glow_size - inset, glow_size - inset),
+                  fill=(0, 206, 184, 72),
+              )
+              glow = glow.filter(ImageFilter.GaussianBlur(glow_size // 7))
+              canvas.alpha_composite(
                   glow,
                   ((width - glow_size) // 2, (height - glow_size) // 2),
-                  glow,
               )
 
               mark_height = max(150, int(min(width, height) * 0.25))
@@ -118,24 +104,29 @@ jobs:
                   output_height=mark_height,
               )
               mark = Image.open(BytesIO(mark_png)).convert('RGBA')
-              background.paste(
+              canvas.alpha_composite(
                   mark,
                   ((width - mark_width) // 2, (height - mark_height) // 2),
-                  mark,
               )
 
-              background.save(splash_path, 'JPEG', quality=92, optimize=True, progressive=True)
+              canvas.convert('RGB').save(
+                  splash_path,
+                  'JPEG',
+                  quality=92,
+                  optimize=True,
+                  progressive=True,
+              )
           PY
 
-      - name: Commit generated icons
+      - name: Commit generated artwork
         run: |
           git config user.name "sickened36"
           git config user.email "121896441+sickened36@users.noreply.github.com"
-          git add static/apple-touch-icon.png static/favicons static/pwa/apple-icon-180.png static/pwa/manifest-icon-192.png static/pwa/manifest-icon-512.png
+          git add static/apple-touch-icon.png static/favicons static/pwa/apple-icon-180.png static/pwa/manifest-icon-192.png static/pwa/manifest-icon-512.png static/pwa/apple-splash-*.jpg
           if git diff --cached --quiet; then
-            echo "App icons are already current."
+            echo "App artwork is already current."
             exit 0
           fi
-          git commit -m "Generate Fantasy Foosball app icons"
+          git commit -m "Generate Fantasy Foosball app artwork"
           git pull --rebase origin master
           git push
