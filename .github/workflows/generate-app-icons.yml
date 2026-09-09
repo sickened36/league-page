@@ -1,0 +1,76 @@
+name: Generate Fantasy Foosball App Icons
+
+on:
+  push:
+    paths:
+      - 'static/fantasy-foosball-app-icon.svg'
+      - '.github/workflows/generate-app-icons.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  generate-icons:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install icon renderer
+        run: python -m pip install --disable-pip-version-check cairosvg pillow
+
+      - name: Render app icons
+        run: |
+          python - <<'PY'
+          from io import BytesIO
+          from pathlib import Path
+          import cairosvg
+          from PIL import Image
+
+          source = Path('static/fantasy-foosball-app-icon.svg').read_bytes()
+
+          outputs = {
+              'static/favicons/apple-touch-icon.png': 180,
+              'static/favicons/android-chrome-192x192.png': 192,
+              'static/favicons/android-chrome-512x512.png': 512,
+              'static/favicons/favicon-32x32.png': 32,
+              'static/favicons/favicon-16x16.png': 16,
+              'static/favicons/mstile-150x150.png': 150,
+              'static/pwa/apple-icon-180.png': 180,
+              'static/pwa/manifest-icon-192.png': 192,
+              'static/pwa/manifest-icon-512.png': 512,
+          }
+
+          for output, size in outputs.items():
+              Path(output).parent.mkdir(parents=True, exist_ok=True)
+              png = cairosvg.svg2png(
+                  bytestring=source,
+                  output_width=size,
+                  output_height=size,
+              )
+              Path(output).write_bytes(png)
+
+          ico_png = cairosvg.svg2png(bytestring=source, output_width=64, output_height=64)
+          image = Image.open(BytesIO(ico_png)).convert('RGBA')
+          image.save('static/favicons/favicon.ico', format='ICO', sizes=[(16, 16), (32, 32), (48, 48), (64, 64)])
+          PY
+
+      - name: Commit generated icons
+        run: |
+          git config user.name "sickened36"
+          git config user.email "121896441+sickened36@users.noreply.github.com"
+          git add static/favicons static/pwa/apple-icon-180.png static/pwa/manifest-icon-192.png static/pwa/manifest-icon-512.png
+          if git diff --cached --quiet; then
+            echo "App icons are already current."
+            exit 0
+          fi
+          git commit -m "Generate Fantasy Foosball app icons"
+          git push
