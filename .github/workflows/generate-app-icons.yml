@@ -38,6 +38,7 @@ jobs:
           source = Path('static/fantasy-foosball-app-icon.svg').read_bytes()
 
           outputs = {
+              'static/apple-touch-icon.png': 180,
               'static/favicons/apple-touch-icon.png': 180,
               'static/favicons/android-chrome-192x192.png': 192,
               'static/favicons/android-chrome-512x512.png': 512,
@@ -67,7 +68,7 @@ jobs:
         run: |
           git config user.name "sickened36"
           git config user.email "121896441+sickened36@users.noreply.github.com"
-          git add static/favicons static/pwa/apple-icon-180.png static/pwa/manifest-icon-192.png static/pwa/manifest-icon-512.png
+          git add static/apple-touch-icon.png static/favicons static/pwa/apple-icon-180.png static/pwa/manifest-icon-192.png static/pwa/manifest-icon-512.png
           if git diff --cached --quiet; then
             echo "App icons are already current."
             exit 0
