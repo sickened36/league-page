@@ -2,24 +2,6 @@
 	import NavSmall from './NavSmall.svelte';
 	import NavLarge from './NavLarge.svelte';
     import { page } from '$app/state';
-	import IconButton from '@smui/icon-button';
-	import { Icon } from '@smui/common';
-
-	// toggle dark mode
-	let darkTheme = $state(typeof window === "undefined" || window.matchMedia("(prefers-color-scheme: dark)").matches);
-	function switchTheme(currentTheme) {
-		currentTheme = !currentTheme;
-		let themeLink = document.head.querySelector("#theme");
-		if (!themeLink) {
-			themeLink = document.createElement("link");
-			themeLink.rel = "stylesheet";
-			themeLink.id = "theme";
-		}
-		themeLink.href = `/smui${currentTheme ? "" : "-dark"}.css`;
-		document.head
-		.querySelector('link[href="/smui-dark.css"]')
-		.insertAdjacentElement("afterend", themeLink);
-	}
 </script>
 
 <svelte:head>
@@ -32,10 +14,10 @@
     	margin: 0 auto;
 	}
 	nav {
-		background: linear-gradient(180deg, #100d18 0%, #0b0911 100%);
+		background: linear-gradient(180deg, #11161d 0%, #0d1218 100%);
 		position: relative;
 		z-index: 2;
-		border-bottom: 1px solid rgba(139, 92, 246, 0.72);
+		border-bottom: 1px solid rgba(0, 206, 184, 0.72);
 		box-shadow: 0 7px 24px rgba(0, 0, 0, 0.28);
 	}
 
@@ -53,7 +35,7 @@
 		width: 48px;
 		height: 56px;
 		display: block;
-		filter: drop-shadow(0 5px 12px rgba(124, 58, 237, 0.35));
+		filter: drop-shadow(0 5px 12px rgba(0, 206, 184, 0.30));
 	}
 
 	.brand-copy {
@@ -73,7 +55,7 @@
 
 	.brand-copy span {
 		margin-top: 7px;
-		color: #c4b5fd;
+		color: #55e6d5;
 		font-size: 0.58rem;
 		font-weight: 800;
 		letter-spacing: 0.2em;
@@ -87,15 +69,6 @@
 		display: none;
 	}
 
-	.container {
-		position: absolute;
-		top: 0.25em;
-		right: 0.25em;
-	}
-
-	:global(.lightDark) {
-		color: #ddd6fe;
-	}
 
 	@media (max-width: 950px) { /* width of the large navBar */
 		.brand {
@@ -129,18 +102,6 @@
 			<span>Est. 2019 · Year 8</span>
 		</span>
 	</a>
-
-	<div class="container">
-		<IconButton
-			toggle
-			bind:pressed={darkTheme}
-			onclick={() => switchTheme(darkTheme)}
-			class="lightDark"
-		>
-			<Icon class="material-icons" on>dark_mode</Icon>
-			<Icon class="material-icons">light_mode</Icon>
-		</IconButton>
-	</div>
 
 	<div class="large">
 		<NavLarge />
