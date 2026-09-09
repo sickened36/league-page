@@ -17,6 +17,13 @@
         max-width: 500px;
         margin: 80px auto;
     }
+
+    @media (max-width: 700px) {
+        #main {
+            padding: 14px 10px 20px;
+            overflow-x: hidden;
+        }
+    }
 </style>
 
 <PageShell eyebrow="The Record Book" title="League Records" description="The best, worst and most unforgettable performances in Fantasy Foosball history." icon="military_tech" wide={true}>
