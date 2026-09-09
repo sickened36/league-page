@@ -1,6 +1,6 @@
 {
-  "short_name": "League Page",
-  "name": "League Page",
+  "short_name": "Foosball",
+  "name": "Fantasy Foosball",
   "icons": [
     {
       "src": "/favicons/android-chrome-192x192.png",
@@ -16,10 +16,10 @@
     }
   ],
   "start_url": "/",
-  "background_color": "#fff",
+  "background_color": "#0f141a",
   "display": "standalone",
   "scope": "/",
-  "theme_color": "#fff",
+  "theme_color": "#11161d",
   "shortcuts": [
     {
       "name": "Trades and Waivers",
@@ -58,5 +58,5 @@
       "url": "/resources"
     }
   ],
-  "description": "Information about the League"
+  "description": "Fantasy Foosball league hub, weekly previews, recaps, trade grades and history."
 }
