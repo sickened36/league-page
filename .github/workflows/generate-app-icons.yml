@@ -73,4 +73,5 @@ jobs:
             exit 0
           fi
           git commit -m "Generate Fantasy Foosball app icons"
+          git pull --rebase origin master
           git push
