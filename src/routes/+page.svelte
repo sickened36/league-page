@@ -23,10 +23,10 @@
         min-height: 470px;
         color: #fff;
         background:
-            radial-gradient(circle at 78% 15%, rgba(139, 92, 246, 0.4), transparent 30%),
+            radial-gradient(circle at 78% 15%, rgba(0, 206, 184, 0.4), transparent 30%),
             radial-gradient(circle at 20% 105%, rgba(76, 29, 149, 0.36), transparent 35%),
-            linear-gradient(135deg, #0b0911 0%, #181126 58%, #100d18 100%);
-        border-bottom: 1px solid rgba(167, 139, 250, 0.68);
+            linear-gradient(135deg, #0b1015 0%, #111922 58%, #0f141a 100%);
+        border-bottom: 1px solid rgba(85, 230, 213, 0.68);
     }
 
     .home-masthead::before {
@@ -63,7 +63,7 @@
         align-items: center;
         gap: 10px;
         margin-bottom: 16px;
-        color: #c4b5fd;
+        color: #8ee9df;
         font-size: 0.72rem;
         font-weight: 900;
         letter-spacing: 0.2em;
@@ -74,8 +74,8 @@
         content: '';
         width: 52px;
         height: 2px;
-        background: #8b5cf6;
-        box-shadow: 0 0 14px rgba(139, 92, 246, 0.7);
+        background: #00ceb8;
+        box-shadow: 0 0 14px rgba(0, 206, 184, 0.7);
     }
 
     .masthead-copy h1 {
@@ -89,8 +89,8 @@
     }
 
     .masthead-copy h1 span {
-        color: #a78bfa;
-        text-shadow: 0 0 30px rgba(139, 92, 246, 0.28);
+        color: #55e6d5;
+        text-shadow: 0 0 30px rgba(0, 206, 184, 0.28);
     }
 
     .masthead-tagline {
@@ -115,7 +115,7 @@
         min-height: 44px;
         padding: 0 18px;
         color: #fff;
-        border: 1px solid rgba(196, 181, 253, 0.45);
+        border: 1px solid rgba(142, 233, 223, 0.45);
         border-radius: 999px;
         text-decoration: none;
         font-size: 0.78rem;
@@ -125,15 +125,15 @@
     }
 
     .masthead-actions a:first-child {
-        background: #7c3aed;
-        border-color: #8b5cf6;
-        box-shadow: 0 10px 24px rgba(124, 58, 237, 0.28);
+        background: #00b8a4;
+        border-color: #00ceb8;
+        box-shadow: 0 10px 24px rgba(0, 184, 164, 0.28);
     }
 
     .masthead-actions a:hover {
         transform: translateY(-2px);
-        background: #8b5cf6;
-        border-color: #a78bfa;
+        background: #00ceb8;
+        border-color: #55e6d5;
     }
 
     .masthead-mark {
@@ -147,8 +147,8 @@
         position: absolute;
         width: min(34vw, 340px);
         aspect-ratio: 1;
-        background: radial-gradient(circle, rgba(139, 92, 246, 0.26), transparent 68%);
-        border: 1px solid rgba(196, 181, 253, 0.15);
+        background: radial-gradient(circle, rgba(0, 206, 184, 0.26), transparent 68%);
+        border: 1px solid rgba(142, 233, 223, 0.15);
         border-radius: 50%;
     }
 
@@ -219,7 +219,7 @@
     }
 
     .homeBanner {
-        background: linear-gradient(90deg, #4c1d95, #7c3aed);
+        background: linear-gradient(90deg, #007f74, #00b8a4);
         color: #fff;
         padding: 0.5em 0;
         font-weight: 500;
@@ -297,7 +297,7 @@
 }
 
 :global(.ff-kicker) {
-    color: #8b5cf6;
+    color: #00ceb8;
     font-size: 0.78rem;
     font-weight: 800;
     letter-spacing: 0.22em;
@@ -314,7 +314,7 @@
 }
 
 :global(.ff-hero h1 span) {
-    color: #8b5cf6;
+    color: #00ceb8;
 }
 
 :global(.ff-tagline) {
@@ -329,8 +329,8 @@
     height: 3px;
     width: 70px;
     margin-top: 28px;
-    background: #8b5cf6;
-    box-shadow: 0 0 20px rgba(139, 92, 246, 0.55);
+    background: #00ceb8;
+    box-shadow: 0 0 20px rgba(0, 206, 184, 0.55);
 }
 
 
@@ -357,7 +357,7 @@
 
 :global(.ff-stat-card:hover) {
     transform: translateY(-3px);
-    border-color: #8b5cf6;
+    border-color: #00ceb8;
 }
 
 :global(.ff-stat-label) {
@@ -369,7 +369,7 @@
 }
 
 :global(.ff-stat-card strong) {
-    color: #8b5cf6;
+    color: #00ceb8;
     font-size: 1.45rem;
     line-height: 1.1;
 }
@@ -390,7 +390,7 @@
 }
 
 :global(.ff-section-heading > span) {
-    color: #8b5cf6;
+    color: #00ceb8;
     font-size: 0.75rem;
     font-weight: 900;
 }
@@ -423,7 +423,7 @@
 }
 
 :global(.ff-intro .ff-highlight) {
-    color: #8b5cf6;
+    color: #00ceb8;
     font-weight: 800;
     font-size: 1.1rem;
     opacity: 1;
@@ -501,7 +501,7 @@
 :global(.ff-banner.ff-current) {
 	border-color: #d4af37;
 	background:
-		linear-gradient(135deg, rgba(244, 214, 117, 0.24), rgba(139, 92, 246, 0.06) 70%),
+		linear-gradient(135deg, rgba(244, 214, 117, 0.24), rgba(0, 206, 184, 0.06) 70%),
 		var(--fff);
 	box-shadow: 0 0 26px rgba(212, 175, 55, 0.2);
 }
@@ -526,7 +526,7 @@
 }
 
 :global(.ff-era-year) {
-    color: #8b5cf6;
+    color: #00ceb8;
     font-weight: 900;
     font-size: 0.8rem;
     padding-top: 5px;
@@ -551,19 +551,19 @@
 :global(.ff-year8) {
     margin: 70px 0 25px;
     padding: 45px 30px;
-    border: 1px solid #8b5cf6;
+    border: 1px solid #00ceb8;
     border-radius: 12px;
     text-align: center;
     background:
         radial-gradient(
             circle at top,
-            rgba(139, 92, 246, 0.14),
+            rgba(0, 206, 184, 0.14),
             transparent 65%
         );
 }
 
 :global(.ff-year8 small) {
-    color: #8b5cf6;
+    color: #00ceb8;
     font-weight: 900;
     letter-spacing: 0.2em;
 }
@@ -584,7 +584,7 @@
 }
 
 :global(.ff-year8 strong) {
-    color: #8b5cf6;
+    color: #00ceb8;
     font-size: 1.25rem;
     letter-spacing: 0.15em;
 }
