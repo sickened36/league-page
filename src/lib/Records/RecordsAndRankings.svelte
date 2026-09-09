@@ -468,6 +468,131 @@
         }
     }
 
+
+    /* Mobile records layout */
+    @media (max-width: 700px) {
+        .fullFlex {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr);
+            gap: 14px;
+            width: 100%;
+            margin: 1.5em 0 2.5em;
+        }
+
+        .rankingHolder {
+            width: 100%;
+            max-width: 100%;
+            overflow: hidden;
+        }
+
+        .rankingInner {
+            max-width: none;
+        }
+
+        .rankingTableWrapper {
+            min-width: 0;
+            padding: 0;
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+
+        :global(.recordTable),
+        :global(.rankingTable) {
+            width: 100% !important;
+            max-width: 100% !important;
+            min-width: 0 !important;
+            margin: 0 !important;
+            box-sizing: border-box;
+        }
+
+        :global(.recordTable .mdc-data-table__table),
+        :global(.rankingTable .mdc-data-table__table) {
+            width: 100% !important;
+            min-width: 0 !important;
+            table-layout: fixed;
+        }
+
+        :global(.recordTable th),
+        :global(.recordTable td),
+        :global(.rankingTable th),
+        :global(.rankingTable td) {
+            min-width: 0 !important;
+            max-width: none !important;
+            padding: 7px 5px !important;
+            white-space: normal !important;
+            overflow-wrap: anywhere;
+            word-break: normal;
+            line-height: 1.2;
+            font-size: 0.72rem;
+            box-sizing: border-box;
+        }
+
+        :global(.recordTable th:first-child),
+        :global(.recordTable td:first-child),
+        :global(.rankingTable th:first-child),
+        :global(.rankingTable td:first-child) {
+            width: 28px;
+            padding-left: 4px !important;
+            padding-right: 2px !important;
+        }
+
+        :global(.recordTable th:nth-child(2)),
+        :global(.recordTable td:nth-child(2)),
+        :global(.rankingTable th:nth-child(2)),
+        :global(.rankingTable td:nth-child(2)) {
+            width: 39%;
+        }
+
+        :global(.cellName) {
+            padding-left: 4px !important;
+        }
+
+        :global(.differentialName) {
+            padding-block: 7px !important;
+        }
+
+        .vs {
+            padding-left: 0;
+            margin: 0.3em 0;
+        }
+
+        .buttonHolder {
+            width: 100%;
+            margin: 1.5em 0 2.5em;
+            overflow: hidden;
+        }
+
+        :global(.buttonHolder .selectionButtons) {
+            min-width: 0;
+        }
+
+        h4 {
+            margin: 1.4em 0 0.9em;
+        }
+    }
+
+    @media (max-width: 430px) {
+        :global(.recordTable th),
+        :global(.recordTable td),
+        :global(.rankingTable th),
+        :global(.rankingTable td) {
+            padding: 6px 4px !important;
+            font-size: 0.66rem;
+        }
+
+        :global(.recordTable th:nth-child(2)),
+        :global(.recordTable td:nth-child(2)),
+        :global(.rankingTable th:nth-child(2)),
+        :global(.rankingTable td:nth-child(2)) {
+            width: 36%;
+        }
+
+        .subTitle,
+        .italic {
+            font-size: 0.85em;
+        }
+    }
+
     /* END ranking table resizing */
 </style>
 
