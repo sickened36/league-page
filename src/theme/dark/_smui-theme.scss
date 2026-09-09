@@ -2,93 +2,84 @@
 
 @use '@material/theme/color-palette';
 
-// Svelte Colors!
 @use '@material/theme/index' as theme with (
-  $primary: #0082c3,
-  $secondary: #00316b,
-  $surface: #000000,
-  $background: #000000,
-  $error: color-palette.$red-900,
+  $primary: #00ceb8,
+  $secondary: #58a7ff,
+  $surface: #171d24,
+  $background: #0f141a,
+  $error: color-palette.$red-700,
 );
 
-// Import all the styles for the classes.
 @use '@material/typography/mdc-typography';
-// The following classes become available:
-//   mdc-typography--headline1
-//   mdc-typography--headline2
-//   mdc-typography--headline3
-//   mdc-typography--headline4
-//   mdc-typography--headline5
-//   mdc-typography--headline6
-//   mdc-typography--subtitle1
-//   mdc-typography--subtitle2
-//   mdc-typography--body1
-//   mdc-typography--body2
-//   mdc-typography--caption
-//   mdc-typography--button
-//   mdc-typography--overline
-//   mdc-typography--body1
- 
-// Import the mixins.
 @use '@material/typography/index' as typography;
 
 :root {
-  --fff: #000000;
-  --fffTransparent: rgba(0,0,0,0);
-  --f8f8f8: #070707;
-  --f3f3f3: #0d0d0d;
-  --eee: #1b1b1b;
-  --ebebeb: #333;
-  --ddd: #282828;
-  --d7d7d7: #171717;
-  --ccc: #444;
-  --bbb: #444;
-  --aaa: #555;
-  --g999: #666;
-  --g444: #bbb;
-  --g555: #aaa;
-  --g333: #ccc;
-  --g111: #eee;
-  --g000: #fff;
-  --boxShadowOne: #070707;
-  --boxShadowTwo: #272727;
-  --boxShadowThree: #0d0d0d;
-  --ir: #222;
-  --champShadow: #111;
-  --transactHeader: #202424;
-  --draftSwapped: #202025;
-  --waiverAdd: #3e4741;
-  --waiverDrop: #423a3a;
-  --bracketMatch: #010102;
-  --matchupSelected: #2f2f35;
-  --fadeOne: rgba(0, 0, 0, 0) 0%;
-  --fadeTwo: rgba(0, 0, 0, 0.7) 50%;
-  --fadeThree: rgba(0, 0, 0, 0.9) 90%;
-  --fadeFour: rgba(0, 0, 0, 1) 100%;
-  --blueOne: #0082c3;
-  --blueTwo: #003c86;
-  --r1: #1c1c1d;
-  --r2: #1f1d1d;
-  --r3: #181a18;
-  --headerPrimary: #2a2e31;
-  --borderOverride: rgba(255,255,255,.3);
-  --rivalryBack: #333;
+  --sleeper-bg: #0f141a;
+  --sleeper-nav: #11161d;
+  --sleeper-surface: #171d24;
+  --sleeper-card: #1c232c;
+  --sleeper-raised: #222b35;
+  --sleeper-border: #2d3946;
+  --sleeper-teal: #00ceb8;
+  --sleeper-teal-bright: #55e6d5;
+  --sleeper-blue: #58a7ff;
+  --sleeper-text: #f4f7fb;
+  --sleeper-muted: #8f9baa;
 
-  // Chart bar colors
-  --barChartOne: #446a88;
-  --barChartTwo: #32788f;
-  --barChartThree: #1d808d;
-  --barChartFour: #198886;
-  --barChartFive: #2b8673;
-  --barChartSix: #448864;
+  --fff: #171d24;
+  --fffTransparent: rgba(23,29,36,0);
+  --f8f8f8: #0f141a;
+  --f3f3f3: #141a21;
+  --eee: #222b35;
+  --ebebeb: #26313d;
+  --ddd: #2d3946;
+  --d7d7d7: #1b222b;
+  --ccc: #3a4654;
+  --bbb: #536273;
+  --aaa: #6d7c8d;
+  --g999: #7e8b9b;
+  --g777: #8f9baa;
+  --g555: #aab4c1;
+  --g444: #b8c1cc;
+  --g333: #ccd3dc;
+  --g111: #edf1f5;
+  --g000: #ffffff;
+  --boxShadowOne: rgba(0,0,0,.38);
+  --boxShadowTwo: rgba(0,0,0,.28);
+  --boxShadowThree: rgba(0,0,0,.18);
+  --ir: #27313c;
+  --champShadow: rgba(0,0,0,.36);
+  --transactHeader: #18242a;
+  --draftSwapped: #18222d;
+  --waiverAdd: #18372f;
+  --waiverDrop: #3a2225;
+  --bracketMatch: #151c23;
+  --matchupSelected: #203039;
+  --fadeOne: rgba(15, 20, 26, 0) 0%;
+  --fadeTwo: rgba(15, 20, 26, 0.72) 50%;
+  --fadeThree: rgba(15, 20, 26, 0.92) 90%;
+  --fadeFour: rgba(15, 20, 26, 1) 100%;
+  --blueOne: #00ceb8;
+  --blueTwo: #58a7ff;
+  --r1: #19232b;
+  --r2: #231d22;
+  --r3: #18251f;
+  --headerPrimary: #1a2830;
+  --borderOverride: rgba(255,255,255,.12);
+  --rivalryBack: #1b232c;
 
-  // Comparisson bar colors
-  --compBarOne: #446a88;
-  --compBarTwo: #448864;
-  --compBarOneText: #7fc4f5;
-  --compBarTwoText: #79edad;
-  
-  // Positions
+  --barChartOne: #58a7ff;
+  --barChartTwo: #4ab8ee;
+  --barChartThree: #32c5d8;
+  --barChartFour: #00ceb8;
+  --barChartFive: #2bd3a5;
+  --barChartSix: #61d68d;
+
+  --compBarOne: #58a7ff;
+  --compBarTwo: #00ceb8;
+  --compBarOneText: #9bc9ff;
+  --compBarTwoText: #7df0e2;
+
   --QBfade: #ff8fb2;
   --WRfade: #afd4ff;
   --RBfade: #6ccac1;
@@ -103,93 +94,59 @@
   --DLfade: #c392d3;
   --LBfade: #98c097;
 
-	--QB: #ff2a6d;
-	--WR: #58a7ff;
-	--RB: #00ceb8;
-	--TE: #ffae58;
-	--K: #bd66ff;
-	--Budget: #7947d4;
-	--DEF: #fff67a;
-	--DL: #ff795a;
-	--LB: #6d7df5;
-	--DB: #ff7cb6;
-	--BN: #b6d0eb;
+  --QB: #ff2a6d;
+  --WR: #58a7ff;
+  --RB: #00ceb8;
+  --TE: #ffae58;
+  --K: #bd66ff;
+  --Budget: #8f6bff;
+  --DEF: #fff67a;
+  --DL: #ff795a;
+  --LB: #6d7df5;
+  --DB: #ff7cb6;
+  --BN: #90a1b5;
 }
 
 html,
 body {
   position: relative;
   margin: 0;
-  background-color: theme.$surface;
-  color: theme.$on-surface;
   min-height: 100vh;
-  background: #222;
-  background: linear-gradient(to bottom right, #111,#222 );
-  background: -webkit-linear-gradient(to bottom right, #111,#222 );
+  background: linear-gradient(145deg, #0b1015 0%, #0f141a 52%, #121922 100%);
+  color: theme.$on-surface;
 }
- 
-//
-// Some defaults that may be helpful to you.
-// If you just want to use these, and not the classes, you can instead just
-// @use '@material/typography/index' as typography, and your CSS file will be smaller.
-//
+
 html {
   @include typography.typography('body1');
 }
- 
-h1 {
-  @include typography.typography('headline1');
-}
- 
-h2 {
-  @include typography.typography('headline2');
-}
- 
-h3 {
-  @include typography.typography('headline3');
-}
- 
-h4 {
-  @include typography.typography('headline4');
-}
- 
-h5 {
-  @include typography.typography('headline5');
-}
- 
-h6 {
-  @include typography.typography('headline6');
-}
- 
-caption {
-  @include typography.typography('caption');
-}
- 
+
+h1 { @include typography.typography('headline1'); }
+h2 { @include typography.typography('headline2'); }
+h3 { @include typography.typography('headline3'); }
+h4 { @include typography.typography('headline4'); }
+h5 { @include typography.typography('headline5'); }
+h6 { @include typography.typography('headline6'); }
+
+caption { @include typography.typography('caption'); }
+
 code,
 pre {
   font-family: 'Roboto Mono', monospace;
 }
- 
-small {
-  font-size: 0.9em;
-}
- 
-big {
-  font-size: 1.1em;
-}
- 
+
+small { font-size: 0.9em; }
+big { font-size: 1.1em; }
 b,
-strong {
-  font-weight: bold;
-}
+strong { font-weight: bold; }
 
 a {
-  color: #40b3ff;
+  color: #55e6d5;
 }
 a:visited {
-  color: color.scale(#40b3ff, $lightness: -35%);
+  color: color.scale(#55e6d5, $lightness: -18%);
 }
 
 .mdc-button--outlined:not(:disabled) {
-  background-color: #070707 !important;
+  background-color: #1c232c !important;
+  border-color: #2d3946 !important;
 }
