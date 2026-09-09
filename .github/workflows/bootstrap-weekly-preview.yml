@@ -1,0 +1,45 @@
+name: Bootstrap 2026 Weekly Preview
+
+on:
+  push:
+    paths:
+      - '.github/workflows/bootstrap-weekly-preview.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  generate-preview:
+    runs-on: ubuntu-latest
+    environment: recap-bot
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Generate current weekly preview
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_MODEL: gpt-5.6-luna
+          PREVIEW_SEASON: '2026'
+          PREVIEW_LEAGUE_ID: '1389689189200592896'
+        run: node scripts/generate-weekly-preview.mjs
+
+      - name: Publish preview
+        run: |
+          git config user.name "sickened36"
+          git config user.email "121896441+sickened36@users.noreply.github.com"
+          git add static/previews
+          if git diff --cached --quiet; then
+            echo "No preview files to commit."
+            exit 0
+          fi
+          git commit -m "Publish Fantasy Foosball weekly preview"
+          git push
