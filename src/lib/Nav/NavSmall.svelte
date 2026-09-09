@@ -28,7 +28,7 @@
 		top: 15px;
 		left: 15px;
 		font-size: 2em;
-		color: #ddd6fe;
+		color: #55e6d5;
 		padding: 6px;
 		cursor: pointer;
 	}
@@ -44,7 +44,7 @@
 	}
 
 	:global(.nav-item) {
-		color: #858585 !important;
+		color: #8f9baa !important;
 	}
 
 	.nav-back {
