@@ -42,14 +42,14 @@
   }
 
   a:hover {
-    border-color: #8b5cf6;
+    border-color: #00ceb8;
     transform: translateY(-1px);
   }
 
   a.active {
     color: #fff;
-    border-color: #8b5cf6;
-    background: #8b5cf6;
+    border-color: #00ceb8;
+    background: #00ceb8;
   }
 
   .compact a {
