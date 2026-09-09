@@ -37,7 +37,7 @@
   }
 
   .season-year {
-    color: #8b5cf6;
+    color: #00ceb8;
     font-size: 0.72rem;
     font-weight: 900;
     letter-spacing: 0.12em;
@@ -78,7 +78,7 @@
   }
 
   .links a:hover {
-    border-color: #8b5cf6;
+    border-color: #00ceb8;
   }
 
   .legacy {
