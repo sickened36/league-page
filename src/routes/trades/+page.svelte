@@ -55,8 +55,8 @@
 
   .pill.active {
     color: white;
-    background: #8b5cf6;
-    border-color: #8b5cf6;
+    background: #00ceb8;
+    border-color: #00ceb8;
   }
 
   .trade-nav {
@@ -78,8 +78,8 @@
   }
 
   .trade-link.active {
-    border-color: #8b5cf6;
-    background: color-mix(in srgb, var(--fff) 95%, #8b5cf6 5%);
+    border-color: #00ceb8;
+    background: color-mix(in srgb, var(--fff) 95%, #00ceb8 5%);
   }
 
   .trade-link strong,
@@ -104,7 +104,7 @@
   }
 
   .eyebrow {
-    color: #8b5cf6;
+    color: #00ceb8;
     font-size: 0.7rem;
     font-weight: 900;
     letter-spacing: 0.14em;
@@ -146,7 +146,7 @@
     border: 1px solid var(--ddd);
     border-radius: 16px;
     overflow: hidden;
-    background: color-mix(in srgb, var(--fff) 98%, #8b5cf6 2%);
+    background: color-mix(in srgb, var(--fff) 98%, #00ceb8 2%);
   }
 
   .side-top {
@@ -220,7 +220,7 @@
   .analysis h4 {
     margin: 0 0 10px;
     font-size: 0.68rem;
-    color: #8b5cf6;
+    color: #00ceb8;
     letter-spacing: 0.11em;
     text-transform: uppercase;
   }
@@ -273,7 +273,7 @@
   .score-fill {
     height: 100%;
     border-radius: inherit;
-    background: #8b5cf6;
+    background: #00ceb8;
   }
 
   .analysis {
