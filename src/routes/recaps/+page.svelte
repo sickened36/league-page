@@ -33,7 +33,7 @@
   }
 
   .eyebrow {
-    color: #8b5cf6;
+    color: #00ceb8;
     font-size: 0.72rem;
     font-weight: 900;
     letter-spacing: 0.18em;
@@ -81,8 +81,8 @@
   .season-nav a.active,
   .preview-week-nav a.active {
     color: white;
-    background: #8b5cf6;
-    border-color: #8b5cf6;
+    background: #00ceb8;
+    border-color: #00ceb8;
   }
 
   .preview-section {
@@ -122,7 +122,7 @@
     padding: clamp(18px, 3vw, 26px);
     border: 1px solid var(--ddd);
     border-radius: 14px;
-    background: color-mix(in srgb, var(--fff) 97%, #8b5cf6 3%);
+    background: color-mix(in srgb, var(--fff) 97%, #00ceb8 3%);
   }
 
   .preview-matchup {
@@ -175,7 +175,7 @@
   }
 
   .odds-box strong {
-    color: #8b5cf6;
+    color: #00ceb8;
     font-size: 0.98rem;
   }
 
@@ -231,8 +231,8 @@
 
   .week-nav a.active {
     color: white;
-    background: #8b5cf6;
-    border-color: #8b5cf6;
+    background: #00ceb8;
+    border-color: #00ceb8;
   }
 
   .empty {
@@ -294,7 +294,7 @@
 
   .award:hover {
     transform: translateY(-2px);
-    border-color: #8b5cf6;
+    border-color: #00ceb8;
   }
 
   .award small {
@@ -304,7 +304,7 @@
     font-weight: 900;
     letter-spacing: 0.12em;
     text-transform: uppercase;
-    color: #8b5cf6;
+    color: #00ceb8;
   }
 
   .award strong {
@@ -328,7 +328,7 @@
   }
 
   .section-title span {
-    color: #8b5cf6;
+    color: #00ceb8;
     font-weight: 900;
     font-size: 0.72rem;
   }
@@ -361,7 +361,7 @@
   }
 
   .scoreline .winner {
-    color: #8b5cf6;
+    color: #00ceb8;
   }
 
   .scoreline .score {
