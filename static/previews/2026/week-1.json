@@ -1,0 +1,204 @@
+{
+  "leagueId": "1389689189200592896",
+  "leagueName": "Fantasy Foosball Year 8",
+  "season": 2026,
+  "week": 1,
+  "throughWeek": 0,
+  "generatedAt": "2026-09-09T11:58:26.603Z",
+  "model": "gpt-5.6-luna",
+  "title": "Fantasy Foosball Year 8, 2026: Week 1 Preview",
+  "subtitle": "Six playoff spots are available, but every team enters 0-0 and the model remains highly volatile.",
+  "playoffModel": {
+    "simulations": 8000,
+    "playoffTeams": 6,
+    "description": "Seeded Monte Carlo estimate using current record, scoring strength and remaining Sleeper schedule."
+  },
+  "matchups": [
+    {
+      "matchupId": 2,
+      "teamA": {
+        "manager": "Payton",
+        "teamName": "I ♥️ Big Tet-Tees",
+        "rank": 1,
+        "record": "0-0",
+        "pointsFor": 0,
+        "pointsPerGame": null,
+        "playoffOdds": 50.3,
+        "playoffOddsWithWin": 60.3,
+        "playoffOddsWithLoss": 40.2,
+        "playoffOddsSwing": 20.1,
+        "leagueLore": "Two-time champion (2020, 2021). Rivals: Parker, Andy, CJ, Alex."
+      },
+      "teamB": {
+        "manager": "Andy",
+        "teamName": "Long dong silvers",
+        "rank": 2,
+        "record": "0-0",
+        "pointsFor": 0,
+        "pointsPerGame": null,
+        "playoffOdds": 50.1,
+        "playoffOddsWithWin": 60.7,
+        "playoffOddsWithLoss": 39.6,
+        "playoffOddsSwing": 21.1,
+        "leagueLore": "Rivals: Alex, CJ, Payton."
+      },
+      "headline": "Payton and Andy open with nearly even paths",
+      "paragraph": "Payton’s I ♥️ Big Tet-Tees enters Week 1 ranked first, while Andy’s Long dong silvers sits second; both are 0-0 with no points recorded. Their modeled playoff chances are nearly identical at 50.3% and 50.1%, respectively. A win would lift Payton to 60.3% or Andy to 60.7%, while a loss drops them to 40.2% and 39.6%. The model’s supplied swings are 20.1 and 21.1 percentage points, meaningful but volatile this early. Payton’s two championships add lore to a rivalry Andy already shares."
+    },
+    {
+      "matchupId": 5,
+      "teamA": {
+        "manager": "Kane",
+        "teamName": "Blueballs",
+        "rank": 3,
+        "record": "0-0",
+        "pointsFor": 0,
+        "pointsPerGame": null,
+        "playoffOdds": 49.4,
+        "playoffOddsWithWin": 61,
+        "playoffOddsWithLoss": 37.7,
+        "playoffOddsSwing": 23.3,
+        "leagueLore": "Rivals: Kohlt and Kade."
+      },
+      "teamB": {
+        "manager": "Brae",
+        "teamName": "Ogles Outlaws",
+        "rank": 9,
+        "record": "0-0",
+        "pointsFor": 0,
+        "pointsPerGame": null,
+        "playoffOdds": 50.1,
+        "playoffOddsWithWin": 60.8,
+        "playoffOddsWithLoss": 39.3,
+        "playoffOddsSwing": 21.5,
+        "leagueLore": "Rivals: Parker and Andy."
+      },
+      "headline": "Kane faces Brae with the model favoring neither",
+      "paragraph": "Kane’s Blueballs is ranked third and Brae’s Ogles Outlaws ninth, but both managers begin 0-0 with no points to separate them. The model gives Kane a 49.4% playoff chance and Brae 50.1%, making this an unusually balanced outlook despite the standings-rank gap. A win moves Kane to 61.0% and Brae to 60.8%; a loss sends them to 37.7% and 39.3%. Their supplied playoff-odds swings are 23.3 and 21.5 points, so the opening result matters, though Week 1 volatility remains substantial."
+    },
+    {
+      "matchupId": 3,
+      "teamA": {
+        "manager": "Kade",
+        "teamName": "CheesusJesus",
+        "rank": 4,
+        "record": "0-0",
+        "pointsFor": 0,
+        "pointsPerGame": null,
+        "playoffOdds": 50,
+        "playoffOddsWithWin": 59.7,
+        "playoffOddsWithLoss": 40.3,
+        "playoffOddsSwing": 19.4,
+        "leagueLore": "Rivals: Kane, Kohlt, Andy."
+      },
+      "teamB": {
+        "manager": "Cooper",
+        "teamName": "Jack MeHoff",
+        "rank": 8,
+        "record": "0-0",
+        "pointsFor": 0,
+        "pointsPerGame": null,
+        "playoffOdds": 50.2,
+        "playoffOddsWithWin": 60.1,
+        "playoffOddsWithLoss": 40.4,
+        "playoffOddsSwing": 19.7,
+        "leagueLore": "2022 champion. Rival: Kade."
+      },
+      "headline": "Kade-Cooper rivalry starts with matching 50% outlooks",
+      "paragraph": "Kade’s CheesusJesus holds the fourth standings rank, ahead of Cooper’s eighth-ranked Jack MeHoff, yet both are 0-0 and begin with 50.0% and 50.2% modeled playoff chances. Kade’s chance rises to 59.7% with a win and falls to 40.3% with a loss. Cooper’s moves to 60.1% and 40.4%. The supplied swings are nearly identical at 19.4 and 19.7 points, underscoring a meaningful but not overwhelming early-season pivot. Cooper’s 2022 championship and rivalry with Kade provide the established backdrop."
+    },
+    {
+      "matchupId": 6,
+      "teamA": {
+        "manager": "Parker",
+        "teamName": "My BallDak hurts",
+        "rank": 5,
+        "record": "0-0",
+        "pointsFor": 0,
+        "pointsPerGame": null,
+        "playoffOdds": 50,
+        "playoffOddsWithWin": 60.2,
+        "playoffOddsWithLoss": 39.3,
+        "playoffOddsSwing": 20.9,
+        "leagueLore": "2019 inaugural champion. League Public Enemy. Nickname: King of Dogshit Trades. Rivals: everyone."
+      },
+      "teamB": {
+        "manager": "CJ",
+        "teamName": "cjbroadway23",
+        "rank": 11,
+        "record": "0-0",
+        "pointsFor": 0,
+        "pointsPerGame": null,
+        "playoffOdds": 49.4,
+        "playoffOddsWithWin": 59.5,
+        "playoffOddsWithLoss": 39.8,
+        "playoffOddsSwing": 19.7,
+        "leagueLore": "Rivals: Payton, Andy, Alex."
+      },
+      "headline": "Parker and CJ begin from opposite ends of the rank board",
+      "paragraph": "Parker’s My BallDak hurts is ranked fifth, while CJ’s cjbroadway23 is 11th, but both are 0-0 with zero points recorded. Their modeled playoff chances are close: 50.0% for Parker and 49.4% for CJ. A Parker win raises that estimate to 60.2%, while a loss lowers it to 39.3%. CJ would reach 59.5% with a win and fall to 39.8% with a loss. The supplied swings are 20.9 and 19.7 points, making this a volatile Week 1 test with Parker’s league-wide rivalry lore in view."
+    },
+    {
+      "matchupId": 4,
+      "teamA": {
+        "manager": "Joey",
+        "teamName": "Off Constantly",
+        "rank": 6,
+        "record": "0-0",
+        "pointsFor": 0,
+        "pointsPerGame": null,
+        "playoffOdds": 50.4,
+        "playoffOddsWithWin": 60.1,
+        "playoffOddsWithLoss": 41.2,
+        "playoffOddsSwing": 18.9,
+        "leagueLore": "2024 champion. Rivals: Andy and Evan."
+      },
+      "teamB": {
+        "manager": "Evan",
+        "teamName": "Bonnie Blue 42",
+        "rank": 7,
+        "record": "0-0",
+        "pointsFor": 0,
+        "pointsPerGame": null,
+        "playoffOdds": 49.8,
+        "playoffOddsWithWin": 59.9,
+        "playoffOddsWithLoss": 39.3,
+        "playoffOddsSwing": 20.6,
+        "leagueLore": "2023 champion. Rivals: Joey, Andy, Payton."
+      },
+      "headline": "Joey-Evan clash pairs champions and neighboring ranks",
+      "paragraph": "Joey’s Off Constantly is sixth and Evan’s Bonnie Blue 42 seventh, with both managers opening 0-0 and no points recorded. The model gives Joey a 50.4% playoff chance and Evan 49.8%, essentially level before the matchup. A win moves Joey to 60.1% or Evan to 59.9%; a loss leaves them at 41.2% and 39.3%. Their supplied swings are 18.9 and 20.6 points, so the outcome shifts the outlook without making Week 1 decisive. Joey’s 2024 title and Evan’s 2023 championship add recent-lore context."
+    },
+    {
+      "matchupId": 1,
+      "teamA": {
+        "manager": "Alex",
+        "teamName": "I love big TD’s",
+        "rank": 10,
+        "record": "0-0",
+        "pointsFor": 0,
+        "pointsPerGame": null,
+        "playoffOdds": 49.2,
+        "playoffOddsWithWin": 59.8,
+        "playoffOddsWithLoss": 39.3,
+        "playoffOddsSwing": 20.5,
+        "leagueLore": "2025 champion. Rivals: Andy, Payton, CJ."
+      },
+      "teamB": {
+        "manager": "Kohlt",
+        "teamName": "kohlt",
+        "rank": 12,
+        "record": "0-0",
+        "pointsFor": 0,
+        "pointsPerGame": null,
+        "playoffOdds": 51.1,
+        "playoffOddsWithWin": 60.9,
+        "playoffOddsWithLoss": 40.5,
+        "playoffOddsSwing": 20.4,
+        "leagueLore": "Rivals: Kane, Kade, Parker."
+      },
+      "headline": "Alex and Kohlt meet with the lowest ranks, not the lowest odds",
+      "paragraph": "Alex’s I love big TD’s is ranked 10th and Kohlt’s kohlt 12th, but both are 0-0 and their modeled playoff chances sit near 50%: 49.2% for Alex and 51.1% for Kohlt. A win lifts Alex to 59.8% or Kohlt to 60.9%; a loss lowers them to 39.3% and 40.5%. The supplied swings are 20.5 and 20.4 points, a sizable early-season movement while remaining volatile. Alex enters as the 2025 champion, while Kohlt’s listed rivalries include Kane, Kade, and Parker."
+    }
+  ]
+}
