@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - 'static/fantasy-foosball-app-icon.svg'
+      - 'static/fantasy-foosball-mark.svg'
       - '.github/workflows/generate-app-icons.yml'
 
 permissions:
@@ -27,15 +28,17 @@ jobs:
       - name: Install icon renderer
         run: python -m pip install --disable-pip-version-check cairosvg pillow
 
-      - name: Render app icons
+      - name: Render app icons and launch screens
         run: |
           python - <<'PY'
           from io import BytesIO
           from pathlib import Path
+          import re
           import cairosvg
-          from PIL import Image
+          from PIL import Image, ImageFilter
 
-          source = Path('static/fantasy-foosball-app-icon.svg').read_bytes()
+          icon_source = Path('static/fantasy-foosball-app-icon.svg').read_bytes()
+          mark_source = Path('static/fantasy-foosball-mark.svg').read_bytes()
 
           outputs = {
               'static/apple-touch-icon.png': 180,
@@ -53,15 +56,75 @@ jobs:
           for output, size in outputs.items():
               Path(output).parent.mkdir(parents=True, exist_ok=True)
               png = cairosvg.svg2png(
-                  bytestring=source,
+                  bytestring=icon_source,
                   output_width=size,
                   output_height=size,
               )
               Path(output).write_bytes(png)
 
-          ico_png = cairosvg.svg2png(bytestring=source, output_width=64, output_height=64)
+          ico_png = cairosvg.svg2png(bytestring=icon_source, output_width=64, output_height=64)
           image = Image.open(BytesIO(ico_png)).convert('RGBA')
           image.save('static/favicons/favicon.ico', format='ICO', sizes=[(16, 16), (32, 32), (48, 48), (64, 64)])
+
+          # Rebuild every iOS launch image from its filename dimensions.
+          # Keep these as JPGs because src/app.html already references that format.
+          splash_files = sorted(Path('static/pwa').glob('apple-splash-*.jpg'))
+          pattern = re.compile(r'apple-splash-(\d+)-(\d+)\.jpg
+
+      - name: Commit generated icons
+        run: |
+          git config user.name "sickened36"
+          git config user.email "121896441+sickened36@users.noreply.github.com"
+          git add static/apple-touch-icon.png static/favicons static/pwa/apple-icon-180.png static/pwa/manifest-icon-192.png static/pwa/manifest-icon-512.png static/pwa/apple-splash-*.jpg
+          if git diff --cached --quiet; then
+            echo "App icons are already current."
+            exit 0
+          fi
+          git commit -m "Generate Fantasy Foosball app icons"
+          git pull --rebase origin master
+          git push
+)
+
+          for splash_path in splash_files:
+              match = pattern.search(splash_path.name)
+              if not match:
+                  continue
+
+              width, height = map(int, match.groups())
+              background = Image.new('RGB', (width, height), '#0f141a')
+
+              # Subtle teal glow behind the shield.
+              glow_size = max(240, int(min(width, height) * 0.42))
+              glow = Image.new('RGBA', (glow_size, glow_size), (0, 0, 0, 0))
+              glow_center = glow_size / 2
+              pixels = glow.load()
+              for y in range(glow_size):
+                  for x in range(glow_size):
+                      distance = ((x - glow_center) ** 2 + (y - glow_center) ** 2) ** 0.5 / glow_center
+                      alpha = max(0, int(52 * (1 - min(distance, 1)) ** 2))
+                      pixels[x, y] = (0, 206, 184, alpha)
+              glow = glow.filter(ImageFilter.GaussianBlur(max(10, glow_size // 18)))
+              background.paste(
+                  glow,
+                  ((width - glow_size) // 2, (height - glow_size) // 2),
+                  glow,
+              )
+
+              mark_height = max(150, int(min(width, height) * 0.25))
+              mark_width = int(mark_height * 96 / 112)
+              mark_png = cairosvg.svg2png(
+                  bytestring=mark_source,
+                  output_width=mark_width,
+                  output_height=mark_height,
+              )
+              mark = Image.open(BytesIO(mark_png)).convert('RGBA')
+              background.paste(
+                  mark,
+                  ((width - mark_width) // 2, (height - mark_height) // 2),
+                  mark,
+              )
+
+              background.save(splash_path, 'JPEG', quality=92, optimize=True, progressive=True)
           PY
 
       - name: Commit generated icons
