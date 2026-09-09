@@ -4,6 +4,7 @@
   export let data;
 
   const formatScore = (score) => Number(score || 0).toFixed(2);
+  const formatOdds = (value) => value == null ? '—' : `${Number(value).toFixed(1)}%`;
   const record = (team) => `${team.wins}-${team.losses}${team.ties ? `-${team.ties}` : ''}`;
 
   const matchupLabel = (matchup) => {
@@ -14,7 +15,7 @@
 
 <svelte:head>
   <title>Weekly Recaps | Fantasy Foosball</title>
-  <meta name="description" content="AI-generated weekly game stories and league recaps for Fantasy Foosball." />
+  <meta name="description" content="AI-generated weekly matchup previews, playoff stakes and game recaps for Fantasy Foosball." />
 </svelte:head>
 
 <style>
@@ -51,6 +52,159 @@
     max-width: 680px;
     opacity: 0.84;
     line-height: 1.6;
+  }
+
+
+  .season-nav,
+  .preview-week-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 22px;
+  }
+
+  .season-nav a,
+  .preview-week-nav a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 38px;
+    padding: 0 13px;
+    border: 1px solid var(--ddd);
+    border-radius: 999px;
+    color: inherit;
+    text-decoration: none;
+    font-size: 0.78rem;
+    font-weight: 850;
+  }
+
+  .season-nav a.active,
+  .preview-week-nav a.active {
+    color: white;
+    background: #8b5cf6;
+    border-color: #8b5cf6;
+  }
+
+  .preview-section {
+    margin-bottom: 44px;
+    padding-bottom: 38px;
+    border-bottom: 1px solid var(--ddd);
+  }
+
+  .preview-header {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 18px;
+  }
+
+  .preview-header h2 {
+    margin: 5px 0 6px;
+    font-size: clamp(1.8rem, 4vw, 2.8rem);
+    line-height: 1;
+    letter-spacing: -0.03em;
+  }
+
+  .preview-header p {
+    max-width: 700px;
+    margin: 0;
+    line-height: 1.55;
+    opacity: 0.75;
+  }
+
+  .preview-grid {
+    display: grid;
+    gap: 14px;
+  }
+
+  .preview-card {
+    padding: clamp(18px, 3vw, 26px);
+    border: 1px solid var(--ddd);
+    border-radius: 14px;
+    background: color-mix(in srgb, var(--fff) 97%, #8b5cf6 3%);
+  }
+
+  .preview-matchup {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+    align-items: center;
+    gap: 12px;
+  }
+
+  .preview-team:last-child {
+    text-align: right;
+  }
+
+  .preview-team strong {
+    display: block;
+    font-size: 1.02rem;
+  }
+
+  .preview-team span {
+    display: block;
+    margin-top: 3px;
+    font-size: 0.75rem;
+    opacity: 0.62;
+  }
+
+  .preview-vs {
+    font-size: 0.66rem;
+    font-weight: 950;
+    letter-spacing: 0.12em;
+    opacity: 0.42;
+  }
+
+  .odds-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin: 14px 0 18px;
+  }
+
+  .odds-box {
+    padding: 10px 12px;
+    border-radius: 10px;
+    background: color-mix(in srgb, var(--fff) 92%, #64748b 8%);
+    font-size: 0.75rem;
+    line-height: 1.45;
+  }
+
+  .odds-box:last-child {
+    text-align: right;
+  }
+
+  .odds-box strong {
+    color: #8b5cf6;
+    font-size: 0.98rem;
+  }
+
+  .preview-card h3 {
+    margin: 0 0 9px;
+    font-size: clamp(1.15rem, 3vw, 1.45rem);
+    line-height: 1.2;
+  }
+
+  .preview-card p {
+    margin: 0;
+    max-width: 900px;
+    line-height: 1.68;
+  }
+
+  .model-note {
+    margin-top: 14px;
+    font-size: 0.7rem;
+    line-height: 1.5;
+    opacity: 0.52;
+  }
+
+  .recap-label {
+    margin: 0 0 16px;
+    font-size: 0.7rem;
+    font-weight: 900;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    opacity: 0.55;
   }
 
   .week-nav {
@@ -288,6 +442,23 @@
   }
 
   @media (max-width: 600px) {
+    .preview-header {
+      display: block;
+    }
+
+    .preview-matchup {
+      grid-template-columns: 1fr auto 1fr;
+      gap: 8px;
+    }
+
+    .odds-row {
+      grid-template-columns: 1fr;
+    }
+
+    .odds-box:last-child {
+      text-align: left;
+    }
+
     .recaps-page {
       width: 100%;
       padding-top: 18px;
@@ -300,10 +471,77 @@
   }
 </style>
 
-<PageShell eyebrow="Fantasy Foosball Weekly" title="Weekly Recaps" description="Game stories, weekly awards and standout performances generated from the league's actual Sleeper results." icon="newspaper">
+<PageShell eyebrow="Fantasy Foosball Weekly" title="Weekly Recaps" description="Upcoming matchup stakes, modeled playoff odds, game stories and weekly awards built from the league's Sleeper data." icon="newspaper">
 <div class="recaps-page page-panel">
 
+  {#if data.availableSeasons?.length}
+    <nav class="season-nav" aria-label="Weekly content seasons">
+      {#each data.availableSeasons as season}
+        <a class:active={season === data.season} href={`/recaps?season=${season}`}>{season}</a>
+      {/each}
+    </nav>
+  {/if}
+
+  {#if data.preview}
+    <section class="preview-section" aria-label="Upcoming weekly preview">
+      <header class="preview-header">
+        <div>
+          <div class="eyebrow">{data.preview.season} • Week {data.preview.week} Preview</div>
+          <h2>{data.preview.title}</h2>
+          <p>{data.preview.subtitle}</p>
+        </div>
+      </header>
+
+      {#if data.previewWeeks?.length > 1}
+        <nav class="preview-week-nav" aria-label="Weekly preview archive">
+          {#each data.previewWeeks as item}
+            <a class:active={item.week === data.selectedPreviewWeek} href={`/recaps?season=${data.season}&previewWeek=${item.week}`}>
+              Week {item.week}
+            </a>
+          {/each}
+        </nav>
+      {/if}
+
+      <div class="preview-grid">
+        {#each data.preview.matchups as matchup}
+          <article class="preview-card">
+            <div class="preview-matchup">
+              <div class="preview-team">
+                <strong>{matchup.teamA.manager}</strong>
+                <span>{matchup.teamA.record} • Rank #{matchup.teamA.rank}</span>
+              </div>
+              <span class="preview-vs">VS</span>
+              <div class="preview-team">
+                <strong>{matchup.teamB.manager}</strong>
+                <span>{matchup.teamB.record} • Rank #{matchup.teamB.rank}</span>
+              </div>
+            </div>
+
+            <div class="odds-row">
+              <div class="odds-box">
+                <strong>{formatOdds(matchup.teamA.playoffOdds)}</strong> modeled playoff chance<br />
+                Win: {formatOdds(matchup.teamA.playoffOddsWithWin)} • Loss: {formatOdds(matchup.teamA.playoffOddsWithLoss)}
+              </div>
+              <div class="odds-box">
+                <strong>{formatOdds(matchup.teamB.playoffOdds)}</strong> modeled playoff chance<br />
+                Win: {formatOdds(matchup.teamB.playoffOddsWithWin)} • Loss: {formatOdds(matchup.teamB.playoffOddsWithLoss)}
+              </div>
+            </div>
+
+            <h3>{matchup.headline}</h3>
+            <p>{matchup.paragraph}</p>
+          </article>
+        {/each}
+      </div>
+
+      <div class="model-note">
+        Playoff odds are Fantasy Foosball model estimates, not sportsbook probabilities. The model runs {data.preview.playoffModel.simulations.toLocaleString()} seeded simulations using current records, scoring strength and the remaining Sleeper schedule.
+      </div>
+    </section>
+  {/if}
+
   {#if data.weeks?.length}
+    {#if data.preview}<div class="recap-label">Completed Weekly Recaps</div>{/if}
     <nav class="week-nav" aria-label="Weekly recap archive">
       {#each data.weeks as item}
         <a class:active={item.week === data.selectedWeek} href={`/recaps?season=${data.season}&week=${item.week}`}>
@@ -422,8 +660,8 @@
     </article>
   {:else}
     <div class="empty">
-      <strong>No weekly recap has been published yet.</strong><br />
-      {data.error || 'The archive will populate automatically after the first completed fantasy week.'}
+      <strong>No completed weekly recap has been published yet.</strong><br />
+      {data.error || 'The recap archive will populate automatically after Sleeper marks the first fantasy week complete.'}
     </div>
   {/if}
 </div>
