@@ -1,0 +1,86 @@
+name: Probe Legacy ESPN League
+
+on:
+  push:
+    paths:
+      - '.github/workflows/probe-espn-legacy.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Probe ESPN 2019-2021 archive
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json
+          import urllib.error
+          import urllib.request
+
+          LEAGUE_ID = '59065549'
+          YEARS = [2019, 2020, 2021]
+          VIEWS = ['mTeam', 'mSettings', 'mMatchup', 'mRoster', 'mDraftDetail']
+
+          def request_json(url):
+              req = urllib.request.Request(
+                  url,
+                  headers={
+                      'Accept': 'application/json, text/plain, */*',
+                      'User-Agent': 'Mozilla/5.0 (GitHub Actions; Fantasy Foosball archive probe)',
+                  },
+              )
+              try:
+                  with urllib.request.urlopen(req, timeout=30) as response:
+                      raw = response.read()
+                      return response.status, json.loads(raw.decode('utf-8'))
+              except urllib.error.HTTPError as exc:
+                  body = exc.read().decode('utf-8', errors='replace')[:500]
+                  return exc.code, {'errorBody': body}
+              except Exception as exc:
+                  return None, {'error': f'{type(exc).__name__}: {exc}'}
+
+          for year in YEARS:
+              query = '&'.join(f'view={view}' for view in VIEWS)
+              urls = [
+                  f'https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl/seasons/{year}/segments/0/leagues/{LEAGUE_ID}?{query}',
+                  f'https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl/leagueHistory/{LEAGUE_ID}?seasonId={year}&{query}',
+              ]
+
+              print(f'\n===== ESPN {year} =====')
+              for index, url in enumerate(urls, start=1):
+                  status, payload = request_json(url)
+                  print(f'Attempt {index}: HTTP {status}')
+
+                  if status == 200:
+                      if isinstance(payload, list):
+                          print(f'Response type: list ({len(payload)} item(s))')
+                          payload = payload[0] if payload else {}
+                      else:
+                          print('Response type: object')
+
+                      settings = payload.get('settings') or {}
+                      teams = payload.get('teams') or []
+                      members = payload.get('members') or []
+                      schedule = payload.get('schedule') or []
+                      draft = payload.get('draftDetail') or {}
+                      roster_entries = sum(len((team.get('roster') or {}).get('entries') or []) for team in teams)
+
+                      print('ACCESSIBLE: yes')
+                      print(f"League name: {settings.get('name') or payload.get('name') or 'unknown'}")
+                      print(f'Teams: {len(teams)}')
+                      print(f'Members: {len(members)}')
+                      print(f'Schedule entries: {len(schedule)}')
+                      print(f'Roster entries returned: {roster_entries}')
+                      print(f"Draft detail present: {'yes' if draft else 'no'}")
+                      print(f"Top-level keys: {', '.join(sorted(payload.keys()))}")
+                      break
+
+                  error_text = payload.get('errorBody') or payload.get('error') or ''
+                  print(f'Error preview: {error_text[:240]}')
+              else:
+                  print('ACCESSIBLE: no without ESPN authentication')
+          PY
