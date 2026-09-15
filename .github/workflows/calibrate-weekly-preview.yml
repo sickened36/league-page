@@ -32,38 +32,14 @@ jobs:
           path = Path('scripts/generate-weekly-preview.mjs')
           source = path.read_text()
 
-          old = """  for (const team of standings) {
-            const smoothedPPG = team.games
-              ? (team.pointsFor + leagueAverage * 2) / (team.games + 2)
-              : leagueAverage;
-            const smoothedWinPct = (team.wins + team.ties * 0.5 + 2) / (team.games + 4);
-            strengths.set(team.rosterId, {
-              mean: smoothedPPG + (smoothedWinPct - 0.5) * 14,
-              expectedPPG: smoothedPPG,
-            });
-          }
-"""
+          old_ppg = "const smoothedPPG = team.games\n      ? (team.pointsFor + leagueAverage * 2) / (team.games + 2)\n      : leagueAverage;"
+          new_ppg = "// Regress early scoring toward league average so one week cannot dominate the model.\n    const scoringPriorGames = Math.max(1, 5 - Math.min(team.games, 4));\n    const smoothedPPG = team.games\n      ? (team.pointsFor + leagueAverage * scoringPriorGames) / (team.games + scoringPriorGames)\n      : leagueAverage;"
 
-          new = """  for (const team of standings) {
-            // Early in the season, regress scoring heavily toward league average so
-            // one unusually high or low week does not create near-certain playoff odds.
-            // The prior fades quickly as real games accumulate.
-            const scoringPriorGames = Math.max(1, 5 - Math.min(team.games, 4));
-            const smoothedPPG = team.games
-              ? (team.pointsFor + leagueAverage * scoringPriorGames) / (team.games + scoringPriorGames)
-              : leagueAverage;
-            const smoothedWinPct = (team.wins + team.ties * 0.5 + 2) / (team.games + 4);
-            strengths.set(team.rosterId, {
-              mean: smoothedPPG + (smoothedWinPct - 0.5) * 8,
-              expectedPPG: smoothedPPG,
-            });
-          }
-"""
+          if old_ppg not in source:
+              raise SystemExit('Expected scoring prior block was not found; refusing to patch.')
 
-          if old not in source:
-              raise SystemExit('Expected strength-model block was not found; refusing to patch.')
-
-          source = source.replace(old, new, 1)
+          source = source.replace(old_ppg, new_ppg, 1)
+          source = source.replace('mean: smoothedPPG + (smoothedWinPct - 0.5) * 14,', 'mean: smoothedPPG + (smoothedWinPct - 0.5) * 8,', 1)
           source = source.replace('normal(random) * 18', 'normal(random) * 22')
           path.write_text(source)
           PY
