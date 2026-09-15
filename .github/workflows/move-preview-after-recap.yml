@@ -22,6 +22,7 @@ jobs:
         run: |
           python - <<'PY'
           from pathlib import Path
+          import re
 
           path = Path('src/routes/recaps/+page.svelte')
           text = path.read_text(encoding='utf-8')
@@ -38,19 +39,14 @@ jobs:
           insert_at = text.rindex(final_tail) + len('  {/if}\n')
           text = text[:insert_at] + '\n' + preview_block + text[insert_at:]
 
-          old_css = '''  .preview-section {
-            margin-bottom: 44px;
-            padding-bottom: 38px;
-            border-bottom: 1px solid var(--ddd);
-          }'''
-          new_css = '''  .preview-section {
-            margin-top: 48px;
-            padding-top: 38px;
-            border-top: 1px solid var(--ddd);
-          }'''
-          if old_css not in text:
+          text, css_changes = re.subn(
+              r'  \.preview-section \{\n\s+margin-bottom: 44px;\n\s+padding-bottom: 38px;\n\s+border-bottom: 1px solid var\(--ddd\);\n  \}',
+              '  .preview-section {\n    margin-top: 48px;\n    padding-top: 38px;\n    border-top: 1px solid var(--ddd);\n  }',
+              text,
+              count=1,
+          )
+          if css_changes != 1:
               raise SystemExit('Expected preview-section CSS was not found.')
-          text = text.replace(old_css, new_css, 1)
 
           text = text.replace(
               'description="Upcoming matchup stakes, modeled playoff odds, game stories and weekly awards built from the league\'s Sleeper data."',
