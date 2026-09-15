@@ -190,12 +190,14 @@ function buildStrengths(standings) {
 
   const strengths = new Map();
   for (const team of standings) {
+    // Regress early scoring toward league average so one week cannot dominate the model.
+    const scoringPriorGames = Math.max(1, 5 - Math.min(team.games, 4));
     const smoothedPPG = team.games
-      ? (team.pointsFor + leagueAverage * 2) / (team.games + 2)
+      ? (team.pointsFor + leagueAverage * scoringPriorGames) / (team.games + scoringPriorGames)
       : leagueAverage;
     const smoothedWinPct = (team.wins + team.ties * 0.5 + 2) / (team.games + 4);
     strengths.set(team.rosterId, {
-      mean: smoothedPPG + (smoothedWinPct - 0.5) * 14,
+      mean: smoothedPPG + (smoothedWinPct - 0.5) * 8,
       expectedPPG: smoothedPPG,
     });
   }
@@ -246,8 +248,8 @@ function simulatePlayoffOdds({ standings, schedule, previewWeek, playoffTeams, s
       for (const game of week.games) {
         const strengthA = strengths.get(game.rosterA);
         const strengthB = strengths.get(game.rosterB);
-        const scoreA = Math.max(0, strengthA.mean + normal(random) * 18);
-        const scoreB = Math.max(0, strengthB.mean + normal(random) * 18);
+        const scoreA = Math.max(0, strengthA.mean + normal(random) * 22);
+        const scoreB = Math.max(0, strengthB.mean + normal(random) * 22);
         const a = state.get(game.rosterA);
         const b = state.get(game.rosterB);
         a.pointsFor += scoreA;
