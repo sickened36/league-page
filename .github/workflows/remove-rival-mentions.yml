@@ -1,5 +1,6 @@
 name: Remove Rival Mentions
 
+# One-time cleanup; this file removes itself after a successful run.
 on:
   push:
     paths:
