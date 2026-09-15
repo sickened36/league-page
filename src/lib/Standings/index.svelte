@@ -6,7 +6,7 @@
     import { onMount } from 'svelte';
     import Standing from './Standing.svelte';
 
-    export let standingsData, leagueTeamManagersData;
+    export let standingsData, leagueTeamManagersData, playoffOddsData = null;
 
     // Least important to most important (i.e. the most important [usually wins] goes last)
     // Edit this to match your league settings
@@ -17,6 +17,7 @@
         {name: "W", field: "wins"},
         {name: "T", field: "ties"},
         {name: "L", field: "losses"},
+        {name: "Playoff %", field: "playoffChanceDisplay"},
         {name: "Div W", field: "divisionWins"},
         {name: "Div T", field: "divisionTies"},
         {name: "Div L", field: "divisionLosses"},
@@ -28,6 +29,7 @@
     let loading = true;
     let preseason = false;
     let standings, year, leagueTeamManagers;
+    let playoffOddsMeta = null;
 
     const record = (standing) => {
         const wins = standing?.wins ?? 0;
@@ -49,6 +51,12 @@
         return Number.isFinite(number) ? number.toFixed(1) : value;
     };
 
+    const formatPlayoffChance = (value) => {
+        if (value === null || value === undefined || value === '') return '—';
+        const number = Number(value);
+        return Number.isFinite(number) ? `${number.toFixed(1)}%` : '—';
+    };
+
     onMount(async () => {
         const asyncStandingsData = await standingsData;
         if(!asyncStandingsData) {
@@ -58,7 +66,18 @@
         }
         const {standingsInfo, yearData} = asyncStandingsData;
         leagueTeamManagers = await leagueTeamManagersData;
+        const playoffOdds = playoffOddsData ? await playoffOddsData : null;
+        playoffOddsMeta = playoffOdds;
         year = yearData;
+
+        const oddsByTeamName = new Map();
+        for (const matchup of playoffOdds?.matchups || []) {
+            for (const team of [matchup.teamA, matchup.teamB]) {
+                if (!team?.teamName) continue;
+                const odds = Number(team.playoffOdds);
+                if (Number.isFinite(odds)) oddsByTeamName.set(team.teamName, odds);
+            }
+        }
 
         let finalStandings = Object.keys(standingsInfo).map((key) => standingsInfo[key]);
 
@@ -69,7 +88,15 @@
             finalStandings = [...finalStandings].sort((a,b) => b[sortType] - a[sortType]);
         }
 
-        standings = finalStandings;
+        standings = finalStandings.map((standing) => {
+            const team = getTeamFromTeamManagers(leagueTeamManagers, standing.rosterID, year);
+            const chance = oddsByTeamName.get(team?.name);
+            return {
+                ...standing,
+                playoffChance: Number.isFinite(chance) ? chance : null,
+                playoffChanceDisplay: formatPlayoffChance(chance),
+            };
+        });
         loading = false;
     });
 </script>
@@ -100,12 +127,24 @@
 	.season-label {
 		padding: 20px 24px 14px;
 		text-align: left;
-		color: #8b5cf6;
+		color: #00ceb8;
 		font-size: 0.72rem;
 		font-weight: 900;
 		letter-spacing: 0.14em;
 		text-transform: uppercase;
 	}
+
+    .odds-note {
+        padding: 10px 24px 18px;
+        text-align: left;
+        color: var(--g777);
+        font-size: 0.68rem;
+        line-height: 1.45;
+    }
+
+    .odds-note strong {
+        color: #00ceb8;
+    }
 
 	:global(.standingsTable .mdc-data-table) {
 		width: 100%;
@@ -133,6 +172,11 @@
             line-height: 1.45;
         }
 
+        .odds-note {
+            padding: 8px 16px 16px;
+            text-align: center;
+        }
+
         .standingsTable {
             display: none;
         }
@@ -150,7 +194,7 @@
             gap: 14px;
             padding: 16px;
             color: inherit;
-            background: color-mix(in srgb, var(--fff) 97%, #8b5cf6 3%);
+            background: color-mix(in srgb, var(--fff) 97%, #00ceb8 3%);
             border: 1px solid var(--ddd);
             border-radius: 14px;
             font: inherit;
@@ -242,7 +286,7 @@
         .mobile-stats {
             grid-column: 1 / -1;
             display: grid;
-            grid-template-columns: repeat(3, minmax(0, 1fr));
+            grid-template-columns: repeat(4, minmax(0, 1fr));
             gap: 8px;
             padding-top: 12px;
             border-top: 1px solid var(--ddd);
@@ -269,6 +313,17 @@
             text-overflow: ellipsis;
             white-space: nowrap;
             font-size: 0.9rem;
+        }
+
+        .mobile-stat.playoff strong {
+            color: #00ceb8;
+        }
+    }
+
+    @media (max-width: 430px) {
+        .mobile-stats {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            row-gap: 12px;
         }
     }
 </style>
@@ -329,6 +384,10 @@
                 </div>
 
                 <div class="mobile-stats">
+                    <div class="mobile-stat playoff">
+                        <small>Playoff</small>
+                        <strong>{standing.playoffChanceDisplay}</strong>
+                    </div>
                     <div class="mobile-stat">
                         <small>PF</small>
                         <strong>{formatPoints(standing.fpts)}</strong>
@@ -345,4 +404,10 @@
             </button>
         {/each}
     </div>
+
+    {#if playoffOddsMeta?.simulations}
+        <div class="odds-note">
+            <strong>Playoff Chance</strong> is a model estimate from {Number(playoffOddsMeta.simulations).toLocaleString()} simulations using results through Week {playoffOddsMeta.throughWeek} and the remaining Sleeper schedule.
+        </div>
+    {/if}
 {/if}
