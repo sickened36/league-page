@@ -102,6 +102,60 @@ components = re.sub(r"^import Rivalry from './Rivalry/index\.svelte';\n", '', co
 components = re.sub(r'^\s*Rivalry,\n', '', components, flags=re.MULTILINE)
 write(components_path, components)
 
+# Remove rivalry helper from the shared helper barrel.
+helper_path = Path('src/lib/utils/helper.js')
+helper = read(helper_path)
+helper = re.sub(r"^import \{getRivalryMatchups\} from './helperFunctions/rivalryMatchups'\n", '', helper, flags=re.MULTILINE)
+helper = re.sub(r'^\s*getRivalryMatchups,\n', '', helper, flags=re.MULTILINE)
+write(helper_path, helper)
+
+# Remove rival language from the Managers page introduction.
+managers_page_path = Path('src/routes/managers/+page.svelte')
+managers_page = read(managers_page_path)
+managers_page = managers_page.replace(
+    'Meet the personalities, rivals and former champions behind every roster.',
+    'Meet the personalities and former champions behind every roster.'
+)
+write(managers_page_path, managers_page)
+
+# Remove the individual Rival card from manager detail pages.
+manager_info_path = Path('src/lib/Managers/ManagerFantasyInfo.svelte')
+manager_info = read(manager_info_path)
+manager_info = manager_info.replace(
+'''    .infoRival {
+        cursor: pointer;
+    }
+
+    .infoRival:hover .infoIcon {
+        box-shadow: 0 0 6px 4px var(--aaa);
+        border: 1px solid var(--aaa);
+    }
+
+    .rival {
+        height: 100%;
+    }
+
+''',
+''
+)
+manager_info = manager_info.replace(
+'''    <!-- Rival -->
+    <div class="infoSlot infoRival" onclick={() => changeManager(viewManager.rival.link)}>
+        <div class="infoLabel">
+            Rival
+        </div>
+        <div class="infoIcon">
+            <img class="rival" src="{viewManager.rival.image}" alt="rival"/>
+        </div>
+        <div class="infoAnswer">
+            {viewManager.rival.name}
+        </div>
+    </div>
+''',
+''
+)
+write(manager_info_path, manager_info)
+
 # Future AI-generated content: keep non-rival lore, remove all designated rival data.
 for generator in [
     Path('scripts/generate-weekly-preview.mjs'),
