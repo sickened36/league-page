@@ -4,7 +4,6 @@ import News from './News/index.svelte';
 import Resources from './Resources.svelte';
 import Awards from './Awards/Awards.svelte';
 import Rosters from './Rosters/Rosters.svelte';
-import Rivalry from './Rivalry/index.svelte';
 import Transactions from './Transactions/Transactions.svelte';
 import TransactionsPage from './Transactions/TransactionsPage.svelte';
 import MatchupsAndBrackets from './Matchups/MatchupsAndBrackets.svelte';
@@ -26,7 +25,6 @@ export {
     Footer,
     Awards,
     Rosters,
-    Rivalry,
     Transactions,
     TransactionsPage,
     News,

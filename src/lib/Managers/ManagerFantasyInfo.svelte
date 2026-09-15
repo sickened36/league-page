@@ -68,19 +68,6 @@
         vertical-align: middle;
     }
 
-    .infoRival {
-        cursor: pointer;
-    }
-
-    .infoRival:hover .infoIcon {
-        box-shadow: 0 0 6px 4px var(--aaa);
-        border: 1px solid var(--aaa);
-    }
-
-    .rival {
-        height: 100%;
-    }
-
     .rebuildOrWin {
         height: 70px;
     }
@@ -236,16 +223,4 @@
             </div>
         </div>
     {/if}
-    <!-- Rival -->
-    <div class="infoSlot infoRival" onclick={() => changeManager(viewManager.rival.link)}>
-        <div class="infoLabel">
-            Rival
-        </div>
-        <div class="infoIcon">
-            <img class="rival" src="{viewManager.rival.image}" alt="rival"/>
-        </div>
-        <div class="infoAnswer">
-            {viewManager.rival.name}
-        </div>
-    </div>
 </div>

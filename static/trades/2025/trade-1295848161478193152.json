@@ -16,7 +16,7 @@
       "rosterId": 2,
       "manager": "Andy",
       "teamName": "Long dong silvers",
-      "lore": "Rivals: Alex, CJ, Payton.",
+      "lore": "managers: Alex, CJ, Payton.",
       "received": [
         {
           "id": "5892",
@@ -124,7 +124,7 @@
       "rosterId": 8,
       "manager": "Cooper",
       "teamName": "Jack MeHoff",
-      "lore": "2022 champion. Rival: Kade.",
+      "lore": "2022 champion.",
       "received": [
         {
           "id": "5967",

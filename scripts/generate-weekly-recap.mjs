@@ -21,18 +21,18 @@ const managerNames = {
 };
 
 const leagueLore = {
-  Payton: 'Two-time champion (2020, 2021). Rivals: Parker, Andy, CJ, Alex.',
-  Parker: '2019 inaugural champion. League Public Enemy. Nickname: King of Dogshit Trades. Rivals: everyone.',
-  Kane: 'Rivals: Kohlt and Kade.',
-  Cooper: '2022 champion. Rival: Kade.',
-  Joey: '2024 champion. Rivals: Andy and Evan.',
-  Kohlt: 'Rivals: Kane, Kade, Parker.',
-  Brae: 'Rivals: Parker and Andy.',
-  Andy: 'Rivals: Alex, CJ, Payton.',
-  Kade: 'Rivals: Kane, Kohlt, Andy.',
-  Evan: '2023 champion. Rivals: Joey, Andy, Payton.',
-  Alex: '2025 champion. Rivals: Andy, Payton, CJ.',
-  CJ: 'Rivals: Payton, Andy, Alex.',
+  Payton: 'Two-time champion (2020, 2021).',
+  Parker: '2019 inaugural champion. League Public Enemy. Nickname: King of Dogshit Trades.',
+  Kane: '',
+  Cooper: '2022 champion.',
+  Joey: '2024 champion.',
+  Kohlt: '',
+  Brae: '',
+  Andy: '',
+  Kade: '',
+  Evan: '2023 champion.',
+  Alex: '2025 champion.',
+  CJ: '',
 };
 
 function envValue(name, fallback = '') {

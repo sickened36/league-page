@@ -16,7 +16,7 @@
       "rosterId": 1,
       "manager": "Payton",
       "teamName": "Retirement Home",
-      "lore": "Two-time champion (2020, 2021). Rivals: Parker, Andy, CJ, Alex.",
+      "lore": "Two-time champion (2020, 2021).",
       "received": [
         {
           "id": "2505",
@@ -125,7 +125,7 @@
       "rosterId": 5,
       "manager": "Parker",
       "teamName": "My BallDak hurts",
-      "lore": "2019 inaugural champion. League Public Enemy. Nickname: King of Dogshit Trades. Rivals: everyone.",
+      "lore": "2019 inaugural champion. League Public Enemy. Nickname: King of Dogshit Trades.",
       "received": [
         {
           "id": "12474",

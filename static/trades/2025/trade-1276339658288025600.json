@@ -10,13 +10,13 @@
   "methodology": "MVP: Sleeper player search rank + actual league production (when available) + roster fit + starting-lineup impact.",
   "headline": "Chase Powers Andy’s Win in a Four-for-Three Shuffle",
   "verdict": "Andy is the current winner, with the stronger overall grade and the bigger top-end prize in Ja’Marr Chase.",
-  "summary": "This is a classic consolidation-versus-depth deal, but the supplied grades give Andy the edge: B- and 81.8 overall compared with Kane’s C+ and 79.5. Andy turns four pieces into Tony Pollard, Ja’Marr Chase and Ladd McConkey, highlighted by Chase’s 96.2 value, fourth search rank and 22.7 recent average. Kane receives two running backs and two receivers, including Breece Hall at 74.3 value, but gives up the trade’s premier asset and McConkey’s 68.7 value. Andy’s 11-3 record and 1,856.94 points for make the upgrade feel like a contender’s move, while Kane’s 5-9 roster gets breadth. The trash talk writes itself: Andy gets to wave Chase at rivals Alex, CJ and Payton.",
+  "summary": "This is a classic consolidation-versus-depth deal, but the supplied grades give Andy the edge: B- and 81.8 overall compared with Kane’s C+ and 79.5. Andy turns four pieces into Tony Pollard, Ja’Marr Chase and Ladd McConkey, highlighted by Chase’s 96.2 value, fourth search rank and 22.7 recent average. Kane receives two running backs and two receivers, including Breece Hall at 74.3 value, but gives up the trade’s premier asset and McConkey’s 68.7 value. Andy’s 11-3 record and 1,856.94 points for make the upgrade feel like a contender’s move, while Kane’s 5-9 roster gets breadth.",
   "sides": [
     {
       "rosterId": 2,
       "manager": "Andy",
       "teamName": "Long dong silvers",
-      "lore": "Rivals: Alex, CJ, Payton.",
+      "lore": "managers: Alex, CJ, Payton.",
       "received": [
         {
           "id": "5967",
@@ -160,7 +160,7 @@
       "rosterId": 3,
       "manager": "Kane",
       "teamName": "Blueballs",
-      "lore": "Rivals: Kohlt and Kade.",
+      "lore": "managers: Kohlt and Kade.",
       "received": [
         {
           "id": "6806",

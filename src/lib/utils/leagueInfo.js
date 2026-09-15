@@ -46,7 +46,7 @@ export const homepageText = `
 <div class="ff-intro">
     <p>
         What started in 2019 as a 10-manager fantasy league has turned into an
-        annual 12-team battle built on rivalries, questionable trades, waiver-wire
+        annual 12-team battle built on competition, questionable trades, waiver-wire
         desperation and Sunday heartbreak.
     </p>
 
@@ -210,16 +210,16 @@ export const managers = [
         "name": "Payton",
         "bio": "Two-time Fantasy Foosball champion and the only manager in league history to win back-to-back championships.",
         "favoriteTeam": "dal",
-        "philosophy": "2x Champion • 2020, 2021 • Rivals: Parker, Andy, CJ, Alex",
+        "philosophy": "2x Champion • 2020, 2021",
         "preferredContact": "Sleeper",
     },
 
     {
         "managerID": "858516512074502144",
         "name": "Parker",
-        "bio": "Fantasy Foosball's League Public Enemy. The inaugural champion, everyone's rival, and the undisputed King of Dogshit Trades.",
+        "bio": "Fantasy Foosball's League Public Enemy. The inaugural champion and the undisputed King of Dogshit Trades.",
         "favoriteTeam": "dal",
-        "philosophy": "League Public Enemy • King of Dogshit Trades • 2019 Champion • Rivals: Everyone",
+        "philosophy": "League Public Enemy • King of Dogshit Trades • 2019 Champion",
         "preferredContact": "Sleeper",
     },
 
@@ -228,7 +228,7 @@ export const managers = [
         "name": "Kane",
         "bio": "Longtime Fantasy Foosball manager still hunting for his first championship.",
         "favoriteTeam": "dal",
-        "philosophy": "Seeking First Championship • Rivals: Kohlt, Kade",
+        "philosophy": "Seeking First Championship",
         "preferredContact": "Sleeper",
     },
 
@@ -237,7 +237,7 @@ export const managers = [
         "name": "Cooper",
         "bio": "2022 Fantasy Foosball champion and the final champion of the league's original 10-team era.",
         "favoriteTeam": "dal",
-        "philosophy": "2022 Champion • Rival: Kade",
+        "philosophy": "2022 Champion",
         "preferredContact": "Sleeper",
     },
 
@@ -246,7 +246,7 @@ export const managers = [
         "name": "Joey",
         "bio": "2024 Fantasy Foosball champion and one of the league's proven playoff winners.",
         "favoriteTeam": "dal",
-        "philosophy": "2024 Champion • Rivals: Andy, Evan",
+        "philosophy": "2024 Champion",
         "preferredContact": "Sleeper",
     },
 
@@ -255,7 +255,7 @@ export const managers = [
         "name": "Kohlt",
         "bio": "Fantasy Foosball manager chasing his first league championship.",
         "favoriteTeam": "dal",
-        "philosophy": "Seeking First Championship • Rivals: Kane, Kade, Parker",
+        "philosophy": "Seeking First Championship",
         "preferredContact": "Sleeper",
     },
 
@@ -264,16 +264,16 @@ export const managers = [
         "name": "Brae",
         "bio": "Fantasy Foosball manager looking to break through and capture his first championship.",
         "favoriteTeam": "dal",
-        "philosophy": "Seeking First Championship • Rivals: Parker, Andy",
+        "philosophy": "Seeking First Championship",
         "preferredContact": "Sleeper",
     },
 
     {
         "managerID": "855234295671939072",
         "name": "Andy",
-        "bio": "A manager with no shortage of league rivalries and still chasing his first Fantasy Foosball championship.",
+        "bio": "Fantasy Foosball manager still chasing his first championship.",
         "favoriteTeam": "dal",
-        "philosophy": "Seeking First Championship • Rivals: Alex, CJ, Payton",
+        "philosophy": "Seeking First Championship",
         "preferredContact": "Sleeper",
     },
 
@@ -282,7 +282,7 @@ export const managers = [
         "name": "Kade",
         "bio": "The league's lone Packers fan and a manager still hunting for his first Fantasy Foosball championship.",
         "favoriteTeam": "gb",
-        "philosophy": "Seeking First Championship • Rivals: Kane, Kohlt, Andy",
+        "philosophy": "Seeking First Championship",
         "preferredContact": "Sleeper",
     },
 
@@ -291,7 +291,7 @@ export const managers = [
         "name": "Evan",
         "bio": "2023 Fantasy Foosball champion and the first champion of the league's 12-team era.",
         "favoriteTeam": "dal",
-        "philosophy": "2023 Champion • Rivals: Joey, Andy, Payton",
+        "philosophy": "2023 Champion",
         "preferredContact": "Sleeper",
     },
 
@@ -300,16 +300,16 @@ export const managers = [
         "name": "Alex",
         "bio": "The defending Fantasy Foosball champion after capturing the 2025 title.",
         "favoriteTeam": "dal",
-        "philosophy": "2025 Champion • Defending Champion • Rivals: Andy, Payton, CJ",
+        "philosophy": "2025 Champion • Defending Champion",
         "preferredContact": "Sleeper",
     },
 
     {
         "managerID": "991832270292021248",
         "name": "CJ",
-        "bio": "Fantasy Foosball manager chasing his first championship and deeply involved in one of the league's biggest rivalry circles.",
+        "bio": "Fantasy Foosball manager chasing his first championship.",
         "favoriteTeam": "dal",
-        "philosophy": "Seeking First Championship • Rivals: Payton, Andy, Alex",
+        "philosophy": "Seeking First Championship",
         "preferredContact": "Sleeper",
     },
 ];

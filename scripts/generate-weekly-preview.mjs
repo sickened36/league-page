@@ -22,18 +22,18 @@ const managerNames = {
 };
 
 const leagueLore = {
-  Payton: 'Two-time champion (2020, 2021). Rivals: Parker, Andy, CJ, Alex.',
-  Parker: '2019 inaugural champion. League Public Enemy. Nickname: King of Dogshit Trades. Rivals: everyone.',
-  Kane: 'Rivals: Kohlt and Kade.',
-  Cooper: '2022 champion. Rival: Kade.',
-  Joey: '2024 champion. Rivals: Andy and Evan.',
-  Kohlt: 'Rivals: Kane, Kade, Parker.',
-  Brae: 'Rivals: Parker and Andy.',
-  Andy: 'Rivals: Alex, CJ, Payton.',
-  Kade: 'Rivals: Kane, Kohlt, Andy.',
-  Evan: '2023 champion. Rivals: Joey, Andy, Payton.',
-  Alex: '2025 champion. Rivals: Andy, Payton, CJ.',
-  CJ: 'Rivals: Payton, Andy, Alex.',
+  Payton: 'Two-time champion (2020, 2021).',
+  Parker: '2019 inaugural champion. League Public Enemy. Nickname: King of Dogshit Trades.',
+  Kane: '',
+  Cooper: '2022 champion.',
+  Joey: '2024 champion.',
+  Kohlt: '',
+  Brae: '',
+  Andy: '',
+  Kade: '',
+  Evan: '2023 champion.',
+  Alex: '2025 champion.',
+  CJ: '',
 };
 
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
@@ -343,7 +343,7 @@ RULES:
 - Playoff odds are model estimates, not guarantees or sportsbook odds. Use language such as "modeled playoff chance" or "the model gives."
 - Early in the season, acknowledge that odds are volatile when appropriate.
 - If the supplied win/loss odds barely move, do not overstate the stakes.
-- Light rivalry/lore references are allowed only from the supplied leagueLore field.
+- Light league-history/lore references are allowed only from the supplied leagueLore field.
 - Do not calculate additional standings gaps or probabilities beyond what is supplied.
 - Refer to managers by real manager names; team names may be used naturally.
 - Return JSON matching the schema.

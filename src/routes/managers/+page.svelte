@@ -27,7 +27,7 @@
     }
 </style>
 
-<PageShell eyebrow="The League" title="Managers" description="Meet the personalities, rivals and former champions behind every roster." icon="person_search">
+<PageShell eyebrow="The League" title="Managers" description="Meet the personalities and former champions behind every roster." icon="person_search">
 <div class="main page-panel">
     {#await leagueTeamManagersData}
         <!-- promise is pending -->

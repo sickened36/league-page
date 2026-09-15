@@ -10,13 +10,13 @@
   "methodology": "MVP: Sleeper player search rank + actual league production (when available) + roster fit + starting-lineup impact.",
   "headline": "Kade Lands McCaffrey, Kane Buys the Package",
   "verdict": "A near-draw on overall grade, but Kade is the current winner on lineup fit while Kane wins the package-value argument.",
-  "summary": "Both managers received a B, and the overall scores are essentially identical: Kane at 84.3 and Kade at 84.0. Kane turns Christian McCaffrey’s 98.4 value into three pieces, led by DJ Moore’s 72.3 value and a 15.3 recent average, while adding DeAndre Hopkins and Daniel Carlson. That improves breadth but gives up the trade’s premier asset. Kade consolidates the package into McCaffrey, whose 19.8 season average and 20.7 recent average headline the deal. The decisive split is fit: Kade’s 96 roster-fit and lineup-impact scores tower over Kane’s 81.7 and 82.7. In other words, Kane got more stuff; Kade got the biggest hammer. Let the Kane-Kade rivalry add the usual scoreboard seasoning.",
+  "summary": "Both managers received a B, and the overall scores are essentially identical: Kane at 84.3 and Kade at 84.0. Kane turns Christian McCaffrey’s 98.4 value into three pieces, led by DJ Moore’s 72.3 value and a 15.3 recent average, while adding DeAndre Hopkins and Daniel Carlson. That improves breadth but gives up the trade’s premier asset. Kade consolidates the package into McCaffrey, whose 19.8 season average and 20.7 recent average headline the deal. The decisive split is fit: Kade’s 96 roster-fit and lineup-impact scores tower over Kane’s 81.7 and 82.7. In other words, Kane got more stuff; Kade got the biggest hammer.",
   "sides": [
     {
       "rosterId": 3,
       "manager": "Kane",
       "teamName": "Blueballs",
-      "lore": "Rivals: Kohlt and Kade.",
+      "lore": "managers: Kohlt and Kade.",
       "received": [
         {
           "id": "1426",
@@ -124,7 +124,7 @@
       "rosterId": 4,
       "manager": "Kade",
       "teamName": "CheesusJesus",
-      "lore": "Rivals: Kane, Kohlt, Andy. Only Packers fan in a league full of Cowboys fans.",
+      "lore": "Only Packers fan in a league full of Cowboys fans.",
       "received": [
         {
           "id": "4034",

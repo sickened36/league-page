@@ -16,7 +16,7 @@
       "rosterId": 6,
       "manager": "Joey",
       "teamName": "JoeyCrawford33",
-      "lore": "2024 champion. Rivals: Andy and Evan.",
+      "lore": "2024 champion.",
       "received": [
         {
           "id": "5859",
@@ -112,7 +112,7 @@
       "rosterId": 7,
       "manager": "Evan",
       "teamName": "kennedy24",
-      "lore": "2023 champion. Rivals: Joey, Andy, Payton.",
+      "lore": "2023 champion.",
       "received": [
         {
           "id": "4029",
@@ -200,7 +200,7 @@
         "lineupImpact": 64
       },
       "grade": "C-",
-      "analysis": "Evan receives only Dalvin Cook in exchange for A.J. Brown and Najee Harris. Cook carries a 43.2 value, a 617 search rank, and a 6.6 recent average against Harris’s 66.5 value and 16.7 recent average, making the immediate production and market exchange heavily unfavorable on the supplied facts. Evan’s roster-fit score of 86 indicates the move does address construction: he had three running backs and now adds another, while his roster already features Patrick Mahomes, DeVonta Smith, Travis Kelce, and Jakobi Meyers. Still, the 64 lineup-impact score captures the problem: this is a fit play that costs far more talent than it adds. Joey’s rival gets the better headline.",
+      "analysis": "Evan receives only Dalvin Cook in exchange for A.J. Brown and Najee Harris. Cook carries a 43.2 value, a 617 search rank, and a 6.6 recent average against Harris’s 66.5 value and 16.7 recent average, making the immediate production and market exchange heavily unfavorable on the supplied facts. Evan’s roster-fit score of 86 indicates the move does address construction: he had three running backs and now adds another, while his roster already features Patrick Mahomes, DeVonta Smith, Travis Kelce, and Jakobi Meyers. Still, the 64 lineup-impact score captures the problem: this is a fit play that costs far more talent than it adds.",
       "bestReason": "Cook fills a positional need on a roster with three running backs, matching Evan’s relatively strong 86 roster-fit score.",
       "biggestRisk": "Evan gives up Brown and Harris—154.4 in combined supplied value—for Cook at 43.2, with the incoming player’s 6.6 recent average adding substantial downside."
     }

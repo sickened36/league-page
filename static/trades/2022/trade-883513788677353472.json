@@ -16,7 +16,7 @@
       "rosterId": 6,
       "manager": "Joey",
       "teamName": "JoeyCrawford33",
-      "lore": "2024 champion. Rivals: Andy and Evan.",
+      "lore": "2024 champion.",
       "received": [
         {
           "id": "3225",
@@ -112,7 +112,7 @@
       "rosterId": 7,
       "manager": "Evan",
       "teamName": "kennedy24",
-      "lore": "2023 champion. Rivals: Joey, Andy, Payton.",
+      "lore": "2023 champion.",
       "received": [
         {
           "id": "6955",
@@ -200,7 +200,7 @@
         "lineupImpact": 64
       },
       "grade": "C",
-      "analysis": "Evan sends Boyd and Hunt for Robinson, earning a C despite an 86 roster-fit score. The deal reduces his listed roster from four wide receivers and three running backs to three wide receivers and four running backs, directly addressing positional balance. Robinson’s 34.3 value trails the 50.3 and 43.1 values of the players Evan gives up, and his recent average of 2.7 is well below Boyd’s 7.9 and Hunt’s 4.0. Still, Evan’s 4-10 roster gets a simpler one-player return, and the 64 lineup-impact score suggests the immediate starting effect is limited either way. The 2023 champion is taking the narrower side of the value exchange; Joey’s rivalry target can call this one a points-table win.",
+      "analysis": "Evan sends Boyd and Hunt for Robinson, earning a C despite an 86 roster-fit score. The deal reduces his listed roster from four wide receivers and three running backs to three wide receivers and four running backs, directly addressing positional balance. Robinson’s 34.3 value trails the 50.3 and 43.1 values of the players Evan gives up, and his recent average of 2.7 is well below Boyd’s 7.9 and Hunt’s 4.0. Still, Evan’s 4-10 roster gets a simpler one-player return, and the 64 lineup-impact score suggests the immediate starting effect is limited either way.",
       "bestReason": "Evan improves the listed RB/WR roster balance by moving from four WRs and three RBs to three WRs and four RBs.",
       "biggestRisk": "Robinson’s supplied 34.3 value and 2.7 recent average lag behind the combined package Evan sends away."
     }

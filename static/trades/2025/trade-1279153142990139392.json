@@ -16,7 +16,7 @@
       "rosterId": 5,
       "manager": "Parker",
       "teamName": "My BallDak hurts",
-      "lore": "2019 inaugural champion. League Public Enemy. Nickname: King of Dogshit Trades. Rivals: everyone.",
+      "lore": "2019 inaugural champion. League Public Enemy. Nickname: King of Dogshit Trades.",
       "received": [
         {
           "id": "9488",
@@ -124,7 +124,7 @@
       "rosterId": 9,
       "manager": "Brae",
       "teamName": "Ogles Outlaws",
-      "lore": "Rivals: Parker and Andy.",
+      "lore": "managers: Parker and Andy.",
       "received": [
         {
           "id": "6794",

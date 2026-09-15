@@ -16,7 +16,7 @@
       "rosterId": 1,
       "manager": "Payton",
       "teamName": "Retirement Home",
-      "lore": "Two-time champion (2020, 2021). Rivals: Parker, Andy, CJ, Alex.",
+      "lore": "Two-time champion (2020, 2021).",
       "received": [
         {
           "id": "11637",
@@ -101,7 +101,7 @@
       "rosterId": 8,
       "manager": "Cooper",
       "teamName": "Jack MeHoff",
-      "lore": "2022 champion. Rival: Kade.",
+      "lore": "2022 champion.",
       "received": [
         {
           "id": "5872",
@@ -177,7 +177,7 @@
         "lineupImpact": 64
       },
       "grade": "B-",
-      "analysis": "Cooper’s Jack MeHoff lands Deebo Samuel for a B-, making this the stronger value side on the supplied math. Samuel brings a 57.6 package value, 132 search rank, 17 games, 10.8 season average, and 8.4 recent average, all materially ahead of Keon Coleman’s 40 value, 206 rank, eight games, 5.3 season average, and 3.2 recent average. Cooper already has six wide receivers, including Michael Wilson and Ladd McConkey, which explains the more modest 72 roster-fit score. Even so, adding the better-valued player is a meaningful upgrade for a 6-8 roster, though the 64 lineup-impact score says the immediate starting-lineup difference is not guaranteed by the supplied data. Kade’s rival may want a receipt.",
+      "analysis": "Cooper’s Jack MeHoff lands Deebo Samuel for a B-, making this the stronger value side on the supplied math. Samuel brings a 57.6 package value, 132 search rank, 17 games, 10.8 season average, and 8.4 recent average, all materially ahead of Keon Coleman’s 40 value, 206 rank, eight games, 5.3 season average, and 3.2 recent average. Cooper already has six wide receivers, including Michael Wilson and Ladd McConkey, which explains the more modest 72 roster-fit score. Even so, adding the better-valued player is a meaningful upgrade for a 6-8 roster, though the 64 lineup-impact score says the immediate starting-lineup difference is not guaranteed by the supplied data.",
       "bestReason": "Cooper converts a lower-valued wide receiver into Samuel’s stronger market and production profile.",
       "biggestRisk": "The six-WR roster lowers fit, and the lineup-impact score remains only 64 despite the value upgrade."
     }
