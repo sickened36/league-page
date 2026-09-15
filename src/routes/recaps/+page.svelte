@@ -15,7 +15,7 @@
 
 <svelte:head>
   <title>Weekly Recaps | Fantasy Foosball</title>
-  <meta name="description" content="AI-generated weekly matchup previews, playoff stakes and game recaps for Fantasy Foosball." />
+  <meta name="description" content="AI-generated weekly game recaps, awards, matchup previews and playoff stakes for Fantasy Foosball." />
 </svelte:head>
 
 <style>
@@ -86,9 +86,9 @@
   }
 
   .preview-section {
-    margin-bottom: 44px;
-    padding-bottom: 38px;
-    border-bottom: 1px solid var(--ddd);
+    margin-top: 48px;
+    padding-top: 38px;
+    border-top: 1px solid var(--ddd);
   }
 
   .preview-header {
@@ -471,7 +471,7 @@
   }
 </style>
 
-<PageShell eyebrow="Fantasy Foosball Weekly" title="Weekly Recaps" description="Upcoming matchup stakes, modeled playoff odds, game stories and weekly awards built from the league's Sleeper data." icon="newspaper">
+<PageShell eyebrow="Fantasy Foosball Weekly" title="Weekly Recaps" description="Game stories and weekly awards from completed weeks, followed by upcoming matchup stakes and modeled playoff odds." icon="newspaper">
 <div class="recaps-page page-panel">
 
   {#if data.availableSeasons?.length}
@@ -480,64 +480,6 @@
         <a class:active={season === data.season} href={`/recaps?season=${season}`}>{season}</a>
       {/each}
     </nav>
-  {/if}
-
-  {#if data.preview}
-    <section class="preview-section" aria-label="Upcoming weekly preview">
-      <header class="preview-header">
-        <div>
-          <div class="eyebrow">{data.preview.season} • Week {data.preview.week} Preview</div>
-          <h2>{data.preview.title}</h2>
-          <p>{data.preview.subtitle}</p>
-        </div>
-      </header>
-
-      {#if data.previewWeeks?.length > 1}
-        <nav class="preview-week-nav" aria-label="Weekly preview archive">
-          {#each data.previewWeeks as item}
-            <a class:active={item.week === data.selectedPreviewWeek} href={`/recaps?season=${data.season}&previewWeek=${item.week}`}>
-              Week {item.week}
-            </a>
-          {/each}
-        </nav>
-      {/if}
-
-      <div class="preview-grid">
-        {#each data.preview.matchups as matchup}
-          <article class="preview-card">
-            <div class="preview-matchup">
-              <div class="preview-team">
-                <strong>{matchup.teamA.manager}</strong>
-                <span>{matchup.teamA.record} • Rank #{matchup.teamA.rank}</span>
-              </div>
-              <span class="preview-vs">VS</span>
-              <div class="preview-team">
-                <strong>{matchup.teamB.manager}</strong>
-                <span>{matchup.teamB.record} • Rank #{matchup.teamB.rank}</span>
-              </div>
-            </div>
-
-            <div class="odds-row">
-              <div class="odds-box">
-                <strong>{formatOdds(matchup.teamA.playoffOdds)}</strong> modeled playoff chance<br />
-                Win: {formatOdds(matchup.teamA.playoffOddsWithWin)} • Loss: {formatOdds(matchup.teamA.playoffOddsWithLoss)}
-              </div>
-              <div class="odds-box">
-                <strong>{formatOdds(matchup.teamB.playoffOdds)}</strong> modeled playoff chance<br />
-                Win: {formatOdds(matchup.teamB.playoffOddsWithWin)} • Loss: {formatOdds(matchup.teamB.playoffOddsWithLoss)}
-              </div>
-            </div>
-
-            <h3>{matchup.headline}</h3>
-            <p>{matchup.paragraph}</p>
-          </article>
-        {/each}
-      </div>
-
-      <div class="model-note">
-        Playoff odds are Fantasy Foosball model estimates, not sportsbook probabilities. The model runs {data.preview.playoffModel.simulations.toLocaleString()} seeded simulations using current records, scoring strength and the remaining Sleeper schedule.
-      </div>
-    </section>
   {/if}
 
   {#if data.weeks?.length}
@@ -664,6 +606,65 @@
       {data.error || 'The recap archive will populate automatically after Sleeper marks the first fantasy week complete.'}
     </div>
   {/if}
+
+  {#if data.preview}
+    <section class="preview-section" aria-label="Upcoming weekly preview">
+      <header class="preview-header">
+        <div>
+          <div class="eyebrow">{data.preview.season} • Week {data.preview.week} Preview</div>
+          <h2>{data.preview.title}</h2>
+          <p>{data.preview.subtitle}</p>
+        </div>
+      </header>
+
+      {#if data.previewWeeks?.length > 1}
+        <nav class="preview-week-nav" aria-label="Weekly preview archive">
+          {#each data.previewWeeks as item}
+            <a class:active={item.week === data.selectedPreviewWeek} href={`/recaps?season=${data.season}&previewWeek=${item.week}`}>
+              Week {item.week}
+            </a>
+          {/each}
+        </nav>
+      {/if}
+
+      <div class="preview-grid">
+        {#each data.preview.matchups as matchup}
+          <article class="preview-card">
+            <div class="preview-matchup">
+              <div class="preview-team">
+                <strong>{matchup.teamA.manager}</strong>
+                <span>{matchup.teamA.record} • Rank #{matchup.teamA.rank}</span>
+              </div>
+              <span class="preview-vs">VS</span>
+              <div class="preview-team">
+                <strong>{matchup.teamB.manager}</strong>
+                <span>{matchup.teamB.record} • Rank #{matchup.teamB.rank}</span>
+              </div>
+            </div>
+
+            <div class="odds-row">
+              <div class="odds-box">
+                <strong>{formatOdds(matchup.teamA.playoffOdds)}</strong> modeled playoff chance<br />
+                Win: {formatOdds(matchup.teamA.playoffOddsWithWin)} • Loss: {formatOdds(matchup.teamA.playoffOddsWithLoss)}
+              </div>
+              <div class="odds-box">
+                <strong>{formatOdds(matchup.teamB.playoffOdds)}</strong> modeled playoff chance<br />
+                Win: {formatOdds(matchup.teamB.playoffOddsWithWin)} • Loss: {formatOdds(matchup.teamB.playoffOddsWithLoss)}
+              </div>
+            </div>
+
+            <h3>{matchup.headline}</h3>
+            <p>{matchup.paragraph}</p>
+          </article>
+        {/each}
+      </div>
+
+      <div class="model-note">
+        Playoff odds are Fantasy Foosball model estimates, not sportsbook probabilities. The model runs {data.preview.playoffModel.simulations.toLocaleString()} seeded simulations using current records, scoring strength and the remaining Sleeper schedule.
+      </div>
+    </section>
+  {/if}
+
 </div>
 </PageShell>
 
