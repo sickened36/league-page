@@ -1,0 +1,909 @@
+{
+  "leagueId": "1389689189200592896",
+  "leagueName": "Fantasy Foosball Year 8",
+  "season": 2026,
+  "week": 4,
+  "generatedAt": "2026-10-06T20:22:29.006Z",
+  "model": "gpt-5.6-luna",
+  "title": "Fantasy Foosball Weekly: Year 8, 2026 — Week 4 Recap",
+  "subtitle": "Joey erupts, Kade survives a thriller, and Andy remains perfect atop the table",
+  "leagueLead": "Week 4 delivered a little bit of everything: a runaway performance, a razor-thin finish and a first-place team that simply refuses to lose. Joey’s Off Constantly posted the league’s top score at 166.76, overwhelming Cooper’s Jack MeHoff by 76.96 points. Kyren Williams led the charge with 36.7 points, while Kenneth Walker added 30.9. At the other end of the scoreboard, Cooper’s 89.8 was the week’s low mark, though Kirk Cousins still supplied 23.6 points. The Game of the Week belonged to Kade, whose CheesusJesus edged Brae’s Ogles Outlaws 119.12-114.5, a margin of 4.62 points. Kade’s Bijan Robinson paced the winner with 27.7, while Brae got 31.3 from Javonte Williams. Payton also made noise, beating Kane by 36.44 behind a gigantic 45.2-point outing from Tetairoa McMillan. Andy remains ranked No. 1 at 4-0, with Kane, Evan and Kade each at 3-1. Brae remains searching for a first victory at 0-4.",
+  "closing": "Week 4 leaves Andy unbeaten at the top, while Kane, Evan and Kade remain within the 3-1 group. Payton’s 161.12 and Joey’s 166.76 showed how quickly a week can become a scoring showcase, while Kade and Brae supplied the decimal-point drama. The standings also feature a broad middle pack at 2-2, making every upcoming result meaningful without needing any extra hype. For now, the league’s next chapter has a clear assignment: keep scoring, keep checking the bench, and perhaps stop leaving 28-point players parked there.",
+  "awards": {
+    "highScore": {
+      "rosterId": 6,
+      "manager": "Joey",
+      "teamName": "Off Constantly",
+      "score": 166.76,
+      "topStarters": [
+        {
+          "id": "8150",
+          "name": "Kyren Williams",
+          "points": 36.7
+        },
+        {
+          "id": "8151",
+          "name": "Kenneth Walker",
+          "points": 30.9
+        },
+        {
+          "id": "9228",
+          "name": "Bryce Young",
+          "points": 21.46
+        },
+        {
+          "id": "11834",
+          "name": "Devaughn Vele",
+          "points": 17.4
+        }
+      ],
+      "topBench": [
+        {
+          "id": "9493",
+          "name": "Puka Nacua",
+          "points": 27.7
+        },
+        {
+          "id": "4035",
+          "name": "Alvin Kamara",
+          "points": 22.8
+        }
+      ]
+    },
+    "lowScore": {
+      "rosterId": 8,
+      "manager": "Cooper",
+      "teamName": "Jack MeHoff",
+      "score": 89.8,
+      "topStarters": [
+        {
+          "id": "1166",
+          "name": "Kirk Cousins",
+          "points": 23.6
+        },
+        {
+          "id": "12527",
+          "name": "Ashton Jeanty",
+          "points": 18.6
+        },
+        {
+          "id": "12185",
+          "name": "Spencer Shrader",
+          "points": 16
+        },
+        {
+          "id": "12506",
+          "name": "Harold Fannin",
+          "points": 11.7
+        }
+      ],
+      "topBench": [
+        {
+          "id": "8134",
+          "name": "Khalil Shakir",
+          "points": 13.2
+        },
+        {
+          "id": "6797",
+          "name": "Justin Herbert",
+          "points": 11.56
+        }
+      ]
+    },
+    "gameOfWeek": {
+      "matchupId": 2,
+      "teamA": {
+        "rosterId": 4,
+        "manager": "Kade",
+        "teamName": "CheesusJesus",
+        "score": 119.12,
+        "topStarters": [
+          {
+            "id": "9509",
+            "name": "Bijan Robinson",
+            "points": 27.7
+          },
+          {
+            "id": "10859",
+            "name": "Sam LaPorta",
+            "points": 22.4
+          },
+          {
+            "id": "4984",
+            "name": "Josh Allen",
+            "points": 19.52
+          },
+          {
+            "id": "5846",
+            "name": "DK Metcalf",
+            "points": 16.5
+          }
+        ],
+        "topBench": [
+          {
+            "id": "6804",
+            "name": "Jordan Love",
+            "points": 14.08
+          },
+          {
+            "id": "3214",
+            "name": "Hunter Henry",
+            "points": 11.2
+          }
+        ]
+      },
+      "teamB": {
+        "rosterId": 9,
+        "manager": "Brae",
+        "teamName": "Ogles Outlaws",
+        "score": 114.5,
+        "topStarters": [
+          {
+            "id": "7588",
+            "name": "Javonte Williams",
+            "points": 31.3
+          },
+          {
+            "id": "9224",
+            "name": "Chase Brown",
+            "points": 19.1
+          },
+          {
+            "id": "3294",
+            "name": "Dak Prescott",
+            "points": 18.1
+          },
+          {
+            "id": "11786",
+            "name": "Cam Little",
+            "points": 14
+          }
+        ],
+        "topBench": [
+          {
+            "id": "9480",
+            "name": "Brenton Strange",
+            "points": 16.5
+          },
+          {
+            "id": "11620",
+            "name": "Rome Odunze",
+            "points": 15.4
+          }
+        ]
+      },
+      "tied": false,
+      "winner": "Kade",
+      "loser": "Brae",
+      "margin": 4.62
+    },
+    "biggestBlowout": {
+      "matchupId": 6,
+      "teamA": {
+        "rosterId": 6,
+        "manager": "Joey",
+        "teamName": "Off Constantly",
+        "score": 166.76,
+        "topStarters": [
+          {
+            "id": "8150",
+            "name": "Kyren Williams",
+            "points": 36.7
+          },
+          {
+            "id": "8151",
+            "name": "Kenneth Walker",
+            "points": 30.9
+          },
+          {
+            "id": "9228",
+            "name": "Bryce Young",
+            "points": 21.46
+          },
+          {
+            "id": "11834",
+            "name": "Devaughn Vele",
+            "points": 17.4
+          }
+        ],
+        "topBench": [
+          {
+            "id": "9493",
+            "name": "Puka Nacua",
+            "points": 27.7
+          },
+          {
+            "id": "4035",
+            "name": "Alvin Kamara",
+            "points": 22.8
+          }
+        ]
+      },
+      "teamB": {
+        "rosterId": 8,
+        "manager": "Cooper",
+        "teamName": "Jack MeHoff",
+        "score": 89.8,
+        "topStarters": [
+          {
+            "id": "1166",
+            "name": "Kirk Cousins",
+            "points": 23.6
+          },
+          {
+            "id": "12527",
+            "name": "Ashton Jeanty",
+            "points": 18.6
+          },
+          {
+            "id": "12185",
+            "name": "Spencer Shrader",
+            "points": 16
+          },
+          {
+            "id": "12506",
+            "name": "Harold Fannin",
+            "points": 11.7
+          }
+        ],
+        "topBench": [
+          {
+            "id": "8134",
+            "name": "Khalil Shakir",
+            "points": 13.2
+          },
+          {
+            "id": "6797",
+            "name": "Justin Herbert",
+            "points": 11.56
+          }
+        ]
+      },
+      "tied": false,
+      "winner": "Joey",
+      "loser": "Cooper",
+      "margin": 76.96
+    },
+    "benchRegret": {
+      "manager": "Kane",
+      "teamName": "Blueballs",
+      "id": "12534",
+      "name": "Kyle Monangai",
+      "points": 28
+    }
+  },
+  "standings": [
+    {
+      "rank": 1,
+      "manager": "Andy",
+      "wins": 4,
+      "losses": 0,
+      "ties": 0,
+      "pointsFor": 509.38
+    },
+    {
+      "rank": 2,
+      "manager": "Kane",
+      "wins": 3,
+      "losses": 1,
+      "ties": 0,
+      "pointsFor": 547.06
+    },
+    {
+      "rank": 3,
+      "manager": "Evan",
+      "wins": 3,
+      "losses": 1,
+      "ties": 0,
+      "pointsFor": 530.02
+    },
+    {
+      "rank": 4,
+      "manager": "Kade",
+      "wins": 3,
+      "losses": 1,
+      "ties": 0,
+      "pointsFor": 461.56
+    },
+    {
+      "rank": 5,
+      "manager": "Payton",
+      "wins": 2,
+      "losses": 2,
+      "ties": 0,
+      "pointsFor": 526.18
+    },
+    {
+      "rank": 6,
+      "manager": "CJ",
+      "wins": 2,
+      "losses": 2,
+      "ties": 0,
+      "pointsFor": 518.46
+    },
+    {
+      "rank": 7,
+      "manager": "Alex",
+      "wins": 2,
+      "losses": 2,
+      "ties": 0,
+      "pointsFor": 467.98
+    },
+    {
+      "rank": 8,
+      "manager": "Kohlt",
+      "wins": 2,
+      "losses": 2,
+      "ties": 0,
+      "pointsFor": 464.14
+    },
+    {
+      "rank": 9,
+      "manager": "Parker",
+      "wins": 1,
+      "losses": 3,
+      "ties": 0,
+      "pointsFor": 480.14
+    },
+    {
+      "rank": 10,
+      "manager": "Joey",
+      "wins": 1,
+      "losses": 3,
+      "ties": 0,
+      "pointsFor": 429.54
+    },
+    {
+      "rank": 11,
+      "manager": "Cooper",
+      "wins": 1,
+      "losses": 3,
+      "ties": 0,
+      "pointsFor": 380.46
+    },
+    {
+      "rank": 12,
+      "manager": "Brae",
+      "wins": 0,
+      "losses": 4,
+      "ties": 0,
+      "pointsFor": 401.7
+    }
+  ],
+  "matchups": [
+    {
+      "matchupId": 5,
+      "teamA": {
+        "rosterId": 1,
+        "manager": "Payton",
+        "teamName": "I ♥️ Big Tet-Tees",
+        "score": 161.12,
+        "topStarters": [
+          {
+            "id": "12526",
+            "name": "Tetairoa McMillan",
+            "points": 45.2
+          },
+          {
+            "id": "6801",
+            "name": "Tee Higgins",
+            "points": 26.7
+          },
+          {
+            "id": "13279",
+            "name": "Carnell Tate",
+            "points": 21.5
+          },
+          {
+            "id": "8138",
+            "name": "James Cook",
+            "points": 16.3
+          }
+        ],
+        "topBench": [
+          {
+            "id": "5872",
+            "name": "Deebo Samuel",
+            "points": 18
+          },
+          {
+            "id": "12495",
+            "name": "Ollie Gordon",
+            "points": 18
+          }
+        ]
+      },
+      "teamB": {
+        "rosterId": 3,
+        "manager": "Kane",
+        "teamName": "Blueballs",
+        "score": 124.68,
+        "topStarters": [
+          {
+            "id": "7569",
+            "name": "Nico Collins",
+            "points": 30.8
+          },
+          {
+            "id": "9758",
+            "name": "C.J. Stroud",
+            "points": 23.08
+          },
+          {
+            "id": "11792",
+            "name": "Will Reichard",
+            "points": 19
+          },
+          {
+            "id": "3198",
+            "name": "Derrick Henry",
+            "points": 15.9
+          }
+        ],
+        "topBench": [
+          {
+            "id": "12534",
+            "name": "Kyle Monangai",
+            "points": 28
+          },
+          {
+            "id": "11610",
+            "name": "Malik Washington",
+            "points": 12
+          }
+        ]
+      },
+      "tied": false,
+      "winner": "Payton",
+      "loser": "Kane",
+      "margin": 36.44,
+      "headline": "McMillan’s 45.2-point masterpiece lifts Payton over Kane",
+      "story": "Payton’s I ♥️ Big Tet-Tees turned Week 4 into a showcase, defeating Kane’s Blueballs 161.12-124.68 for a 36.44-point victory. The headline act was Tetairoa McMillan, who exploded for 45.2 points and gave Payton a foundation strong enough to withstand a formidable showing from Kane’s roster.\n\nTee Higgins added 26.7 for Payton, while Carnell Tate contributed 21.5 and James Cook supplied 16.3. Kane received 30.8 from Nico Collins, 23.08 from C.J. Stroud and 19 from Will Reichard, but the total still fell short. The bench offered Kane a particularly loud reminder of what might have been: Kyle Monangai scored 28 points. Payton, a two-time champion from 2020 and 2021, now owns another emphatic weekly result, while Kane’s Blueballs absorbed a 36.44-point defeat despite several strong listed performances."
+    },
+    {
+      "matchupId": 3,
+      "teamA": {
+        "rosterId": 2,
+        "manager": "Andy",
+        "teamName": "Long dong silvers",
+        "score": 131.28,
+        "topStarters": [
+          {
+            "id": "7594",
+            "name": "Chuba Hubbard",
+            "points": 25.9
+          },
+          {
+            "id": "9997",
+            "name": "Zay Flowers",
+            "points": 25.8
+          },
+          {
+            "id": "8144",
+            "name": "Chris Olave",
+            "points": 19.6
+          },
+          {
+            "id": "4881",
+            "name": "Lamar Jackson",
+            "points": 18.88
+          }
+        ],
+        "topBench": [
+          {
+            "id": "8183",
+            "name": "Brock Purdy",
+            "points": 19.62
+          },
+          {
+            "id": "7611",
+            "name": "Rhamondre Stevenson",
+            "points": 18.4
+          }
+        ]
+      },
+      "teamB": {
+        "rosterId": 5,
+        "manager": "Parker",
+        "teamName": "My BallDak hurts",
+        "score": 112.1,
+        "topStarters": [
+          {
+            "id": "12512",
+            "name": "Quinshon Judkins",
+            "points": 21.6
+          },
+          {
+            "id": "12489",
+            "name": "RJ Harvey",
+            "points": 19.3
+          },
+          {
+            "id": "4046",
+            "name": "Patrick Mahomes",
+            "points": 17
+          },
+          {
+            "id": "3451",
+            "name": "Ka'imi Fairbairn",
+            "points": 16
+          }
+        ],
+        "topBench": [
+          {
+            "id": "12501",
+            "name": "Matthew Golden",
+            "points": 11.7
+          },
+          {
+            "id": "12474",
+            "name": "Woody Marks",
+            "points": 8.2
+          }
+        ]
+      },
+      "tied": false,
+      "winner": "Andy",
+      "loser": "Parker",
+      "margin": 19.18,
+      "headline": "Andy stays spotless as Flowers and Hubbard power past Parker",
+      "story": "Andy’s Long dong silvers kept their perfect record intact, defeating Parker’s My BallDak hurts 131.28-112.1. The 19.18-point margin was built around a balanced top end, with Chuba Hubbard scoring 25.9 and Zay Flowers adding 25.8. Chris Olave chipped in 19.6, while Lamar Jackson finished with 18.88.\n\nParker’s best listed starters were Quinshon Judkins at 21.6, RJ Harvey at 19.3, Patrick Mahomes at 17 and Ka’imi Fairbairn at 16. Those numbers produced a respectable 112.1, but Andy’s 131.28 proved too much. The result leaves Andy ranked first at 4-0 with 509.38 points for. Parker, the league’s 2019 inaugural champion and self-described Public Enemy known as the King of Dogshit Trades, stands at 1-3 after the loss. The old champion’s lore remains intact; so does Andy’s unbeaten run."
+    },
+    {
+      "matchupId": 2,
+      "teamA": {
+        "rosterId": 4,
+        "manager": "Kade",
+        "teamName": "CheesusJesus",
+        "score": 119.12,
+        "topStarters": [
+          {
+            "id": "9509",
+            "name": "Bijan Robinson",
+            "points": 27.7
+          },
+          {
+            "id": "10859",
+            "name": "Sam LaPorta",
+            "points": 22.4
+          },
+          {
+            "id": "4984",
+            "name": "Josh Allen",
+            "points": 19.52
+          },
+          {
+            "id": "5846",
+            "name": "DK Metcalf",
+            "points": 16.5
+          }
+        ],
+        "topBench": [
+          {
+            "id": "6804",
+            "name": "Jordan Love",
+            "points": 14.08
+          },
+          {
+            "id": "3214",
+            "name": "Hunter Henry",
+            "points": 11.2
+          }
+        ]
+      },
+      "teamB": {
+        "rosterId": 9,
+        "manager": "Brae",
+        "teamName": "Ogles Outlaws",
+        "score": 114.5,
+        "topStarters": [
+          {
+            "id": "7588",
+            "name": "Javonte Williams",
+            "points": 31.3
+          },
+          {
+            "id": "9224",
+            "name": "Chase Brown",
+            "points": 19.1
+          },
+          {
+            "id": "3294",
+            "name": "Dak Prescott",
+            "points": 18.1
+          },
+          {
+            "id": "11786",
+            "name": "Cam Little",
+            "points": 14
+          }
+        ],
+        "topBench": [
+          {
+            "id": "9480",
+            "name": "Brenton Strange",
+            "points": 16.5
+          },
+          {
+            "id": "11620",
+            "name": "Rome Odunze",
+            "points": 15.4
+          }
+        ]
+      },
+      "tied": false,
+      "winner": "Kade",
+      "loser": "Brae",
+      "margin": 4.62,
+      "headline": "Kade wins the week’s thriller by 4.62 points",
+      "story": "CheesusJesus delivered the narrowest victory of Week 4, with Kade defeating Brae’s Ogles Outlaws 119.12-114.5. The 4.62-point margin made this the Game of the Week, and the winning formula started with Bijan Robinson’s 27.7 points. Sam LaPorta added 22.4, Josh Allen scored 19.52 and DK Metcalf posted 16.5 for Kade.\n\nBrae had the individual scoring leader in Javonte Williams, whose 31.3 points topped all listed players in the matchup. Chase Brown contributed 19.1, Dak Prescott had 18.1 and Cam Little scored 14. Still, Ogles Outlaws came up short, leaving Brae at 0-4. Kade, meanwhile, moved to 3-1 and sits fourth in the supplied standings. The bench numbers added another layer of intrigue: Brae had 16.5 from Brenton Strange and 15.4 from Rome Odunze, while Kade’s Jordan Love scored 14.08. In a matchup this tight, every decimal had a job."
+    },
+    {
+      "matchupId": 6,
+      "teamA": {
+        "rosterId": 6,
+        "manager": "Joey",
+        "teamName": "Off Constantly",
+        "score": 166.76,
+        "topStarters": [
+          {
+            "id": "8150",
+            "name": "Kyren Williams",
+            "points": 36.7
+          },
+          {
+            "id": "8151",
+            "name": "Kenneth Walker",
+            "points": 30.9
+          },
+          {
+            "id": "9228",
+            "name": "Bryce Young",
+            "points": 21.46
+          },
+          {
+            "id": "11834",
+            "name": "Devaughn Vele",
+            "points": 17.4
+          }
+        ],
+        "topBench": [
+          {
+            "id": "9493",
+            "name": "Puka Nacua",
+            "points": 27.7
+          },
+          {
+            "id": "4035",
+            "name": "Alvin Kamara",
+            "points": 22.8
+          }
+        ]
+      },
+      "teamB": {
+        "rosterId": 8,
+        "manager": "Cooper",
+        "teamName": "Jack MeHoff",
+        "score": 89.8,
+        "topStarters": [
+          {
+            "id": "1166",
+            "name": "Kirk Cousins",
+            "points": 23.6
+          },
+          {
+            "id": "12527",
+            "name": "Ashton Jeanty",
+            "points": 18.6
+          },
+          {
+            "id": "12185",
+            "name": "Spencer Shrader",
+            "points": 16
+          },
+          {
+            "id": "12506",
+            "name": "Harold Fannin",
+            "points": 11.7
+          }
+        ],
+        "topBench": [
+          {
+            "id": "8134",
+            "name": "Khalil Shakir",
+            "points": 13.2
+          },
+          {
+            "id": "6797",
+            "name": "Justin Herbert",
+            "points": 11.56
+          }
+        ]
+      },
+      "tied": false,
+      "winner": "Joey",
+      "loser": "Cooper",
+      "margin": 76.96,
+      "headline": "Joey’s 166.76-point avalanche buries Cooper",
+      "story": "Off Constantly produced the week’s most explosive performance, with Joey defeating Cooper’s Jack MeHoff 166.76-89.8. The 76.96-point margin was the largest of the week, and Kyren Williams supplied the biggest spark with 36.7 points. Kenneth Walker followed with 30.9, Bryce Young delivered 21.46 and Devaughn Vele added 17.4.\n\nCooper’s top listed starters were Kirk Cousins at 23.6, Ashton Jeanty at 18.6, Spencer Shrader at 16 and Harold Fannin at 11.7. That group could not match Joey’s total, which earned Off Constantly both the weekly high score and the biggest blowout. Joey’s bench also featured major production from Puka Nacua at 27.7 and Alvin Kamara at 22.8. The result is especially notable in the league’s championship roll call: Joey won in 2024, while Cooper claimed the title in 2022. This week, Joey’s banner had the louder scoreboard."
+    },
+    {
+      "matchupId": 1,
+      "teamA": {
+        "rosterId": 7,
+        "manager": "Evan",
+        "teamName": "Bonnie Blue 42",
+        "score": 110.92,
+        "topStarters": [
+          {
+            "id": "6786",
+            "name": "CeeDee Lamb",
+            "points": 41.3
+          },
+          {
+            "id": "11632",
+            "name": "Malik Nabers",
+            "points": 23.2
+          },
+          {
+            "id": "6083",
+            "name": "Matt Gay",
+            "points": 16
+          },
+          {
+            "id": "6904",
+            "name": "Jalen Hurts",
+            "points": 13.52
+          }
+        ],
+        "topBench": [
+          {
+            "id": "8676",
+            "name": "Rashid Shaheed",
+            "points": 12.3
+          },
+          {
+            "id": "421",
+            "name": "Matthew Stafford",
+            "points": 11.68
+          }
+        ]
+      },
+      "teamB": {
+        "rosterId": 10,
+        "manager": "Alex",
+        "teamName": "I love big TD’s",
+        "score": 97.54,
+        "topStarters": [
+          {
+            "id": "4217",
+            "name": "George Kittle",
+            "points": 17
+          },
+          {
+            "id": "12545",
+            "name": "Tyler Shough",
+            "points": 15.94
+          },
+          {
+            "id": "8228",
+            "name": "Jaylen Warren",
+            "points": 15.6
+          },
+          {
+            "id": "7547",
+            "name": "Amon-Ra St. Brown",
+            "points": 15.5
+          }
+        ],
+        "topBench": [
+          {
+            "id": "11564",
+            "name": "Drake Maye",
+            "points": 27.16
+          },
+          {
+            "id": "6770",
+            "name": "Joe Burrow",
+            "points": 25.72
+          }
+        ]
+      },
+      "tied": false,
+      "winner": "Evan",
+      "loser": "Alex",
+      "margin": 13.38,
+      "headline": "CeeDee’s 41.3 points carry Evan past Alex",
+      "story": "Evan’s Bonnie Blue 42 defeated Alex’s I love big TD’s 110.92-97.54, earning a 13.38-point victory. CeeDee Lamb did the heavy lifting with 41.3 points, the highest listed individual total in the matchup. Malik Nabers added 23.2, Matt Gay scored 16 and Jalen Hurts finished with 13.52.\n\nAlex’s top listed starters were George Kittle at 17, Tyler Shough at 15.94, Jaylen Warren at 15.6 and Amon-Ra St. Brown at 15.5. Alex also had substantial bench production, including 27.16 from Drake Maye and 25.72 from Joe Burrow, but the final score still landed at 97.54. Evan is now 3-1 and ranked third, while Alex sits 2-2 at No. 7. The matchup also paired two recent champions: Evan won in 2023, and Alex captured the 2025 title. This time, Lamb made the difference between a competitive afternoon and a victory."
+    },
+    {
+      "matchupId": 4,
+      "teamA": {
+        "rosterId": 11,
+        "manager": "CJ",
+        "teamName": "cjbroadway23",
+        "score": 94.98,
+        "topStarters": [
+          {
+            "id": "6813",
+            "name": "Jonathan Taylor",
+            "points": 22.7
+          },
+          {
+            "id": "3163",
+            "name": "Jared Goff",
+            "points": 20.48
+          },
+          {
+            "id": "9221",
+            "name": "Jahmyr Gibbs",
+            "points": 17.7
+          },
+          {
+            "id": "4199",
+            "name": "Aaron Jones",
+            "points": 16.8
+          }
+        ],
+        "topBench": [
+          {
+            "id": "5849",
+            "name": "Kyler Murray",
+            "points": 11.48
+          },
+          {
+            "id": "13298",
+            "name": "KC Concepcion",
+            "points": 11.4
+          }
+        ]
+      },
+      "teamB": {
+        "rosterId": 12,
+        "manager": "Kohlt",
+        "teamName": "kohlt",
+        "score": 116.78,
+        "topStarters": [
+          {
+            "id": "11435",
+            "name": "Emanuel Wilson",
+            "points": 27
+          },
+          {
+            "id": "11604",
+            "name": "Brock Bowers",
+            "points": 20.6
+          },
+          {
+            "id": "10232",
+            "name": "Michael Wilson",
+            "points": 16.5
+          },
+          {
+            "id": "7526",
+            "name": "Jaylen Waddle",
+            "points": 14.5
+          }
+        ],
+        "topBench": [
+          {
+            "id": "8132",
+            "name": "Tyler Allgeier",
+            "points": 12.9
+          },
+          {
+            "id": "7002",
+            "name": "Juwan Johnson",
+            "points": 11.9
+          }
+        ]
+      },
+      "tied": false,
+      "winner": "Kohlt",
+      "loser": "CJ",
+      "margin": 21.8,
+      "headline": "Emanuel Wilson leads Kohlt past CJ",
+      "story": "Kohlt’s kohlt defeated CJ’s cjbroadway23 116.78-94.98, winning by 21.8 points. Emanuel Wilson led the way for Kohlt with 27 points, followed by Brock Bowers at 20.6, Michael Wilson at 16.5 and Jaylen Waddle at 14.5. The listed production gave Kohlt enough separation to secure the week’s fifth-largest margin.\n\nCJ’s leading starters were Jonathan Taylor with 22.7, Jared Goff with 20.48, Jahmyr Gibbs at 17.7 and Aaron Jones at 16.8. Those performances helped cjbroadway23 reach 94.98, but Kohlt finished at 116.78. The result leaves Kohlt ranked eighth at 2-2, while CJ is sixth with the same record. Both teams remain in the crowded middle of the supplied standings, but only one gets to walk away from this matchup with the cleaner ledger. Wilson’s 27-point outing was the difference-maker, and Kohlt’s total held comfortably above CJ’s final score."
+    }
+  ]
+}
