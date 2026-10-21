@@ -1,0 +1,208 @@
+{
+  "id": "1418352380927373312",
+  "leagueId": "1389689189200592896",
+  "leagueName": "Fantasy Foosball Year 8",
+  "season": 2026,
+  "week": 6,
+  "occurredAt": 1792544408553,
+  "generatedAt": "2026-10-21T04:56:48.580Z",
+  "model": "gpt-5.6-luna",
+  "methodology": "MVP: Sleeper player search rank + actual league production (when available) + roster fit + starting-lineup impact.",
+  "headline": "Wilson for Two: A Clean Swap With No Clear Knockout",
+  "verdict": "It is too close to separate, with Payton gaining the cleaner headline asset and Cooper gaining the deeper package.",
+  "summary": "Both managers land a C+ deal, and the scores explain why this trade resists easy victory-lap material. Payton turns Deebo Samuel and Ollie Gordon into Garrett Wilson, whose supplied production is stronger: 15.8 points per game for the season versus Samuel's 10.1, while Wilson also carries the better market rank. That consolidation fits a 3-3 roster already built around Christian McCaffrey, James Cook, and Tetairoa McMillan, though Wilson's recent average is below his season mark. Cooper, at 2-4, adds a second wide receiver and running back while already carrying six at each position. The package offers more bodies, but the lineup-impact score trails Payton's.",
+  "sides": [
+    {
+      "rosterId": 1,
+      "manager": "Payton",
+      "teamName": "I ♥️ Big Tet-Tees",
+      "lore": "Two-time champion (2020, 2021).",
+      "received": [
+        {
+          "id": "8146",
+          "type": "player",
+          "name": "Garrett Wilson",
+          "position": "WR",
+          "nflTeam": "NYJ",
+          "searchRank": 38,
+          "games": 6,
+          "seasonAvg": 15.8,
+          "recentAvg": 12.5,
+          "value": 80.3
+        }
+      ],
+      "sent": [
+        {
+          "id": "5872",
+          "type": "player",
+          "name": "Deebo Samuel",
+          "position": "WR",
+          "nflTeam": "SF",
+          "searchRank": 131,
+          "games": 6,
+          "seasonAvg": 10.1,
+          "recentAvg": 6.8,
+          "value": 55.3
+        },
+        {
+          "id": "12495",
+          "type": "player",
+          "name": "Ollie Gordon",
+          "position": "RB",
+          "nflTeam": "MIA",
+          "searchRank": 459,
+          "games": 3,
+          "seasonAvg": 10.9,
+          "recentAvg": 10.9,
+          "value": 43.2
+        }
+      ],
+      "context": {
+        "record": "3-3",
+        "pointsFor": 770.84,
+        "positionCounts": {
+          "QB": 1,
+          "RB": 5,
+          "WR": 6,
+          "TE": 2,
+          "K": 1,
+          "DEF": 1
+        },
+        "topPlayers": [
+          {
+            "name": "Christian McCaffrey",
+            "position": "RB",
+            "value": 98.4
+          },
+          {
+            "name": "James Cook",
+            "position": "RB",
+            "value": 97.6
+          },
+          {
+            "name": "Tetairoa McMillan",
+            "position": "WR",
+            "value": 84.8
+          },
+          {
+            "name": "Garrett Wilson",
+            "position": "WR",
+            "value": 80.3
+          },
+          {
+            "name": "Tyler Warren",
+            "position": "TE",
+            "value": 78.7
+          }
+        ]
+      },
+      "packageValue": 80.3,
+      "scores": {
+        "overall": 79.7,
+        "value": 81.1,
+        "rosterFit": 77,
+        "lineupImpact": 76
+      },
+      "grade": "C+",
+      "analysis": "Payton converts two players into the cleaner single-asset return in Garrett Wilson. Wilson brings a supplied market rank of 38 and a 15.8 season average, both ahead of Deebo Samuel's 131 rank and 10.1 average; Ollie Gordon has three games and a 10.9 average. The move also fits a 3-3 roster whose core already includes Christian McCaffrey, James Cook, and Tetairoa McMillan, giving Payton another prominent wide receiver alongside that foundation. The principal risk is recent form: Wilson's 12.5 average is below his season number. Still, the two-time champion gets the deal's cleaner headline piece.",
+      "bestReason": "Payton consolidates Samuel and Gordon into Wilson, who has the stronger supplied market rank and season average.",
+      "biggestRisk": "Wilson's recent average of 12.5 trails his 15.8 season average, so the upgrade is not without short-term volatility."
+    },
+    {
+      "rosterId": 8,
+      "manager": "Cooper",
+      "teamName": "Jack MeHoff",
+      "lore": "2022 champion.",
+      "received": [
+        {
+          "id": "5872",
+          "type": "player",
+          "name": "Deebo Samuel",
+          "position": "WR",
+          "nflTeam": "SF",
+          "searchRank": 131,
+          "games": 6,
+          "seasonAvg": 10.1,
+          "recentAvg": 6.8,
+          "value": 55.3
+        },
+        {
+          "id": "12495",
+          "type": "player",
+          "name": "Ollie Gordon",
+          "position": "RB",
+          "nflTeam": "MIA",
+          "searchRank": 459,
+          "games": 3,
+          "seasonAvg": 10.9,
+          "recentAvg": 10.9,
+          "value": 43.2
+        }
+      ],
+      "sent": [
+        {
+          "id": "8146",
+          "type": "player",
+          "name": "Garrett Wilson",
+          "position": "WR",
+          "nflTeam": "NYJ",
+          "searchRank": 38,
+          "games": 6,
+          "seasonAvg": 15.8,
+          "recentAvg": 12.5,
+          "value": 80.3
+        }
+      ],
+      "context": {
+        "record": "2-4",
+        "pointsFor": 565.6,
+        "positionCounts": {
+          "RB": 6,
+          "QB": 1,
+          "K": 1,
+          "TE": 1,
+          "WR": 6,
+          "DEF": 1
+        },
+        "topPlayers": [
+          {
+            "name": "Ashton Jeanty",
+            "position": "RB",
+            "value": 86.8
+          },
+          {
+            "name": "George Pickens",
+            "position": "WR",
+            "value": 83.8
+          },
+          {
+            "name": "Spencer Shrader",
+            "position": "K",
+            "value": 69.2
+          },
+          {
+            "name": "Harold Fannin",
+            "position": "TE",
+            "value": 65.2
+          },
+          {
+            "name": "Khalil Shakir",
+            "position": "WR",
+            "value": 63.4
+          }
+        ]
+      },
+      "packageValue": 87.3,
+      "scores": {
+        "overall": 78.4,
+        "value": 82.9,
+        "rosterFit": 72,
+        "lineupImpact": 64
+      },
+      "grade": "C+",
+      "analysis": "Cooper receives two players for one, adding Deebo Samuel at wide receiver and Ollie Gordon at running back. That matters for a 2-4 roster with six players at each of those positions, and Gordon's 10.9 average across three games matches his recent average. Samuel's 10.1 season average and 6.8 recent average are less impressive than Garrett Wilson's 15.8 and 12.5, however. The supplied scores reflect the trade's shape: Cooper has the higher value score and package value, but lower roster-fit and lineup-impact marks. The 2022 champion gains depth, yet this is more quantity than unquestioned star power.",
+      "bestReason": "Cooper adds a wide receiver and running back while paying one player, with Gordon supplying a steady 10.9 average in the supplied sample.",
+      "biggestRisk": "Samuel's 6.8 recent average and Wilson's superior production leave Cooper vulnerable if the extra piece does not translate into stronger lineup impact."
+    }
+  ]
+}

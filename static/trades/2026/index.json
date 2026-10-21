@@ -1,4 +1,29 @@
 {
   "season": 2026,
-  "trades": []
+  "trades": [
+    {
+      "id": "1418352380927373312",
+      "week": 6,
+      "occurredAt": 1792544408553,
+      "generatedAt": "2026-10-21T04:56:48.580Z",
+      "headline": "Wilson for Two: A Clean Swap With No Clear Knockout",
+      "verdict": "It is too close to separate, with Payton gaining the cleaner headline asset and Cooper gaining the deeper package.",
+      "participants": [
+        {
+          "rosterId": 1,
+          "manager": "Payton",
+          "teamName": "I ♥️ Big Tet-Tees",
+          "grade": "C+",
+          "score": 79.7
+        },
+        {
+          "rosterId": 8,
+          "manager": "Cooper",
+          "teamName": "Jack MeHoff",
+          "grade": "C+",
+          "score": 78.4
+        }
+      ]
+    }
+  ]
 }
