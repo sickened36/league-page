@@ -1,0 +1,208 @@
+{
+  "id": "1419813128920698880",
+  "leagueId": "1389689189200592896",
+  "leagueName": "Fantasy Foosball Year 8",
+  "season": 2026,
+  "week": 7,
+  "occurredAt": 1792872381726,
+  "generatedAt": "2026-10-24T20:55:12.724Z",
+  "model": "gpt-5.6-luna",
+  "methodology": "MVP: Sleeper player search rank + actual league production (when available) + roster fit + starting-lineup impact.",
+  "headline": "Cooper Lands the Star Power as Kade Pays a Premium",
+  "verdict": "Cooper is the clear current winner, with a B+ grade and a 16.8-point overall-score edge over Kade’s C-.",
+  "summary": "This deal tilts decisively toward Cooper on the supplied numbers. He sends one RB in Josh Jacobs, valued at 50.6, and receives Saquon Barkley and Josh Allen, whose combined package value is 142.4. Allen carries a search rank of 3, a 27.5 season average, and a 23.1 recent average, while Barkley is ranked 10th. Kade’s best case is roster fit: an 86 fit score and a Packers back landing with the league’s only Packers fan. But the lineup impact score is only 64 after moving a top-ranked quarterback and Barkley. Cooper’s 2-4 record creates urgency, and his 80 lineup-impact score says this is a meaningful push rather than a cosmetic swap.",
+  "sides": [
+    {
+      "rosterId": 4,
+      "manager": "Kade",
+      "teamName": "CheesusJesus",
+      "lore": " Only Packers fan in a league full of Cowboys fans.",
+      "received": [
+        {
+          "id": "5850",
+          "type": "player",
+          "name": "Josh Jacobs",
+          "position": "RB",
+          "nflTeam": "GB",
+          "searchRank": 20,
+          "games": 6,
+          "seasonAvg": 0,
+          "recentAvg": 0,
+          "value": 50.6
+        }
+      ],
+      "sent": [
+        {
+          "id": "4866",
+          "type": "player",
+          "name": "Saquon Barkley",
+          "position": "RB",
+          "nflTeam": "PHI",
+          "searchRank": 10,
+          "games": 6,
+          "seasonAvg": 3.8,
+          "recentAvg": 0.7,
+          "value": 59.5
+        },
+        {
+          "id": "4984",
+          "type": "player",
+          "name": "Josh Allen",
+          "position": "QB",
+          "nflTeam": "BUF",
+          "searchRank": 3,
+          "games": 6,
+          "seasonAvg": 27.5,
+          "recentAvg": 23.1,
+          "value": 98.4
+        }
+      ],
+      "context": {
+        "record": "3-3",
+        "pointsFor": 673.76,
+        "positionCounts": {
+          "TE": 3,
+          "K": 1,
+          "WR": 5,
+          "RB": 4,
+          "QB": 1,
+          "DEF": 2
+        },
+        "topPlayers": [
+          {
+            "name": "Bijan Robinson",
+            "position": "RB",
+            "value": 98
+          },
+          {
+            "name": "Sam LaPorta",
+            "position": "TE",
+            "value": 81.3
+          },
+          {
+            "name": "Jordan Love",
+            "position": "QB",
+            "value": 79.1
+          },
+          {
+            "name": "DK Metcalf",
+            "position": "WR",
+            "value": 71.8
+          },
+          {
+            "name": "Hunter Henry",
+            "position": "TE",
+            "value": 69.3
+          }
+        ]
+      },
+      "packageValue": 50.6,
+      "scores": {
+        "overall": 72.6,
+        "value": 71.5,
+        "rosterFit": 86,
+        "lineupImpact": 64
+      },
+      "grade": "C-",
+      "analysis": "Kade receives Josh Jacobs, a Packers RB valued at 50.6, and the roster fit is the strongest part of this side: an 86 score. That fit matters for a 3-3 team with four RBs, while Kade already has Jordan Love at quarterback and Bijan Robinson anchoring the roster. The price, however, is steep. Kade sends Josh Allen, ranked third with a 27.5 season average and 23.1 recent average, plus Saquon Barkley, ranked 10th. The 64 lineup-impact score captures the lost star power, leaving this C- side dependent on fit outweighing the premium surrendered.",
+      "bestReason": "Josh Jacobs fits Kade’s roster and adds another Packers connection for the league’s only Packers fan.",
+      "biggestRisk": "Kade gives up Josh Allen’s elite supplied production profile and Barkley’s No. 10 market rank for a much smaller package."
+    },
+    {
+      "rosterId": 8,
+      "manager": "Cooper",
+      "teamName": "Jack MeHoff",
+      "lore": "2022 champion.",
+      "received": [
+        {
+          "id": "4866",
+          "type": "player",
+          "name": "Saquon Barkley",
+          "position": "RB",
+          "nflTeam": "PHI",
+          "searchRank": 10,
+          "games": 6,
+          "seasonAvg": 3.8,
+          "recentAvg": 0.7,
+          "value": 59.5
+        },
+        {
+          "id": "4984",
+          "type": "player",
+          "name": "Josh Allen",
+          "position": "QB",
+          "nflTeam": "BUF",
+          "searchRank": 3,
+          "games": 6,
+          "seasonAvg": 27.5,
+          "recentAvg": 23.1,
+          "value": 98.4
+        }
+      ],
+      "sent": [
+        {
+          "id": "5850",
+          "type": "player",
+          "name": "Josh Jacobs",
+          "position": "RB",
+          "nflTeam": "GB",
+          "searchRank": 20,
+          "games": 6,
+          "seasonAvg": 0,
+          "recentAvg": 0,
+          "value": 50.6
+        }
+      ],
+      "context": {
+        "record": "2-4",
+        "pointsFor": 565.6,
+        "positionCounts": {
+          "RB": 6,
+          "QB": 2,
+          "K": 1,
+          "WR": 5,
+          "TE": 1,
+          "DEF": 1
+        },
+        "topPlayers": [
+          {
+            "name": "Josh Allen",
+            "position": "QB",
+            "value": 98.4
+          },
+          {
+            "name": "Ashton Jeanty",
+            "position": "RB",
+            "value": 86.8
+          },
+          {
+            "name": "George Pickens",
+            "position": "WR",
+            "value": 83.8
+          },
+          {
+            "name": "Spencer Shrader",
+            "position": "K",
+            "value": 69.2
+          },
+          {
+            "name": "Khalil Shakir",
+            "position": "WR",
+            "value": 63.4
+          }
+        ]
+      },
+      "packageValue": 142.4,
+      "scores": {
+        "overall": 89.4,
+        "value": 92.5,
+        "rosterFit": 84,
+        "lineupImpact": 80
+      },
+      "grade": "B+",
+      "analysis": "Cooper turns Josh Jacobs into a two-player headline package: Saquon Barkley and Josh Allen. The return carries 142.4 in combined package value, including Allen at 98.4, a search rank of 3, a 27.5 season average, and a 23.1 recent average. Barkley adds the No. 10 search rank, too. The roster fit scores 84 and lineup impact 80, strong marks for a 2-4 team with six RBs and two QBs. Cooper’s risk is concentration: the deal moves him from depth at both positions toward higher-end names, but the B+ grade and 92.5 value score make the upgrade clear.",
+      "bestReason": "Cooper acquires the deal’s two highest-profile assets while sending only Jacobs, producing a 92.5 value score.",
+      "biggestRisk": "With six RBs and two QBs already rostered, Cooper adds more premium talent to positions where depth was already substantial."
+    }
+  ]
+}

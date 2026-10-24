@@ -2,6 +2,30 @@
   "season": 2026,
   "trades": [
     {
+      "id": "1419813128920698880",
+      "week": 7,
+      "occurredAt": 1792872381726,
+      "generatedAt": "2026-10-24T20:55:12.724Z",
+      "headline": "Cooper Lands the Star Power as Kade Pays a Premium",
+      "verdict": "Cooper is the clear current winner, with a B+ grade and a 16.8-point overall-score edge over Kade’s C-.",
+      "participants": [
+        {
+          "rosterId": 4,
+          "manager": "Kade",
+          "teamName": "CheesusJesus",
+          "grade": "C-",
+          "score": 72.6
+        },
+        {
+          "rosterId": 8,
+          "manager": "Cooper",
+          "teamName": "Jack MeHoff",
+          "grade": "B+",
+          "score": 89.4
+        }
+      ]
+    },
+    {
       "id": "1418352380927373312",
       "week": 6,
       "occurredAt": 1792544408553,
