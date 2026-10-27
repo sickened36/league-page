@@ -1,0 +1,204 @@
+{
+  "leagueId": "1389689189200592896",
+  "leagueName": "Fantasy Foosball Year 8",
+  "season": 2026,
+  "week": 8,
+  "throughWeek": 7,
+  "generatedAt": "2026-10-27T20:07:51.720Z",
+  "model": "gpt-5.6-luna",
+  "title": "Fantasy Foosball Weekly: Year 8, Week 8 Preview",
+  "subtitle": "With six playoff spots available, modeled postseason chances put pressure on the middle and lower ranks.",
+  "playoffModel": {
+    "simulations": 8000,
+    "playoffTeams": 6,
+    "description": "Seeded Monte Carlo estimate using current record, scoring strength and remaining Sleeper schedule."
+  },
+  "matchups": [
+    {
+      "matchupId": 4,
+      "teamA": {
+        "manager": "Payton",
+        "teamName": "I ♥️ Big Tet-Tees",
+        "rank": 4,
+        "record": "4-3",
+        "pointsFor": 913.92,
+        "pointsPerGame": 130.56,
+        "playoffOdds": 88.9,
+        "playoffOddsWithWin": 91.2,
+        "playoffOddsWithLoss": 75.8,
+        "playoffOddsSwing": 15.4,
+        "leagueLore": "Two-time champion (2020, 2021)."
+      },
+      "teamB": {
+        "manager": "Brae",
+        "teamName": "Ogles Outlaws",
+        "rank": 12,
+        "record": "0-7",
+        "pointsFor": 687.84,
+        "pointsPerGame": 98.26,
+        "playoffOdds": 0,
+        "playoffOddsWithWin": 0,
+        "playoffOddsWithLoss": 0,
+        "playoffOddsSwing": 0,
+        "leagueLore": ""
+      },
+      "headline": "Payton faces a must-protect position against Brae",
+      "paragraph": "Payton’s I ♥️ Big Tet-Tees enters Week 8 ranked fourth at 4-3, with an 88.9% modeled playoff chance. A win raises that figure to 91.2%, while a loss drops it to 75.8%, a 15.4-point swing. Brae’s Ogles Outlaws are 0-7 and ranked 12th; the model gives them no playoff chance before or after either result. The matchup offers Payton a chance to preserve a strong position, while Brae is seeking a first win."
+    },
+    {
+      "matchupId": 6,
+      "teamA": {
+        "manager": "Andy",
+        "teamName": "Long dong silvers",
+        "rank": 2,
+        "record": "6-1",
+        "pointsFor": 803.6,
+        "pointsPerGame": 114.8,
+        "playoffOdds": 92.6,
+        "playoffOddsWithWin": 97.6,
+        "playoffOddsWithLoss": 85.6,
+        "playoffOddsSwing": 12,
+        "leagueLore": ""
+      },
+      "teamB": {
+        "manager": "Kade",
+        "teamName": "CheesusJesus",
+        "rank": 8,
+        "record": "3-4",
+        "pointsFor": 767.42,
+        "pointsPerGame": 109.63,
+        "playoffOdds": 9.4,
+        "playoffOddsWithWin": 17.1,
+        "playoffOddsWithLoss": 4.1,
+        "playoffOddsSwing": 13,
+        "leagueLore": ""
+      },
+      "headline": "Andy’s strong position meets Kade’s urgent climb",
+      "paragraph": "Andy’s Long dong silvers hold second place at 6-1, and the model gives them a 92.6% playoff chance. A win lifts that to 97.6%; a loss lowers it to 85.6%, a 12-point swing. Kade’s CheesusJesus is ranked eighth at 3-4, with only a 9.4% modeled playoff chance. That chance rises to 17.1% with a win and falls to 4.1% with a loss, making this a meaningful opportunity for Kade."
+    },
+    {
+      "matchupId": 1,
+      "teamA": {
+        "manager": "Kane",
+        "teamName": "Blueballs",
+        "rank": 6,
+        "record": "4-3",
+        "pointsFor": 857.6,
+        "pointsPerGame": 122.51,
+        "playoffOdds": 85.7,
+        "playoffOddsWithWin": 94.3,
+        "playoffOddsWithLoss": 79.7,
+        "playoffOddsSwing": 14.6,
+        "leagueLore": ""
+      },
+      "teamB": {
+        "manager": "Alex",
+        "teamName": "I love big TD’s",
+        "rank": 3,
+        "record": "5-2",
+        "pointsFor": 916.62,
+        "pointsPerGame": 130.95,
+        "playoffOdds": 98.9,
+        "playoffOddsWithWin": 99.7,
+        "playoffOddsWithLoss": 97.8,
+        "playoffOddsSwing": 1.9,
+        "leagueLore": "2025 champion."
+      },
+      "headline": "Kane can gain ground, but Alex is already favored by the model",
+      "paragraph": "Kane’s Blueballs are ranked sixth at 4-3, carrying an 85.7% modeled playoff chance into a matchup with Alex. A win moves Kane to 94.3%, while a loss leaves 79.7%, a 14.6-point swing. Alex’s I love big TD’s is third at 5-2, and the model gives the defending 2025 champion a 98.9% playoff chance. The result barely shifts Alex’s outlook: 99.7% with a win and 97.8% with a loss."
+    },
+    {
+      "matchupId": 3,
+      "teamA": {
+        "manager": "Parker",
+        "teamName": "My BallDak hurts",
+        "rank": 10,
+        "record": "2-5",
+        "pointsFor": 854.4,
+        "pointsPerGame": 122.06,
+        "playoffOdds": 26.1,
+        "playoffOddsWithWin": 30.8,
+        "playoffOddsWithLoss": 10.1,
+        "playoffOddsSwing": 20.7,
+        "leagueLore": "2019 inaugural champion. League Public Enemy. Nickname: King of Dogshit Trades."
+      },
+      "teamB": {
+        "manager": "Cooper",
+        "teamName": "Jack MeHoff",
+        "rank": 11,
+        "record": "2-5",
+        "pointsFor": 670.5,
+        "pointsPerGame": 95.79,
+        "playoffOdds": 0.4,
+        "playoffOddsWithWin": 1.3,
+        "playoffOddsWithLoss": 0.1,
+        "playoffOddsSwing": 1.2,
+        "leagueLore": "2022 champion."
+      },
+      "headline": "Parker and Cooper meet with little margin below the line",
+      "paragraph": "Parker’s My BallDak hurts and Cooper’s Jack MeHoff are both 2-5, ranked 10th and 11th, respectively. Parker’s modeled playoff chance is 26.1%, rising to 30.8% with a win but dropping to 10.1% with a loss—a 20.7-point swing. Cooper, the 2022 champion, has only a 0.4% chance; a win raises it to 1.3%, while a loss reduces it to 0.1%. Parker has considerably more modeled leverage."
+    },
+    {
+      "matchupId": 2,
+      "teamA": {
+        "manager": "Joey",
+        "teamName": "Off Constantly",
+        "rank": 7,
+        "record": "3-4",
+        "pointsFor": 768.42,
+        "pointsPerGame": 109.77,
+        "playoffOdds": 4.7,
+        "playoffOddsWithWin": 11.3,
+        "playoffOddsWithLoss": 2,
+        "playoffOddsSwing": 9.3,
+        "leagueLore": "2024 champion."
+      },
+      "teamB": {
+        "manager": "CJ",
+        "teamName": "cjbroadway23",
+        "rank": 5,
+        "record": "4-3",
+        "pointsFor": 895.4,
+        "pointsPerGame": 127.91,
+        "playoffOdds": 85.9,
+        "playoffOddsWithWin": 90.9,
+        "playoffOddsWithLoss": 73.9,
+        "playoffOddsSwing": 17,
+        "leagueLore": ""
+      },
+      "headline": "CJ’s fifth-ranked team stands between Joey and a late push",
+      "paragraph": "Joey’s Off Constantly is 3-4 and ranked seventh, with a 4.7% modeled playoff chance. A win raises that figure to 11.3%, while a loss lowers it to 2%, a 9.3-point swing. CJ’s cjbroadway23 enters at 4-3 in fifth place, and the model gives CJ an 85.9% playoff chance. That outlook reaches 90.9% with a win and falls to 73.9% with a loss, creating the matchup’s larger modeled swing."
+    },
+    {
+      "matchupId": 5,
+      "teamA": {
+        "manager": "Evan",
+        "teamName": "Bonnie Blue 42",
+        "rank": 1,
+        "record": "6-1",
+        "pointsFor": 945.4,
+        "pointsPerGame": 135.06,
+        "playoffOdds": 99.9,
+        "playoffOddsWithWin": 100,
+        "playoffOddsWithLoss": 99.7,
+        "playoffOddsSwing": 0.3,
+        "leagueLore": "2023 champion."
+      },
+      "teamB": {
+        "manager": "Kohlt",
+        "teamName": "kohlt",
+        "rank": 9,
+        "record": "3-4",
+        "pointsFor": 746.42,
+        "pointsPerGame": 106.63,
+        "playoffOdds": 7.4,
+        "playoffOddsWithWin": 18.2,
+        "playoffOddsWithLoss": 4.8,
+        "playoffOddsSwing": 13.4,
+        "leagueLore": ""
+      },
+      "headline": "Evan’s top-ranked Bonnie Blue 42 can nearly lock in its outlook",
+      "paragraph": "Evan’s Bonnie Blue 42 leads the league at 6-1, and the model gives the 2023 champion a 99.9% playoff chance. A win raises that to 100%, while a loss still leaves 99.7%, just a 0.3-point swing. Kohlt’s team, kohlt, is ranked ninth at 3-4 with a 7.4% modeled playoff chance. A win would lift Kohlt to 18.2%, but a loss drops the chance to 4.8%, making this far more consequential for Kohlt."
+    }
+  ]
+}
