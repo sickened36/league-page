@@ -1,0 +1,232 @@
+{
+  "id": "1422460587484393472",
+  "leagueId": "1389689189200592896",
+  "leagueName": "Fantasy Foosball Year 8",
+  "season": 2026,
+  "week": 8,
+  "occurredAt": 1793503547494,
+  "generatedAt": "2026-11-01T06:16:32.695Z",
+  "model": "gpt-5.6-luna",
+  "methodology": "MVP: Sleeper player search rank + actual league production (when available) + roster fit + starting-lineup impact.",
+  "headline": "Purdy-Hampton Package Gives Parker the Edge",
+  "verdict": "Parker wins the deal on the supplied grades, though Andy’s roster fit keeps it from becoming a rout.",
+  "summary": "The transaction gives Parker’s 2-5 My BallDak hurts a more valuable package on paper: Brock Purdy and Omarion Hampton carry a combined heuristic packageValue of 128, compared with 95.5 for Austin Ekeler and Kyle Pitts Sr. Parker’s B grade and 85.5 overall score lead Andy’s B- and 80.8, with advantages in value, roster fit, and lineup impact. Andy does receive a strong positional-fit score of 91, and Pitts’ 17.1 recent average is the most encouraging individual trend in the deal. Still, Parker acquires the higher-ranked player package, while Andy accepts the bigger production and role risks. The standings say this is a useful win for Parker, not a league-breaking heist.",
+  "sides": [
+    {
+      "rosterId": 2,
+      "manager": "Andy",
+      "teamName": "Long dong silvers",
+      "lore": "",
+      "received": [
+        {
+          "id": "4663",
+          "type": "player",
+          "name": "Austin Ekeler",
+          "position": "RB",
+          "nflTeam": "WAS",
+          "searchRank": 632,
+          "games": 2,
+          "seasonAvg": 2.6,
+          "recentAvg": 2.6,
+          "value": 24.6
+        },
+        {
+          "id": "7553",
+          "type": "player",
+          "name": "Kyle Pitts Sr.",
+          "position": "TE",
+          "nflTeam": "ATL",
+          "searchRank": 68,
+          "games": 7,
+          "seasonAvg": 9,
+          "recentAvg": 17.1,
+          "value": 77.3
+        }
+      ],
+      "sent": [
+        {
+          "id": "8183",
+          "type": "player",
+          "name": "Brock Purdy",
+          "position": "QB",
+          "nflTeam": "SF",
+          "searchRank": 56,
+          "games": 7,
+          "seasonAvg": 21.4,
+          "recentAvg": 16.2,
+          "value": 79.2
+        },
+        {
+          "id": "12507",
+          "type": "player",
+          "name": "Omarion Hampton",
+          "position": "RB",
+          "nflTeam": "LAC",
+          "searchRank": 12,
+          "games": 7,
+          "seasonAvg": 8.2,
+          "recentAvg": 4.3,
+          "value": 66
+        }
+      ],
+      "context": {
+        "record": "6-1",
+        "pointsFor": 803.6,
+        "positionCounts": {
+          "WR": 8,
+          "K": 1,
+          "RB": 4,
+          "QB": 1,
+          "TE": 2,
+          "DEF": 1
+        },
+        "topPlayers": [
+          {
+            "name": "Zay Flowers",
+            "position": "WR",
+            "value": 87.3
+          },
+          {
+            "name": "Ja'Marr Chase",
+            "position": "WR",
+            "value": 83.4
+          },
+          {
+            "name": "Chris Olave",
+            "position": "WR",
+            "value": 82.4
+          },
+          {
+            "name": "Kyle Pitts Sr.",
+            "position": "TE",
+            "value": 77.3
+          },
+          {
+            "name": "Chuba Hubbard",
+            "position": "RB",
+            "value": 74.2
+          }
+        ]
+      },
+      "packageValue": 95.5,
+      "scores": {
+        "overall": 80.8,
+        "value": 78.8,
+        "rosterFit": 91,
+        "lineupImpact": 80
+      },
+      "grade": "B-",
+      "analysis": "Andy’s B- reflects a deal built more on roster fit than raw return. Kyle Pitts Sr. supplies the centerpiece at TE, carrying a 77.3 heuristic value, a 68 search rank, and a 17.1 recent average across seven games—comfortably ahead of his 9.0 season average. Austin Ekeler adds RB depth, but his 24.6 value, 632 search rank, and 2.6 average in two games make him a modest secondary return. Andy is 6-1 with 803.6 points and already has two TEs, so this is a targeted upgrade rather than a desperate rebuild. The risk: he gives up Brock Purdy’s 21.4 season average and Omarion Hampton’s No. 12 search rank.",
+      "bestReason": "Pitts’ roster fit is the engine of Andy’s 91 fit score, with his recent production giving the package a credible weekly-impact angle.",
+      "biggestRisk": "Andy parts with the trade’s stronger value assets: Purdy and Hampton total 145.2 in player value versus 101.9 received."
+    },
+    {
+      "rosterId": 5,
+      "manager": "Parker",
+      "teamName": "My BallDak hurts",
+      "lore": "2019 inaugural champion. League Public Enemy. Nickname: King of Dogshit Trades.",
+      "received": [
+        {
+          "id": "8183",
+          "type": "player",
+          "name": "Brock Purdy",
+          "position": "QB",
+          "nflTeam": "SF",
+          "searchRank": 56,
+          "games": 7,
+          "seasonAvg": 21.4,
+          "recentAvg": 16.2,
+          "value": 79.2
+        },
+        {
+          "id": "12507",
+          "type": "player",
+          "name": "Omarion Hampton",
+          "position": "RB",
+          "nflTeam": "LAC",
+          "searchRank": 12,
+          "games": 7,
+          "seasonAvg": 8.2,
+          "recentAvg": 4.3,
+          "value": 66
+        }
+      ],
+      "sent": [
+        {
+          "id": "4663",
+          "type": "player",
+          "name": "Austin Ekeler",
+          "position": "RB",
+          "nflTeam": "WAS",
+          "searchRank": 632,
+          "games": 2,
+          "seasonAvg": 2.6,
+          "recentAvg": 2.6,
+          "value": 24.6
+        },
+        {
+          "id": "7553",
+          "type": "player",
+          "name": "Kyle Pitts Sr.",
+          "position": "TE",
+          "nflTeam": "ATL",
+          "searchRank": 68,
+          "games": 7,
+          "seasonAvg": 9,
+          "recentAvg": 17.1,
+          "value": 77.3
+        }
+      ],
+      "context": {
+        "record": "2-5",
+        "pointsFor": 854.4,
+        "positionCounts": {
+          "RB": 7,
+          "WR": 4,
+          "K": 2,
+          "QB": 2,
+          "TE": 1,
+          "DEF": 1
+        },
+        "topPlayers": [
+          {
+            "name": "Jaxon Smith-Njigba",
+            "position": "WR",
+            "value": 98.4
+          },
+          {
+            "name": "Drake London",
+            "position": "WR",
+            "value": 86.4
+          },
+          {
+            "name": "Brock Purdy",
+            "position": "QB",
+            "value": 79.2
+          },
+          {
+            "name": "Ka'imi Fairbairn",
+            "position": "K",
+            "value": 78.3
+          },
+          {
+            "name": "Matthew Golden",
+            "position": "WR",
+            "value": 77
+          }
+        ]
+      },
+      "packageValue": 128,
+      "scores": {
+        "overall": 85.5,
+        "value": 85.2,
+        "rosterFit": 86.5,
+        "lineupImpact": 86
+      },
+      "grade": "B",
+      "analysis": "Parker’s B is the stronger grade because he acquires the better overall package while addressing a roster that already has seven RBs and only two QBs. Brock Purdy brings a 79.2 value, No. 56 search rank, and a 21.4 season average through seven games, although his recent average has dipped to 16.2. Omarion Hampton adds a 66 value and No. 12 search rank, but his 8.2 season average and 4.3 recent average show a meaningful production risk. For a 2-5 team with 854.4 points, Parker gets more market value and lineup-impact potential. King of Dogshit Trades gets a cleaner card this time.",
+      "bestReason": "Parker’s 128 packageValue and 85.5 overall score lead the deal, while Purdy and Hampton fit his positional counts better than the outgoing package.",
+      "biggestRisk": "Hampton’s recent 4.3 average and Purdy’s decline from 21.4 season production to 16.2 recently could limit the immediate payoff."
+    }
+  ]
+}

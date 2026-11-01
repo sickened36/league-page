@@ -2,6 +2,54 @@
   "season": 2026,
   "trades": [
     {
+      "id": "1422460587484393472",
+      "week": 8,
+      "occurredAt": 1793503547494,
+      "generatedAt": "2026-11-01T06:16:32.695Z",
+      "headline": "Purdy-Hampton Package Gives Parker the Edge",
+      "verdict": "Parker wins the deal on the supplied grades, though Andy’s roster fit keeps it from becoming a rout.",
+      "participants": [
+        {
+          "rosterId": 2,
+          "manager": "Andy",
+          "teamName": "Long dong silvers",
+          "grade": "B-",
+          "score": 80.8
+        },
+        {
+          "rosterId": 5,
+          "manager": "Parker",
+          "teamName": "My BallDak hurts",
+          "grade": "B",
+          "score": 85.5
+        }
+      ]
+    },
+    {
+      "id": "1422387602320842752",
+      "week": 8,
+      "occurredAt": 1793503253671,
+      "generatedAt": "2026-11-01T06:16:25.463Z",
+      "headline": "Kamara Package Edges Rice in a Classic Need-for-Need Swap",
+      "verdict": "Parker is the current winner, though the gap is narrow rather than decisive.",
+      "participants": [
+        {
+          "rosterId": 5,
+          "manager": "Parker",
+          "teamName": "My BallDak hurts",
+          "grade": "B",
+          "score": 83.3
+        },
+        {
+          "rosterId": 6,
+          "manager": "Joey",
+          "teamName": "Off Constantly",
+          "grade": "C",
+          "score": 73.2
+        }
+      ]
+    },
+    {
       "id": "1419813128920698880",
       "week": 7,
       "occurredAt": 1792872381726,

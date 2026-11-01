@@ -1,0 +1,208 @@
+{
+  "id": "1422387602320842752",
+  "leagueId": "1389689189200592896",
+  "leagueName": "Fantasy Foosball Year 8",
+  "season": 2026,
+  "week": 8,
+  "occurredAt": 1793503253671,
+  "generatedAt": "2026-11-01T06:16:25.463Z",
+  "model": "gpt-5.6-luna",
+  "methodology": "MVP: Sleeper player search rank + actual league production (when available) + roster fit + starting-lineup impact.",
+  "headline": "Kamara Package Edges Rice in a Classic Need-for-Need Swap",
+  "verdict": "Parker is the current winner, though the gap is narrow rather than decisive.",
+  "summary": "Parker gets the stronger overall grade, 83.3 to Joey’s 73.2, and the larger package-value return: 101.9 for a single player valued at 55.2. Kamara brings the best supplied production in the deal, averaging 9.4 points for the season and 10.2 recently, while Dowdle adds another running back after Parker sent away a wide receiver. That fit matters for a 2-5 team carrying seven RBs but only four WRs, even if the lineup-impact score is a modest 70. Joey’s 3-4 roster has seven wideouts and five backs, so Rice addresses a positional imbalance, but his recent average is listed at zero. The league’s Public Enemy may have survived another trade headline.",
+  "sides": [
+    {
+      "rosterId": 5,
+      "manager": "Parker",
+      "teamName": "My BallDak hurts",
+      "lore": "2019 inaugural champion. League Public Enemy. Nickname: King of Dogshit Trades.",
+      "received": [
+        {
+          "id": "4035",
+          "type": "player",
+          "name": "Alvin Kamara",
+          "position": "RB",
+          "nflTeam": "NO",
+          "searchRank": 119,
+          "games": 7,
+          "seasonAvg": 9.4,
+          "recentAvg": 10.2,
+          "value": 61.9
+        },
+        {
+          "id": "7021",
+          "type": "player",
+          "name": "Rico Dowdle",
+          "position": "RB",
+          "nflTeam": "PIT",
+          "searchRank": 65,
+          "games": 6,
+          "seasonAvg": 4.2,
+          "recentAvg": 4.9,
+          "value": 54
+        }
+      ],
+      "sent": [
+        {
+          "id": "10229",
+          "type": "player",
+          "name": "Rashee Rice",
+          "position": "WR",
+          "nflTeam": "KC",
+          "searchRank": 29,
+          "games": 7,
+          "seasonAvg": 5.4,
+          "recentAvg": 0,
+          "value": 55.2
+        }
+      ],
+      "context": {
+        "record": "2-5",
+        "pointsFor": 854.4,
+        "positionCounts": {
+          "RB": 7,
+          "WR": 4,
+          "K": 2,
+          "QB": 2,
+          "TE": 1,
+          "DEF": 1
+        },
+        "topPlayers": [
+          {
+            "name": "Jaxon Smith-Njigba",
+            "position": "WR",
+            "value": 98.4
+          },
+          {
+            "name": "Drake London",
+            "position": "WR",
+            "value": 86.4
+          },
+          {
+            "name": "Brock Purdy",
+            "position": "QB",
+            "value": 79.2
+          },
+          {
+            "name": "Ka'imi Fairbairn",
+            "position": "K",
+            "value": 78.3
+          },
+          {
+            "name": "Matthew Golden",
+            "position": "WR",
+            "value": 77
+          }
+        ]
+      },
+      "packageValue": 101.9,
+      "scores": {
+        "overall": 83.3,
+        "value": 88.5,
+        "rosterFit": 72,
+        "lineupImpact": 70
+      },
+      "grade": "B",
+      "analysis": "Parker’s B-grade return is built around quantity, production, and a clear positional pivot. Alvin Kamara is the centerpiece, with a 9.4 season average and 10.2 recent average, while Rico Dowdle adds a second RB valued at 54. That package totals 101.9 against the 55.2 value of Rashee Rice. Parker’s roster has seven running backs but only four wide receivers, so the fit is not perfect; still, the 2-5 team receives the deal’s strongest actual production indicators and more total value. The 70 lineup-impact score keeps this from being a runaway, but King of Dogshit Trades gets to enjoy a rare favorable headline.",
+      "bestReason": "Parker receives the higher-value package, led by Kamara’s 9.4 season average and 10.2 recent average.",
+      "biggestRisk": "The roster-fit score is only 72 and lineup impact is 70, so the two-RB return may not translate cleanly into starting-lineup gains."
+    },
+    {
+      "rosterId": 6,
+      "manager": "Joey",
+      "teamName": "Off Constantly",
+      "lore": "2024 champion.",
+      "received": [
+        {
+          "id": "10229",
+          "type": "player",
+          "name": "Rashee Rice",
+          "position": "WR",
+          "nflTeam": "KC",
+          "searchRank": 29,
+          "games": 7,
+          "seasonAvg": 5.4,
+          "recentAvg": 0,
+          "value": 55.2
+        }
+      ],
+      "sent": [
+        {
+          "id": "4035",
+          "type": "player",
+          "name": "Alvin Kamara",
+          "position": "RB",
+          "nflTeam": "NO",
+          "searchRank": 119,
+          "games": 7,
+          "seasonAvg": 9.4,
+          "recentAvg": 10.2,
+          "value": 61.9
+        },
+        {
+          "id": "7021",
+          "type": "player",
+          "name": "Rico Dowdle",
+          "position": "RB",
+          "nflTeam": "PIT",
+          "searchRank": 65,
+          "games": 6,
+          "seasonAvg": 4.2,
+          "recentAvg": 4.9,
+          "value": 54
+        }
+      ],
+      "context": {
+        "record": "3-4",
+        "pointsFor": 768.42,
+        "positionCounts": {
+          "WR": 7,
+          "RB": 5,
+          "QB": 2,
+          "K": 1,
+          "TE": 1,
+          "DEF": 1
+        },
+        "topPlayers": [
+          {
+            "name": "Puka Nacua",
+            "position": "WR",
+            "value": 96.3
+          },
+          {
+            "name": "Kyren Williams",
+            "position": "RB",
+            "value": 91.7
+          },
+          {
+            "name": "Kenneth Walker III",
+            "position": "RB",
+            "value": 91.3
+          },
+          {
+            "name": "Chase McLaughlin",
+            "position": "K",
+            "value": 74.7
+          },
+          {
+            "name": "Tucker Kraft",
+            "position": "TE",
+            "value": 74.2
+          }
+        ]
+      },
+      "packageValue": 55.2,
+      "scores": {
+        "overall": 73.2,
+        "value": 75.5,
+        "rosterFit": 72,
+        "lineupImpact": 64
+      },
+      "grade": "C",
+      "analysis": "Joey’s C grade reflects a reasonable roster correction at a steeper price. Rashee Rice carries a 55.2 supplied value and a search rank of 29, giving Joey a single wide receiver after sending two running backs. That positional move fits a roster with seven WRs and five RBs less cleanly than Parker’s transaction context, but it still changes the shape of a 3-4 team’s assets. The concern is the production record supplied here: Rice has a 5.4 season average and a recent average of zero across seven games. Joey’s value score of 75.5 and lineup-impact score of 64 show why the deal trails Parker’s side.",
+      "bestReason": "Rice has the strongest supplied market signal in the deal, including a 29 search rank, while Joey sends from a deeper five-player RB group.",
+      "biggestRisk": "Joey gives up a 101.9-value two-player package for Rice’s 55.2 value, with Rice’s recent average listed at zero."
+    }
+  ]
+}
