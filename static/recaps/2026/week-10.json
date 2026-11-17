@@ -1,0 +1,909 @@
+{
+  "leagueId": "1389689189200592896",
+  "leagueName": "Fantasy Foosball Year 8",
+  "season": 2026,
+  "week": 10,
+  "generatedAt": "2026-11-17T22:57:46.342Z",
+  "model": "gpt-5.6-luna",
+  "title": "Fantasy Foosball Weekly: Week 10 Brings Big Scores, Bigger Margins",
+  "subtitle": "Parker posts the week’s top total, Kane delivers the knockout, and the standings remain packed with storylines.",
+  "leagueLead": "Week 10 of Fantasy Foosball Year 8, 2026, had no shortage of fireworks. Parker’s My BallDak hurts led all teams with 160.36 points, powered by Brock Purdy’s 31.66, Jaxon Smith-Njigba’s 31.1, the Minnesota Vikings’ 22 and Drake London’s 16.9. Parker’s victory also came with a little bench-side drama: Patrick Mahomes scored 35.42 points in reserve, earning the week’s Bench Regret distinction. Cooper nearly matched Parker’s total, scoring 158.14 behind George Pickens’ enormous 43.5, while Kane’s Blueballs reached 147.24 and Payton’s I ♥️ Big Tet-Tees posted 144.86. At the other end, Kohlt’s 65.38 was the week’s low mark, and Kane’s 81.86-point win over kohlt was the largest margin. Payton’s 78.46-point demolition of Joey also belonged in the blowout files. At the top of the table, Evan and Andy are both 8-2, with Payton at 7-3. The race has plenty of heat, even if several managers would prefer less of it.",
+  "closing": "Week 10 leaves the league with plenty of scoreboard fuel. Evan and Andy remain at the top at 8-2, Payton follows at 7-3, and Kane and Alex sit at 6-4. Parker’s 160.36 points set the weekly standard, while Kohlt’s 65.38 marked the other end of the spectrum. With several managers clustered around .500 and multiple champions carrying league lore into every result, the next scoring slate should bring another round of pressure, bragging rights and bench regret.",
+  "awards": {
+    "highScore": {
+      "rosterId": 5,
+      "manager": "Parker",
+      "teamName": "My BallDak hurts",
+      "score": 160.36,
+      "topStarters": [
+        {
+          "id": "8183",
+          "name": "Brock Purdy",
+          "points": 31.66
+        },
+        {
+          "id": "9488",
+          "name": "Jaxon Smith-Njigba",
+          "points": 31.1
+        },
+        {
+          "id": "MIN",
+          "name": "Minnesota Vikings",
+          "points": 22
+        },
+        {
+          "id": "8112",
+          "name": "Drake London",
+          "points": 16.9
+        }
+      ],
+      "topBench": [
+        {
+          "id": "4046",
+          "name": "Patrick Mahomes",
+          "points": 35.42
+        },
+        {
+          "id": "12507",
+          "name": "Omarion Hampton",
+          "points": 17.5
+        }
+      ]
+    },
+    "lowScore": {
+      "rosterId": 12,
+      "manager": "Kohlt",
+      "teamName": "kohlt",
+      "score": 65.38,
+      "topStarters": [
+        {
+          "id": "7523",
+          "name": "Trevor Lawrence",
+          "points": 27.78
+        },
+        {
+          "id": "8155",
+          "name": "Breece Hall",
+          "points": 14.8
+        },
+        {
+          "id": "HOU",
+          "name": "Houston Texans",
+          "points": 6
+        },
+        {
+          "id": "9502",
+          "name": "Tank Dell",
+          "points": 5.1
+        }
+      ],
+      "topBench": [
+        {
+          "id": "7002",
+          "name": "Juwan Johnson",
+          "points": 4.8
+        },
+        {
+          "id": "7562",
+          "name": "Tutu Atwell",
+          "points": 4.1
+        }
+      ]
+    },
+    "gameOfWeek": {
+      "matchupId": 4,
+      "teamA": {
+        "rosterId": 2,
+        "manager": "Andy",
+        "teamName": "Long dong silvers",
+        "score": 133.52,
+        "topStarters": [
+          {
+            "id": "7594",
+            "name": "Chuba Hubbard",
+            "points": 34.2
+          },
+          {
+            "id": "7564",
+            "name": "Ja'Marr Chase",
+            "points": 34.1
+          },
+          {
+            "id": "96",
+            "name": "Aaron Rodgers",
+            "points": 15.62
+          },
+          {
+            "id": "SEA",
+            "name": "Seattle Seahawks",
+            "points": 12
+          }
+        ],
+        "topBench": [
+          {
+            "id": "13293",
+            "name": "Ja'Kobi Lane",
+            "points": 9.1
+          },
+          {
+            "id": "13346",
+            "name": "Denzel Boston",
+            "points": 2.6
+          }
+        ]
+      },
+      "teamB": {
+        "rosterId": 11,
+        "manager": "CJ",
+        "teamName": "cjbroadway23",
+        "score": 115.92,
+        "topStarters": [
+          {
+            "id": "9221",
+            "name": "Jahmyr Gibbs",
+            "points": 44.2
+          },
+          {
+            "id": "3163",
+            "name": "Jared Goff",
+            "points": 22.42
+          },
+          {
+            "id": "4199",
+            "name": "Aaron Jones Sr.",
+            "points": 12.5
+          },
+          {
+            "id": "6813",
+            "name": "Jonathan Taylor",
+            "points": 12.3
+          }
+        ],
+        "topBench": [
+          {
+            "id": "13286",
+            "name": "Jadarian Price",
+            "points": 11.4
+          },
+          {
+            "id": "1479",
+            "name": "Keenan Allen",
+            "points": 11.1
+          }
+        ]
+      },
+      "tied": false,
+      "winner": "Andy",
+      "loser": "CJ",
+      "margin": 17.6
+    },
+    "biggestBlowout": {
+      "matchupId": 3,
+      "teamA": {
+        "rosterId": 3,
+        "manager": "Kane",
+        "teamName": "Blueballs",
+        "score": 147.24,
+        "topStarters": [
+          {
+            "id": "9487",
+            "name": "Parker Washington",
+            "points": 28.2
+          },
+          {
+            "id": "12481",
+            "name": "Cam Skattebo",
+            "points": 27.2
+          },
+          {
+            "id": "7569",
+            "name": "Nico Collins",
+            "points": 24.4
+          },
+          {
+            "id": "9758",
+            "name": "C.J. Stroud",
+            "points": 21.44
+          }
+        ],
+        "topBench": [
+          {
+            "id": "11610",
+            "name": "Malik Washington",
+            "points": 13.36
+          },
+          {
+            "id": "3257",
+            "name": "Jacoby Brissett",
+            "points": 12.8
+          }
+        ]
+      },
+      "teamB": {
+        "rosterId": 12,
+        "manager": "Kohlt",
+        "teamName": "kohlt",
+        "score": 65.38,
+        "topStarters": [
+          {
+            "id": "7523",
+            "name": "Trevor Lawrence",
+            "points": 27.78
+          },
+          {
+            "id": "8155",
+            "name": "Breece Hall",
+            "points": 14.8
+          },
+          {
+            "id": "HOU",
+            "name": "Houston Texans",
+            "points": 6
+          },
+          {
+            "id": "9502",
+            "name": "Tank Dell",
+            "points": 5.1
+          }
+        ],
+        "topBench": [
+          {
+            "id": "7002",
+            "name": "Juwan Johnson",
+            "points": 4.8
+          },
+          {
+            "id": "7562",
+            "name": "Tutu Atwell",
+            "points": 4.1
+          }
+        ]
+      },
+      "tied": false,
+      "winner": "Kane",
+      "loser": "Kohlt",
+      "margin": 81.86
+    },
+    "benchRegret": {
+      "manager": "Parker",
+      "teamName": "My BallDak hurts",
+      "id": "4046",
+      "name": "Patrick Mahomes",
+      "points": 35.42
+    }
+  },
+  "standings": [
+    {
+      "rank": 1,
+      "manager": "Evan",
+      "wins": 8,
+      "losses": 2,
+      "ties": 0,
+      "pointsFor": 1306.36
+    },
+    {
+      "rank": 2,
+      "manager": "Andy",
+      "wins": 8,
+      "losses": 2,
+      "ties": 0,
+      "pointsFor": 1131.84
+    },
+    {
+      "rank": 3,
+      "manager": "Payton",
+      "wins": 7,
+      "losses": 3,
+      "ties": 0,
+      "pointsFor": 1346.92
+    },
+    {
+      "rank": 4,
+      "manager": "Alex",
+      "wins": 6,
+      "losses": 4,
+      "ties": 0,
+      "pointsFor": 1301.94
+    },
+    {
+      "rank": 5,
+      "manager": "Kane",
+      "wins": 6,
+      "losses": 4,
+      "ties": 0,
+      "pointsFor": 1191.44
+    },
+    {
+      "rank": 6,
+      "manager": "Parker",
+      "wins": 5,
+      "losses": 5,
+      "ties": 0,
+      "pointsFor": 1261.78
+    },
+    {
+      "rank": 7,
+      "manager": "Joey",
+      "wins": 5,
+      "losses": 5,
+      "ties": 0,
+      "pointsFor": 1114.62
+    },
+    {
+      "rank": 8,
+      "manager": "CJ",
+      "wins": 4,
+      "losses": 6,
+      "ties": 0,
+      "pointsFor": 1158.46
+    },
+    {
+      "rank": 9,
+      "manager": "Kade",
+      "wins": 4,
+      "losses": 6,
+      "ties": 0,
+      "pointsFor": 1074.52
+    },
+    {
+      "rank": 10,
+      "manager": "Cooper",
+      "wins": 3,
+      "losses": 7,
+      "ties": 0,
+      "pointsFor": 994.66
+    },
+    {
+      "rank": 11,
+      "manager": "Kohlt",
+      "wins": 3,
+      "losses": 7,
+      "ties": 0,
+      "pointsFor": 976.88
+    },
+    {
+      "rank": 12,
+      "manager": "Brae",
+      "wins": 1,
+      "losses": 9,
+      "ties": 0,
+      "pointsFor": 1049.56
+    }
+  ],
+  "matchups": [
+    {
+      "matchupId": 2,
+      "teamA": {
+        "rosterId": 1,
+        "manager": "Payton",
+        "teamName": "I ♥️ Big Tet-Tees",
+        "score": 144.86,
+        "topStarters": [
+          {
+            "id": "4034",
+            "name": "Christian McCaffrey",
+            "points": 46.3
+          },
+          {
+            "id": "11566",
+            "name": "Jayden Daniels",
+            "points": 22.76
+          },
+          {
+            "id": "8138",
+            "name": "James Cook III",
+            "points": 21.7
+          },
+          {
+            "id": "8146",
+            "name": "Garrett Wilson",
+            "points": 15.6
+          }
+        ],
+        "topBench": [
+          {
+            "id": "5967",
+            "name": "Tony Pollard",
+            "points": 23.9
+          },
+          {
+            "id": "11586",
+            "name": "Blake Corum",
+            "points": 20.9
+          }
+        ]
+      },
+      "teamB": {
+        "rosterId": 6,
+        "manager": "Joey",
+        "teamName": "Off Constantly",
+        "score": 66.4,
+        "topStarters": [
+          {
+            "id": "5119",
+            "name": "Jason Sanders",
+            "points": 14
+          },
+          {
+            "id": "10229",
+            "name": "Rashee Rice",
+            "points": 13.2
+          },
+          {
+            "id": "KC",
+            "name": "Kansas City Chiefs",
+            "points": 10
+          },
+          {
+            "id": "8148",
+            "name": "Jameson Williams",
+            "points": 9
+          }
+        ],
+        "topBench": [
+          {
+            "id": "1373",
+            "name": "Geno Smith",
+            "points": 5.92
+          },
+          {
+            "id": "11834",
+            "name": "Devaughn Vele",
+            "points": 3.4
+          }
+        ]
+      },
+      "tied": false,
+      "winner": "Payton",
+      "loser": "Joey",
+      "margin": 78.46,
+      "headline": "McCaffrey Erupts as Payton Rolls Past Joey",
+      "story": "Payton’s I ♥️ Big Tet-Tees turned a Week 10 matchup into a one-sided showcase, beating Joey’s Off Constantly 144.86-66.4. The 78.46-point margin was the week’s second-largest, and Payton got the kind of headline performance expected from a two-time champion. Christian McCaffrey led the charge with 46.3 points, while Jayden Daniels added 22.76 and James Cook III contributed 21.7.\n\nJoey’s scoring was paced by Jason Sanders at 14 points and Rashee Rice at 13.2, with the Kansas City Chiefs defense adding 10. Jameson Williams supplied 9, but Off Constantly could not keep pace with Payton’s star power. Payton also had Tony Pollard score 23.9 on the bench, a reminder that the two-time champion had plenty of production outside the starting lineup. Joey, the 2024 champion, will be looking for a more generous fantasy script after this lopsided result."
+    },
+    {
+      "matchupId": 4,
+      "teamA": {
+        "rosterId": 2,
+        "manager": "Andy",
+        "teamName": "Long dong silvers",
+        "score": 133.52,
+        "topStarters": [
+          {
+            "id": "7594",
+            "name": "Chuba Hubbard",
+            "points": 34.2
+          },
+          {
+            "id": "7564",
+            "name": "Ja'Marr Chase",
+            "points": 34.1
+          },
+          {
+            "id": "96",
+            "name": "Aaron Rodgers",
+            "points": 15.62
+          },
+          {
+            "id": "SEA",
+            "name": "Seattle Seahawks",
+            "points": 12
+          }
+        ],
+        "topBench": [
+          {
+            "id": "13293",
+            "name": "Ja'Kobi Lane",
+            "points": 9.1
+          },
+          {
+            "id": "13346",
+            "name": "Denzel Boston",
+            "points": 2.6
+          }
+        ]
+      },
+      "teamB": {
+        "rosterId": 11,
+        "manager": "CJ",
+        "teamName": "cjbroadway23",
+        "score": 115.92,
+        "topStarters": [
+          {
+            "id": "9221",
+            "name": "Jahmyr Gibbs",
+            "points": 44.2
+          },
+          {
+            "id": "3163",
+            "name": "Jared Goff",
+            "points": 22.42
+          },
+          {
+            "id": "4199",
+            "name": "Aaron Jones Sr.",
+            "points": 12.5
+          },
+          {
+            "id": "6813",
+            "name": "Jonathan Taylor",
+            "points": 12.3
+          }
+        ],
+        "topBench": [
+          {
+            "id": "13286",
+            "name": "Jadarian Price",
+            "points": 11.4
+          },
+          {
+            "id": "1479",
+            "name": "Keenan Allen",
+            "points": 11.1
+          }
+        ]
+      },
+      "tied": false,
+      "winner": "Andy",
+      "loser": "CJ",
+      "margin": 17.6,
+      "headline": "Chase and Hubbard Power Andy Past Gibbs’ Best",
+      "story": "Andy’s Long dong silvers survived a monster performance from Jahmyr Gibbs to defeat CJ’s cjbroadway23, 133.52-115.92. The 17.6-point margin made this the week’s Game of the Week, with Andy getting a balanced burst from Chuba Hubbard and Ja’Marr Chase. Hubbard scored 34.2 points and Chase added 34.1, giving Andy two players who nearly matched each other at the top of the card.\n\nCJ had the single biggest individual output in the matchup: Gibbs exploded for 44.2 points. Jared Goff added 22.42, while Aaron Jones Sr. and Jonathan Taylor posted 12.5 and 12.3, respectively. It still was not enough to catch Andy, whose Aaron Rodgers scored 15.62 and Seattle’s defense delivered 12. The result keeps Andy at 8-2 and moves CJ’s record to 4-6, while the weekly headline belongs to a matchup where Gibbs did everything short of rewriting the final score."
+    },
+    {
+      "matchupId": 3,
+      "teamA": {
+        "rosterId": 3,
+        "manager": "Kane",
+        "teamName": "Blueballs",
+        "score": 147.24,
+        "topStarters": [
+          {
+            "id": "9487",
+            "name": "Parker Washington",
+            "points": 28.2
+          },
+          {
+            "id": "12481",
+            "name": "Cam Skattebo",
+            "points": 27.2
+          },
+          {
+            "id": "7569",
+            "name": "Nico Collins",
+            "points": 24.4
+          },
+          {
+            "id": "9758",
+            "name": "C.J. Stroud",
+            "points": 21.44
+          }
+        ],
+        "topBench": [
+          {
+            "id": "11610",
+            "name": "Malik Washington",
+            "points": 13.36
+          },
+          {
+            "id": "3257",
+            "name": "Jacoby Brissett",
+            "points": 12.8
+          }
+        ]
+      },
+      "teamB": {
+        "rosterId": 12,
+        "manager": "Kohlt",
+        "teamName": "kohlt",
+        "score": 65.38,
+        "topStarters": [
+          {
+            "id": "7523",
+            "name": "Trevor Lawrence",
+            "points": 27.78
+          },
+          {
+            "id": "8155",
+            "name": "Breece Hall",
+            "points": 14.8
+          },
+          {
+            "id": "HOU",
+            "name": "Houston Texans",
+            "points": 6
+          },
+          {
+            "id": "9502",
+            "name": "Tank Dell",
+            "points": 5.1
+          }
+        ],
+        "topBench": [
+          {
+            "id": "7002",
+            "name": "Juwan Johnson",
+            "points": 4.8
+          },
+          {
+            "id": "7562",
+            "name": "Tutu Atwell",
+            "points": 4.1
+          }
+        ]
+      },
+      "tied": false,
+      "winner": "Kane",
+      "loser": "Kohlt",
+      "margin": 81.86,
+      "headline": "Blueballs Blast Off in 81.86-Point Rout",
+      "story": "Kane’s Blueballs produced the week’s biggest blowout, overwhelming Kohlt’s kohlt 147.24-65.38. The 81.86-point margin left no ambiguity, and Kane’s lineup featured four starters with at least 21 points. Parker Washington led the way with 28.2, followed closely by Cam Skattebo’s 27.2. Nico Collins added 24.4, while C.J. Stroud supplied 21.44.\n\nKohlt’s best starter was Trevor Lawrence, who scored 27.78, with Breece Hall adding 14.8. The Houston Texans defense contributed 6 points and Tank Dell had 5.1, but the total remained the week’s lowest. Kane also had Malik Washington score 13.36 on the bench, while Kohlt’s top reserve, Juwan Johnson, managed 4.8. Blueballs rises to 6-4, while kohlt sits at 3-7; in this matchup, the scoreboard did all the talking, and it used a megaphone."
+    },
+    {
+      "matchupId": 5,
+      "teamA": {
+        "rosterId": 4,
+        "manager": "Kade",
+        "teamName": "CheesusJesus",
+        "score": 106.2,
+        "topStarters": [
+          {
+            "id": "2449",
+            "name": "Stefon Diggs",
+            "points": 20.3
+          },
+          {
+            "id": "9509",
+            "name": "Bijan Robinson",
+            "points": 17.7
+          },
+          {
+            "id": "LAR",
+            "name": "Los Angeles Rams",
+            "points": 17
+          },
+          {
+            "id": "5846",
+            "name": "DK Metcalf",
+            "points": 15.4
+          }
+        ],
+        "topBench": [
+          {
+            "id": "5012",
+            "name": "Mark Andrews",
+            "points": 16.2
+          },
+          {
+            "id": "12509",
+            "name": "Tre' Harris",
+            "points": 13.6
+          }
+        ]
+      },
+      "teamB": {
+        "rosterId": 5,
+        "manager": "Parker",
+        "teamName": "My BallDak hurts",
+        "score": 160.36,
+        "topStarters": [
+          {
+            "id": "8183",
+            "name": "Brock Purdy",
+            "points": 31.66
+          },
+          {
+            "id": "9488",
+            "name": "Jaxon Smith-Njigba",
+            "points": 31.1
+          },
+          {
+            "id": "MIN",
+            "name": "Minnesota Vikings",
+            "points": 22
+          },
+          {
+            "id": "8112",
+            "name": "Drake London",
+            "points": 16.9
+          }
+        ],
+        "topBench": [
+          {
+            "id": "4046",
+            "name": "Patrick Mahomes",
+            "points": 35.42
+          },
+          {
+            "id": "12507",
+            "name": "Omarion Hampton",
+            "points": 17.5
+          }
+        ]
+      },
+      "tied": false,
+      "winner": "Parker",
+      "loser": "Kade",
+      "margin": 54.16,
+      "headline": "Parker’s BallDak Machine Leads Week 10",
+      "story": "Parker’s My BallDak hurts delivered the highest score of Week 10, defeating Kade’s CheesusJesus 160.36-106.2. Brock Purdy led Parker with 31.66 points, and Jaxon Smith-Njigba was nearly identical at 31.1. The Minnesota Vikings added 22, while Drake London scored 16.9, giving Parker a formidable top group and a 54.16-point victory.\n\nKade’s best starters were Stefon Diggs with 20.3 and Bijan Robinson with 17.7. The Los Angeles Rams defense added 17, and DK Metcalf posted 15.4, but CheesusJesus could not match Parker’s scoring surge. The result puts Parker at 5-5 and Kade at 4-6. There was also some delicious bench regret for Parker: Patrick Mahomes scored 35.42 points in reserve, the week’s designated reminder that fantasy managers can win comfortably and still find something to second-guess. For a manager known around the league as Public Enemy and the King of Dogshit Trades, it was an especially loud scoreboard statement."
+    },
+    {
+      "matchupId": 6,
+      "teamA": {
+        "rosterId": 7,
+        "manager": "Evan",
+        "teamName": "Bonnie Blue 42",
+        "score": 111.96,
+        "topStarters": [
+          {
+            "id": "13337",
+            "name": "Emmett Johnson",
+            "points": 35.1
+          },
+          {
+            "id": "421",
+            "name": "Matthew Stafford",
+            "points": 20.76
+          },
+          {
+            "id": "6786",
+            "name": "CeeDee Lamb",
+            "points": 20.2
+          },
+          {
+            "id": "6794",
+            "name": "Justin Jefferson",
+            "points": 16.4
+          }
+        ],
+        "topBench": [
+          {
+            "id": "11783",
+            "name": "Ryan Flournoy",
+            "points": 19.1
+          },
+          {
+            "id": "10236",
+            "name": "Dalton Kincaid",
+            "points": 7.8
+          }
+        ]
+      },
+      "teamB": {
+        "rosterId": 9,
+        "manager": "Brae",
+        "teamName": "Ogles Outlaws",
+        "score": 131.72,
+        "topStarters": [
+          {
+            "id": "3294",
+            "name": "Dak Prescott",
+            "points": 35.42
+          },
+          {
+            "id": "9224",
+            "name": "Chase Brown",
+            "points": 28.3
+          },
+          {
+            "id": "11786",
+            "name": "Cam Little",
+            "points": 19
+          },
+          {
+            "id": "9500",
+            "name": "Josh Downs",
+            "points": 15.3
+          }
+        ],
+        "topBench": [
+          {
+            "id": "10219",
+            "name": "Chris Rodriguez Jr.",
+            "points": 0.5
+          },
+          {
+            "id": "4454",
+            "name": "Kendrick Bourne",
+            "points": 0
+          }
+        ]
+      },
+      "tied": false,
+      "winner": "Brae",
+      "loser": "Evan",
+      "margin": 19.76,
+      "headline": "Brae Hands Evan a Rare Setback",
+      "story": "Brae’s Ogles Outlaws defeated Evan’s Bonnie Blue 42, 131.72-111.96, with Dak Prescott and Chase Brown providing the main punch. Prescott scored 35.42 points, while Brown added 28.3. Cam Little chipped in 19 and Josh Downs posted 15.3, giving Brae four listed starters who supplied a sturdy foundation in the 19.76-point win.\n\nEvan’s response was led by Emmett Johnson, who scored 35.1 points. Matthew Stafford added 20.76, CeeDee Lamb had 20.2 and Justin Jefferson contributed 16.4, but that group still came up short. The result moves Brae to 1-9 and Evan to 8-2. For Evan, the 2023 champion, the loss is a blemish on an otherwise strong record; for Brae, it is a week where the Outlaws’ top performers made the final margin hold up. Fantasy football offers no style points, only totals, and Brae had the larger one."
+    },
+    {
+      "matchupId": 1,
+      "teamA": {
+        "rosterId": 8,
+        "manager": "Cooper",
+        "teamName": "Jack MeHoff",
+        "score": 158.14,
+        "topStarters": [
+          {
+            "id": "8137",
+            "name": "George Pickens",
+            "points": 43.5
+          },
+          {
+            "id": "5872",
+            "name": "Deebo Samuel Sr.",
+            "points": 25.9
+          },
+          {
+            "id": "4984",
+            "name": "Josh Allen",
+            "points": 23.34
+          },
+          {
+            "id": "4983",
+            "name": "DJ Moore",
+            "points": 19.4
+          }
+        ],
+        "topBench": [
+          {
+            "id": "1166",
+            "name": "Kirk Cousins",
+            "points": 16.38
+          },
+          {
+            "id": "13296",
+            "name": "Caleb Douglas",
+            "points": 10.1
+          }
+        ]
+      },
+      "teamB": {
+        "rosterId": 10,
+        "manager": "Alex",
+        "teamName": "I love big TD’s",
+        "score": 121.32,
+        "topStarters": [
+          {
+            "id": "8131",
+            "name": "Isaiah Likely",
+            "points": 27.7
+          },
+          {
+            "id": "7547",
+            "name": "Amon-Ra St. Brown",
+            "points": 25.8
+          },
+          {
+            "id": "12490",
+            "name": "Bhayshul Tuten",
+            "points": 20.3
+          },
+          {
+            "id": "IND",
+            "name": "Indianapolis Colts",
+            "points": 15
+          }
+        ],
+        "topBench": [
+          {
+            "id": "6770",
+            "name": "Joe Burrow",
+            "points": 33.16
+          },
+          {
+            "id": "13281",
+            "name": "Jordyn Tyson",
+            "points": 19
+          }
+        ]
+      },
+      "tied": false,
+      "winner": "Cooper",
+      "loser": "Alex",
+      "margin": 36.82,
+      "headline": "Pickens’ 43.5 Sparks Cooper’s Upset",
+      "story": "Cooper’s Jack MeHoff surged past Alex’s I love big TD’s, 158.14-121.32, behind a spectacular outing from George Pickens. Pickens scored 43.5 points, the highest individual total among the listed starters in this matchup and one of the week’s premier performances. Deebo Samuel Sr. added 25.9, Josh Allen scored 23.34 and DJ Moore contributed 19.4 as Cooper built the week’s third-highest team total.\n\nAlex had plenty of production, led by Isaiah Likely’s 27.7 and Amon-Ra St. Brown’s 25.8. Bhayshul Tuten added 20.3 and the Indianapolis Colts defense scored 15, but Alex still finished 36.82 points behind. Joe Burrow’s 33.16 on the bench offered an extra layer of what-if intrigue for the 2025 champion. Cooper, the 2022 champion, improves to 3-7, while Alex moves to 6-4. Pickens supplied the headline; the rest of Cooper’s listed starters made sure it became a win."
+    }
+  ]
+}
